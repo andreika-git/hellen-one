@@ -1,0 +1,7 @@
+(module MOD_HELLEN_KNOCK (layer F.Cu) (tedit 6013001A)
+  (pad 1 smd oval (at 18.1500018 -2.7500072 180.0) (size 0.5 0.25) (layers F.Cu F.Mask))
+  (pad 2 smd oval (at 18.1500018 -1.8750026 180.0) (size 0.5 0.25) (layers F.Cu F.Mask))
+  (pad 3 smd oval (at 18.1500018 -1.175004 180.0) (size 0.5 0.25) (layers F.Cu F.Mask))
+  (pad 4 smd oval (at 0.324993 -0.7249922) (size 0.5 0.25) (layers F.Cu F.Mask))
+  (pad 5 smd oval (at 0.324993 -3.1250128) (size 0.5 0.25) (layers F.Cu F.Mask))
+)

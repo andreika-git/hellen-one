@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "pngjs": "^6.0.0",
+    "puppeteer": "^5.5.0",
+    "zlib": "^1.0.5"
+  }
+}

@@ -1,0 +1,6 @@
+Designator,Mid X,Mid Y,Layer,Rotation
+M450,11.0500mm,7.7625mm,Top,0
+R450,0.6500mm,14.1500mm,Top,270
+C451,2.9750mm,14.1500mm,Top,90
+C450,1.8000mm,14.1500mm,Top,90
+J450,11.3500mm,8.0500mm,Top,180

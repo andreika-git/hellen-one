@@ -1,0 +1,13 @@
+[submodule "bin/gerbmerge"]
+	path = bin/gerbmerge
+	url = https://github.com/andreika-git/gerbmerge
+[submodule "bin/python-combine-pdfs"]
+	path = bin/python-combine-pdfs
+	url = https://github.com/andreika-git/python-combine-pdfs
+	branch = python2-backport
+[submodule "bin/InteractiveHtmlBom"]
+	path = bin/InteractiveHtmlBom
+	url = https://github.com/openscopeproject/InteractiveHtmlBom
+[submodule "bin/pcb-tools"]
+	path = bin/pcb-tools
+	url = https://github.com/curtacircuitos/pcb-tools.git

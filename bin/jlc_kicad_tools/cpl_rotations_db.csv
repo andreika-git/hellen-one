@@ -1,0 +1,19 @@
+"Footprint pattern","Correction"
+"^SOT-223",180
+"^SOT-23",180
+"^SOT23",180
+"^TSOT-23",180
+"^TSOT23",180
+"^SOT-353",180
+"^TANT",180
+"^QFN",270
+"^LQFP",270
+"^TQFP",270
+"^SOP-(?!18_)",270
+"^TSSOP",270
+"^DFN",270
+"^SO[1-9]",270
+"^SOIC",270
+"^VSSOP",270
+"^HTSSOP",270
+"^R0603-4",270
