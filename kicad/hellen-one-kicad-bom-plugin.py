@@ -10,10 +10,10 @@
     Components are sorted by ref
     One component per line
     Fields are (if exist)
-    Ref, value, Part, footprint, Datasheet, Manufacturer, Vendor
+    Comment, Designator, Footprint, LCSC Part #
 
     Command line:
-    python "pathToFile/bom_csv_sorted_by_ref.py" "%I" "%O.csv"
+    python "pathToFile/hellen-one-kicad-bom-plugin.py "%I" "%P/gerber/%B.csv"
 """
 
 from __future__ import print_function

@@ -24,7 +24,7 @@ dst_name = dst_path + "/" + name
 
 fixRotationsPath = "bin/jlc_kicad_tools/cpl_rotations_db.csv"
 
-pat_module = re.compile(r'[Mm]odule-([\w]+)-([\w\.]+)')
+pat_module = re.compile(r'^[Mm]odule-([\w]+)-([\w\.]+)')
 
 #################################################
 
@@ -71,18 +71,19 @@ bom = dict()
 print ("Copying BOM...")
 with open(src_name + ".csv", 'rb') as src_f, open(dst_name + "-BOM.csv", 'w') as dst_f:
 	dst_f.write("Comment,Designator,Footprint,LCSC Part #\n")
-	reader = csv.reader(src_f, delimiter=';')
+	reader = csv.reader(src_f, delimiter=',')
 	# skip header
 	next(src_f)
 	for row in reader:
-		comment = row[4]
+		comment = row[0]
 		des = row[1]
 		footprint = row[2]
-		lcsc = row[5]
+		lcsc = row[3]
 		bom[des] = footprint
 		print ("* " + des)
 		mod = pat_module.match(comment)
 		if mod:
+			print ("*** Module detected!")
 			comment = "Module:" + mod.group(1) + "/" + mod.group(2)
 		dst_f.write("\"" + comment + "\",\"" + des + "\",\"" + footprint + "\",\"" + lcsc + "\"\n")
 
