@@ -3,6 +3,10 @@
 # Hellen-One: A board rendering script.
 # (c) andreika <prometheus.pcb@gmail.com>
 ############################################################################################
+#
+# based on iBom-template.html produced by https://github.com/openscopeproject/InteractiveHtmlBom
+#
+
 
 import os, sys
 import re
