@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 ############################################################################################
 # Hellen-One: A board rendering script.
+#
+# here we produde andreika-git-iBom using gerbers, placement and BOM files as input.
+# andreika-git-iBom adds 3D view of the PCB into the original https://github.com/openscopeproject/InteractiveHtmlBom
+#
 # (c) andreika <prometheus.pcb@gmail.com>
 ############################################################################################
 #
