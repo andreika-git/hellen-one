@@ -1,11 +1,12 @@
 #!/bin/bash
 
-project_base="${1}"
-type="${2}"
-name="${3}"
-rev="${4}"
+src_base="${1}"
+project_base="${2}"
+type="${3}"
+name="${4}"
+rev="${5}"
 
-src_path="../${type}/hellen1-${name}/jlc-${rev}"
+src_path="${src_base}/${type}/hellen1-${name}/jlc-${rev}"
 if [ $type = "frames" ]; then
 	dst_path="${project_base}/hellen${name}/boards/hellen${name}${rev}/frame"
 else
