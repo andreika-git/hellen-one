@@ -5,7 +5,7 @@ Comment,Designator,Footprint,LCSC Part #
 "2.2u","C227, C228, C229","C0805","C49217"
 "SRV05-4-P-T7","D200, D201, D202, D203, D204, D205","SOT23-6","C85364"
 "P6SMB6.8CA","D206","SMB","C78395"
-"Hellen One : Input Module interface","M200","",""
+"Module:input/0.1","M200","",""
 "4k7","R200, R201, R202, R203, R204, R205, R207","R0603-4","C1980"
 "680k","R206, R209, R211","R0603-4","C145776"
 "10k","R208, R210","R0603-4","C29718"
