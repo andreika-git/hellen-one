@@ -1,0 +1,4 @@
+(module L-MWSA0503 (layer F.Cu) (tedit 60367123)
+  (pad 1 smd roundrect (at -2.0500086 -0.0) (size 1.9 2.5) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
+  (pad 2 smd roundrect (at 2.0500086 -0.0) (size 1.9 2.5) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
+)
