@@ -1,5 +1,7 @@
 This repository contains all scripts and data to create Hellen One boards for [rusEFI](https://github.com/rusefi/rusefi)!
 
+See also https://github.com/andreika-git/hellen-boards
+
 Hellen One is a DIY PnP ECU board construction toolset.
 
 Do you have a car with a rare or non-standard ECU connector pinout?
