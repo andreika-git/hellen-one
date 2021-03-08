@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/../../footprints")(options "")(descr ""))
+  (lib (name "hellen-one-wbo-0.1")(type "KiCad")(uri "C:/Work/rusefi/github/hellen64_miataNA6_94/hellen-one/modules/wbo/0.1")(options "")(descr ""))
 )
