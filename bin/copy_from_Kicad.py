@@ -8,19 +8,25 @@ import os, sys, errno
 import csv, re
 import glob, shutil
 
-if len(sys.argv) < 4:
-    print "Error! Please specify the project base folder, name and rev."
+if len(sys.argv) < 5:
+    print "Error! Please specify the project type, base folder, name and rev."
     sys.exit(1)
-project_base = sys.argv[1]
-name = sys.argv[2]
-rev = sys.argv[3]
+type = sys.argv[1]
+project_base = sys.argv[2]
+name = sys.argv[3]
+rev = sys.argv[4]
 
-base_path = project_base + "/hellen" + name + "/boards/hellen" + name + "-" + rev
-src_path = base_path + "/kicad6/gerber"
-dst_path = base_path + "/frame"
-
-src_name = src_path + "/hellen" + name
-dst_name = dst_path + "/" + name
+if (type == "frames"):
+    base_path = project_base + "/hellen" + name + "/boards/hellen" + name + "-" + rev
+    src_path = base_path + "/kicad6/gerber"
+    dst_path = base_path + "/frame"
+    src_name = src_path + "/hellen" + name
+    dst_name = dst_path + "/" + name
+else: # modules
+    src_path = project_base + "/hellen1-" + name + "/gerber"
+    dst_path = "modules/" + name + "/" + rev
+    src_name = src_path + "/hellen1-" + name
+    dst_name = dst_path + "/" + name
 
 fixRotationsPath = "bin/jlc_kicad_tools/cpl_rotations_db.csv"
 
@@ -49,7 +55,9 @@ for g in gerbers:
 		print ("* Copying " + name + g + "...")
 		# keepout layer is a special case
 		if (g == ".GM1"):
-			shutil.copyfile(gPath, dst_name + ".GM15")
+			# currently the "edge cuts" layer is used as a frame border
+			if (type == "frames"):
+				shutil.copyfile(gPath, dst_name + ".GM15")
 			shutil.copyfile(gPath, dst_name + ".GKO")
 		else:
 			shutil.copyfile(gPath, dst_name + g)
@@ -61,6 +69,9 @@ for g in gerbers:
 			print ("Error! Gerber " + g + " not found for " + name + "!")
 			sys.exit(2)
 
+if (type == "modules"):
+	# copy the module border layer
+	shutil.copyfile(src_name + "-Module_Edge.gbr", dst_name + ".GM15")
 # copy the schematic
 shutil.copyfile(src_name + ".pdf", dst_name + "-schematic.pdf")
 # copy the VRML 3D components
