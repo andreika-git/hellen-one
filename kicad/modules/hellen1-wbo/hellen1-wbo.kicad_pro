@@ -391,7 +391,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "",
-      "vrml": ""
+      "vrml": "gerber/hellen1-wbo.wrl"
     },
     "page_layout_descr_file": ""
   },
@@ -418,7 +418,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "export/",
+    "plot_directory": "gerber",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
