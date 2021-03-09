@@ -1,0 +1,10 @@
+Designator,Mid X,Mid Y,Layer,Rotation
+M490,6.0000mm,2.6625mm,Top,0
+U491,1.6000mm,4.0000mm,Top,180
+U490,1.6000mm,1.5250mm,Top,180
+R491,7.2250mm,2.1000mm,Top,90
+R490,10.0750mm,2.1000mm,Top,90
+C493,5.0000mm,4.4000mm,Top,180
+C492,7.6750mm,4.3750mm,Top,180
+C491,3.8000mm,1.2500mm,Top,270
+C490,4.9000mm,1.7250mm,Top,90
