@@ -1,5 +1,5 @@
 (sym_lib_table
   (lib (name "hellen1-wbo-rescue")(type "Legacy")(uri "${KIPRJMOD}/hellen1-wbo-rescue.lib")(options "")(descr ""))
   (lib (name "hellen-one-common")(type "KiCad")(uri "${KIPRJMOD}/../../hellen-one-common.kicad_sym")(options "")(descr ""))
-  (lib (name "wbo")(type "KiCad")(uri "C:/Work/rusefi/github/hellen64_miataNA6_94/hellen-one/modules/wbo/0.1/wbo.kicad_sym")(options "")(descr ""))
+  (lib (name "hellen-one-wbo-0.1")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/wbo/0.1/wbo.kicad_sym")(options "")(descr ""))
 )
