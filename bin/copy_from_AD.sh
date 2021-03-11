@@ -8,7 +8,7 @@ rev="${5}"
 
 src_path="${src_base}/${type}/hellen1-${name}/jlc-${rev}"
 if [ $type = "frames" ]; then
-	dst_path="${project_base}/hellen${name}/boards/hellen${name}${rev}/frame"
+	dst_path="${project_base}/hellen${name}/boards/hellen${name}-${rev}/frame"
 else
 	dst_path="${type}/${name}/${rev}"
 fi

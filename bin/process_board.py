@@ -83,7 +83,7 @@ def print_module(name, prefix, fileName, flag):
 		else:
 			write_lines(file, "BoardOutline=%(prefix)s.GM15")
 
-def append_cpl(src_fname, dst_fname, x, y):
+def append_cpl(src_fname, dst_fname, x, y, suffix = ""):
 	print ("* appending the CPL with offset (" + str(x) + "," + str(y) + ")...")
 	with open(src_fname, 'rb') as src_f, open(dst_fname, 'a') as dst_f:
 		reader = csv.reader(src_f, delimiter=',')
@@ -107,11 +107,11 @@ def append_cpl(src_fname, dst_fname, x, y):
 			# offset the coordinates
 			x_offset = cx + float(x)
 			y_offset = cy + float(y)
-			write_lines(dst_f, des + "," + str(x_offset) + "mm," + str(y_offset) + "mm," + lay + "," + rot)
+			write_lines(dst_f, des + suffix + "," + str(x_offset) + "mm," + str(y_offset) + "mm," + lay + "," + rot)
 			i = i + 1
 			print (str(i) + " parts processed...", end = "\r")
 
-def append_bom(src_fname, dst_fname):
+def append_bom(src_fname, dst_fname, suffix = ""):
 	print ("* appending the BOM...")
 	with open(src_fname, 'rb') as src_f, open(dst_fname, 'a') as dst_f:
 		reader = csv.reader(src_f, delimiter=',')
@@ -124,10 +124,19 @@ def append_bom(src_fname, dst_fname):
 			footprint = row[2]
 			lcsc = row[3]
 
-			# remove module designators
-			if (re.match("^M[0-9]+$", des)):
-				print ("* (skipping " + des + ")")
+			# process designators
+			des_list = des.split(", ")
+			new_des_list = []
+			for d in des_list:
+				# remove module designators
+				if (re.match("^M[0-9]+$", d)):
+					print ("* (skipping " + d + ")")
+					continue
+				new_des_list.append(d + suffix)
+			if len(new_des_list) < 1:
 				continue
+			des = ", ".join(new_des_list)
+
 			write_lines(dst_f, "\"" + comment + "\",\"" + des + "\",\"" + footprint + "\",\"" + lcsc + "\"")
 			i = i + 1
 			print (str(i) + " parts processed...", end = "\r")
@@ -198,7 +207,7 @@ append_bom(frame_path + "/" + frame_name + "-BOM.csv", board_bom)
 schem_list = [frame_path + "/" + frame_name + "-schematic.pdf"]
 
 print ("Processing modules...")
-modules_list = []
+modules_list = {}
 with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 	bom_reader = csv.reader(bom_f, delimiter=',')
 	# skip header
@@ -210,45 +219,56 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 		# is it a module?
 		mod = pat_module.match(module)
 		if mod:
-			print ("  ** Inserting " + module + " into " + des + "...")
 			module_name = mod.group(1)
 			module_rev = mod.group(2)
+			des_list = des.split(", ")
+			for des in des_list:
+				print ("  ** Inserting " + module + " into " + des + "...")
+
+				if (module_name in modules_list):
+					modules_list[module_name] += 1
+					module_suffix = "_" + str(modules_list[module_name])
+				else:
+					modules_list[module_name] = 1
+					module_suffix = ""
+				module_unique_name = module_name + module_suffix
 			
-			# get module coords from the CPL file
-			with open(frame_path + "/" + frame_name + "-CPL.csv", 'r') as cpl_f:
-				cpl_reader = csv.reader(cpl_f, delimiter=',')
-				# skip header
-				next(cpl_f)
-				for cpl_row in cpl_reader:
-					if des in cpl_row[0]:
-						cxmm = cpl_row[1]
-						cymm = cpl_row[2]
-						lay = cpl_row[3]
-						rot = cpl_row[4]
-						xmm = cpl_row[5]
-						ymm = cpl_row[6]
-						# remove "mm" suffix
-						x = float(xmm.replace("mm", ""))
-						y = float(ymm.replace("mm", ""))
-						# convert into inches (the gerber coords are imperial)
-						x_inch = x / 25.4
-						y_inch = y / 25.4
+				# get module coords from the CPL file
+				with open(frame_path + "/" + frame_name + "-CPL.csv", 'r') as cpl_f:
+					cpl_reader = csv.reader(cpl_f, delimiter=',')
+					# skip header
+					next(cpl_f)
+					for cpl_row in cpl_reader:
+						if des in cpl_row[0]:
+							cxmm = cpl_row[1]
+							cymm = cpl_row[2]
+							lay = cpl_row[3]
+							rot = cpl_row[4]
+							xmm = cpl_row[5]
+							ymm = cpl_row[6]
+							# remove "mm" suffix
+							x = float(xmm.replace("mm", ""))
+							y = float(ymm.replace("mm", ""))
+							# convert into inches (the gerber coords are imperial)
+							x_inch = x / 25.4
+							y_inch = y / 25.4
 	
-						print ("  ** adding " + module_name + "/" + module_rev + ", coords: " + str(x_inch) + "\", " + str(y_inch) + "\" (" + str(x) + " mm, " + str(y) + " mm)")
+							print ("  ** adding " + module_unique_name + "/" + module_rev + ", coords: " + str(x_inch) + "\", " + str(y_inch) + "\" (" + str(x) + " mm, " + str(y) + " mm)")
 
-						# add module gerbers
-						module_path = "modules/" + module_name + "/" + module_rev
-						print_module(module_name, module_path + "/" + module_name, board_cfg_path, 0)
-						# write abs. coords
-						print_to_file(board_place_path, "a", module_name + " " + str(x_inch) + " " + str(y_inch))
+							# add module gerbers
+							module_path = "modules/" + module_name + "/" + module_rev
+							print_module(module_unique_name, module_path + "/" + module_name, board_cfg_path, 0)
+							# write abs. coords
+							print_to_file(board_place_path, "a", module_unique_name + " " + str(x_inch) + " " + str(y_inch))
 
-						append_cpl(module_path + "/" + module_name + "-CPL.csv", board_cpl, x, y)
+							append_cpl(module_path + "/" + module_name + "-CPL.csv", board_cpl, x, y, module_suffix)
 
-						append_bom(module_path + "/" + module_name + "-BOM.csv", board_bom)
+							append_bom(module_path + "/" + module_name + "-BOM.csv", board_bom, module_suffix)
 
-						# adding schematics PDF for merging at the end
-						schem_list.append(module_path + "/" + module_name + "-schematic.pdf")
-						break
+							# adding schematics PDF for merging at the end
+							if (module_unique_name == module_name):
+								schem_list.append(module_path + "/" + module_name + "-schematic.pdf")
+							break
 
 print ("* Done!")
 
