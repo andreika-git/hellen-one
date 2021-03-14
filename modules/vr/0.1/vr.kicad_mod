@@ -29,7 +29,7 @@
     (solder_mask_margin 0.07) (solder_paste_margin -50) (zone_connect 2) (tstamp 0d8ff273-d250-4783-b493-eba0593b355f))
   (pad "G" smd oval (at 3.254578 -7.968506 180) (locked) (size 5.2 0.2) (layers "F.Cu" "F.Paste")
     (solder_mask_margin 0.07) (solder_paste_margin -50) (zone_connect 2) (tstamp 2fe3ae02-7a38-43ab-a69f-a73a84476da2))
-  (pad "G" smd oval (at 12.975029 -7.975 180) (locked) (size 12.8 0.2) (layers "F.Cu" "F.Paste")
+  (pad "G" smd oval (at 13.0 -7.975 180) (locked) (size 12.8 0.2) (layers "F.Cu" "F.Paste")
     (solder_mask_margin 0.07) (solder_paste_margin -50) (zone_connect 2) (tstamp 59699c60-847d-44cf-91f3-7822f18af60b))
   (pad "G" smd oval (at 0.417772 -0.664012 90) (locked) (size 1 0.2) (layers "F.Cu" "F.Paste")
     (solder_mask_margin 0.07) (solder_paste_margin -50) (zone_connect 2) (tstamp c4738502-4143-438a-9e81-09d2d9d5fd6e))
