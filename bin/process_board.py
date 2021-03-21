@@ -186,7 +186,8 @@ print_to_file(board_cfg_path, "w", [
 		"[Options]",
 		"ExcellonLeadingZeros = 0",
 		"MeasurementUnits = inch",
-		"AllowMissingLayers = 1"])
+		"AllowMissingLayers = 1",
+		"FixedRotationOrigin = 1"])
 
 # board gerbers
 print_module("MergeOutputFiles", merged_gerber_path + "/" + board_name, board_cfg_path, 1)
@@ -258,8 +259,9 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 							# add module gerbers
 							module_path = "modules/" + module_name + "/" + module_rev
 							print_module(module_unique_name, module_path + "/" + module_name, board_cfg_path, 0)
+							rotated = ("*rotated" + rot) if (float(rot) != 0) else ""
 							# write abs. coords
-							print_to_file(board_place_path, "a", module_unique_name + " " + str(x_inch) + " " + str(y_inch))
+							print_to_file(board_place_path, "a", module_unique_name + rotated + " " + str(x_inch) + " " + str(y_inch))
 
 							append_cpl(module_path + "/" + module_name + "-CPL.csv", board_cpl, x, y, module_suffix)
 

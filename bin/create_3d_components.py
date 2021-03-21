@@ -26,7 +26,10 @@ fragments = []
 with open(mergePlaceFile, 'rb') as fmp:
 	for line in fmp:
 		m = line.split()
-		m = {"name": m[0], "x": m[1], "y": m[2], "path": config[m[0]]["Prefix"] }
+		name_and_rot = m[0].split('*rotated') # split the name and rotation parts
+		name = name_and_rot[0]
+		rot = name_and_rot[1] if len(name_and_rot) > 1 else "0"
+		m = {"name": name, "x": m[1], "y": m[2], "rot": rot, "path": config[name]["Prefix"] }
 		fragments.append(m)
 
 print "* Starting merge of " + str(len(fragments)) + " board fragments..."
@@ -48,8 +51,10 @@ for frag in fragments:
 	# convert to mm
 	off_x_mm = float(frag["x"]) * 25.4
 	off_y_mm = float(frag["y"]) * 25.4
+	# todo: apply module rotations
+	rot = float(frag["rot"])
 	fileName = frag["path"] + "-vrml.wrl"
-	print "* Adding " + frag["name"] + " (" + fileName + ")..."
+	print "* Adding " + frag["name"] + " (" + fileName + ") at (" + str(off_x_mm) + "," + str(off_y_mm) + "), rot=" + str(rot) + "..."
 	with open(fileName, 'rb') as f:
 		for line in f:
 			line = line.rstrip()
