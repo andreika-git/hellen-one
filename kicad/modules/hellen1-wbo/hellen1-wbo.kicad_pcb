@@ -43,6 +43,7 @@
       (copper_finish "None")
       (dielectric_constraints no)
     )
+    (aux_axis_origin 77.7 95.05)
     (grid_origin 77.7 95.05)
     (pcbplotparams
       (layerselection 0x00410f8_ffffffff)
