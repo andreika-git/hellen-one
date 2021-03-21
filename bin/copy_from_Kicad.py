@@ -140,6 +140,6 @@ with open(src_name + "-all-pos.csv", 'rb') as src_f, open(dst_name + "-CPL.csv",
 					rot = rot % 360.0
 					print ("* fixing rotations for " + des)
 		side = side.capitalize() 
-		dst_f.write(des + "," + posx + "mm," + posy + "mm," + str(rot) + "," + side + "," + posx + "mm," + posy + "mm\n")
+		dst_f.write(des + "," + posx + "mm," + posy + "mm," + side + "," + str(rot) + "," + posx + "mm," + posy + "mm\n")
 
 print ("Done!")

@@ -83,7 +83,7 @@ def print_module(name, prefix, fileName, flag):
 		else:
 			write_lines(file, "BoardOutline=%(prefix)s.GM15")
 
-def append_cpl(src_fname, dst_fname, x, y, suffix = ""):
+def append_cpl(src_fname, dst_fname, x, y, mrot, suffix = ""):
 	print ("* appending the CPL with offset (" + str(x) + "," + str(y) + ")...")
 	with open(src_fname, 'rb') as src_f, open(dst_fname, 'a') as dst_f:
 		reader = csv.reader(src_f, delimiter=',')
@@ -104,9 +104,22 @@ def append_cpl(src_fname, dst_fname, x, y, suffix = ""):
 			# remove "mm" suffix
 			cx = float(cxmm.replace("mm", ""))
 			cy = float(cymm.replace("mm", ""))
+			
+			# rotate the coordinates
+			rxy = {
+				0: lambda cxy: [cxy[0], cxy[1]],
+				90: lambda cxy: [-cxy[1], cxy[0]],
+				180: lambda cxy: [-cxy[0], -cxy[0]],
+				270: lambda cxy: [cxy[1], -cxy[0]],
+			}[int(mrot)]([cx, cy])
+
+			# rotate the footprint
+			rot = float(rot) + float(mrot)
+			rot = str(rot % 360.0)
+
 			# offset the coordinates
-			x_offset = cx + float(x)
-			y_offset = cy + float(y)
+			x_offset = rxy[0] + float(x)
+			y_offset = rxy[1] + float(y)
 			write_lines(dst_f, des + suffix + "," + str(x_offset) + "mm," + str(y_offset) + "mm," + lay + "," + rot)
 			i = i + 1
 			print (str(i) + " parts processed...", end = "\r")
@@ -166,7 +179,7 @@ try:
 	if os.path.exists(board_path):
 		shutil.rmtree(board_path)
 except OSError as e:
-	if exc.errno == errno.EEXIST and os.path.isdir(path):
+	if e.errno == errno.EEXIST and os.path.isdir(path):
 		pass
 	else:
 		print ("Error: %s - %s." % (e.filename, e.strerror))
@@ -202,7 +215,7 @@ print_to_file(board_place_path, "w", frame_name + " 0.000 0.000")
 print_to_file(board_cpl, "w", ["Designator,Mid X,Mid Y,Layer,Rotation"])
 print_to_file(board_bom, "w", ["Comment,Designator,Footprint,LCSC Part #"])
 
-append_cpl(frame_path + "/" + frame_name + "-CPL.csv", board_cpl, "0", "0")
+append_cpl(frame_path + "/" + frame_name + "-CPL.csv", board_cpl, "0", "0", "0")
 append_bom(frame_path + "/" + frame_name + "-BOM.csv", board_bom)
 
 schem_list = [frame_path + "/" + frame_name + "-schematic.pdf"]
@@ -263,7 +276,7 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 							# write abs. coords
 							print_to_file(board_place_path, "a", module_unique_name + rotated + " " + str(x_inch) + " " + str(y_inch))
 
-							append_cpl(module_path + "/" + module_name + "-CPL.csv", board_cpl, x, y, module_suffix)
+							append_cpl(module_path + "/" + module_name + "-CPL.csv", board_cpl, x, y, rot, module_suffix)
 
 							append_bom(module_path + "/" + module_name + "-BOM.csv", board_bom, module_suffix)
 
@@ -283,9 +296,13 @@ p = subprocess.Popen([sys.executable, "bin/gerbmerge/gerbmerge",
 p.communicate(input='y\n')[0]
 
 print ("Post-processing BOM...")
-subprocess.call([sys.executable, "bin/process_BOM.py", 
-	board_bom, 
-	bom_replace])
+try:
+	subprocess.check_output([sys.executable, "bin/process_BOM.py",
+		board_bom,
+		bom_replace])
+except subprocess.CalledProcessError, e:
+	print ("BOM processing error:\n" + e.output)
+	sys.exit(2)
 
 print ("Merging Schematics...")
 subprocess.call([sys.executable, "bin/python-combine-pdfs/python-combinepdf.py"]
