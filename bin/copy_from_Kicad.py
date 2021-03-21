@@ -30,6 +30,8 @@ else: # modules
 
 fixRotationsPath = "bin/jlc_kicad_tools/cpl_rotations_db.csv"
 
+fixFootprintsPath = "kicad/footprints.csv"
+
 pat_module = re.compile(r'^[Mm]odule-([\w]+)-([\w\.]+)')
 
 #################################################
@@ -77,6 +79,14 @@ shutil.copyfile(src_name + ".pdf", dst_name + "-schematic.pdf")
 # copy the VRML 3D components
 shutil.copyfile(src_name + ".wrl", dst_name + "-vrml.wrl")
 
+footprint_LUT = dict()
+
+print ("Reading footprint replacement table...")
+with open(fixFootprintsPath, 'rb') as f_f:
+	reader = csv.reader(f_f, delimiter=',')
+	for row in reader:
+		footprint_LUT[row[0]] = row[1]
+
 bom = dict()
 
 print ("Copying BOM...")
@@ -90,6 +100,8 @@ with open(src_name + ".csv", 'rb') as src_f, open(dst_name + "-BOM.csv", 'w') as
 		des = row[1]
 		footprint = row[2]
 		lcsc = row[3]
+		if footprint in footprint_LUT:
+			footprint = footprint_LUT[footprint]
 		bom[des] = footprint
 		print ("* " + des)
 		mod = pat_module.match(comment)
