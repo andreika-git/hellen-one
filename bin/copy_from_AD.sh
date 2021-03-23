@@ -26,7 +26,17 @@ cp ${src_path}/${name}.GKO ${dst_path}
 # copy "mechanical 15" module outline layer
 cp ${src_path}/${name}.GM15 ${dst_path}
 # copy NC drill
-cp ${src_path}/${name}.TXT ${dst_path}/${name}.DRL 2> /dev/null || (echo "* Skipping Drill for ${name}..." && >"${dst_path}/${name}.DRL")
+if [ -f "${src_path}/${name}-RoundHoles.TXT" ]; then
+	cp ${src_path}/${name}-RoundHoles.TXT ${dst_path}/${name}.DRL 2> /dev/null
+	if [ -f "${src_path}/${name}-SlotHoles.TXT" ]; then
+		# todo: wait until we add a proper slot support to gerbmerge
+		echo "Warning! Found slot drill layer. Please make sure all slots are placed on keep-out layer!"
+		#echo "Found slot file, appending it to the DRL..."
+		#cat ${src_path}/${name}-SlotHoles.TXT >> ${dst_path}/${name}.DRL
+	fi
+else
+	cp ${src_path}/${name}.TXT ${dst_path}/${name}.DRL 2> /dev/null || (echo "* Skipping Drill for ${name}..." && >"${dst_path}/${name}.DRL")
+fi
 # copy the schematic
 cp ${src_path}/${name}-schematic.PDF ${dst_path}/${name}-schematic.pdf
 # copy the PCB 3D rendered view
