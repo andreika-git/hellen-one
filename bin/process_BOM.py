@@ -8,21 +8,21 @@ from collections import OrderedDict
 import csv, sys, re
 
 if len(sys.argv) < 2:
-    print "Error! Please specify a BOM file name."
+    print ("Error! Please specify a BOM file name.")
     sys.exit(1)
 fileName = sys.argv[1]
 
 if len(sys.argv) > 2:
-    repl = sys.argv[2]
+    repl_csv = sys.argv[2]
 
-print "Opening BOM file " + fileName + "..."
+print ("Opening BOM file " + fileName + "...")
 
 rows = OrderedDict()
 emptyId = 1
 
 with open(fileName, 'rb') as f:
     reader = csv.reader(f, delimiter=',')
-    print "Searching for duplicates..."
+    print ("Searching for duplicates...")
     for row in reader:
         rowName = row[3]
         # all empty names should be saved separately
@@ -34,45 +34,53 @@ with open(fileName, 'rb') as f:
         if rowName in rows:
             oldRow = rows[rowName]
             if oldRow[0] != row[0]:
-            	print "* Error! Comment mismatch for the part #" + rowName + ": " + oldRow[0] + " != " + row[0]
+            	print ("* Error! Comment mismatch for the part #" + rowName + ": " + oldRow[0] + " != " + row[0])
             	sys.exit(2)
             if oldRow[2] != row[2]:
-            	print "* Warning! Footprint mismatch for the part #" + rowName + ": " + oldRow[2] + " != " + row[2]
+            	print ("* Warning! Footprint mismatch for the part #" + rowName + ": " + oldRow[2] + " != " + row[2])
             	#sys.exit(3)
-            print "* Duplicates found for " + rowName + " (" + row[0] + ")! Merging..."
+            print ("* Duplicates found for " + rowName + " (" + row[0] + ")! Merging...")
             row[1] = oldRow[1] + row[1]
         rows[rowName] = row
         #for idx,item in enumerate(row):
         #    print idx , ": ", item
 
-print "Processing the board replacements..."
-replList = repl.split(";")
+replList = list()
+print ("Reading replacement list from the CSV file " + repl_csv + "...")
+with open(repl_csv, 'rb') as f:
+    reader = csv.reader(f, delimiter=',')
+    for row in reader:
+        # skip empty lines and comments (this is not strictly CSV-compliant, but useful for our purposes)
+        if (len(row) < 1 or row[0].startswith("#")):
+            continue
+        replList.append(row)
+
+print ("Processing the board replacements...")
 for r in replList:
-    rel = re.search("(\w+)=([\w\-]+)?,?([\w\-]+)?,?(\w+)?", r)
-    if not rel:
-    	continue
-    reDesignator = rel.group(1)
-    reComment = rel.group(2)
-    reFootprint = rel.group(3)
-    rePartNumber = rel.group(4)
+    reDesignator = r[0]
     for rowName in rows:
         row = rows[rowName]
         if reDesignator in row[1]:
-            print "* Removing " + reDesignator + " from the old row..."
+            print ("* Removing " + reDesignator + " from the old row...")
             row[1].remove(reDesignator)
             if not row[1]:
-                print "* Deleting an empty row..."
+                print ("* Deleting an empty row...")
                 del rows[rowName]
+    if len(r) < 4:
+        continue
+    reComment = r[1]
+    reFootprint = r[2]
+    rePartNumber = r[3]
     # find the matching row by partnumber (if set)
     if rePartNumber:
         if rePartNumber in rows:
-            print "* Adding " + reDesignator + " to another existing row..."
+            print ("* Adding " + reDesignator + " to another existing row...")
             rows[rePartNumber][1] += [reDesignator]
         else:
-            print "* Appending a new row for " + reDesignator + "..."
+            print ("* Appending a new row for " + reDesignator + "...")
             rows[rePartNumber] = [reComment, [reDesignator], reFootprint, rePartNumber]
 
-print "Saving..."
+print ("Saving...")
 with open (fileName, 'wb') as new_f:
     rowIdx = 0
     for rowName in rows:
@@ -90,4 +98,4 @@ with open (fileName, 'wb') as new_f:
             row[1] = ", ".join(row[1])
         writer.writerow(row)
         rowIdx += 1
-print "Done!"
+print ("Done!")

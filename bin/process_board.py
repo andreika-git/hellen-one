@@ -11,16 +11,17 @@ import csv, re
 import subprocess
 
 if len(sys.argv) < 4:
-	print ("Error! Please specify the project base name, frame name, revision and optional BOM replacement list.")
+	print ("Error! Please specify the project base name, frame name, revision and optional BOM replacement file.")
 	sys.exit(1)
 
-project_base = sys.argv[1]
+project_base_path = sys.argv[1]
 frame_name = sys.argv[2]
 frame_rev = sys.argv[3]
+
 if len(sys.argv) > 3:
-	bom_replace = sys.argv[4]
+	bom_replace_csv = sys.argv[4]
 else:
-	bom_replace = ""
+	bom_replace_csv = ""
 
 board_prefix = "hellen"
 
@@ -29,7 +30,8 @@ imageDpi = "600"
 # these should match the definitions in the parent shell script (create_board.sh)!
 project_name = board_prefix + frame_name
 board_name = project_name + "-" + frame_rev
-project_path = project_base + "/" + project_name + "/boards/" + board_name
+project_path = project_base_path + "/boards/" + board_name
+bom_replace_csv_path = project_base_path + "/" + bom_replace_csv
 frame_path = project_path + "/frame"
 board_path = project_path + "/board"
 board_path_name = board_path + "/" + board_name
@@ -297,9 +299,10 @@ p.communicate(input='y\n')[0]
 
 print ("Post-processing BOM...")
 try:
-	subprocess.check_output([sys.executable, "bin/process_BOM.py",
+	out = subprocess.check_output([sys.executable, "bin/process_BOM.py",
 		board_bom,
-		bom_replace])
+		bom_replace_csv_path], stderr=subprocess.STDOUT)
+	print (out)
 except subprocess.CalledProcessError, e:
 	print ("BOM processing error:\n" + e.output)
 	sys.exit(2)
