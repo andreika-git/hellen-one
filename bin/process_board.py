@@ -108,12 +108,13 @@ def append_cpl(src_fname, dst_fname, x, y, mrot, suffix = ""):
 			cy = float(cymm.replace("mm", ""))
 			
 			# rotate the coordinates
+			mrot_idx = int(float(mrot) + 360.0) % 360  # can be negative
 			rxy = {
 				0: lambda cxy: [cxy[0], cxy[1]],
 				90: lambda cxy: [-cxy[1], cxy[0]],
 				180: lambda cxy: [-cxy[0], -cxy[0]],
 				270: lambda cxy: [cxy[1], -cxy[0]],
-			}[int(mrot)]([cx, cy])
+			}[mrot_idx]([cx, cy])
 
 			# rotate the footprint
 			rot = float(rot) + float(mrot)

@@ -9,21 +9,22 @@ import csv, re
 import glob, shutil
 
 if len(sys.argv) < 5:
-    print "Error! Please specify the project type, base folder, name and rev."
+    print "Error! Please specify the project type, base folder, gerber folder, name and rev."
     sys.exit(1)
 type = sys.argv[1]
 project_base = sys.argv[2]
-name = sys.argv[3]
-rev = sys.argv[4]
+gerber_rel_path = sys.argv[3]
+name = sys.argv[4]
+rev = sys.argv[5]
 
 if (type == "frames"):
     base_path = project_base + "/hellen" + name + "/boards/hellen" + name + "-" + rev
-    src_path = base_path + "/kicad6/gerber"
+    src_path = base_path + "/" + gerber_rel_path
     dst_path = base_path + "/frame"
     src_name = src_path + "/hellen" + name
     dst_name = dst_path + "/" + name
 else: # modules
-    src_path = project_base + "/hellen1-" + name + "/gerber"
+    src_path = project_base + "/hellen1-" + name + "/" + gerber_rel_path
     dst_path = "modules/" + name + "/" + rev
     src_name = src_path + "/hellen1-" + name
     dst_name = dst_path + "/" + name
@@ -50,6 +51,7 @@ def mkdir_p(path):
 mkdir_p(dst_path)
 
 # copy gerbers
+print ("Reading gerbers from " + src_name + "*.*")
 gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GM1", ".DRL"]
 for g in gerbers:
 	copied = False
