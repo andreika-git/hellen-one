@@ -52,11 +52,12 @@ mkdir_p(dst_path)
 
 # copy gerbers
 print ("Reading gerbers from " + src_name + "*.*")
-gerbers = [ ".gtl", ".gto", ".gtp", ".gts", ".gbl", ".gbo", ".gbs", ".gm1", ".drl"]
+gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GM1", ".DRL"]
 for g in gerbers:
 	copied = False
-	for gPath in glob.glob(src_name + "*" + g):
-		print ("* Copying " + name + g + "...")
+	gl = g.lower()
+	for gPath in glob.glob(src_name + "*" + gl):
+		print ("* Copying " + name + gl + "...")
 		# keepout layer is a special case
 		if (g == ".GM1"):
 			# currently the "edge cuts" layer is used as a frame border
