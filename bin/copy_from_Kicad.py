@@ -52,7 +52,7 @@ mkdir_p(dst_path)
 
 # copy gerbers
 print ("Reading gerbers from " + src_name + "*.*")
-gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GM1", ".DRL"]
+gerbers = [ ".gtl", ".gto", ".gtp", ".gts", ".gbl", ".gbo", ".gbs", ".gm1", ".drl"]
 for g in gerbers:
 	copied = False
 	for gPath in glob.glob(src_name + "*" + g):
