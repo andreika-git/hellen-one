@@ -276,7 +276,7 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 							module_path = "modules/" + module_name + "/" + module_rev
 							print_module(module_unique_name, module_path + "/" + module_name, board_cfg_path, 0)
 							irot = int(float(rot))
-							rotated = ("*rotated" + irot) if (irot != 0) else ""
+							rotated = ("*rotated" + str(irot)) if (irot != 0) else ""
 							# write abs. coords
 							print_to_file(board_place_path, "a", module_unique_name + rotated + " " + str(x_inch) + " " + str(y_inch))
 
