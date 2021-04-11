@@ -112,7 +112,7 @@ def append_cpl(src_fname, dst_fname, x, y, mrot, suffix = ""):
 			rxy = {
 				0: lambda cxy: [cxy[0], cxy[1]],
 				90: lambda cxy: [-cxy[1], cxy[0]],
-				180: lambda cxy: [-cxy[0], -cxy[0]],
+				180: lambda cxy: [-cxy[0], -cxy[1]],
 				270: lambda cxy: [cxy[1], -cxy[0]],
 			}[mrot_idx]([cx, cy])
 
