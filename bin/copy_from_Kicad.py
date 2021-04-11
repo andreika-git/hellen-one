@@ -105,6 +105,8 @@ with open(src_name + ".csv", 'rb') as src_f, open(dst_name + "-BOM.csv", 'w') as
 		lcsc = row[3]
 		if footprint in footprint_LUT:
 			footprint = footprint_LUT[footprint]
+		# remove kicad library prefix from the footprint names (such as "hellen-one-common:")
+		footprint = re.sub(r"[^\:]+\:", "", footprint)
 		bom[des] = footprint
 		print ("* " + des)
 		mod = pat_module.match(comment)
