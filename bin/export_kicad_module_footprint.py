@@ -73,13 +73,14 @@ def process_schematic(src_name, dst_name):
 		dst_f.write(")")
 
 def process_pcb(src_name, dst_name):
+	global pat_close_symbol
 	with open(src_name, 'rt') as src_f, open(dst_name, 'w') as dst_f:
 		in_footprint = False
 		in_zone = False
 		for line in src_f:
 			m = pat_footprint.match(line)
 			if m:
-				if "Mod-Hellen" in m.group(2) and in_footprint == False:
+				if ("Mod-Hellen" in m.group(2) or "MOD_Hellen" in m.group(2)) and in_footprint == False:
 					print ("* Found footprint " + m.group(2))
 					# the close symbol should have the same indent as the open one
 					pat_close_symbol = re.compile(r'^' + m.group(1) + '\)')
