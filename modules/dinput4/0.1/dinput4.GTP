@@ -1,10 +1,16 @@
 G04*
-G04 #@! TF.GenerationSoftware,Altium Limited,Altium Designer,20.0.10 (225)*
+G04 #@! TF.GenerationSoftware,Altium Limited,Altium Designer,20.2.7 (254)*
 G04*
 G04 Layer_Color=8421504*
 %FSLAX25Y25*%
 %MOIN*%
 G70*
+G04*
+G04 #@! TF.SameCoordinates,8AA55358-C2C9-4A8A-8939-0763D1A49ECB*
+G04*
+G04*
+G04 #@! TF.FilePolarity,Positive*
+G04*
 G01*
 G75*
 G04:AMPARAMS|DCode=12|XSize=12.6mil|YSize=31.5mil|CornerRadius=1.26mil|HoleSize=0mil|Usage=FLASHONLY|Rotation=270.000|XOffset=0mil|YOffset=0mil|HoleType=Round|Shape=RoundedRectangle|*
