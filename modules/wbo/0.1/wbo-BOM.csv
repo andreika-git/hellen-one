@@ -20,7 +20,7 @@ Comment,Designator,Footprint,LCSC Part #
 "LED-GREEN-0603","D601","LED-0603","C72043"
 "LED-BLUE-0603","D602","LED-0603","C72041"
 "LED-RED-0603","D603","LED-0603","C2286"
-"Module:wbo/0.1","M600","hellen-one-wbo-0.1:wbo",""
+"Module:wbo/0.1","M600","wbo",""
 "BTS3028","Q600","DPAK","C112639"
 "1k","R600","R0402","C11702"
 "1k","R601","R0402","C11702"

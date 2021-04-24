@@ -1,4 +1,4 @@
-19425980974085072
+19421055066278867
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -44919,6 +44919,13 @@ usb usb-c 2.0 pd
 20
 17
 Connector_USB
+USB_C_Receptacle_JAE_DX07S016JA1R1500
+USB TYPE C, USB 2.0, SMT, https://www.jae.com/en/connectors/series/detail/product/id=91780
+USB C Type-C Receptacle SMD USB 2.0
+0
+22
+17
+Connector_USB
 USB_C_Receptacle_JAE_DX07S024WJ1R350
 http://www.jae.com/z-en/pdf_download_exec.cfm?param=SJ117219.pdf
 USB C Type-C Receptacle SMD
@@ -84172,7 +84179,7 @@ PAD-0805-PAD
 
 
 0
-6
+4
 2
 footprints
 PAD-1206-PAD
@@ -84188,6 +84195,13 @@ Through hole pad
 0
 1
 1
+footprints
+PROTO_AREA
+
+
+0
+15
+15
 footprints
 R0603
 
@@ -84224,6 +84238,13 @@ SMD-2_2.9x3.9x1.7
 2
 2
 footprints
+SO20POWER
+PowerSO20
+
+0
+23
+23
+footprints
 SOD-323
 
 
@@ -84249,5 +84270,5 @@ wbo
 
 
 0
-24
-11
+28
+15
