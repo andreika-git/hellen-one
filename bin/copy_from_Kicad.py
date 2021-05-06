@@ -63,7 +63,8 @@ for g in gerbers:
 			# currently the "edge cuts" layer is used as a frame border
 			if (type == "frames"):
 				shutil.copyfile(gPath, dst_name + ".GM15")
-			shutil.copyfile(gPath, dst_name + ".GKO")
+			else:
+				shutil.copyfile(gPath, dst_name + ".GKO")
 		else:
 			shutil.copyfile(gPath, dst_name + g)
 		copied = True
@@ -77,6 +78,10 @@ for g in gerbers:
 if (type == "modules"):
 	# copy the module border layer
 	shutil.copyfile(src_name + "-Module_Edge.gbr", dst_name + ".GM15")
+	# print default (empty) keepout layer
+	with open(dst_name + ".GKO", "w") as keepout_file:
+		keepout_file.write("%FSLAX25Y25*%\n%MOIN*%\nG70*\nG01*\nG75*\nM02*\n")
+
 # copy the schematic
 shutil.copyfile(src_name + ".pdf", dst_name + "-schematic.pdf")
 # copy the VRML 3D components
