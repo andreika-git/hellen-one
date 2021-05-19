@@ -1,0 +1,4 @@
+(module "Battery:BatteryHolder_Keystone_1060_1x2032" (layer "F.Cu")
+  (pad "1" smd rect (at -14.65 0 90) (size 2.6 3.6) (layers "F.Cu" "F.Paste" "F.Mask")
+  (pad "2" smd rect (at 14.65 0 90) (size 2.6 3.6) (layers "F.Cu" "F.Paste" "F.Mask")
+)
