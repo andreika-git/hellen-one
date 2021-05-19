@@ -341,7 +341,6 @@ subprocess.call([sys.executable, "bin/create_3d_components.py",
 	board_cfg_path, 
 	board_misc_path_name + "-3D.wrl.gz"])
 
-"""
 print ("Rendering a 3D-model of the board components...")
 subprocess.call([node_bin, "bin/render_vrml/render_components.js", 
 	board_misc_path_name + "-3D.wrl.gz", 
@@ -369,7 +368,6 @@ subprocess.call([sys.executable, "bin/gen_iBOM.py",
 	"./ibom-data",
 	rotations,
 	board_path_name + "-ibom.html"])
-"""
 
 print ("Cleaning up...")
 delete_file(board_cfg_path)

@@ -27,24 +27,31 @@ try {
 	var compImgFile = args[1];
 	var dpi = parseFloat(args[2]);
 	
-	console.log("* Starting Puppeteer (" + vrmlFile + " dpi=" + dpi + "...");
+	console.log("* Starting Puppeteer (" + vrmlFile + " dpi=" + dpi + ")...");
 
 	(async () => {
-		const browser = await puppeteer.launch();
+		const browser = await puppeteer.launch({
+			timeout: 60000,
+			slowMo: 500,
+			headless: true,
+			args: ['--unlimited-storage', '--full-memory-crash-report']
+		});
   		const page = await browser.newPage();
   		
 	  	var contentHtml = fs.readFileSync("bin/render_vrml/render_vrml.html", "utf8");
 	  	
-	  	console.log("* Reading the input file...");
-  		var vrmlData = fs.readFileSync(vrmlFile);
+		console.log("* Reading the input file...");
+		var vrmlData = fs.readFileSync(vrmlFile);
+		var vrmlDataType = "octet-stream";
   		if (vrmlFile.endsWith('.gz')) {
-			vrmlData = zlib.gunzipSync(vrmlData);
+			// we unzip it later, on the frontend side
+			vrmlDataType = "x-gzip";
 		}
-	  	var vrmlDataBase64 = vrmlData.toString("base64");
+		var vrmlDataBase64 = vrmlData.toString("base64");
 	  	
-	  	// injecting the data to the client script
-	  	contentHtml = contentHtml.replace("___SCREEN_DPI___", dpi);
-  		contentHtml = contentHtml.replace("___VRML_DATA___", "data:application/gzip;base64," + vrmlDataBase64);
+		// injecting the data to the client script
+		contentHtml = contentHtml.replace("___SCREEN_DPI___", dpi);
+		contentHtml = contentHtml.replace("___VRML_DATA___", "data:application/" + vrmlDataType + ";base64," + vrmlDataBase64);
 
 		page.on("console", message => {
 				message.args().forEach(async (arg) => {
@@ -59,12 +66,19 @@ try {
 			})
     		.on("pageerror", ({ message }) => console.log(`* LOG_ERROR: ` + message))
     		.on("response", response => console.log(`* Loading: ` + `${response.status()} ${response.url()}`))
-	    	.on("requestfailed", request => console.log(`* Loading Failed: ` + `${request.failure().errorText} ${request.url()}`));
+    		.on("requestfailed", request => console.log(`* Loading Failed: ` + `${request.failure() ? request.failure().errorText : "?"} ${request.url()}`));
 
-		console.log("* Executing the script...");
-		await page.setContent(contentHtml);
+		process.on('unhandledRejection', (reason, p) => {
+			console.error('Unhandled Rejection at: Promise', p, 'reason:', reason);
+			browser.close();
+		});
+
+		await page.setDefaultNavigationTimeout(90000); 	// 90 seconds
+
+		console.log("* Executing the script (content size is " + contentHtml.length + " bytes)...");
+		await page.setContent(contentHtml, { waitUntil: 'domcontentloaded' });
 		console.log("* Waiting for completion...");
-		const watchDog = page.waitForFunction("document.done");
+		const watchDog = page.waitForFunction("document.done", {timeout: 180000});	// 180 seconds
 		await watchDog;
 
 		var screenWidth = await page.evaluate(() => document.compImgWidth);
@@ -72,6 +86,7 @@ try {
 	  	console.log("* Saving the screenshot (" + screenWidth + "x" + screenHeight + ")");
   		await page.setViewport({width: screenWidth, height: screenHeight, deviceScaleFactor: 1, });
 	  	await page.screenshot({path: compImgFile, omitBackground: true});
+	  	await page.close();
 	  	await browser.close();
 	  	console.log("* Done! Exiting...");
 	})();

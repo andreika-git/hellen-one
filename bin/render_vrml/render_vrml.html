@@ -21,11 +21,15 @@ var dist = 100;
 var minDist = 0.001;
 
 // the far clipping plane is intentionally set to be less than the dist - to clip the board surface!
-var boardSurfaceClippingThreshold = 0.0001;
+var boardSurfaceClippingThreshold = 0.001;
+
+var gzHeader = "data:application/x-gzip;base64,";
 
 // use the official Three.js public distribution
 import * as THREE from 'https://unpkg.com/three@0.119.0/build/three.module.js';
 import { VRMLLoader } from 'https://unpkg.com/three@0.119.0/examples/jsm/loaders/VRMLLoader.js';
+
+import * as fflate from 'https://unpkg.com/three@0.128.0/examples/jsm/libs/fflate.module.js';
 
 console.log('Starting...');
 
@@ -39,6 +43,18 @@ var renderer;
 
 function load() {
 	return new Promise((resolve, reject) => {
+
+		if (vrmlData.substring(0, gzHeader.length) === gzHeader) {
+			console.log('Decompressing GZip...');
+			vrmlData = vrmlData.substring(gzHeader.length);
+			var vrmlDataBytes = fflate.strToU8(atob(vrmlData), true);
+			var vrmlDataUncompressed = fflate.gunzipSync(vrmlDataBytes);
+			var vrmlDataUncompressedB64 = btoa(fflate.strFromU8(vrmlDataUncompressed));
+			vrmlData = "data:application/octet-stream;base64," + vrmlDataUncompressedB64;
+			console.log('Decompressed ' + vrmlDataUncompressed.length + ' bytes...');
+		}
+
+		console.log('Loading VRML...');
 		var loader = new VRMLLoader();
 		loader.load(vrmlData, function (object) {
 			console.log('Scene and camera setup...');
@@ -78,11 +94,10 @@ function load() {
 
 async function run() {
 	console.log('Init renderer...');
-	renderer = new THREE.WebGLRenderer({antialias: true, alpha: true, preserveDrawingBuffer: true});
+	renderer = new THREE.WebGLRenderer({antialias: true, alpha: true, logarithmicDepthBuffer: true, preserveDrawingBuffer: true});
 	renderer.setClearColor(0x000000, 0);
 	document.body.appendChild(renderer.domElement);
 
-	console.log('Loading VRML...');
 	await load();
 	console.log('Exiting script...');
 }

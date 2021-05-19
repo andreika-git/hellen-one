@@ -20,7 +20,7 @@ function createBoardImg(pcbImg, outlineImg, compImg) {
 	var boardImg = new PNG({ 
 		width: Math.max(pcbImg.width, outlineImg.width, compImg.width), 
 		height: Math.max(pcbImg.height, outlineImg.height, compImg.height) });
-	var pcbOffY = (pcbImg.height < boardImg.height) ? -(boardImg.height - pcbImg.height) : 0;
+	var pcbOffY = (pcbImg.height < outlineImg.height) ? -(outlineImg.height - pcbImg.height) : 0;
 	// Blit the pcbImg using the outlineImg mask and add compImg.
 	// We cannot use PNG.bitblt() for that
 	for (var y = 0; y < boardImg.height; y++) {
