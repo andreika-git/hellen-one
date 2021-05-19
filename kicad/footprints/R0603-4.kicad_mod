@@ -22,7 +22,7 @@
   (pad "6" smd roundrect (at 0.9 0.4 270) (size 0.45 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp dace73e1-4d9e-4738-b8af-2038cf06b998))
   (pad "7" smd roundrect (at 0.9 -0.4 270) (size 0.45 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp d979d61c-1923-4d09-bb3d-e092e7415a29))
   (pad "8" smd roundrect (at 0.9 -1.275 270) (size 0.65 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp a108fd11-aab0-4800-b846-648f6ed6e571))
-  (model "${KIPRJMOD}/ALTIUM_EMBEDDED_MODELS/CAY16-F4.STEP"
+  (model ":hellen-one-models:CAY16-F4.STEP"
     (offset (xyz 0.0 1.6 0.25))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 -0 0))

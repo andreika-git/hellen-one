@@ -25,9 +25,4 @@
   (pad "13" thru_hole circle (at 5.08 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 279bc2b9-036d-4505-b21b-dd268afbb4da))
   (pad "14" thru_hole circle (at 7.62 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp f491acf5-0248-41b4-874e-bd670cda18e7))
   (pad "15" thru_hole circle (at 10.16 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 021492b0-e1fd-4193-83c9-cce59abf97b7))
-  (model "${KIPRJMOD}/ALTIUM_EMBEDDED_MODELS/0603 cap.STEP"
-    (offset (xyz 0.000081 0.000078 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz -90 -0 0))
-  )
 )

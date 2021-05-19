@@ -21,7 +21,7 @@
   (pad "4" smd roundrect (at 1.2 0.95 270) (locked) (size 0.6 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp 4e9d5030-d0cf-4944-9473-7c06a0273131))
   (pad "5" smd roundrect (at 1.2 0.0 270) (locked) (size 0.6 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp c52df27c-ad20-4b2f-93ff-74b5af01e843))
   (pad "6" smd roundrect (at 1.2 -0.95 270) (locked) (size 0.6 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp f96eb780-3c54-42ed-9b90-9d277ad2ca65))
-  (model "${KIPRJMOD}/ALTIUM_EMBEDDED_MODELS/sot-23-6.stp"
+  (model ":hellen-one-models:sot-23-6.stp"
     (offset (xyz -0 0 0.82))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 -0 90))

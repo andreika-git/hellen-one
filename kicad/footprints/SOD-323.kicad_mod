@@ -24,7 +24,7 @@
   (fp_line (start -0.4 0) (end 0.3 -0.35) (layer "F.SilkS") (width 0.17) (tstamp f2994582-e476-47d0-a093-ba7ffc9c9b22))
   (pad "1" smd roundrect (at -1.1 0 270) (size 0.6 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp 9afc6c52-4070-4300-8ec6-ff736c7e95ce))
   (pad "2" smd roundrect (at 1.1 0 270) (size 0.6 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp 38154067-a01d-4d56-8119-f2e8f87aca6c))
-  (model "${KIPRJMOD}/ALTIUM_EMBEDDED_MODELS/SOD323F.STEP"
+  (model ":hellen-one-models:SOD323F.STEP"
     (offset (xyz 0.0 0.0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 -0 -180))
