@@ -294,6 +294,9 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 					fprint = readFootprint(fpname, footprintsPath, row[0])
 					# if the footprint is not found, we cannot add it to the iBOM
 					if not fprint:
+						if idx in bomlut:
+							bomlut.remove(idx)
+						del bom[row[0]]
 						continue
 					footprints[fpname] = fprint
 				fpr = copy.deepcopy(fprint)
@@ -324,6 +327,9 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 
 	for b in bomlut:
 		refs = b["refs"]
+		if len(refs) < 1:
+			print ("* Skipping DNP component: " + b["value"])
+			continue
 		bomItem = [
 			len(refs), 
 			b["value"], 

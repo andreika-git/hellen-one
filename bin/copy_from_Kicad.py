@@ -112,7 +112,7 @@ with open(src_name + ".csv", 'rb') as src_f, open(dst_name + "-BOM.csv", 'w') as
 		# remove kicad library prefix from the footprint names (such as "hellen-one-common:")
 		footprint = re.sub(r"[^\:]+\:", "", footprint)
 		bom[des] = footprint
-		print ("* " + des)
+		print ("* " + des + " " + footprint)
 		mod = pat_module.match(comment)
 		if mod:
 			print ("*** Module detected!")
