@@ -63,8 +63,7 @@ for g in gerbers:
 			# currently the "edge cuts" layer is used as a frame border
 			if (type == "frames"):
 				shutil.copyfile(gPath, dst_name + ".GM15")
-			else:
-				shutil.copyfile(gPath, dst_name + ".GKO")
+			shutil.copyfile(gPath, dst_name + ".GKO")
 		else:
 			shutil.copyfile(gPath, dst_name + g)
 		copied = True
