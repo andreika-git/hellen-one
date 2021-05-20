@@ -276,7 +276,7 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 				print("* Skipping an empty footprint for (" + row[1] + ")...")
 				continue
 			bb = row[1].split(", ")
-			bomlut.append({ "value": row[0], "refs": [] })
+			bomlut.append({ "value": row[0], "fp": row[2], "refs": [] })
 			idx = len(bomlut) - 1
 			for b in bb:
 				bom[b] = { "fp": row[2], "idx": idx }
@@ -333,7 +333,7 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 		bomItem = [
 			len(refs), 
 			b["value"], 
-			fpname, 
+			b["fp"],
 			refs, 
 			[]
 		]
