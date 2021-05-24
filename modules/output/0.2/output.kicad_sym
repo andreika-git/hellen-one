@@ -40,7 +40,7 @@
         (number "W5" (effects (font (size 1.27 1.27))))
       )
     )
-    (symbol "Module-output-0.1_2_0"
+    (symbol "Module-output-0.2_2_0"
       (rectangle (start 20.32 0) (end 0 -86.36)
         (stroke (width 0)) (fill (type background))
       )
@@ -149,7 +149,7 @@
         (number "W40" (effects (font (size 1.27 1.27))))
       )
     )
-    (symbol "Module-output-0.1_3_0"
+    (symbol "Module-output-0.2_3_0"
       (rectangle (start 25.4 0) (end 0 -86.36)
         (stroke (width 0)) (fill (type background))
       )
