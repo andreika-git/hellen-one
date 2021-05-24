@@ -731,7 +731,7 @@
     (property "Datasheet" "" (id 3) (at 0 0 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (property "LCSC" " C17477" (id 4) (at 0 -3.81 0)
+    (property "LCSC" "C17477" (id 4) (at 0 -3.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (symbol "Jumper-Pad-Pad_0_1"
