@@ -16,7 +16,7 @@ Comment,Designator,Footprint,LCSC Part #
 "1u","C765","C0402","C52923"
 "1u","C766","C0402","C52923"
 "1u","C767","C0402","C52923"
-"LED","D751","LED-0603","C72043"
+"LED-GREEN-0603","D751","LED-0603","C72043"
 "Module:vr/discrete","M1","vr-discrete",""
 "2.2k","R751","R0402","C25879"
 "10k","R752","R_0805_2012Metric","C17414"

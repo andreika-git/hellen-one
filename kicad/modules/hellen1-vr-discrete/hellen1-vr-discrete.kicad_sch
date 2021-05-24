@@ -3045,7 +3045,7 @@
     (property "Reference" "D751" (id 0) (at 33.4772 126.0094 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "LED" (id 1) (at 33.4772 128.3208 90)
+    (property "Value" "LED-GREEN-0603" (id 1) (at 33.4772 128.3208 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "LED_SMD:LED_0603_1608Metric" (id 2) (at 30.48 127 0)
@@ -3860,7 +3860,7 @@
       (reference "C767") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/f48b53a5-a1a7-45f8-861f-0a454ab7dbf2"
-      (reference "D751") (unit 1) (value "LED") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D751") (unit 1) (value "LED-GREEN-0603") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/c56f9b22-fce5-4a58-bfa9-904429ba6336"
       (reference "M1") (unit 1) (value "Module-vr-discrete-0.1") (footprint "hellen-one-vr-discrete-0.1:vr-discrete")
