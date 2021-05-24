@@ -715,7 +715,7 @@
       (property "Reference" "U" (id 0) (at -5.08 11.43 0)
         (effects (font (size 1.27 1.27)) (justify right))
       )
-      (property "Value" "SRV05-4" (id 1) (at 2.54 11.43 0)
+      (property "Value" "SRV05-4-P-T7" (id 1) (at 2.54 11.43 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (id 2) (at 17.78 -11.43 0)
@@ -3661,7 +3661,7 @@
     (in_bom yes) (on_board yes)
     (uuid 2438cbe3-a2c4-4bca-9f38-14e827595b8e)
     (property "Reference" "U751" (id 0) (at 76.2 30.48 0))
-    (property "Value" "SRV05-4" (id 1) (at 72.39 26.67 0)
+    (property "Value" "SRV05-4-P-T7" (id 1) (at 72.39 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (id 2) (at 87.63 53.34 0)
@@ -3929,7 +3929,7 @@
       (reference "U2") (unit 1) (value "74AHC1G02") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/2438cbe3-a2c4-4bca-9f38-14e827595b8e"
-      (reference "U751") (unit 1) (value "SRV05-4") (footprint "Package_TO_SOT_SMD:SOT-23-6")
+      (reference "U751") (unit 1) (value "SRV05-4-P-T7") (footprint "Package_TO_SOT_SMD:SOT-23-6")
     )
     (path "/4fab11ed-4e08-402e-943d-dbc4e18c69da"
       (reference "U753") (unit 1) (value "MCP6004") (footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm")

@@ -1803,7 +1803,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f986b7f1-8c10-498c-866b-3ae0e1dafe66)
     )
-    (fp_text value "SRV05-4" (at 0 2.4) (layer "F.Fab")
+    (fp_text value "SRV05-4-P-T7" (at 0 2.4) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c516f6db-1fae-4a03-ad40-5e90b0d12d39)
     )
