@@ -52,7 +52,7 @@ node_bin = "node"
 rotations = "bin/jlc_kicad_tools/cpl_rotations_db.csv"
 
 # the format is: "Module:module_name/module_rev"
-pat_module = re.compile(r'Module:([\w]+)/([\w\.]+)')
+pat_module = re.compile(r'Module:([\w\-]+)/([\w\.]+)')
 
 ############################################################################################
 
