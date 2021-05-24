@@ -33,7 +33,7 @@ fixRotationsPath = "bin/jlc_kicad_tools/cpl_rotations_db.csv"
 
 fixFootprintsPath = "kicad/footprints.csv"
 
-pat_module = re.compile(r'^[Mm]odule-([\w]+)-([\w\.]+)')
+pat_module = re.compile(r'^[Mm]odule-([\w\-]+)-([\w\.]+)')
 
 #################################################
 
