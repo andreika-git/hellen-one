@@ -67,7 +67,7 @@ for frag in fragments:
 					# the board is 1.6 mm thick?
 					# todo: this is a 'hack'
 					z_offset = -1.6
-				outf.write("DEF TX" + frag["name"] + " Transform {\n")
+				outf.write("DEF TX" + frag["name"].replace('-', '') + " Transform {\n")
 				outf.write("  center 0 0 0\n")
 				outf.write("  rotation 0 0 1 " + str(math.radians(rot)) + "\n")
 				outf.write("  scale 1.0 1.0 1.0\n")
