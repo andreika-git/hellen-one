@@ -269,7 +269,7 @@
     (solder_paste_margin -50) (tstamp 6491048b-71b0-4763-9b06-9f8cb6714336))
   (pad "W10" smd roundrect (at 0.475 -36.520011 90) (locked) (size 0.25 0.5) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.5)
     (solder_paste_margin -50) (tstamp f45c7dbb-21ac-4f2c-8169-d997adade114))
-  (zone (net 0) (net_name "") (layer "F.Cu") (tstamp c2191bb6-badc-45f5-b187-deeb836409c0) (hatch edge 0.2)
+  (zone (net 0) (net_name "") (layers "F.Cu" "In1.Cu" "In2.Cu") (tstamp c2191bb6-badc-45f5-b187-deeb836409c0) (hatch edge 0.2)
     (connect_pads (clearance 0))
     (min_thickness 0.254) (filled_areas_thickness no)
     (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))

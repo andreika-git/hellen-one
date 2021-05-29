@@ -60,7 +60,7 @@
     (solder_paste_margin -49.999999) (zone_connect 2) (tstamp 8e6f209f-07a3-409d-877a-0bf500570c27))
   (pad "N6" smd roundrect (at 6.225002 -0.399994 180) (locked) (size 0.25 0.499999) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.5)
     (solder_paste_margin -49.999999) (zone_connect 2) (tstamp 33da308b-a387-41a8-8e5a-48353b3b170e))
-  (zone (net 0) (net_name "") (layer "F.Cu") (tstamp fe8e47a3-c22f-483a-b9c9-ad70102515af) (hatch edge 0.2)
+  (zone (net 0) (net_name "") (layers "F.Cu" "In1.Cu" "In2.Cu") (tstamp fe8e47a3-c22f-483a-b9c9-ad70102515af) (hatch edge 0.2)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
     (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))

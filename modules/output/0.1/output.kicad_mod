@@ -177,7 +177,7 @@
     (solder_paste_margin -49.999999) (zone_connect 2) (tstamp cc1058b1-b958-4fdb-a3d9-e7ddfccfad80))
   (pad "W40" smd oval (at 0.271544 -40.938714 90) (locked) (size 0.2 0.399999) (layers "B.Cu" "B.Paste" "B.Mask")
     (solder_paste_margin -49.999999) (zone_connect 2) (tstamp 56d17e5f-96aa-40a6-bc9f-ff7a964681a1))
-  (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 4c047976-992b-4d73-8292-bdc372d89038) (hatch edge 0.2)
+  (zone (net 0) (net_name "") (layers "F.Cu" "In1.Cu" "In2.Cu") (tstamp 4c047976-992b-4d73-8292-bdc372d89038) (hatch edge 0.2)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
     (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))

@@ -193,7 +193,7 @@
     (solder_paste_margin -50) (tstamp 75b6dcca-25d2-4dd9-80d5-cd6f42348044))
   (pad "S26" smd roundrect (at 6.575 -0.364998) (size 0.25 0.5) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.5)
     (solder_paste_margin -50) (tstamp 3ca70dca-c51f-410d-ac95-554cbe8e4f8c))
-  (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 5ce533b5-890a-4e02-a1c3-cb49ad478d88) (hatch edge 0.2)
+  (zone (net 0) (net_name "") (layers "F.Cu" "In1.Cu" "In2.Cu") (tstamp 5ce533b5-890a-4e02-a1c3-cb49ad478d88) (hatch edge 0.2)
     (connect_pads (clearance 0))
     (min_thickness 0.254) (filled_areas_thickness no)
     (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))
