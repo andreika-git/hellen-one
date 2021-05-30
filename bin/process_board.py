@@ -63,7 +63,7 @@ def write_lines(f, lines):
 		for l in lines:
 			f.write(l + "\n")
 
-def print_module(name, prefix, fileName, flag):
+def print_module(name, prefix, fileName, isBoard):
 	with open(fileName, 'a') as file:
 		write_lines(file, [
 			"[" + name + "]",
@@ -77,7 +77,11 @@ def print_module(name, prefix, fileName, flag):
 			"*BottomSilkscreen=%(prefix)s.GBO",
 			"*Keepout=%(prefix)s.GKO",
 			"Drills=%(prefix)s.DRL"])
-		if (flag == 1):
+		if ((os.path.isfile(prefix + ".G1") and os.path.isfile(prefix + ".G2")) or isBoard == 1):
+			write_lines(file, [
+				"*InnerLayer2=%(prefix)s.G1",
+				"*InnerLayer3=%(prefix)s.G2"])
+		if (isBoard == 1):
 			write_lines(file, [
 				"ToolList = nul",
 				"Placement = nul",

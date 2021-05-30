@@ -8,6 +8,10 @@ import os, sys, errno
 import csv, re
 import glob, shutil
 
+# for internal layers, we are using established Altium naming convention:
+# https://www.candorind.com/gerber-file-extensions/
+# also recognized by JLCPCB: https://support.jlcpcb.com/article/29-suggested-naming-patterns
+
 if len(sys.argv) < 5:
     print "Error! Please specify the project type, base folder, gerber folder, name and rev."
     sys.exit(1)
@@ -52,7 +56,7 @@ mkdir_p(dst_path)
 
 # copy gerbers
 print ("Reading gerbers from " + src_name + "*.*")
-gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GM1", ".DRL"]
+gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GM1", ".G2", ".G3", ".DRL"]
 for g in gerbers:
 	copied = False
 	gl = g.lower()
@@ -64,6 +68,12 @@ for g in gerbers:
 			if (type == "frames"):
 				shutil.copyfile(gPath, dst_name + ".GM15")
 			shutil.copyfile(gPath, dst_name + ".GKO")
+		elif (g == ".G2"):
+			# using Altium naming convention
+			shutil.copyfile(gPath, dst_name + ".G1")
+		elif (g == ".G3"):
+			# using Altium naming convention
+			shutil.copyfile(gPath, dst_name + ".G2")
 		else:
 			shutil.copyfile(gPath, dst_name + g)
 		copied = True
