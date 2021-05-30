@@ -3276,7 +3276,7 @@
   (symbol (lib_id "Device:C") (at 219.71 77.47 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d48a1995-2c59-49e9-ae20-70b0acc08ff3)
-    (property "Reference" "C1" (id 0) (at 222.631 76.3016 0)
+    (property "Reference" "C761" (id 0) (at 222.631 76.3016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (id 1) (at 222.631 78.613 0)
@@ -3408,7 +3408,7 @@
   (symbol (lib_id "74xGxx:74AHC1G02") (at 203.2 64.77 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 74280eea-e894-4ce8-bacd-e9b7722ccb6d)
-    (property "Reference" "U1" (id 0) (at 207.645 61.0828 0))
+    (property "Reference" "U752" (id 0) (at 207.645 61.0828 0))
     (property "Value" "74AHC1G02" (id 1) (at 211.455 63.3815 0))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 203.2 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3429,7 +3429,7 @@
   (symbol (lib_id "74xGxx:74AHC1G02") (at 203.2 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid f71d842a-9b40-4ac0-a243-11a16b8f8a76)
-    (property "Reference" "U2" (id 0) (at 206.375 75.0528 0))
+    (property "Reference" "U757" (id 0) (at 206.375 75.0528 0))
     (property "Value" "74AHC1G02" (id 1) (at 211.455 77.3515 0))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 203.2 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3684,7 +3684,7 @@
   (symbol (lib_id "hellen-one-vr-discrete-0.1:Module-vr-discrete-0.1") (at 60.96 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c56f9b22-fce5-4a58-bfa9-904429ba6336)
-    (property "Reference" "M1" (id 0) (at 77.47 103.3738 0))
+    (property "Reference" "M750" (id 0) (at 77.47 103.3738 0))
     (property "Value" "Module-vr-discrete-0.1" (id 1) (at 77.47 105.6725 0))
     (property "Footprint" "hellen-one-vr-discrete-0.1:vr-discrete" (id 2) (at 86.36 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3808,9 +3808,6 @@
     (path "/20812392-7533-44f0-bd60-214698fe5e09"
       (reference "#PWR0794") (unit 1) (value "GND") (footprint "")
     )
-    (path "/d48a1995-2c59-49e9-ae20-70b0acc08ff3"
-      (reference "C1") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
-    )
     (path "/65804bb3-89db-493b-9774-afe58321711f"
       (reference "C751") (unit 1) (value "1n") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
@@ -3841,6 +3838,9 @@
     (path "/687a2114-e863-41db-b250-c5e21067a8cf"
       (reference "C760") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
+    (path "/d48a1995-2c59-49e9-ae20-70b0acc08ff3"
+      (reference "C761") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
+    )
     (path "/68fa890e-ea5a-4f1e-b022-85af6082c1d3"
       (reference "C762") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
@@ -3863,7 +3863,7 @@
       (reference "D751") (unit 1) (value "LED-GREEN-0603") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/c56f9b22-fce5-4a58-bfa9-904429ba6336"
-      (reference "M1") (unit 1) (value "Module-vr-discrete-0.1") (footprint "hellen-one-vr-discrete-0.1:vr-discrete")
+      (reference "M750") (unit 1) (value "Module-vr-discrete-0.1") (footprint "hellen-one-vr-discrete-0.1:vr-discrete")
     )
     (path "/775a58d6-98a7-48ae-b469-7148a9e02d9b"
       (reference "R751") (unit 1) (value "2.2k") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -3922,14 +3922,11 @@
     (path "/fd35846f-fbb3-4b60-8474-0ab0d6b748eb"
       (reference "R769") (unit 1) (value "10") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
-    (path "/74280eea-e894-4ce8-bacd-e9b7722ccb6d"
-      (reference "U1") (unit 1) (value "74AHC1G02") (footprint "Package_TO_SOT_SMD:SOT-23-5")
-    )
-    (path "/f71d842a-9b40-4ac0-a243-11a16b8f8a76"
-      (reference "U2") (unit 1) (value "74AHC1G02") (footprint "Package_TO_SOT_SMD:SOT-23-5")
-    )
     (path "/2438cbe3-a2c4-4bca-9f38-14e827595b8e"
       (reference "U751") (unit 1) (value "SRV05-4-P-T7") (footprint "Package_TO_SOT_SMD:SOT-23-6")
+    )
+    (path "/74280eea-e894-4ce8-bacd-e9b7722ccb6d"
+      (reference "U752") (unit 1) (value "74AHC1G02") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/4fab11ed-4e08-402e-943d-dbc4e18c69da"
       (reference "U753") (unit 1) (value "MCP6004") (footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm")
@@ -3966,6 +3963,9 @@
     )
     (path "/f0f00008-ca80-4ba4-b476-89fffe370cbe"
       (reference "U756") (unit 2) (value "NC7SB3157P6X") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
+    )
+    (path "/f71d842a-9b40-4ac0-a243-11a16b8f8a76"
+      (reference "U757") (unit 1) (value "74AHC1G02") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
   )
 )
