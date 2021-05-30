@@ -80,6 +80,8 @@ for g in gerbers:
 	if not copied:
 		if (g == ".DRL"):
 			print ("* Skipping Drill for " + name + "...")
+		elif (g == ".G2" or g == ".G3"):
+			print ("* Skipping Internal Layer " + g + " for " + name + "...")
 		else:
 			print ("Error! Gerber " + g + " not found for " + name + "!")
 			sys.exit(2)
