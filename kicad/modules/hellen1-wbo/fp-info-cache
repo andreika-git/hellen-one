@@ -1,4 +1,4 @@
-19437330637335878
+19434138988903254
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84196,13 +84196,6 @@ C0603
 2
 2
 footprints
-FUSE_5x20
-
-
-0
-2
-2
-footprints
 Jack_3.5mm_PJ-3250-5A
 TRS 3.5mm, horizontal, through-hole, with switch, circular holes, https://www.cui.com/product/resource/sj1-353xng.pdf
 TRS audio jack stereo horizontal circular
@@ -84328,13 +84321,6 @@ usb mini receptacle vertical
 0
 7
 6
-footprints
-XH-8A
-
-
-0
-8
-8
 hellen-one-wbo-0.2
 wbo
 
