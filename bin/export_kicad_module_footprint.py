@@ -80,7 +80,7 @@ def process_pcb(src_name, dst_name):
 		for line in src_f:
 			m = pat_footprint.match(line)
 			if m:
-				if ("Mod-Hellen" in m.group(2) or "MOD_Hellen" in m.group(2)) and in_footprint == False:
+				if ("Mod-Hellen" in m.group(2) or "MOD_Hellen" in m.group(2) or "MOD_HELLEN" in m.group(2)) and in_footprint == False:
 					print ("* Found footprint " + m.group(2))
 					# the close symbol should have the same indent as the open one
 					pat_close_symbol = re.compile(r'^' + m.group(1) + '\)')
