@@ -1,0 +1,3 @@
+(module PAD-TH-2.0 (layer F.Cu) (tedit 60D370B1)
+  (pad 1 thru_hole oval (at 0.0 -0.0) (size 2.0 2.0) (drill 1.2) (layers F.Cu F.Mask))
+)
