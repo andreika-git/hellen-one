@@ -16,7 +16,7 @@ function getPixel(img, x, y) {
 	return [ img.data[idx], img.data[idx + 1], img.data[idx + 2], img.data[idx + 3] ];
 }
 
-function createBoardImg(pcbImg, outlineImg, compImg) {
+function createBoardImg(pcbImg, outlineImg, compImg, compImgOffset) {
 	var boardImg = new PNG({ 
 		width: Math.max(pcbImg.width, outlineImg.width, compImg.width), 
 		height: Math.max(pcbImg.height, outlineImg.height, compImg.height) });
@@ -26,7 +26,7 @@ function createBoardImg(pcbImg, outlineImg, compImg) {
 	for (var y = 0; y < boardImg.height; y++) {
     	for (var x = 0; x < boardImg.width; x++) {
         	var bPixel = getPixel(pcbImg, x, y + pcbOffY);
-        	var cPixel = getPixel(compImg, x, y);
+            var cPixel = getPixel(compImg, x + compImgOffset[0], y + compImgOffset[1]);
         	var a = parseFloat(cPixel[3]) / 255.0;
         	var na = 1.0 - a;
         	var idx = (boardImg.width * y + x) << 2;
@@ -54,16 +54,17 @@ try {
 	var outlineImgFile = args[1];
 	var compImgFile = args[2];
 	var boardImgFile = args[3];
+	var compImgOffset = args[4].split(",").map((x) => parseInt(x));
 	
 	console.log("* Reading the pcb image...");
 	var pcbImg = PNG.sync.read(fs.readFileSync(pcbImgFile));
-  	console.log("* Reading the components image...");
+  	console.log("* Reading the components image with offset (" + compImgOffset[0] + "," + compImgOffset[1] + ")...");
 	var compImg = PNG.sync.read(fs.readFileSync(compImgFile));
   	console.log("* Reading the outline image...");
 	var outlineImg = PNG.sync.read(fs.readFileSync(outlineImgFile));
 
 	console.log("* Creating the final board image...");
-	var boardImg = createBoardImg(pcbImg, outlineImg, compImg);
+	var boardImg = createBoardImg(pcbImg, outlineImg, compImg, compImgOffset);
   	console.log("* Saving the board image...");
 	fs.writeFileSync(boardImgFile, PNG.sync.write(boardImg, { colorType: 6 }));
 

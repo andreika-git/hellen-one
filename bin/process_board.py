@@ -23,6 +23,11 @@ if len(sys.argv) > 3:
 else:
 	bom_replace_csv = ""
 
+if len(sys.argv) > 4:
+	comp_img_offset = sys.argv[5]
+else:
+	comp_img_offset = "0,0"
+
 board_prefix = "hellen"
 
 imageDpi = "600"
@@ -357,7 +362,7 @@ subprocess.call([node_bin, "bin/render_vrml/render_board.js",
 	board_img_outline, 
 	board_img_components, 
 	board_img, 
-	imageDpi])
+	comp_img_offset])
 
 print ("Creating an interactive html BOM...")
 subprocess.call([sys.executable, "bin/gen_iBOM.py",

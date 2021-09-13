@@ -9,6 +9,7 @@ project_base="$1"
 frame_name="$2"
 frame_rev="$3"
 bom_replace="$4"
+comp_img_offset="$5"
 
 python_bin="python2.7"
 
@@ -30,7 +31,7 @@ if ! ./bin/check_all.sh; then
 fi
 
 echo "Processing board..."
-$python_bin bin/process_board.py ${project_base} ${frame_name} ${frame_rev} ${bom_replace}
+$python_bin bin/process_board.py ${project_base} ${frame_name} ${frame_rev} ${bom_replace} ${comp_img_offset}
 
 echo "All done!"
 exit 0
