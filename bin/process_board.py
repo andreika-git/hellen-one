@@ -18,12 +18,12 @@ project_base_path = sys.argv[1]
 frame_name = sys.argv[2]
 frame_rev = sys.argv[3]
 
-if len(sys.argv) > 3:
+if len(sys.argv) > 4:
 	bom_replace_csv = sys.argv[4]
 else:
 	bom_replace_csv = ""
 
-if len(sys.argv) > 4:
+if len(sys.argv) > 5:
 	comp_img_offset = sys.argv[5]
 else:
 	comp_img_offset = "0,0"
