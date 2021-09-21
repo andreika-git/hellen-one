@@ -24,13 +24,14 @@ with open(fileName, 'rb') as f:
     reader = csv.reader(f, delimiter=',')
     print ("Searching for duplicates...")
     for row in reader:
+        row[3] = row[3].strip()
         rowName = row[3]
+        row[1] = row[1].split(", ")
         # all empty names should be saved separately
         if not rowName:
         	rows["_" + str(emptyId)] = row
         	emptyId += 1
         	continue
-        row[1] = row[1].split(", ")
         if rowName in rows:
             oldRow = rows[rowName]
             if oldRow[0] != row[0]:
