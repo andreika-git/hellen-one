@@ -45,6 +45,7 @@ board_misc_path_name = board_misc_path + "/" + board_name
 merged_gerber_path = board_path + "/gerber"
 board_cfg_path = board_path + "/board.cfg"
 board_place_path = board_path + "/board_place.txt"
+board_tmp_path = merged_gerber_path + "/" + board_name + ".tmp"
 board_bom = board_path_name + "-BOM.csv"
 board_cpl = board_path_name + "-CPL.csv"
 board_img = board_path_name + ".png"
@@ -88,9 +89,9 @@ def print_module(name, prefix, fileName, isBoard):
 				"*InnerLayer3=%(prefix)s.G2"])
 		if (isBoard == 1):
 			write_lines(file, [
-				"ToolList = nul",
-				"Placement = nul",
-				"BoardOutline = nul"])
+				"ToolList = %(prefix)s.tmp",
+				"Placement = %(prefix)s.tmp",
+				"BoardOutline = %(prefix)s.tmp"])
 		else:
 			write_lines(file, "BoardOutline=%(prefix)s.GM15")
 
@@ -381,6 +382,7 @@ subprocess.call([sys.executable, "bin/gen_iBOM.py",
 print ("Cleaning up...")
 delete_file(board_cfg_path)
 delete_file(board_place_path)
+delete_file(board_tmp_path)
 
 print ("Creating a zip-archive with gerbers...")
 shutil.make_archive(board_path_name + "-gerber", "zip", board_path, "gerber")
