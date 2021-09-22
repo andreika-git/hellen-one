@@ -31,7 +31,11 @@ if ! ./bin/check_all.sh; then
 fi
 
 echo "Processing board..."
-$python_bin bin/process_board.py ${project_base} ${frame_name} ${frame_rev} ${bom_replace} ${comp_img_offset}
+if ! $python_bin bin/process_board.py ${project_base} ${frame_name} ${frame_rev} ${bom_replace} ${comp_img_offset}; then
+	echo "ABORTING!"
+	exit 3
+else
+	echo "All done!"
+	exit 0
+fi
 
-echo "All done!"
-exit 0

@@ -184,6 +184,12 @@ def delete_file(fileName):
 	if os.path.exists(fileName):
 		os.remove(fileName)
 
+def check_returncode(result):
+	# zero code means "success"
+	if result:
+		print ("\nWhere was an ERROR executing the script! Code=" + str(result))
+		sys.exit(result)
+
 ############################################################################################
 
 print ("Removing old files of the board...")
@@ -320,53 +326,60 @@ except subprocess.CalledProcessError, e:
 	sys.exit(2)
 
 print ("Merging Schematics...")
-subprocess.call([sys.executable, "bin/python-combine-pdfs/python-combinepdf.py"]
+result = subprocess.call([sys.executable, "bin/python-combine-pdfs/python-combinepdf.py"]
 	+ schem_list 
 	+ ["-o", board_path_name + "-schematic.pdf"])
+check_returncode(result)
 
 print ("Rendering TOP side image...")
-subprocess.call([sys.executable, "bin/render_gerber.py", 
+result = subprocess.call([sys.executable, "bin/render_gerber.py", 
 	merged_gerber_path, 
 	board_img_top, 
 	"top", 
 	imageDpi])
+check_returncode(result)
 
 print ("Rendering BOTTOM side image...")
-subprocess.call([sys.executable, "bin/render_gerber.py", 
+result = subprocess.call([sys.executable, "bin/render_gerber.py", 
 	merged_gerber_path, 
 	board_img_bottom, 
 	"bottom", 
 	imageDpi])
+check_returncode(result)
 
 print ("Rendering OUTLINE image...")
-subprocess.call([sys.executable, "bin/render_gerber.py", 
+result = subprocess.call([sys.executable, "bin/render_gerber.py", 
 	merged_gerber_path, 
 	board_img_outline, 
 	"outline", 
 	imageDpi])
+check_returncode(result)
 
 print ("Merging 3D-models of components...")
-subprocess.call([sys.executable, "bin/create_3d_components.py", 
+result = subprocess.call([sys.executable, "bin/create_3d_components.py", 
 	board_place_path, 
 	board_cfg_path, 
 	board_misc_path_name + "-3D.wrl.gz"])
+check_returncode(result)
 
 print ("Rendering a 3D-model of the board components...")
-subprocess.call([node_bin, "bin/render_vrml/render_components.js", 
+result = subprocess.call([node_bin, "bin/render_vrml/render_components.js", 
 	board_misc_path_name + "-3D.wrl.gz", 
 	board_img_components, 
 	imageDpi])
+check_returncode(result)
 
 print ("Creating a composite board image...")
-subprocess.call([node_bin, "bin/render_vrml/render_board.js", 
+result = subprocess.call([node_bin, "bin/render_vrml/render_board.js", 
 	board_img_top, 
 	board_img_outline, 
 	board_img_components, 
 	board_img, 
 	comp_img_offset])
+check_returncode(result)
 
 print ("Creating an interactive html BOM...")
-subprocess.call([sys.executable, "bin/gen_iBOM.py",
+result = subprocess.call([sys.executable, "bin/gen_iBOM.py",
 	project_name,
 	frame_rev,
 	imageDpi,
@@ -378,6 +391,7 @@ subprocess.call([sys.executable, "bin/gen_iBOM.py",
 	"./ibom-data",
 	rotations,
 	board_path_name + "-ibom.html"])
+check_returncode(result)
 
 print ("Cleaning up...")
 delete_file(board_cfg_path)
@@ -388,3 +402,5 @@ print ("Creating a zip-archive with gerbers...")
 shutil.make_archive(board_path_name + "-gerber", "zip", board_path, "gerber")
 
 print ("Board processing done!")
+
+sys.exit(0)
