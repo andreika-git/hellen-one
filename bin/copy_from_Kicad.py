@@ -154,6 +154,9 @@ with open(src_name + "-all-pos.csv", 'rb') as src_f, open(dst_name + "-CPL.csv",
 		rot = float(row[5])
 		side = row[6]
 		print ("* " + des)
+		# fix kicad's negative x coord for bottom-placed components
+		if (side.lower() == "bottom"):
+			posx = str(-float(posx))
 		if bom[des]:
 			for r in rotations:
 				if re.match(r, bom[des]):

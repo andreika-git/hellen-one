@@ -69,18 +69,24 @@ def write_lines(f, lines):
 		for l in lines:
 			f.write(l + "\n")
 
-def print_module(name, prefix, fileName, isBoard):
+def print_module(name, prefix, fileName, isBoard, isBottom):
+	if isBottom:
+		top = "Bottom"
+		bottom = "Top"
+	else:
+		top = "Top"
+		bottom = "Bottom"
 	with open(fileName, 'a') as file:
 		write_lines(file, [
 			"[" + name + "]",
 			"Prefix = " + prefix,
-			"*TopCopper=%(prefix)s.GTL",
-			"*TopSoldermask=%(prefix)s.GTS",
-			"*TopSolderPasteMask=%(prefix)s.GTP",
-			"*TopSilkscreen=%(prefix)s.GTO",
-			"*BottomCopper=%(prefix)s.GBL",
-			"*BottomSoldermask=%(prefix)s.GBS",
-			"*BottomSilkscreen=%(prefix)s.GBO",
+			"*" + top + "Copper=%(prefix)s.GTL",
+			"*" + top + "Soldermask=%(prefix)s.GTS",
+			"*" + top + "SolderPasteMask=%(prefix)s.GTP",
+			"*" + top + "Silkscreen=%(prefix)s.GTO",
+			"*" + bottom + "Copper=%(prefix)s.GBL",
+			"*" + bottom + "Soldermask=%(prefix)s.GBS",
+			"*" + bottom + "Silkscreen=%(prefix)s.GBO",
 			"*Keepout=%(prefix)s.GKO",
 			"Drills=%(prefix)s.DRL"])
 		if ((os.path.isfile(prefix + ".G1") and os.path.isfile(prefix + ".G2")) or isBoard == 1):
@@ -222,10 +228,10 @@ print_to_file(board_cfg_path, "w", [
 		"FixedRotationOrigin = 1"])
 
 # board gerbers
-print_module("MergeOutputFiles", merged_gerber_path + "/" + board_name, board_cfg_path, 1)
+print_module("MergeOutputFiles", merged_gerber_path + "/" + board_name, board_cfg_path, 1, 0)
 
 # frame gerbers
-print_module(frame_name, frame_path + "/" + frame_name, board_cfg_path, 0)
+print_module(frame_name, frame_path + "/" + frame_name, board_cfg_path, 0, 0)
 
 # the frame should always have zero coordinates, matching the left-bottom keepout border
 print_to_file(board_place_path, "w", frame_name + " 0.000 0.000")
@@ -272,7 +278,7 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 					# skip header
 					next(cpl_f)
 					for cpl_row in cpl_reader:
-						if des in cpl_row[0]:
+						if des == cpl_row[0].strip():
 							cxmm = cpl_row[1]
 							cymm = cpl_row[2]
 							lay = cpl_row[3]
@@ -286,11 +292,11 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 							x_inch = x / 25.4
 							y_inch = y / 25.4
 	
-							print ("  ** adding " + module_unique_name + "/" + module_rev + ", coords: " + str(x_inch) + "\", " + str(y_inch) + "\" (" + str(x) + " mm, " + str(y) + " mm)")
+							print ("  ** adding " + module_unique_name + "/" + module_rev + " on " + lay + ", coords: " + str(x_inch) + "\", " + str(y_inch) + "\" (" + str(x) + " mm, " + str(y) + " mm)")
 
 							# add module gerbers
 							module_path = "modules/" + module_name + "/" + module_rev
-							print_module(module_unique_name, module_path + "/" + module_name, board_cfg_path, 0)
+							print_module(module_unique_name, module_path + "/" + module_name, board_cfg_path, 0, lay == "Bottom")
 							irot = int(float(rot) + 360.0) % 360
 							rotated = ("*rotated" + str(irot)) if (irot != 0) else ""
 							# write abs. coords
