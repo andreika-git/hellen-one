@@ -1,4 +1,4 @@
-19434138988903254
+19711580565018195
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -6433,6 +6433,13 @@ jack stereo TRS
 5
 5
 Connector_Audio
+Jack_3.5mm_Lumberg_1503_07_Horizontal
+TRS 3.5mm, horizontal, through-hole, https://downloads.lumberg.com/datenblaetter/en/1503_07.pdf
+TRS audio jack horizontal
+0
+4
+3
+Connector_Audio
 Jack_3.5mm_PJ311_Horizontal
 PJ311 6pin SMD 3.5mm stereo headphones jack.
 headphones jack plug stereo 3.5mm PJ311
@@ -7847,6 +7854,13 @@ Power Jack
 3
 3
 Connector_BarrelJack
+BarrelJack_SwitchcraftConxall_RAPC10U_Horizontal
+DC Power Jack, 13A, 24V, Panel Mount,Through-hole, https://www.switchcraft.com/Drawings/RAPC10U_CD.pdf
+barreljack switchcraftconxall dc power
+0
+2
+2
+Connector_BarrelJack
 BarrelJack_Wuerth_6941xx301002
 Wuerth electronics barrel jack connector (5.5mm outher diameter, inner diameter 2.05mm or 2.55mm depending on exact order number), See: http://katalog.we-online.de/em/datasheet/6941xx301002.pdf
 connector barrel jack
@@ -7957,6 +7971,13 @@ Panel-mountable BNC connector mounted through PCB, vertical
 BNC connector
 0
 2
+2
+Connector_Coaxial
+BNC_TEConnectivity_1478035_Horizontal
+BNC RF Interface, PCB mount 4 pin, Right Angle, Bayonet, 50Ohm, 4GHz, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1478035%7FB1%7Fpdf%7FEnglish%7FENG_CD_1478035_B1.pdf%7F1-1478035-0
+BNC RF interface bayonet 50ohm
+0
+5
 2
 Connector_Coaxial
 BNC_TEConnectivity_1478204_Vertical
@@ -9674,6 +9695,13 @@ connector Hirose FH12 horizontal
 55
 54
 Connector_FFC-FPC
+Hirose_FH41-30S-0.5SH_1x30_1MP_1SH_P0.5mm_Horizontal
+Hirose FH41, FFC/FPC connector, FH41-30S-0.5SH, 30 Pins per row (https://www.hirose.com/fr/product/document?clcode=CL0580-2218-5-05&productname=FH41-30S-0.5SH(05)&series=FH41&documenttype=2DDrawing&lang=fr&documentid=0001001704)
+connector Hirose FH41 horizontal
+0
+38
+32
+Connector_FFC-FPC
 JAE_FF0825SA1_2Rows-25Pins_P0.40mm_Horizontal
 Molex JAE 0.2mm pitch, 1mm overall height FFC/FPC connector, FF0825SA1, 25 Circuits (http://www.jae.com/z-en/pdf_download_exec.cfm?param=SJ108178.pdf), generated with kicad-footprint-generator
 connector JAE  top entry
@@ -9716,12 +9744,26 @@ connector JAE  top entry
 81
 81
 Connector_FFC-FPC
+Molex_52559-3652_2x18-1MP_P0.5mm_Vertical
+Molex 0.50mm Pitch Easy-On Type FFC/FPC, 52559-3652, 36 Circuits (https://www.molex.com/pdm_docs/sd/525593652_sd.pdf)
+connector Molex top entry
+0
+40
+37
+Connector_FFC-FPC
 Molex_54132-5033_1x50-1MP_P0.5mm_Horizontal
 Molex FFC/FPC connector, 50 bottom-side contacts, 0.5mm pitch, 2.0mm height, https://www.molex.com/pdm_docs/sd/541325033_sd.pdf
 FFC FPC
 0
 54
 51
+Connector_FFC-FPC
+Molex_54548-1071_1x10-1MP_P0.5mm_Horizontal
+Molex FFC/FPC connector, 10 bottom-side contacts, 0.5mm pitch, 1.2mm height, https://www.molex.com/pdm_docs/sd/545481071_sd.pdf
+FFC FPC connector
+0
+12
+11
 Connector_FFC-FPC
 Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal
 Molex Molex 1.00mm Pitch Easy-On BackFlip, Right-Angle, Bottom Contact FFC/FPC, 200528-0040, 4 Circuits (https://www.molex.com/pdm_docs/sd/2005280040_sd.pdf), generated with kicad-footprint-generator
@@ -41295,2030 +41337,2030 @@ connector Samtec  side entry
 Connector_Samtec_HLE_SMD
 Samtec_HLE-102-02-xxx-DV-BE-LC_2x02_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-102-02-xxx-DV-BE-LC, 2 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 4
 4
 Connector_Samtec_HLE_SMD
 Samtec_HLE-102-02-xxx-DV-BE_2x02_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-102-02-xxx-DV-BE, 2 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 4
 4
 Connector_Samtec_HLE_SMD
 Samtec_HLE-102-02-xxx-DV-LC_2x02_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-102-02-xxx-DV-LC, 2 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 4
 4
 Connector_Samtec_HLE_SMD
 Samtec_HLE-102-02-xxx-DV_2x02_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-102-02-xxx-DV, 2 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 4
 4
 Connector_Samtec_HLE_SMD
 Samtec_HLE-103-02-xxx-DV-BE-LC_2x03_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-103-02-xxx-DV-BE-LC, 3 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 6
 6
 Connector_Samtec_HLE_SMD
 Samtec_HLE-103-02-xxx-DV-BE_2x03_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-103-02-xxx-DV-BE, 3 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 6
 6
 Connector_Samtec_HLE_SMD
 Samtec_HLE-103-02-xxx-DV-LC_2x03_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-103-02-xxx-DV-LC, 3 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 6
 6
 Connector_Samtec_HLE_SMD
 Samtec_HLE-103-02-xxx-DV_2x03_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-103-02-xxx-DV, 3 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 6
 6
 Connector_Samtec_HLE_SMD
 Samtec_HLE-104-02-xxx-DV-A_2x04_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-104-02-xxx-DV-A, 4 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 8
 8
 Connector_Samtec_HLE_SMD
 Samtec_HLE-104-02-xxx-DV-BE-A_2x04_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-104-02-xxx-DV-BE-A, 4 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 8
 8
 Connector_Samtec_HLE_SMD
 Samtec_HLE-104-02-xxx-DV-BE-LC_2x04_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-104-02-xxx-DV-BE-LC, 4 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 8
 8
 Connector_Samtec_HLE_SMD
 Samtec_HLE-104-02-xxx-DV-BE_2x04_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-104-02-xxx-DV-BE, 4 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 8
 8
 Connector_Samtec_HLE_SMD
 Samtec_HLE-104-02-xxx-DV-LC_2x04_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-104-02-xxx-DV-LC, 4 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 8
 8
 Connector_Samtec_HLE_SMD
 Samtec_HLE-104-02-xxx-DV_2x04_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-104-02-xxx-DV, 4 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 8
 8
 Connector_Samtec_HLE_SMD
 Samtec_HLE-105-02-xxx-DV-A_2x05_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-105-02-xxx-DV-A, 5 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 10
 10
 Connector_Samtec_HLE_SMD
 Samtec_HLE-105-02-xxx-DV-BE-A_2x05_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-105-02-xxx-DV-BE-A, 5 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 10
 10
 Connector_Samtec_HLE_SMD
 Samtec_HLE-105-02-xxx-DV-BE-LC_2x05_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-105-02-xxx-DV-BE-LC, 5 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 10
 10
 Connector_Samtec_HLE_SMD
 Samtec_HLE-105-02-xxx-DV-BE_2x05_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-105-02-xxx-DV-BE, 5 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 10
 10
 Connector_Samtec_HLE_SMD
 Samtec_HLE-105-02-xxx-DV-LC_2x05_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-105-02-xxx-DV-LC, 5 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 10
 10
 Connector_Samtec_HLE_SMD
 Samtec_HLE-105-02-xxx-DV_2x05_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-105-02-xxx-DV, 5 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 10
 10
 Connector_Samtec_HLE_SMD
 Samtec_HLE-106-02-xxx-DV-A_2x06_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-106-02-xxx-DV-A, 6 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 12
 12
 Connector_Samtec_HLE_SMD
 Samtec_HLE-106-02-xxx-DV-BE-A_2x06_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-106-02-xxx-DV-BE-A, 6 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 12
 12
 Connector_Samtec_HLE_SMD
 Samtec_HLE-106-02-xxx-DV-BE-LC_2x06_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-106-02-xxx-DV-BE-LC, 6 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 12
 12
 Connector_Samtec_HLE_SMD
 Samtec_HLE-106-02-xxx-DV-BE_2x06_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-106-02-xxx-DV-BE, 6 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 12
 12
 Connector_Samtec_HLE_SMD
 Samtec_HLE-106-02-xxx-DV-LC_2x06_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-106-02-xxx-DV-LC, 6 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 12
 12
 Connector_Samtec_HLE_SMD
 Samtec_HLE-106-02-xxx-DV_2x06_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-106-02-xxx-DV, 6 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 12
 12
 Connector_Samtec_HLE_SMD
 Samtec_HLE-107-02-xxx-DV-A_2x07_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-107-02-xxx-DV-A, 7 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 14
 14
 Connector_Samtec_HLE_SMD
 Samtec_HLE-107-02-xxx-DV-BE-A_2x07_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-107-02-xxx-DV-BE-A, 7 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 14
 14
 Connector_Samtec_HLE_SMD
 Samtec_HLE-107-02-xxx-DV-BE-LC_2x07_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-107-02-xxx-DV-BE-LC, 7 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 14
 14
 Connector_Samtec_HLE_SMD
 Samtec_HLE-107-02-xxx-DV-BE_2x07_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-107-02-xxx-DV-BE, 7 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 14
 14
 Connector_Samtec_HLE_SMD
 Samtec_HLE-107-02-xxx-DV-LC_2x07_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-107-02-xxx-DV-LC, 7 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 14
 14
 Connector_Samtec_HLE_SMD
 Samtec_HLE-107-02-xxx-DV_2x07_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-107-02-xxx-DV, 7 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 14
 14
 Connector_Samtec_HLE_SMD
 Samtec_HLE-108-02-xxx-DV-A_2x08_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-108-02-xxx-DV-A, 8 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 16
 16
 Connector_Samtec_HLE_SMD
 Samtec_HLE-108-02-xxx-DV-BE-A_2x08_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-108-02-xxx-DV-BE-A, 8 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 16
 16
 Connector_Samtec_HLE_SMD
 Samtec_HLE-108-02-xxx-DV-BE-LC_2x08_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-108-02-xxx-DV-BE-LC, 8 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 16
 16
 Connector_Samtec_HLE_SMD
 Samtec_HLE-108-02-xxx-DV-BE_2x08_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-108-02-xxx-DV-BE, 8 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 16
 16
 Connector_Samtec_HLE_SMD
 Samtec_HLE-108-02-xxx-DV-LC_2x08_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-108-02-xxx-DV-LC, 8 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 16
 16
 Connector_Samtec_HLE_SMD
 Samtec_HLE-108-02-xxx-DV_2x08_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-108-02-xxx-DV, 8 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 16
 16
 Connector_Samtec_HLE_SMD
 Samtec_HLE-109-02-xxx-DV-A_2x09_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-109-02-xxx-DV-A, 9 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 18
 18
 Connector_Samtec_HLE_SMD
 Samtec_HLE-109-02-xxx-DV-BE-A_2x09_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-109-02-xxx-DV-BE-A, 9 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 18
 18
 Connector_Samtec_HLE_SMD
 Samtec_HLE-109-02-xxx-DV-BE-LC_2x09_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-109-02-xxx-DV-BE-LC, 9 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 18
 18
 Connector_Samtec_HLE_SMD
 Samtec_HLE-109-02-xxx-DV-BE_2x09_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-109-02-xxx-DV-BE, 9 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 18
 18
 Connector_Samtec_HLE_SMD
 Samtec_HLE-109-02-xxx-DV-LC_2x09_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-109-02-xxx-DV-LC, 9 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 18
 18
 Connector_Samtec_HLE_SMD
 Samtec_HLE-109-02-xxx-DV_2x09_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-109-02-xxx-DV, 9 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 18
 18
 Connector_Samtec_HLE_SMD
 Samtec_HLE-110-02-xxx-DV-A_2x10_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-110-02-xxx-DV-A, 10 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 20
 20
 Connector_Samtec_HLE_SMD
 Samtec_HLE-110-02-xxx-DV-BE-A_2x10_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-110-02-xxx-DV-BE-A, 10 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 20
 20
 Connector_Samtec_HLE_SMD
 Samtec_HLE-110-02-xxx-DV-BE-LC_2x10_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-110-02-xxx-DV-BE-LC, 10 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 20
 20
 Connector_Samtec_HLE_SMD
 Samtec_HLE-110-02-xxx-DV-BE_2x10_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-110-02-xxx-DV-BE, 10 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 20
 20
 Connector_Samtec_HLE_SMD
 Samtec_HLE-110-02-xxx-DV-LC_2x10_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-110-02-xxx-DV-LC, 10 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 20
 20
 Connector_Samtec_HLE_SMD
 Samtec_HLE-110-02-xxx-DV_2x10_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-110-02-xxx-DV, 10 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 20
 20
 Connector_Samtec_HLE_SMD
 Samtec_HLE-111-02-xxx-DV-A_2x11_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-111-02-xxx-DV-A, 11 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 22
 22
 Connector_Samtec_HLE_SMD
 Samtec_HLE-111-02-xxx-DV-BE-A_2x11_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-111-02-xxx-DV-BE-A, 11 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 22
 22
 Connector_Samtec_HLE_SMD
 Samtec_HLE-111-02-xxx-DV-BE-LC_2x11_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-111-02-xxx-DV-BE-LC, 11 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 22
 22
 Connector_Samtec_HLE_SMD
 Samtec_HLE-111-02-xxx-DV-BE_2x11_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-111-02-xxx-DV-BE, 11 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 22
 22
 Connector_Samtec_HLE_SMD
 Samtec_HLE-111-02-xxx-DV-LC_2x11_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-111-02-xxx-DV-LC, 11 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 22
 22
 Connector_Samtec_HLE_SMD
 Samtec_HLE-111-02-xxx-DV_2x11_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-111-02-xxx-DV, 11 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 22
 22
 Connector_Samtec_HLE_SMD
 Samtec_HLE-112-02-xxx-DV-A_2x12_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-112-02-xxx-DV-A, 12 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 24
 24
 Connector_Samtec_HLE_SMD
 Samtec_HLE-112-02-xxx-DV-BE-A_2x12_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-112-02-xxx-DV-BE-A, 12 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 24
 24
 Connector_Samtec_HLE_SMD
 Samtec_HLE-112-02-xxx-DV-BE-LC_2x12_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-112-02-xxx-DV-BE-LC, 12 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 24
 24
 Connector_Samtec_HLE_SMD
 Samtec_HLE-112-02-xxx-DV-BE_2x12_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-112-02-xxx-DV-BE, 12 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 24
 24
 Connector_Samtec_HLE_SMD
 Samtec_HLE-112-02-xxx-DV-LC_2x12_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-112-02-xxx-DV-LC, 12 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 24
 24
 Connector_Samtec_HLE_SMD
 Samtec_HLE-112-02-xxx-DV_2x12_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-112-02-xxx-DV, 12 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 24
 24
 Connector_Samtec_HLE_SMD
 Samtec_HLE-113-02-xxx-DV-A_2x13_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-113-02-xxx-DV-A, 13 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 26
 26
 Connector_Samtec_HLE_SMD
 Samtec_HLE-113-02-xxx-DV-BE-A_2x13_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-113-02-xxx-DV-BE-A, 13 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 26
 26
 Connector_Samtec_HLE_SMD
 Samtec_HLE-113-02-xxx-DV-BE-LC_2x13_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-113-02-xxx-DV-BE-LC, 13 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 26
 26
 Connector_Samtec_HLE_SMD
 Samtec_HLE-113-02-xxx-DV-BE_2x13_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-113-02-xxx-DV-BE, 13 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 26
 26
 Connector_Samtec_HLE_SMD
 Samtec_HLE-113-02-xxx-DV-LC_2x13_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-113-02-xxx-DV-LC, 13 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 26
 26
 Connector_Samtec_HLE_SMD
 Samtec_HLE-113-02-xxx-DV_2x13_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-113-02-xxx-DV, 13 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 26
 26
 Connector_Samtec_HLE_SMD
 Samtec_HLE-114-02-xxx-DV-A_2x14_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-114-02-xxx-DV-A, 14 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 28
 28
 Connector_Samtec_HLE_SMD
 Samtec_HLE-114-02-xxx-DV-BE-A_2x14_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-114-02-xxx-DV-BE-A, 14 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 28
 28
 Connector_Samtec_HLE_SMD
 Samtec_HLE-114-02-xxx-DV-BE-LC_2x14_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-114-02-xxx-DV-BE-LC, 14 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 28
 28
 Connector_Samtec_HLE_SMD
 Samtec_HLE-114-02-xxx-DV-BE_2x14_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-114-02-xxx-DV-BE, 14 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 28
 28
 Connector_Samtec_HLE_SMD
 Samtec_HLE-114-02-xxx-DV-LC_2x14_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-114-02-xxx-DV-LC, 14 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 28
 28
 Connector_Samtec_HLE_SMD
 Samtec_HLE-114-02-xxx-DV_2x14_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-114-02-xxx-DV, 14 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 28
 28
 Connector_Samtec_HLE_SMD
 Samtec_HLE-115-02-xxx-DV-A_2x15_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-115-02-xxx-DV-A, 15 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 30
 30
 Connector_Samtec_HLE_SMD
 Samtec_HLE-115-02-xxx-DV-BE-A_2x15_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-115-02-xxx-DV-BE-A, 15 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 30
 30
 Connector_Samtec_HLE_SMD
 Samtec_HLE-115-02-xxx-DV-BE-LC_2x15_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-115-02-xxx-DV-BE-LC, 15 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 30
 30
 Connector_Samtec_HLE_SMD
 Samtec_HLE-115-02-xxx-DV-BE_2x15_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-115-02-xxx-DV-BE, 15 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 30
 30
 Connector_Samtec_HLE_SMD
 Samtec_HLE-115-02-xxx-DV-LC_2x15_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-115-02-xxx-DV-LC, 15 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 30
 30
 Connector_Samtec_HLE_SMD
 Samtec_HLE-115-02-xxx-DV_2x15_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-115-02-xxx-DV, 15 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 30
 30
 Connector_Samtec_HLE_SMD
 Samtec_HLE-116-02-xxx-DV-A_2x16_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-116-02-xxx-DV-A, 16 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 32
 32
 Connector_Samtec_HLE_SMD
 Samtec_HLE-116-02-xxx-DV-BE-A_2x16_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-116-02-xxx-DV-BE-A, 16 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 32
 32
 Connector_Samtec_HLE_SMD
 Samtec_HLE-116-02-xxx-DV-BE-LC_2x16_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-116-02-xxx-DV-BE-LC, 16 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 32
 32
 Connector_Samtec_HLE_SMD
 Samtec_HLE-116-02-xxx-DV-BE_2x16_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-116-02-xxx-DV-BE, 16 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 32
 32
 Connector_Samtec_HLE_SMD
 Samtec_HLE-116-02-xxx-DV-LC_2x16_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-116-02-xxx-DV-LC, 16 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 32
 32
 Connector_Samtec_HLE_SMD
 Samtec_HLE-116-02-xxx-DV_2x16_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-116-02-xxx-DV, 16 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 32
 32
 Connector_Samtec_HLE_SMD
 Samtec_HLE-117-02-xxx-DV-A_2x17_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-117-02-xxx-DV-A, 17 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 34
 34
 Connector_Samtec_HLE_SMD
 Samtec_HLE-117-02-xxx-DV-BE-A_2x17_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-117-02-xxx-DV-BE-A, 17 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 34
 34
 Connector_Samtec_HLE_SMD
 Samtec_HLE-117-02-xxx-DV-BE-LC_2x17_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-117-02-xxx-DV-BE-LC, 17 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 34
 34
 Connector_Samtec_HLE_SMD
 Samtec_HLE-117-02-xxx-DV-BE_2x17_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-117-02-xxx-DV-BE, 17 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 34
 34
 Connector_Samtec_HLE_SMD
 Samtec_HLE-117-02-xxx-DV-LC_2x17_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-117-02-xxx-DV-LC, 17 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 34
 34
 Connector_Samtec_HLE_SMD
 Samtec_HLE-117-02-xxx-DV_2x17_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-117-02-xxx-DV, 17 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 34
 34
 Connector_Samtec_HLE_SMD
 Samtec_HLE-118-02-xxx-DV-A_2x18_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-118-02-xxx-DV-A, 18 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 36
 36
 Connector_Samtec_HLE_SMD
 Samtec_HLE-118-02-xxx-DV-BE-A_2x18_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-118-02-xxx-DV-BE-A, 18 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 36
 36
 Connector_Samtec_HLE_SMD
 Samtec_HLE-118-02-xxx-DV-BE-LC_2x18_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-118-02-xxx-DV-BE-LC, 18 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 36
 36
 Connector_Samtec_HLE_SMD
 Samtec_HLE-118-02-xxx-DV-BE_2x18_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-118-02-xxx-DV-BE, 18 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 36
 36
 Connector_Samtec_HLE_SMD
 Samtec_HLE-118-02-xxx-DV-LC_2x18_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-118-02-xxx-DV-LC, 18 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 36
 36
 Connector_Samtec_HLE_SMD
 Samtec_HLE-118-02-xxx-DV_2x18_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-118-02-xxx-DV, 18 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 36
 36
 Connector_Samtec_HLE_SMD
 Samtec_HLE-119-02-xxx-DV-A_2x19_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-119-02-xxx-DV-A, 19 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 38
 38
 Connector_Samtec_HLE_SMD
 Samtec_HLE-119-02-xxx-DV-BE-A_2x19_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-119-02-xxx-DV-BE-A, 19 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 38
 38
 Connector_Samtec_HLE_SMD
 Samtec_HLE-119-02-xxx-DV-BE-LC_2x19_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-119-02-xxx-DV-BE-LC, 19 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 38
 38
 Connector_Samtec_HLE_SMD
 Samtec_HLE-119-02-xxx-DV-BE_2x19_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-119-02-xxx-DV-BE, 19 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 38
 38
 Connector_Samtec_HLE_SMD
 Samtec_HLE-119-02-xxx-DV-LC_2x19_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-119-02-xxx-DV-LC, 19 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 38
 38
 Connector_Samtec_HLE_SMD
 Samtec_HLE-119-02-xxx-DV_2x19_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-119-02-xxx-DV, 19 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 38
 38
 Connector_Samtec_HLE_SMD
 Samtec_HLE-120-02-xxx-DV-A_2x20_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-120-02-xxx-DV-A, 20 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 40
 40
 Connector_Samtec_HLE_SMD
 Samtec_HLE-120-02-xxx-DV-BE-A_2x20_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-120-02-xxx-DV-BE-A, 20 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 40
 40
 Connector_Samtec_HLE_SMD
 Samtec_HLE-120-02-xxx-DV-BE-LC_2x20_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-120-02-xxx-DV-BE-LC, 20 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 40
 40
 Connector_Samtec_HLE_SMD
 Samtec_HLE-120-02-xxx-DV-BE_2x20_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-120-02-xxx-DV-BE, 20 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 40
 40
 Connector_Samtec_HLE_SMD
 Samtec_HLE-120-02-xxx-DV-LC_2x20_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-120-02-xxx-DV-LC, 20 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 40
 40
 Connector_Samtec_HLE_SMD
 Samtec_HLE-120-02-xxx-DV_2x20_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-120-02-xxx-DV, 20 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 40
 40
 Connector_Samtec_HLE_SMD
 Samtec_HLE-121-02-xxx-DV-A_2x21_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-121-02-xxx-DV-A, 21 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 42
 42
 Connector_Samtec_HLE_SMD
 Samtec_HLE-121-02-xxx-DV-BE-A_2x21_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-121-02-xxx-DV-BE-A, 21 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 42
 42
 Connector_Samtec_HLE_SMD
 Samtec_HLE-121-02-xxx-DV-BE-LC_2x21_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-121-02-xxx-DV-BE-LC, 21 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 42
 42
 Connector_Samtec_HLE_SMD
 Samtec_HLE-121-02-xxx-DV-BE_2x21_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-121-02-xxx-DV-BE, 21 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 42
 42
 Connector_Samtec_HLE_SMD
 Samtec_HLE-121-02-xxx-DV-LC_2x21_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-121-02-xxx-DV-LC, 21 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 42
 42
 Connector_Samtec_HLE_SMD
 Samtec_HLE-121-02-xxx-DV_2x21_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-121-02-xxx-DV, 21 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 42
 42
 Connector_Samtec_HLE_SMD
 Samtec_HLE-122-02-xxx-DV-A_2x22_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-122-02-xxx-DV-A, 22 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 44
 44
 Connector_Samtec_HLE_SMD
 Samtec_HLE-122-02-xxx-DV-BE-A_2x22_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-122-02-xxx-DV-BE-A, 22 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 44
 44
 Connector_Samtec_HLE_SMD
 Samtec_HLE-122-02-xxx-DV-BE-LC_2x22_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-122-02-xxx-DV-BE-LC, 22 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 44
 44
 Connector_Samtec_HLE_SMD
 Samtec_HLE-122-02-xxx-DV-BE_2x22_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-122-02-xxx-DV-BE, 22 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 44
 44
 Connector_Samtec_HLE_SMD
 Samtec_HLE-122-02-xxx-DV-LC_2x22_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-122-02-xxx-DV-LC, 22 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 44
 44
 Connector_Samtec_HLE_SMD
 Samtec_HLE-122-02-xxx-DV_2x22_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-122-02-xxx-DV, 22 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 44
 44
 Connector_Samtec_HLE_SMD
 Samtec_HLE-123-02-xxx-DV-A_2x23_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-123-02-xxx-DV-A, 23 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 46
 46
 Connector_Samtec_HLE_SMD
 Samtec_HLE-123-02-xxx-DV-BE-A_2x23_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-123-02-xxx-DV-BE-A, 23 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 46
 46
 Connector_Samtec_HLE_SMD
 Samtec_HLE-123-02-xxx-DV-BE-LC_2x23_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-123-02-xxx-DV-BE-LC, 23 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 46
 46
 Connector_Samtec_HLE_SMD
 Samtec_HLE-123-02-xxx-DV-BE_2x23_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-123-02-xxx-DV-BE, 23 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 46
 46
 Connector_Samtec_HLE_SMD
 Samtec_HLE-123-02-xxx-DV-LC_2x23_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-123-02-xxx-DV-LC, 23 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 46
 46
 Connector_Samtec_HLE_SMD
 Samtec_HLE-123-02-xxx-DV_2x23_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-123-02-xxx-DV, 23 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 46
 46
 Connector_Samtec_HLE_SMD
 Samtec_HLE-124-02-xxx-DV-A_2x24_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-124-02-xxx-DV-A, 24 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 48
 48
 Connector_Samtec_HLE_SMD
 Samtec_HLE-124-02-xxx-DV-BE-A_2x24_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-124-02-xxx-DV-BE-A, 24 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 48
 48
 Connector_Samtec_HLE_SMD
 Samtec_HLE-124-02-xxx-DV-BE-LC_2x24_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-124-02-xxx-DV-BE-LC, 24 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 48
 48
 Connector_Samtec_HLE_SMD
 Samtec_HLE-124-02-xxx-DV-BE_2x24_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-124-02-xxx-DV-BE, 24 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 48
 48
 Connector_Samtec_HLE_SMD
 Samtec_HLE-124-02-xxx-DV-LC_2x24_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-124-02-xxx-DV-LC, 24 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 48
 48
 Connector_Samtec_HLE_SMD
 Samtec_HLE-124-02-xxx-DV_2x24_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-124-02-xxx-DV, 24 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 48
 48
 Connector_Samtec_HLE_SMD
 Samtec_HLE-125-02-xxx-DV-A_2x25_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-125-02-xxx-DV-A, 25 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 50
 50
 Connector_Samtec_HLE_SMD
 Samtec_HLE-125-02-xxx-DV-BE-A_2x25_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-125-02-xxx-DV-BE-A, 25 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 50
 50
 Connector_Samtec_HLE_SMD
 Samtec_HLE-125-02-xxx-DV-BE-LC_2x25_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-125-02-xxx-DV-BE-LC, 25 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 50
 50
 Connector_Samtec_HLE_SMD
 Samtec_HLE-125-02-xxx-DV-BE_2x25_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-125-02-xxx-DV-BE, 25 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 50
 50
 Connector_Samtec_HLE_SMD
 Samtec_HLE-125-02-xxx-DV-LC_2x25_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-125-02-xxx-DV-LC, 25 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 50
 50
 Connector_Samtec_HLE_SMD
 Samtec_HLE-125-02-xxx-DV_2x25_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-125-02-xxx-DV, 25 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 50
 50
 Connector_Samtec_HLE_SMD
 Samtec_HLE-126-02-xxx-DV-A_2x26_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-126-02-xxx-DV-A, 26 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 52
 52
 Connector_Samtec_HLE_SMD
 Samtec_HLE-126-02-xxx-DV-BE-A_2x26_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-126-02-xxx-DV-BE-A, 26 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 52
 52
 Connector_Samtec_HLE_SMD
 Samtec_HLE-126-02-xxx-DV-BE-LC_2x26_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-126-02-xxx-DV-BE-LC, 26 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 52
 52
 Connector_Samtec_HLE_SMD
 Samtec_HLE-126-02-xxx-DV-BE_2x26_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-126-02-xxx-DV-BE, 26 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 52
 52
 Connector_Samtec_HLE_SMD
 Samtec_HLE-126-02-xxx-DV-LC_2x26_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-126-02-xxx-DV-LC, 26 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 52
 52
 Connector_Samtec_HLE_SMD
 Samtec_HLE-126-02-xxx-DV_2x26_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-126-02-xxx-DV, 26 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 52
 52
 Connector_Samtec_HLE_SMD
 Samtec_HLE-127-02-xxx-DV-A_2x27_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-127-02-xxx-DV-A, 27 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 54
 54
 Connector_Samtec_HLE_SMD
 Samtec_HLE-127-02-xxx-DV-BE-A_2x27_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-127-02-xxx-DV-BE-A, 27 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 54
 54
 Connector_Samtec_HLE_SMD
 Samtec_HLE-127-02-xxx-DV-BE-LC_2x27_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-127-02-xxx-DV-BE-LC, 27 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 54
 54
 Connector_Samtec_HLE_SMD
 Samtec_HLE-127-02-xxx-DV-BE_2x27_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-127-02-xxx-DV-BE, 27 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 54
 54
 Connector_Samtec_HLE_SMD
 Samtec_HLE-127-02-xxx-DV-LC_2x27_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-127-02-xxx-DV-LC, 27 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 54
 54
 Connector_Samtec_HLE_SMD
 Samtec_HLE-127-02-xxx-DV_2x27_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-127-02-xxx-DV, 27 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 54
 54
 Connector_Samtec_HLE_SMD
 Samtec_HLE-128-02-xxx-DV-A_2x28_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-128-02-xxx-DV-A, 28 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 56
 56
 Connector_Samtec_HLE_SMD
 Samtec_HLE-128-02-xxx-DV-BE-A_2x28_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-128-02-xxx-DV-BE-A, 28 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 56
 56
 Connector_Samtec_HLE_SMD
 Samtec_HLE-128-02-xxx-DV-BE-LC_2x28_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-128-02-xxx-DV-BE-LC, 28 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 56
 56
 Connector_Samtec_HLE_SMD
 Samtec_HLE-128-02-xxx-DV-BE_2x28_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-128-02-xxx-DV-BE, 28 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 56
 56
 Connector_Samtec_HLE_SMD
 Samtec_HLE-128-02-xxx-DV-LC_2x28_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-128-02-xxx-DV-LC, 28 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 56
 56
 Connector_Samtec_HLE_SMD
 Samtec_HLE-128-02-xxx-DV_2x28_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-128-02-xxx-DV, 28 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 56
 56
 Connector_Samtec_HLE_SMD
 Samtec_HLE-129-02-xxx-DV-A_2x29_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-129-02-xxx-DV-A, 29 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 58
 58
 Connector_Samtec_HLE_SMD
 Samtec_HLE-129-02-xxx-DV-BE-A_2x29_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-129-02-xxx-DV-BE-A, 29 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 58
 58
 Connector_Samtec_HLE_SMD
 Samtec_HLE-129-02-xxx-DV-BE-LC_2x29_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-129-02-xxx-DV-BE-LC, 29 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 58
 58
 Connector_Samtec_HLE_SMD
 Samtec_HLE-129-02-xxx-DV-BE_2x29_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-129-02-xxx-DV-BE, 29 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 58
 58
 Connector_Samtec_HLE_SMD
 Samtec_HLE-129-02-xxx-DV-LC_2x29_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-129-02-xxx-DV-LC, 29 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 58
 58
 Connector_Samtec_HLE_SMD
 Samtec_HLE-129-02-xxx-DV_2x29_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-129-02-xxx-DV, 29 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 58
 58
 Connector_Samtec_HLE_SMD
 Samtec_HLE-130-02-xxx-DV-A_2x30_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-130-02-xxx-DV-A, 30 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 60
 60
 Connector_Samtec_HLE_SMD
 Samtec_HLE-130-02-xxx-DV-BE-A_2x30_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-130-02-xxx-DV-BE-A, 30 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 60
 60
 Connector_Samtec_HLE_SMD
 Samtec_HLE-130-02-xxx-DV-BE-LC_2x30_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-130-02-xxx-DV-BE-LC, 30 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 60
 60
 Connector_Samtec_HLE_SMD
 Samtec_HLE-130-02-xxx-DV-BE_2x30_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-130-02-xxx-DV-BE, 30 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 60
 60
 Connector_Samtec_HLE_SMD
 Samtec_HLE-130-02-xxx-DV-LC_2x30_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-130-02-xxx-DV-LC, 30 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 60
 60
 Connector_Samtec_HLE_SMD
 Samtec_HLE-130-02-xxx-DV_2x30_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-130-02-xxx-DV, 30 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 60
 60
 Connector_Samtec_HLE_SMD
 Samtec_HLE-131-02-xxx-DV-A_2x31_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-131-02-xxx-DV-A, 31 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 62
 62
 Connector_Samtec_HLE_SMD
 Samtec_HLE-131-02-xxx-DV-BE-A_2x31_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-131-02-xxx-DV-BE-A, 31 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 62
 62
 Connector_Samtec_HLE_SMD
 Samtec_HLE-131-02-xxx-DV-BE-LC_2x31_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-131-02-xxx-DV-BE-LC, 31 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 62
 62
 Connector_Samtec_HLE_SMD
 Samtec_HLE-131-02-xxx-DV-BE_2x31_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-131-02-xxx-DV-BE, 31 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 62
 62
 Connector_Samtec_HLE_SMD
 Samtec_HLE-131-02-xxx-DV-LC_2x31_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-131-02-xxx-DV-LC, 31 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 62
 62
 Connector_Samtec_HLE_SMD
 Samtec_HLE-131-02-xxx-DV_2x31_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-131-02-xxx-DV, 31 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 62
 62
 Connector_Samtec_HLE_SMD
 Samtec_HLE-132-02-xxx-DV-A_2x32_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-132-02-xxx-DV-A, 32 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 64
 64
 Connector_Samtec_HLE_SMD
 Samtec_HLE-132-02-xxx-DV-BE-A_2x32_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-132-02-xxx-DV-BE-A, 32 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 64
 64
 Connector_Samtec_HLE_SMD
 Samtec_HLE-132-02-xxx-DV-BE-LC_2x32_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-132-02-xxx-DV-BE-LC, 32 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 64
 64
 Connector_Samtec_HLE_SMD
 Samtec_HLE-132-02-xxx-DV-BE_2x32_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-132-02-xxx-DV-BE, 32 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 64
 64
 Connector_Samtec_HLE_SMD
 Samtec_HLE-132-02-xxx-DV-LC_2x32_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-132-02-xxx-DV-LC, 32 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 64
 64
 Connector_Samtec_HLE_SMD
 Samtec_HLE-132-02-xxx-DV_2x32_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-132-02-xxx-DV, 32 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 64
 64
 Connector_Samtec_HLE_SMD
 Samtec_HLE-133-02-xxx-DV-A_2x33_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-133-02-xxx-DV-A, 33 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 66
 66
 Connector_Samtec_HLE_SMD
 Samtec_HLE-133-02-xxx-DV-BE-A_2x33_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-133-02-xxx-DV-BE-A, 33 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 66
 66
 Connector_Samtec_HLE_SMD
 Samtec_HLE-133-02-xxx-DV-BE-LC_2x33_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-133-02-xxx-DV-BE-LC, 33 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 66
 66
 Connector_Samtec_HLE_SMD
 Samtec_HLE-133-02-xxx-DV-BE_2x33_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-133-02-xxx-DV-BE, 33 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 66
 66
 Connector_Samtec_HLE_SMD
 Samtec_HLE-133-02-xxx-DV-LC_2x33_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-133-02-xxx-DV-LC, 33 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 66
 66
 Connector_Samtec_HLE_SMD
 Samtec_HLE-133-02-xxx-DV_2x33_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-133-02-xxx-DV, 33 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 66
 66
 Connector_Samtec_HLE_SMD
 Samtec_HLE-134-02-xxx-DV-A_2x34_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-134-02-xxx-DV-A, 34 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 68
 68
 Connector_Samtec_HLE_SMD
 Samtec_HLE-134-02-xxx-DV-BE-A_2x34_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-134-02-xxx-DV-BE-A, 34 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 68
 68
 Connector_Samtec_HLE_SMD
 Samtec_HLE-134-02-xxx-DV-BE-LC_2x34_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-134-02-xxx-DV-BE-LC, 34 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 68
 68
 Connector_Samtec_HLE_SMD
 Samtec_HLE-134-02-xxx-DV-BE_2x34_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-134-02-xxx-DV-BE, 34 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 68
 68
 Connector_Samtec_HLE_SMD
 Samtec_HLE-134-02-xxx-DV-LC_2x34_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-134-02-xxx-DV-LC, 34 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 68
 68
 Connector_Samtec_HLE_SMD
 Samtec_HLE-134-02-xxx-DV_2x34_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-134-02-xxx-DV, 34 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 68
 68
 Connector_Samtec_HLE_SMD
 Samtec_HLE-135-02-xxx-DV-A_2x35_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-135-02-xxx-DV-A, 35 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 70
 70
 Connector_Samtec_HLE_SMD
 Samtec_HLE-135-02-xxx-DV-BE-A_2x35_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-135-02-xxx-DV-BE-A, 35 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 70
 70
 Connector_Samtec_HLE_SMD
 Samtec_HLE-135-02-xxx-DV-BE-LC_2x35_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-135-02-xxx-DV-BE-LC, 35 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 70
 70
 Connector_Samtec_HLE_SMD
 Samtec_HLE-135-02-xxx-DV-BE_2x35_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-135-02-xxx-DV-BE, 35 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 70
 70
 Connector_Samtec_HLE_SMD
 Samtec_HLE-135-02-xxx-DV-LC_2x35_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-135-02-xxx-DV-LC, 35 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 70
 70
 Connector_Samtec_HLE_SMD
 Samtec_HLE-135-02-xxx-DV_2x35_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-135-02-xxx-DV, 35 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 70
 70
 Connector_Samtec_HLE_SMD
 Samtec_HLE-136-02-xxx-DV-A_2x36_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-136-02-xxx-DV-A, 36 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 72
 72
 Connector_Samtec_HLE_SMD
 Samtec_HLE-136-02-xxx-DV-BE-A_2x36_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-136-02-xxx-DV-BE-A, 36 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 72
 72
 Connector_Samtec_HLE_SMD
 Samtec_HLE-136-02-xxx-DV-BE-LC_2x36_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-136-02-xxx-DV-BE-LC, 36 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 72
 72
 Connector_Samtec_HLE_SMD
 Samtec_HLE-136-02-xxx-DV-BE_2x36_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-136-02-xxx-DV-BE, 36 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 72
 72
 Connector_Samtec_HLE_SMD
 Samtec_HLE-136-02-xxx-DV-LC_2x36_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-136-02-xxx-DV-LC, 36 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 72
 72
 Connector_Samtec_HLE_SMD
 Samtec_HLE-136-02-xxx-DV_2x36_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-136-02-xxx-DV, 36 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 72
 72
 Connector_Samtec_HLE_SMD
 Samtec_HLE-137-02-xxx-DV-A_2x37_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-137-02-xxx-DV-A, 37 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 74
 74
 Connector_Samtec_HLE_SMD
 Samtec_HLE-137-02-xxx-DV-BE-A_2x37_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-137-02-xxx-DV-BE-A, 37 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 74
 74
 Connector_Samtec_HLE_SMD
 Samtec_HLE-137-02-xxx-DV-BE-LC_2x37_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-137-02-xxx-DV-BE-LC, 37 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 74
 74
 Connector_Samtec_HLE_SMD
 Samtec_HLE-137-02-xxx-DV-BE_2x37_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-137-02-xxx-DV-BE, 37 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 74
 74
 Connector_Samtec_HLE_SMD
 Samtec_HLE-137-02-xxx-DV-LC_2x37_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-137-02-xxx-DV-LC, 37 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 74
 74
 Connector_Samtec_HLE_SMD
 Samtec_HLE-137-02-xxx-DV_2x37_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-137-02-xxx-DV, 37 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 74
 74
 Connector_Samtec_HLE_SMD
 Samtec_HLE-138-02-xxx-DV-A_2x38_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-138-02-xxx-DV-A, 38 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 76
 76
 Connector_Samtec_HLE_SMD
 Samtec_HLE-138-02-xxx-DV-BE-A_2x38_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-138-02-xxx-DV-BE-A, 38 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 76
 76
 Connector_Samtec_HLE_SMD
 Samtec_HLE-138-02-xxx-DV-BE-LC_2x38_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-138-02-xxx-DV-BE-LC, 38 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 76
 76
 Connector_Samtec_HLE_SMD
 Samtec_HLE-138-02-xxx-DV-BE_2x38_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-138-02-xxx-DV-BE, 38 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 76
 76
 Connector_Samtec_HLE_SMD
 Samtec_HLE-138-02-xxx-DV-LC_2x38_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-138-02-xxx-DV-LC, 38 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 76
 76
 Connector_Samtec_HLE_SMD
 Samtec_HLE-138-02-xxx-DV_2x38_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-138-02-xxx-DV, 38 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 76
 76
 Connector_Samtec_HLE_SMD
 Samtec_HLE-139-02-xxx-DV-A_2x39_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-139-02-xxx-DV-A, 39 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 78
 78
 Connector_Samtec_HLE_SMD
 Samtec_HLE-139-02-xxx-DV-BE-A_2x39_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-139-02-xxx-DV-BE-A, 39 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 78
 78
 Connector_Samtec_HLE_SMD
 Samtec_HLE-139-02-xxx-DV-BE-LC_2x39_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-139-02-xxx-DV-BE-LC, 39 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 78
 78
 Connector_Samtec_HLE_SMD
 Samtec_HLE-139-02-xxx-DV-BE_2x39_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-139-02-xxx-DV-BE, 39 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 78
 78
 Connector_Samtec_HLE_SMD
 Samtec_HLE-139-02-xxx-DV-LC_2x39_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-139-02-xxx-DV-LC, 39 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 78
 78
 Connector_Samtec_HLE_SMD
 Samtec_HLE-139-02-xxx-DV_2x39_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-139-02-xxx-DV, 39 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 78
 78
 Connector_Samtec_HLE_SMD
 Samtec_HLE-140-02-xxx-DV-A_2x40_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-140-02-xxx-DV-A, 40 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 80
 80
 Connector_Samtec_HLE_SMD
 Samtec_HLE-140-02-xxx-DV-BE-A_2x40_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-140-02-xxx-DV-BE-A, 40 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 80
 80
 Connector_Samtec_HLE_SMD
 Samtec_HLE-140-02-xxx-DV-BE-LC_2x40_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-140-02-xxx-DV-BE-LC, 40 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 80
 80
 Connector_Samtec_HLE_SMD
 Samtec_HLE-140-02-xxx-DV-BE_2x40_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-140-02-xxx-DV-BE, 40 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 80
 80
 Connector_Samtec_HLE_SMD
 Samtec_HLE-140-02-xxx-DV-LC_2x40_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-140-02-xxx-DV-LC, 40 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 80
 80
 Connector_Samtec_HLE_SMD
 Samtec_HLE-140-02-xxx-DV_2x40_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-140-02-xxx-DV, 40 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 80
 80
 Connector_Samtec_HLE_SMD
 Samtec_HLE-141-02-xxx-DV-A_2x41_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-141-02-xxx-DV-A, 41 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 82
 82
 Connector_Samtec_HLE_SMD
 Samtec_HLE-141-02-xxx-DV-BE-A_2x41_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-141-02-xxx-DV-BE-A, 41 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 82
 82
 Connector_Samtec_HLE_SMD
 Samtec_HLE-141-02-xxx-DV-BE-LC_2x41_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-141-02-xxx-DV-BE-LC, 41 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 82
 82
 Connector_Samtec_HLE_SMD
 Samtec_HLE-141-02-xxx-DV-BE_2x41_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-141-02-xxx-DV-BE, 41 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 82
 82
 Connector_Samtec_HLE_SMD
 Samtec_HLE-141-02-xxx-DV-LC_2x41_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-141-02-xxx-DV-LC, 41 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 82
 82
 Connector_Samtec_HLE_SMD
 Samtec_HLE-141-02-xxx-DV_2x41_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-141-02-xxx-DV, 41 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 82
 82
 Connector_Samtec_HLE_SMD
 Samtec_HLE-142-02-xxx-DV-A_2x42_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-142-02-xxx-DV-A, 42 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 84
 84
 Connector_Samtec_HLE_SMD
 Samtec_HLE-142-02-xxx-DV-BE-A_2x42_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-142-02-xxx-DV-BE-A, 42 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 84
 84
 Connector_Samtec_HLE_SMD
 Samtec_HLE-142-02-xxx-DV-BE-LC_2x42_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-142-02-xxx-DV-BE-LC, 42 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 84
 84
 Connector_Samtec_HLE_SMD
 Samtec_HLE-142-02-xxx-DV-BE_2x42_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-142-02-xxx-DV-BE, 42 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 84
 84
 Connector_Samtec_HLE_SMD
 Samtec_HLE-142-02-xxx-DV-LC_2x42_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-142-02-xxx-DV-LC, 42 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 84
 84
 Connector_Samtec_HLE_SMD
 Samtec_HLE-142-02-xxx-DV_2x42_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-142-02-xxx-DV, 42 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 84
 84
 Connector_Samtec_HLE_SMD
 Samtec_HLE-143-02-xxx-DV-A_2x43_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-143-02-xxx-DV-A, 43 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 86
 86
 Connector_Samtec_HLE_SMD
 Samtec_HLE-143-02-xxx-DV-BE-A_2x43_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-143-02-xxx-DV-BE-A, 43 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 86
 86
 Connector_Samtec_HLE_SMD
 Samtec_HLE-143-02-xxx-DV-BE-LC_2x43_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-143-02-xxx-DV-BE-LC, 43 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 86
 86
 Connector_Samtec_HLE_SMD
 Samtec_HLE-143-02-xxx-DV-BE_2x43_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-143-02-xxx-DV-BE, 43 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 86
 86
 Connector_Samtec_HLE_SMD
 Samtec_HLE-143-02-xxx-DV-LC_2x43_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-143-02-xxx-DV-LC, 43 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 86
 86
 Connector_Samtec_HLE_SMD
 Samtec_HLE-143-02-xxx-DV_2x43_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-143-02-xxx-DV, 43 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 86
 86
 Connector_Samtec_HLE_SMD
 Samtec_HLE-144-02-xxx-DV-A_2x44_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-144-02-xxx-DV-A, 44 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 88
 88
 Connector_Samtec_HLE_SMD
 Samtec_HLE-144-02-xxx-DV-BE-A_2x44_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-144-02-xxx-DV-BE-A, 44 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 88
 88
 Connector_Samtec_HLE_SMD
 Samtec_HLE-144-02-xxx-DV-BE-LC_2x44_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-144-02-xxx-DV-BE-LC, 44 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 88
 88
 Connector_Samtec_HLE_SMD
 Samtec_HLE-144-02-xxx-DV-BE_2x44_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-144-02-xxx-DV-BE, 44 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 88
 88
 Connector_Samtec_HLE_SMD
 Samtec_HLE-144-02-xxx-DV-LC_2x44_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-144-02-xxx-DV-LC, 44 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 88
 88
 Connector_Samtec_HLE_SMD
 Samtec_HLE-144-02-xxx-DV_2x44_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-144-02-xxx-DV, 44 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 88
 88
 Connector_Samtec_HLE_SMD
 Samtec_HLE-145-02-xxx-DV-A_2x45_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-145-02-xxx-DV-A, 45 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 90
 90
 Connector_Samtec_HLE_SMD
 Samtec_HLE-145-02-xxx-DV-BE-A_2x45_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-145-02-xxx-DV-BE-A, 45 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 90
 90
 Connector_Samtec_HLE_SMD
 Samtec_HLE-145-02-xxx-DV-BE-LC_2x45_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-145-02-xxx-DV-BE-LC, 45 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 90
 90
 Connector_Samtec_HLE_SMD
 Samtec_HLE-145-02-xxx-DV-BE_2x45_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-145-02-xxx-DV-BE, 45 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 90
 90
 Connector_Samtec_HLE_SMD
 Samtec_HLE-145-02-xxx-DV-LC_2x45_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-145-02-xxx-DV-LC, 45 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 90
 90
 Connector_Samtec_HLE_SMD
 Samtec_HLE-145-02-xxx-DV_2x45_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-145-02-xxx-DV, 45 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 90
 90
 Connector_Samtec_HLE_SMD
 Samtec_HLE-146-02-xxx-DV-A_2x46_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-146-02-xxx-DV-A, 46 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 92
 92
 Connector_Samtec_HLE_SMD
 Samtec_HLE-146-02-xxx-DV-BE-A_2x46_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-146-02-xxx-DV-BE-A, 46 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 92
 92
 Connector_Samtec_HLE_SMD
 Samtec_HLE-146-02-xxx-DV-BE-LC_2x46_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-146-02-xxx-DV-BE-LC, 46 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 92
 92
 Connector_Samtec_HLE_SMD
 Samtec_HLE-146-02-xxx-DV-BE_2x46_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-146-02-xxx-DV-BE, 46 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 92
 92
 Connector_Samtec_HLE_SMD
 Samtec_HLE-146-02-xxx-DV-LC_2x46_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-146-02-xxx-DV-LC, 46 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 92
 92
 Connector_Samtec_HLE_SMD
 Samtec_HLE-146-02-xxx-DV_2x46_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-146-02-xxx-DV, 46 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 92
 92
 Connector_Samtec_HLE_SMD
 Samtec_HLE-147-02-xxx-DV-A_2x47_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-147-02-xxx-DV-A, 47 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 94
 94
 Connector_Samtec_HLE_SMD
 Samtec_HLE-147-02-xxx-DV-BE-A_2x47_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-147-02-xxx-DV-BE-A, 47 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 94
 94
 Connector_Samtec_HLE_SMD
 Samtec_HLE-147-02-xxx-DV-BE-LC_2x47_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-147-02-xxx-DV-BE-LC, 47 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 94
 94
 Connector_Samtec_HLE_SMD
 Samtec_HLE-147-02-xxx-DV-BE_2x47_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-147-02-xxx-DV-BE, 47 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 94
 94
 Connector_Samtec_HLE_SMD
 Samtec_HLE-147-02-xxx-DV-LC_2x47_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-147-02-xxx-DV-LC, 47 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 94
 94
 Connector_Samtec_HLE_SMD
 Samtec_HLE-147-02-xxx-DV_2x47_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-147-02-xxx-DV, 47 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 94
 94
 Connector_Samtec_HLE_SMD
 Samtec_HLE-148-02-xxx-DV-A_2x48_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-148-02-xxx-DV-A, 48 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 96
 96
 Connector_Samtec_HLE_SMD
 Samtec_HLE-148-02-xxx-DV-BE-A_2x48_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-148-02-xxx-DV-BE-A, 48 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 96
 96
 Connector_Samtec_HLE_SMD
 Samtec_HLE-148-02-xxx-DV-BE-LC_2x48_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-148-02-xxx-DV-BE-LC, 48 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 96
 96
 Connector_Samtec_HLE_SMD
 Samtec_HLE-148-02-xxx-DV-BE_2x48_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-148-02-xxx-DV-BE, 48 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 96
 96
 Connector_Samtec_HLE_SMD
 Samtec_HLE-148-02-xxx-DV-LC_2x48_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-148-02-xxx-DV-LC, 48 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 96
 96
 Connector_Samtec_HLE_SMD
 Samtec_HLE-148-02-xxx-DV_2x48_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-148-02-xxx-DV, 48 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 96
 96
 Connector_Samtec_HLE_SMD
 Samtec_HLE-149-02-xxx-DV-A_2x49_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-149-02-xxx-DV-A, 49 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 98
 98
 Connector_Samtec_HLE_SMD
 Samtec_HLE-149-02-xxx-DV-BE-A_2x49_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-149-02-xxx-DV-BE-A, 49 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 98
 98
 Connector_Samtec_HLE_SMD
 Samtec_HLE-149-02-xxx-DV-BE-LC_2x49_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-149-02-xxx-DV-BE-LC, 49 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 98
 98
 Connector_Samtec_HLE_SMD
 Samtec_HLE-149-02-xxx-DV-BE_2x49_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-149-02-xxx-DV-BE, 49 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 98
 98
 Connector_Samtec_HLE_SMD
 Samtec_HLE-149-02-xxx-DV-LC_2x49_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-149-02-xxx-DV-LC, 49 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 98
 98
 Connector_Samtec_HLE_SMD
 Samtec_HLE-149-02-xxx-DV_2x49_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-149-02-xxx-DV, 49 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 98
 98
 Connector_Samtec_HLE_SMD
 Samtec_HLE-150-02-xxx-DV-A_2x50_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-150-02-xxx-DV-A, 50 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 100
 100
 Connector_Samtec_HLE_SMD
 Samtec_HLE-150-02-xxx-DV-BE-A_2x50_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-150-02-xxx-DV-BE-A, 50 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 100
 100
 Connector_Samtec_HLE_SMD
 Samtec_HLE-150-02-xxx-DV-BE-LC_2x50_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-150-02-xxx-DV-BE-LC, 50 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 100
 100
 Connector_Samtec_HLE_SMD
 Samtec_HLE-150-02-xxx-DV-BE_2x50_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-150-02-xxx-DV-BE, 50 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 100
 100
 Connector_Samtec_HLE_SMD
 Samtec_HLE-150-02-xxx-DV-LC_2x50_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-150-02-xxx-DV-LC, 50 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 100
 100
 Connector_Samtec_HLE_SMD
 Samtec_HLE-150-02-xxx-DV_2x50_P2.54mm_Horizontal
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-150-02-xxx-DV, 50 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xxx-dv-xx-xx-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-dv-footprint.pdf), generated with kicad-footprint-generator
-connector Samtec HLE top entry
+connector Samtec HLE horizontal
 0
 100
 100
@@ -47817,6 +47859,20 @@ dcdc traco 5w smd
 6
 6
 Converter_DCDC
+Converter_DCDC_TRACO_TDN_5-xxxxWI_THT
+Traco TDN 5WI Series, 5W (https://www.tracopower.com/sites/default/files/products/datasheets/tdn5wi_datasheet.pdf#page=4)
+dcdc traco 5w
+0
+6
+6
+Converter_DCDC
+Converter_DCDC_TRACO_TEL12-xxxx_THT
+Traco 12W, THT (https://www.tracopower.com/sites/default/files/products/datasheets/tel12_datasheet.pdf)
+traco dcdc tht 12w
+0
+5
+5
+Converter_DCDC
 Converter_DCDC_TRACO_TEN10-xxxx_Dual_THT
 DCDC-Converter, TRACO, TEN10-xxxx, single output, https://assets.tracopower.com/20171102100522/TEN10/documents/ten10-datasheet.pdf
 DCDC-Converter TRACO TEN10-xxxx single output
@@ -49728,6 +49784,13 @@ DFS SO-DIL Slim
 4
 4
 Diode_SMD
+Diode_Bridge_OnSemi_SDIP-4L
+SMD diode bridge OnSemi SDIP-4L, see https://www.onsemi.com/pdf/datasheet/df10s1-d.pdf
+OnSemi Diode Bridge SDIP-4L
+0
+4
+4
+Diode_SMD
 Diode_Bridge_Vishay_DFS
 SMD diode bridge DFS, see http://www.vishay.com/docs/88854/padlayouts.pdf
 DFS
@@ -51310,6 +51373,20 @@ SMD Type 10.7MHz Ceramic Filter https://www.murata.com/en-us/products/filter/cer
 6
 6
 Filter
+Filter_SAW-6_3.8x3.8mm
+6-pin 3.8 x 3.8mm SAW filter package, https://www.golledge.com/media/3785/mp08167.pdf
+SAW filter 6-pin
+0
+6
+6
+Filter
+Filter_SAW-8_3.8x3.8mm
+8-pin 3.8x3.8mm SAW filter, https://www.golledge.com/media/1831/ma05497.pdf
+SAW filter 8-pin
+0
+8
+8
+Filter
 Filter_Schaffner_FN405
 Compact PCB mounting EMI filter (https://www.schaffner.com/de/produkte/download/product/datasheet/fn-405-pcb-mounting-filter/)
 EMI filter
@@ -51912,6 +51989,13 @@ Fuseholder horizontal open 5x20 Stelvio-Kontek PTF/78
 2
 2
 Fuse
+Fuseholder_Cylinder-5x20mm_Wuerth_696103101002-SMD_Horizontal_Open
+Fuseholder horizontal open 5x20mm 250V 10A Würth 696103101002
+Fuseholder horizontal open 5x20mm 250V 10A
+0
+2
+2
+Fuse
 Fuseholder_Cylinder-6.3x32mm_Schurter_0031-8002_Horizontal_Open
 Fuseholder, horizontal, open, 6.3x32, Schurter, 0031.8002, https://www.schurter.com/en/datasheet/typ_OG__Holder__6.3x32.pdf
 Fuseholder horizontal open 6.3x32 Schurter 0031.8002
@@ -51929,6 +52013,48 @@ Fuse
 Fuseholder_Keystone_3555-2
 Maxi APX ATX Automotive Blade Fuse Clip Holder https://www.keyelco.com/userAssets/file/M65p40.pdf
 Maxi APX ATX Automotive Blade Fuse Clip Holder
+0
+4
+2
+Fuse
+Fuseholder_Littelfuse_100_series_5x20mm
+Littelfuse clips, https://www.littelfuse.com/~/media/electronics/datasheets/fuse_clips/littelfuse_fuse_clip_100_445_030_520_datasheet.pdf.pdf
+Fuseholder clips
+0
+4
+2
+Fuse
+Fuseholder_Littelfuse_100_series_5x25mm
+Littelfuse clips, https://www.littelfuse.com/~/media/electronics/datasheets/fuse_clips/littelfuse_fuse_clip_100_445_030_520_datasheet.pdf.pdf
+Fuseholder clips
+0
+4
+2
+Fuse
+Fuseholder_Littelfuse_100_series_5x30mm
+Littelfuse clips, https://www.littelfuse.com/~/media/electronics/datasheets/fuse_clips/littelfuse_fuse_clip_100_445_030_520_datasheet.pdf.pdf
+Fuseholder clips
+0
+4
+2
+Fuse
+Fuseholder_Littelfuse_445_030_series_5x20mm
+Littelfuse clips, https://www.littelfuse.com/~/media/electronics/datasheets/fuse_clips/littelfuse_fuse_clip_100_445_030_520_datasheet.pdf.pdf
+Fuseholder clips
+0
+4
+2
+Fuse
+Fuseholder_Littelfuse_445_030_series_5x25mm
+Littelfuse clips, https://www.littelfuse.com/~/media/electronics/datasheets/fuse_clips/littelfuse_fuse_clip_100_445_030_520_datasheet.pdf.pdf
+Fuseholder clips
+0
+4
+2
+Fuse
+Fuseholder_Littelfuse_445_030_series_5x30mm
+Littelfuse clips, https://www.littelfuse.com/~/media/electronics/datasheets/fuse_clips/littelfuse_fuse_clip_100_445_030_520_datasheet.pdf.pdf
+Fuseholder clips
 0
 4
 2
@@ -52388,6 +52514,13 @@ Bourns SRP1245A SMD inductor
 2
 2
 Inductor_SMD
+L_Bourns_SRP1770TA_16.9x16.9mm
+Bourns SRP1770TA series SMD Inductor http://www.bourns.com/docs/Product-Datasheets/SRP1770TA.pdf
+Bourns SRP1770TA series SMD Inductor 
+0
+2
+2
+Inductor_SMD
 L_Bourns_SRP2313AA
 Bourns SRR1260 series SMD inductor http://www.bourns.com/docs/product-datasheets/srp2313aa.pdf
 Bourns SRR1260 SMD inductor
@@ -52811,6 +52944,13 @@ Inductor_SMD
 L_Pulse_PA4320
 Inductor SMD Pulse PA4320 http://productfinder.pulseeng.com/products/datasheets/P787.pdf
 Inductor SMD Pulse PA4320
+0
+2
+2
+Inductor_SMD
+L_Pulse_PA4344
+Pulse PA4344 / PM4344 Series SMD Inductors https://productfinder.pulseelectronics.com/api/public/uploads/product-attachments/datasheet_p771_1608107700.pdf
+Pulse PA4344 PM4344 Series SMD Inductors
 0
 2
 2
@@ -55330,28 +55470,28 @@ L_Toroid Vertical series Radial pin pitch 31.80mm  length 67.6mm width 36.1mm Vi
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
-solder jumper open
+net tie solder jumper bridged
 0
 2
 2
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 2 copper strips
-solder jumper open
+net tie solder jumper bridged
 0
 2
 2
 Jumper
 SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 1 copper strip
-solder jumper open
+net tie solder jumper bridged
 0
 2
 2
 Jumper
 SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip
-solder jumper open
+net tie solder jumper bridged
 0
 2
 2
@@ -55379,56 +55519,56 @@ solder jumper open
 Jumper
 SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm
 SMD Solder 3-pad Jumper, 1x1.5mm Pads, 0.3mm gap, pads 1-2 Bridged2Bar with 2 copper strip
-solder jumper open
+net tie solder jumper bridged
 0
 3
 3
 Jumper
 SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, pads 1-2 Bridged2Bar with 2 copper strip, labeled with numbers
-solder jumper open
+net tie solder jumper bridged
 0
 3
 3
 Jumper
 SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm
 SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 Bridged2Bar with 2 copper strip
-solder jumper open
+net tie solder jumper bridged
 0
 3
 3
 Jumper
 SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels
 SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 Bridged2Bar with 2 copper strip, labeled with numbers
-solder jumper open
+net tie solder jumper bridged
 0
 3
 3
 Jumper
 SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm
 SMD Solder 3-pad Jumper, 1x1.5mm Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip
-solder jumper open
+net tie solder jumper bridged
 0
 3
 3
 Jumper
 SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip, labeled with numbers
-solder jumper open
+net tie solder jumper bridged
 0
 3
 3
 Jumper
 SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm
 SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip
-solder jumper open
+net tie solder jumper bridged
 0
 3
 3
 Jumper
 SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels
 SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip, labeled with numbers
-solder jumper open
+net tie solder jumper bridged
 0
 3
 3
@@ -55650,6 +55790,13 @@ LED Avago PLCC-6 ASMT-YTB7-0AA02
 6
 6
 LED_SMD
+LED_CSP_Samsung_LH181B_2.36x2.36mm
+High Power CSP LED, 2.36mm x 2.36mm, 1.4A max, https://cdn.samsung.com/led/file/resource/2021/01/Data_Sheet_LH181B_Rev.4.0.pdf
+LED Samsung LH181B
+0
+2
+2
+LED_SMD
 LED_Cree-PLCC4_2x2mm_CW
 2.0mm x 2.0mm PLCC4 LED, http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/HB/Data-Sheets/CLMVBFKA.pdf
 LED Cree PLCC-4
@@ -55810,6 +55957,13 @@ LED RGB
 0
 4
 4
+LED_SMD
+LED_Luminus_MP-3030-1100_3.0x3.0mm
+Mid Power LED, Luminus MP-3030-1100, 3.0x3.0mm, 816mW, https://download.luminus.com/datasheets/Luminus_MP3030_1100_Datasheet.pdf
+LED Luminus MP-3030-1100
+0
+5
+2
 LED_SMD
 LED_Osram_Lx_P47F_D2mm_ReverseMount
 OSRAM, reverse-mount LED, SMD, 2mm diameter, http://www.farnell.com/datasheets/2711587.pdf
@@ -61271,6 +61425,20 @@ LFCSP NoLead
 59
 33
 Package_CSP
+LFCSP-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm
+LFCSP, 32 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ADV7280.PDF#page=28), generated with kicad-footprint-generator ipc_noLead_generator.py
+LFCSP NoLead
+0
+37
+33
+Package_CSP
+LFCSP-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias
+LFCSP, 32 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ADV7280.PDF#page=28), generated with kicad-footprint-generator ipc_noLead_generator.py
+LFCSP NoLead
+0
+47
+33
+Package_CSP
 LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm
 32-Lead Frame Chip Scale Package LFCSP (5mm x 5mm); (see http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-32/CP_32_27.pdf
 LFCSP 0.5
@@ -61857,6 +62025,13 @@ DFN, 8 Pin (https://www.onsemi.com/pub/Collateral/NUF4401MN-D.PDF#page=6), gener
 DFN NoLead
 0
 13
+9
+Package_DFN_QFN
+DFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.6mm
+DFN, 8 Pin (https://www.qorvo.com/products/d/da007268), generated with kicad-footprint-generator ipc_noLead_generator.py
+DFN NoLead
+0
+10
 9
 Package_DFN_QFN
 DFN-8-1EP_2x2mm_P0.5mm_EP0.9x1.3mm
@@ -63805,6 +63980,20 @@ QFN NoLead
 127
 65
 Package_DFN_QFN
+QFN-64-1EP_9x9mm_P0.5mm_EP3.4x3.4mm
+QFN, 64 Pin (www.intel.com/content/www/us/en/ethernet-controllers/i210-ethernet-controller-datasheet.html), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+74
+65
+Package_DFN_QFN
+QFN-64-1EP_9x9mm_P0.5mm_EP3.4x3.4mm_ThermalVias
+QFN, 64 Pin (www.intel.com/content/www/us/en/ethernet-controllers/i210-ethernet-controller-datasheet.html), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+79
+65
+Package_DFN_QFN
 QFN-64-1EP_9x9mm_P0.5mm_EP3.8x3.8mm
 QFN, 64 Pin (https://datasheet.lcsc.com/szlcsc/Realtek-Semicon-RTL8211EG-VB-CG_C69264.pdf#page=77), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
@@ -65170,6 +65359,20 @@ VQFN NoLead
 66
 47
 Package_DFN_QFN
+VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm
+VQFN, 48 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/48L_VQFN_6x6mm_6LX_C04-00494a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead
+0
+58
+49
+Package_DFN_QFN
+VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm_ThermalVias
+VQFN, 48 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/48L_VQFN_6x6mm_6LX_C04-00494a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead
+0
+75
+49
+Package_DFN_QFN
 VQFN-48-1EP_7x7mm_P0.5mm_EP4.1x4.1mm
 VQFN, 48 Pin (http://www.ti.com/lit/ds/symlink/cc430f5137.pdf#page=128), generated with kicad-footprint-generator ipc_noLead_generator.py
 VQFN NoLead
@@ -65210,6 +65413,20 @@ VQFN, 64 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/PIC16LF19195-6-7-D
 VQFN NoLead
 0
 100
+65
+Package_DFN_QFN
+VQFN-64-1EP_9x9mm_P0.5mm_EP7.15x7.15mm
+VQFN, 64 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/64L_QFN_9x9_MR_C04-00149e.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead
+0
+74
+65
+Package_DFN_QFN
+VQFN-64-1EP_9x9mm_P0.5mm_EP7.15x7.15mm_ThermalVias
+VQFN, 64 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/64L_QFN_9x9_MR_C04-00149e.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead
+0
+91
 65
 Package_DFN_QFN
 WDFN-6-2EP_4.0x2.6mm_P0.65mm
@@ -67591,6 +67808,13 @@ Texas MicroSiP NoLead
 0
 18
 11
+Package_LGA
+VLGA-4_2x2.5mm_P1.65mm
+VLGA, 4 Pin (https://ww1.microchip.com/downloads/en/DeviceDoc/DSC60XX-Ultra-Small-Ultra-Low-Power-MEMS-Oscillator-DS20005625C.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VLGA NoLead
+0
+4
+4
 Package_QFP
 EQFP-144-1EP_20x20mm_P0.5mm_EP4x4mm
 EQFP, 144 Pin (https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/packaging/04r00482-02.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -67892,6 +68116,13 @@ MQFP QFP
 0
 44
 44
+Package_QFP
+PQFP-32_5x5mm_P0.5mm
+PQFP, 32 Pin (https://www.ti.com/lit/ds/symlink/ads127l01.pdf#page=87), generated with kicad-footprint-generator ipc_gullwing_generator.py
+PQFP QFP
+0
+32
+32
 Package_QFP
 PQFP-44_10x10mm_P0.8mm
 44-Lead Plastic Quad Flatpack - 10x10x2.5mm Body (http://www.onsemi.com/pub/Collateral/122BK.PDF)
@@ -68439,6 +68670,13 @@ HTSSOP SO
 21
 17
 Package_SO
+HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP2.74x3.86mm
+HTSSOP, 20 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/4011fb.pdf#page=24), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HTSSOP SO
+0
+23
+21
+Package_SO
 HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP2.85x4mm
 HTSSOP, 20 Pin (https://pdfserv.maximintegrated.com/package_dwgs/21-0108.PDF U20E-1), generated with kicad-footprint-generator ipc_gullwing_generator.py
 HTSSOP SO
@@ -68836,6 +69074,20 @@ MSOP, 10 Pin (www.allegromicro.com/~/media/Files/Datasheets/A4952-3-Datasheet.as
 MSOP SO
 0
 20
+11
+Package_SO
+MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm
+MSOP, 10 Pin (https://www.ti.com/lit/ds/symlink/xtr111.pdf#page=27), generated with kicad-footprint-generator ipc_gullwing_generator.py
+MSOP SO
+0
+16
+11
+Package_SO
+MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias
+MSOP, 10 Pin (https://www.ti.com/lit/ds/symlink/xtr111.pdf#page=27), generated with kicad-footprint-generator ipc_gullwing_generator.py
+MSOP SO
+0
+23
 11
 Package_SO
 MSOP-10_3x3mm_P0.5mm
@@ -69984,6 +70236,13 @@ TSSOP28: plastic thin shrink small outline package; 28 leads; body width 4.4 mm;
 SSOP 0.65
 0
 36
+29
+Package_SO
+TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.85x6.7mm
+TSSOP, 28 Pin (JEDEC MO-153 Var AET Pkg.Code U28E-4 https://pdfserv.maximintegrated.com/package_dwgs/21-0108.PDF), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSSOP SO
+0
+35
 29
 Package_SO
 TSSOP-28_4.4x7.8mm_P0.5mm
@@ -82922,6 +83181,13 @@ Transformer Ethernet SMD
 24
 24
 Transformer_SMD
+Transformer_Ethernet_Wuerth_749013011A
+Ethernet Transformer, Wuerth 749013011A, https://www.we-online.com/katalog/datasheet/749013011A.pdf
+Ethernet Transformer
+0
+16
+16
+Transformer_SMD
 Transformer_MACOM_SM-22
 https://cdn.macom.com/datasheets/ETC1-1-13.pdf
 RF Transformer
@@ -84189,8 +84455,22 @@ Fuse
 2
 2
 footprints
+178780-1
+
+
+0
+80
+76
+footprints
 C0603
 
+
+0
+2
+2
+footprints
+C0805
+Capacitor SMD 0805
 
 0
 2
@@ -84231,6 +84511,13 @@ LOGO
 0
 0
 footprints
+Molex-39301020
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-02A2, example for new mpn: 39-30-0020, 1 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryplastic_peg
+0
+2
+2
+footprints
 PAD-0805-PAD
 
 
@@ -84258,6 +84545,13 @@ PROTO_AREA
 0
 15
 15
+footprints
+PinHeader_1x06_P2.54mm_Vertical
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
 footprints
 R0603
 
@@ -84301,6 +84595,13 @@ PowerSO20
 23
 23
 footprints
+SOD-123
+SOD-123
+SOD-123
+0
+2
+2
+footprints
 SOD-323
 
 
@@ -84321,7 +84622,21 @@ usb mini receptacle vertical
 0
 7
 6
+footprints
+USB_B
+USB B receptacle, Horizontal, through-hole, http://www.on-shore.com/wp-content/uploads/2015/09/usb-b1hsxx.pdf
+USB-B receptacle horizontal through-hole
+0
+6
+5
 hellen-one-wbo-0.2
+wbo
+
+
+0
+34
+21
+hellen-one-wbo-0.3
 wbo
 
 
