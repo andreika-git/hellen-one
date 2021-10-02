@@ -2,6 +2,8 @@
 
 All notable changes will be documented in this file.
 
+## added initial support for bottom-placed modules (alpha-version)
+
 ## wbo-0.3
   - Added Q601 in TO-220 (TH package) in case if Q600 is not in stock
   - Changed one of the pads in the module footprint: remove one trace from the parent frame and re-fill
