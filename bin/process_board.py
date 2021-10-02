@@ -69,8 +69,10 @@ def write_lines(f, lines):
 		for l in lines:
 			f.write(l + "\n")
 
-def print_module(name, prefix, fileName, isBoard, isBottom):
-	if isBottom:
+def print_module(name, prefixPath, moduleName, fileName, isBoard, isBottom):
+	prefix = prefixPath + "/" + moduleName
+	# swap the layers for bottom-placed modules
+	if (isBottom):
 		top = "Bottom"
 		bottom = "Top"
 	else:
@@ -95,6 +97,7 @@ def print_module(name, prefix, fileName, isBoard, isBottom):
 				"*InnerLayer3=%(prefix)s.G2"])
 		if (isBoard == 1):
 			write_lines(file, [
+				"*" + bottom + "SolderPasteMask=%(prefix)s.GBP",
 				"ToolList = %(prefix)s.tmp",
 				"Placement = %(prefix)s.tmp",
 				"BoardOutline = %(prefix)s.tmp"])
@@ -228,10 +231,10 @@ print_to_file(board_cfg_path, "w", [
 		"FixedRotationOrigin = 1"])
 
 # board gerbers
-print_module("MergeOutputFiles", merged_gerber_path + "/" + board_name, board_cfg_path, 1, 0)
+print_module("MergeOutputFiles", merged_gerber_path, board_name, board_cfg_path, 1, 0)
 
 # frame gerbers
-print_module(frame_name, frame_path + "/" + frame_name, board_cfg_path, 0, 0)
+print_module(frame_name, frame_path, frame_name, board_cfg_path, 0, 0)
 
 # the frame should always have zero coordinates, matching the left-bottom keepout border
 print_to_file(board_place_path, "w", frame_name + " 0.000 0.000")
@@ -296,9 +299,11 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 
 							# add module gerbers
 							module_path = "modules/" + module_name + "/" + module_rev
-							print_module(module_unique_name, module_path + "/" + module_name, board_cfg_path, 0, lay == "Bottom")
+							print_module(module_unique_name, module_path, module_name, board_cfg_path, 0, lay == "Bottom")
 							irot = int(float(rot) + 360.0) % 360
 							rotated = ("*rotated" + str(irot)) if (irot != 0) else ""
+							if (lay == "Bottom"):
+								rotated += "*flippedV"
 							# write abs. coords
 							print_to_file(board_place_path, "a", module_unique_name + rotated + " " + str(x_inch) + " " + str(y_inch))
 
