@@ -26,10 +26,11 @@ fragments = []
 with open(mergePlaceFile, 'rb') as fmp:
 	for line in fmp:
 		m = line.split()
-		name_and_rot = m[0].split('*rotated') # split the name and rotation parts
+		name_and_rot = re.split(r'\*rotated|\*flipped', m[0]) # split the name and rotation/flip parts
 		name = name_and_rot[0]
 		rot = name_and_rot[1] if len(name_and_rot) > 1 else "0"
-		m = {"name": name, "x": m[1], "y": m[2], "rot": rot, "path": config[name]["Prefix"] }
+		flip = name_and_rot[2] if len(name_and_rot) > 2 else ""
+		m = {"name": name, "x": m[1], "y": m[2], "rot": rot, "flip": flip, "path": config[name]["Prefix"] }
 		fragments.append(m)
 
 print ("* Starting merge of " + str(len(fragments)) + " board fragments...")
@@ -47,12 +48,12 @@ for frag in fragments:
 	off_x_mm = float(frag["x"]) * 25.4
 	off_y_mm = float(frag["y"]) * 25.4
 	rot = float(frag["rot"])
+	invertZ = -1.0 if (frag["flip"] == "V") else 1.0
 	fileName = frag["path"] + "-vrml.wrl"
-	z_offset = 0
 	was_global_transform = False
 	fragId = str(fId).zfill(2)
 	
-	print ("* Adding " + frag["name"] + " (" + fileName + ") at (" + str(off_x_mm) + "," + str(off_y_mm) + "), rot=" + str(rot) + "...")
+	print ("* Adding " + frag["name"] + " (" + fileName + ") at (" + str(off_x_mm) + "," + str(off_y_mm) + "), rot=" + str(rot) + ", invZ=" + str(invertZ) + "...")
 	with open(fileName, 'rb') as f:
 		for line in f:
 			line = line.rstrip()
@@ -61,16 +62,21 @@ for frag in fragments:
 				continue
 			# add global transformation for the module
 			if not was_global_transform:
+				z_offset = 0
+				# todo: the board is 1.6 mm thick?
+				board_thickness = 1.6
 				# for bottom-aligned kicad VRML files, we need to shift them down - to align it with the top surface of the board
 				if pat_kicad_transform.match(line):
 					print ("* Kicad VRML detected!")
-					# the board is 1.6 mm thick?
 					# todo: this is a 'hack'
-					z_offset = -1.6
+					z_offset = -board_thickness
+				# for upside-down modules, the offset needs to be reversed
+				if (invertZ < 0):
+					z_offset = -board_thickness - z_offset
 				outf.write("DEF TX" + frag["name"].replace('-', '') + " Transform {\n")
 				outf.write("  center 0 0 0\n")
 				outf.write("  rotation 0 0 1 " + str(math.radians(rot)) + "\n")
-				outf.write("  scale 1.0 1.0 1.0\n")
+				outf.write("  scale 1.0 " + str(invertZ) + " " + str(invertZ) + "\n")
 				outf.write("  scaleOrientation 0 0 1 0\n")
 				outf.write("  translation " + str(off_x_mm) + " " + str(off_y_mm) + " " + str(z_offset) + "\n")
 				outf.write(" children [\n")
