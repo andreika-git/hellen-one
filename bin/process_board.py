@@ -104,7 +104,7 @@ def print_module(name, prefixPath, moduleName, fileName, isBoard, isBottom):
 		else:
 			write_lines(file, "BoardOutline=%(prefix)s.GM15")
 
-def append_cpl(src_fname, dst_fname, x, y, mrot, suffix = ""):
+def append_cpl(src_fname, dst_fname, x, y, mrot, isBottom, suffix = ""):
 	print ("* appending the CPL with offset (" + str(x) + "," + str(y) + ")...")
 	with open(src_fname, 'rb') as src_f, open(dst_fname, 'a') as dst_f:
 		reader = csv.reader(src_f, delimiter=',')
@@ -138,6 +138,12 @@ def append_cpl(src_fname, dst_fname, x, y, mrot, suffix = ""):
 			# rotate the footprint
 			rot = float(rot) + float(mrot)
 			rot = str(rot % 360.0)
+
+			# swap layers for bottom-placed modules
+			if (isBottom):
+				lay = "Bottom" if (lay.lower() == "top") else "Top"
+				# invert Y-coordinate (vertical flip)
+				rxy[1] = -rxy[1]
 
 			# offset the coordinates
 			x_offset = rxy[0] + float(x)
@@ -243,7 +249,7 @@ print_to_file(board_place_path, "w", frame_name + " 0.000 0.000")
 print_to_file(board_cpl, "w", ["Designator,Mid X,Mid Y,Layer,Rotation"])
 print_to_file(board_bom, "w", ["Comment,Designator,Footprint,LCSC Part #"])
 
-append_cpl(frame_path + "/" + frame_name + "-CPL.csv", board_cpl, "0", "0", "0")
+append_cpl(frame_path + "/" + frame_name + "-CPL.csv", board_cpl, "0", "0", "0", 0)
 append_bom(frame_path + "/" + frame_name + "-BOM.csv", board_bom)
 
 schem_list = [frame_path + "/" + frame_name + "-schematic.pdf"]
@@ -288,6 +294,7 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 							rot = cpl_row[4]
 							xmm = cpl_row[5]
 							ymm = cpl_row[6]
+							isBottom = (lay == "Bottom")
 							# remove "mm" suffix
 							x = float(xmm.replace("mm", ""))
 							y = float(ymm.replace("mm", ""))
@@ -299,15 +306,15 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 
 							# add module gerbers
 							module_path = "modules/" + module_name + "/" + module_rev
-							print_module(module_unique_name, module_path, module_name, board_cfg_path, 0, lay == "Bottom")
+							print_module(module_unique_name, module_path, module_name, board_cfg_path, 0, isBottom)
 							irot = int(float(rot) + 360.0) % 360
 							rotated = ("*rotated" + str(irot)) if (irot != 0) else ""
-							if (lay == "Bottom"):
+							if (isBottom):
 								rotated += "*flippedV"
 							# write abs. coords
 							print_to_file(board_place_path, "a", module_unique_name + rotated + " " + str(x_inch) + " " + str(y_inch))
 
-							append_cpl(module_path + "/" + module_name + "-CPL.csv", board_cpl, x, y, rot, module_suffix)
+							append_cpl(module_path + "/" + module_name + "-CPL.csv", board_cpl, x, y, rot, isBottom, module_suffix)
 
 							append_bom(module_path + "/" + module_name + "-BOM.csv", board_bom, module_suffix)
 
