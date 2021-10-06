@@ -1,15 +1,16 @@
 #!/bin/bash
 
 ############################################################################################
-# Hellen-One: A Hellen board creation script.
+# Hellen-One: A board creation script with custom (non-hellen) board prefix.
 # (c) andreika <prometheus.pcb@gmail.com>
 ############################################################################################
 
-project_base="$1"
-frame_name="$2"
-frame_rev="$3"
-bom_replace="$4"
-comp_img_offset="$5"
+board_prefix="$1"
+project_base="$2"
+frame_name="$3"
+frame_rev="$4"
+bom_replace="$5"
+comp_img_offset="$6"
 
 python_bin="python2.7"
 
@@ -30,8 +31,8 @@ if ! ./bin/check_all.sh; then
 	exit 2
 fi
 
-echo "Processing Hellen board..."
-if ! $python_bin bin/process_board.py "hellen" ${project_base} ${frame_name} ${frame_rev} ${bom_replace} ${comp_img_offset}; then
+echo "Processing ${board_prefix} board..."
+if ! $python_bin bin/process_board.py ${board_prefix} ${project_base} ${frame_name} ${frame_rev} ${bom_replace} ${comp_img_offset}; then
 	echo "ABORTING!"
 	exit 3
 else

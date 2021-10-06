@@ -2,7 +2,9 @@
 
 All notable changes will be documented in this file.
 
-## added initial support for bottom-placed modules (alpha-version)
+## added support for custom board prefixes
+
+## added support for bottom-placed modules (beta-version)
 
 ## wbo-0.3
   - Added Q601 in TO-220 (TH package) in case if Q600 is not in stock

@@ -10,25 +10,24 @@ import os, sys, shutil, errno
 import csv, re
 import subprocess
 
-if len(sys.argv) < 4:
-	print ("Error! Please specify the project base name, frame name, revision and optional BOM replacement file.")
+if len(sys.argv) < 5:
+	print ("Error! Please specify the board prefix, project base name, frame name, revision and optional BOM replacement file.")
 	sys.exit(1)
 
-project_base_path = sys.argv[1]
-frame_name = sys.argv[2]
-frame_rev = sys.argv[3]
+board_prefix = sys.argv[1]
+project_base_path = sys.argv[2]
+frame_name = sys.argv[3]
+frame_rev = sys.argv[4]
 
-if len(sys.argv) > 4:
-	bom_replace_csv = sys.argv[4]
+if len(sys.argv) > 5:
+	bom_replace_csv = sys.argv[5]
 else:
 	bom_replace_csv = ""
 
-if len(sys.argv) > 5:
-	comp_img_offset = sys.argv[5]
+if len(sys.argv) > 6:
+	comp_img_offset = sys.argv[6]
 else:
 	comp_img_offset = "0,0"
-
-board_prefix = "hellen"
 
 imageDpi = "600"
 
