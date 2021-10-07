@@ -21,11 +21,15 @@ gerber_rel_path = sys.argv[3]
 name = sys.argv[4]
 rev = sys.argv[5]
 
+prefix = "hellen"
+if (":" in type):
+    (type, prefix) = type.split(":")
+
 if (type == "frames"):
-    base_path = project_base + "/hellen" + name + "/boards/hellen" + name + "-" + rev
+    base_path = project_base + "/" + prefix + name + "/boards/" + prefix + name + "-" + rev
     src_path = base_path + "/" + gerber_rel_path
     dst_path = base_path + "/frame"
-    src_name = src_path + "/hellen" + name
+    src_name = src_path + "/" + prefix + name
     dst_name = dst_path + "/" + name
 else: # modules
     src_path = project_base + "/hellen1-" + name + "/" + gerber_rel_path
