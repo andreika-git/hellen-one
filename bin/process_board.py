@@ -331,6 +331,7 @@ p = subprocess.Popen([sys.executable, "bin/gerbmerge/gerbmerge",
 	stdin=subprocess.PIPE)
 # pass 'y' symbol to the subprocess as if a user pressed 'yes'
 p.communicate(input='y\n')[0]
+check_returncode(p.returncode)
 
 print ("Post-processing BOM...")
 try:
