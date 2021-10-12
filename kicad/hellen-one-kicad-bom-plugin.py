@@ -58,5 +58,8 @@ writerow( out, ['Comment', 'Designator', 'Footprint', 'LCSC Part #'] )
 
 # Output all of the component information (One component per row)
 for c in components:
-    writerow( out, [c.getValue(), c.getRef(), c.getFootprint(), c.getField("LCSC")])
+    lcsc = c.getField("LCSC")
+    if (c.getField("MyComment") == "DNP"):
+        lcsc = ""
+    writerow( out, [c.getValue(), c.getRef(), c.getFootprint(), lcsc])
 
