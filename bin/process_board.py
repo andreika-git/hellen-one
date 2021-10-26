@@ -233,7 +233,9 @@ print_to_file(board_cfg_path, "w", [
 		"ExcellonLeadingZeros = 0",
 		"MeasurementUnits = inch",
 		"AllowMissingLayers = 1",
-		"FixedRotationOrigin = 1"])
+		"FixedRotationOrigin = 1",
+		"PanelWidth = 19.6",
+		"PanelHeight = 15.7"])
 
 # board gerbers
 print_module("MergeOutputFiles", merged_gerber_path, board_name, board_cfg_path, 1, 0)
