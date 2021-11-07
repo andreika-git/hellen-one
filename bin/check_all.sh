@@ -97,6 +97,7 @@ function check_library {
 	  if ! command -v pkg-config >/dev/null 2>&1 ; then
 	    echo "* Missing pkg-config"
 	    echo "* TODO auto-install that dependency!"
+	    exit -1
 	  fi
 
 		lib=$(pkg-config --libs $2 2>&1 | grep -Po '(\-l'$1')')
