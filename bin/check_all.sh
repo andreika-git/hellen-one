@@ -94,6 +94,11 @@ fi
 function check_library {
 	echo "* Checking $1..."
 	while true; do
+	  if ! command -v pkg-config >/dev/null 2>&1 ; then
+	    echo "* Missing pkg-config"
+	    echo "* TODO auto-install that dependency!"
+	  fi
+
 		lib=$(pkg-config --libs $2 2>&1 | grep -Po '(\-l'$1')')
 		if [[ -z "$lib" ]] ; then
 			echo "Error! Library $1 NOT FOUND!"
