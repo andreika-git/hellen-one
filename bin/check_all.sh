@@ -88,8 +88,23 @@ python_ver=$($python_bin -V 2>&1 | grep -Po '(?<=Python )(.+)')
 if [[ -z "$python_ver" ]] || [[ ! $python_ver =~ ^2\.7.* ]] ; then
     echo "Error! Python 2.7.x is required. It should be installed and added to the PATH!"
     install_package python2
+	apt-get install python-dev
+    apt-get install build-essential
+	apt install python-pip
+	apt install curl
+    curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+    python2 get-pip.py
+	pip2 --version
+	pip install pcb-tools
 fi
-
+	apt-get install python-dev
+    apt-get install build-essential
+	apt install python-pip
+	apt install curl
+    curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+    python2 get-pip.py
+	pip2 --version
+	pip install pcb-tools
 # $1 = name, $2 = library name, $3 = package name
 function check_library {
 	echo "* Checking $1..."
@@ -112,6 +127,23 @@ function check_library {
 }
 
 echo "* Python $python_ver detected!"
+
+
+#-----------------------------------------------
+echo "Checking if Node.js is installed..."
+node_bin="node"
+node_ver=$($node_bin -v 2>&1 | grep -Po '(v[0-9]+.*)')
+if [[ -z "$node_ver" ]] ; then
+    #echo "Error! This script requires Node.Js installed in PATH!"
+    #echo "Please download and install it from here: https://nodejs.org/en/download/"
+	sudo apt install -y nodejs npm
+	node -v
+	npm -v
+
+fi
+#------------------------------------------------
+
+
 
 echo "Updating git submodules for scripts..."
 git submodule update --init -- bin/gerbmerge bin/python-combine-pdfs bin/InteractiveHtmlBom bin/pcb-tools
@@ -164,15 +196,22 @@ echo "Checking if Node.js is installed..."
 node_bin="node"
 node_ver=$($node_bin -v 2>&1 | grep -Po '(v[0-9]+.*)')
 if [[ -z "$node_ver" ]] ; then
-    echo "Error! This script requires Node.Js installed in PATH!"
-    echo "Please download and install it from here: https://nodejs.org/en/download/"
+    #echo "Error! This script requires Node.Js installed in PATH!"
+    #echo "Please download and install it from here: https://nodejs.org/en/download/"
+	sudo apt install -y nodejs npm
+	node -v
+	npm -v
+
     exit 1
 fi
 
 echo "* Node.js $node_ver detected!"
 
 echo "Checking Node.js packages..."
-pushd ./bin/render_vrml > /dev/null
+#pushd ./bin/render_vrml > /dev/null
+pushd () {
+    command pushd "./bin/render_vrml" > /dev/null
+}
 for package in 'puppeteer' 'pngjs' 'fs' 'zlib'; do
 	if [ `npm list --depth=0 | grep -c "\-\- ${package}"` -eq 1 ]; then
 	    echo "* Checking Node.js module '$package': OK"
@@ -188,7 +227,10 @@ for package in 'puppeteer' 'pngjs' 'fs' 'zlib'; do
 		done
 	fi
 done
-popd > /dev/null
+#popd > /dev/null
+popd () {
+    command popd "$@" > /dev/null
+}
 
 echo "All checks done!"
 
