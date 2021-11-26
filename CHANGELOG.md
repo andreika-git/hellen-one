@@ -2,6 +2,12 @@
 
 All notable changes will be documented in this file.
 
+## output-0.3
+  - TC4427 output protection: Added R312, R316, C301, C302
+  - MCU protection from TC4427 failure: Added R311, R314; Changed R307, R308
+  - Changed C300 C0805->C0603 (same capacity & voltage rating)
+  - Added silkscreen for +12V/+5V supply voltage selection jumpers for push-pull outputs
+
 ## added support for custom board prefixes
 
 ## added support for bottom-placed modules (beta-version)
