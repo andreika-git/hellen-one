@@ -80,6 +80,21 @@ function install_package {
 		sudo apt-get install $1
 	fi
 }
+### The Installation only for Linux environment ####
+  if [[ "${machine}" = "linux" ]]; then 
+	sudo apt-get install python-dev
+    sudo apt-get install build-essential
+	sudo apt install python-pip
+	sudo apt install curl
+    sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+    sudo python2 get-pip.py
+	sudo pip2 --version
+	sudo pip install pcb-tools
+	sudo apt install -y nodejs npm
+	sudo node -v
+	sudo npm -v
+fi
+###################### 
 
 echo "Checking the Python version..."
 # check python version - should be 2.x ONLY
