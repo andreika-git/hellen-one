@@ -33,8 +33,8 @@
   (fp_line (start 0.65 -1.45) (end 0.65 1.45) (layer "F.Fab") (width 0.1) (tstamp 81bc57de-e027-4446-a631-3a14fe5b6eae))
   (fp_line (start 0.65 1.45) (end -0.65 1.45) (layer "F.Fab") (width 0.1) (tstamp e5b960e5-3ce2-49b8-a4a6-db3a5080a640))
   (pad "1" smd roundrect (at -0.9375 -0.95) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 33b32060-0929-45a0-b6d7-1737aabc6a06))
-  (pad "2" smd roundrect (at -0.9375 0.95) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 33d261e0-f766-4be7-92cb-fda574df9969))
-  (pad "3" smd roundrect (at 0.9375 0) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 3a212e44-5c50-470d-a8bf-1580c21f57e7))
+  (pad "2" smd roundrect (at 0.9375 0) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 3a212e44-5c50-470d-a8bf-1580c21f57e7))
+  (pad "3" smd roundrect (at -0.9375 0.95) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 33d261e0-f766-4be7-92cb-fda574df9969))
   (model ":hellen-one-models:SOT-23.STEP"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
