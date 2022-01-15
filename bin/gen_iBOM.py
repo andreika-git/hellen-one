@@ -183,8 +183,8 @@ def updateBbox(bbox, padXY, padWH):
 def readFootprint(fpname, footprintsPath, des):
 	if not fpname:
 		return None
-	pat_module = re.compile(r'\(module\s+([\w\-]+)\s+\(layer ([FB])')
-	pat_pad = re.compile(r'^\s*\(pad\s+([0-9]+)\s+(\w+)\s+(\w+)\s+\(at\s+([+\-0-9e\.]+)\s+([+\-0-9e\.]+)\s*([+\-0-9\.]+)?\)\s+\(size\s+([+\-0-9\.]+)\s+([+\-0-9\.]+)\)(\s*\(drill\s+([+\-0-9\.]+)\))?\s+\(layer[s]?\s+([^\)]+)\)(\s*\(roundrect_rratio\s+([+\-0-9\.]+)\))?')
+	pat_module = re.compile(r'\(module\s+\"?([\w\-\.]+)\"?\s+\(layer\s+\"?([FB])')
+	pat_pad = re.compile(r'^\s*\(pad\s+\"?([0-9]+)\"?\s+(\w+)\s+(\w+)\s+\(at\s+([+\-0-9e\.]+)\s+([+\-0-9e\.]+)\s*([+\-0-9\.]+)?\)\s+\(size\s+([+\-0-9\.]+)\s+([+\-0-9\.]+)\)(\s*\(drill\s+([+\-0-9\.]+)\))?\s+\(layer[s]?\s+\"?([^\)]+)\)(\s*\(roundrect_rratio\s+([+\-0-9\.]+)\))?')
 
 	fpFileName = footprintsPath + "/" + fpname + ".kicad_mod"
 	print("* Reading " + fpFileName)
@@ -232,7 +232,6 @@ def readFootprint(fpname, footprintsPath, des):
 	json["bbox"] = { 
 		"relpos": bbox[0], 
 		"size": [bbox[1][0] - bbox[0][0], bbox[1][1] - bbox[0][1]], 
-		"offset": [(bbox[1][0] + bbox[0][0]) * 0.5, (bbox[1][1] + bbox[0][1]) * 0.5]
 	}
 	return json
 
@@ -240,7 +239,8 @@ def getPosValue(c):
 	return float(c.replace("mm", ""))
 
 def rotate(origin, point, angle):
-	angleRad = math.radians(angle)
+	# the angle is inverted because the Y-axis is inverted
+	angleRad = math.radians(-angle)
 	[ox, oy] = origin
 	[px, py] = point
 
@@ -310,17 +310,13 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 					if re.match(rot, fpname):
 						rotation = -rotations[rot]
 				fpr["bbox"]["angle"] += rotation
+				fpr["bbox"]["pos"][1] = yInvert - fpr["bbox"]["pos"][1]
 				for p in range(len(fpr["pads"])):
 					# move and rotate the pads according to the CPL data
-					fpr["pads"][p]["pos"][0] -= fpr["bbox"]["offset"][0]
-					fpr["pads"][p]["pos"][1] -= fpr["bbox"]["offset"][1]
 					fpr["pads"][p]["pos"] = rotate(origin, fpr["pads"][p]["pos"], fpr["bbox"]["angle"])
 					fpr["pads"][p]["pos"][0] += fpr["bbox"]["pos"][0]
 					fpr["pads"][p]["pos"][1] += fpr["bbox"]["pos"][1]
-					fpr["pads"][p]["pos"][1] = yInvert - fpr["pads"][p]["pos"][1]
 					fpr["pads"][p]["angle"] += fpr["bbox"]["angle"]
-				fpr["bbox"]["pos"][1] = yInvert - fpr["bbox"]["pos"][1]
-				#fpr["bbox"]["size"] = rotate(origin, fpr["bbox"]["size"], fpr["bbox"]["angle"])
 				json["footprints"].append(fpr)
 				fid = len(json["footprints"]) - 1
 				bomlut[idx]["refs"].append([row[0], fid])
