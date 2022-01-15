@@ -1,0 +1,8 @@
+(module "WL9981TC" (layer "F.Cu") (tedit 61CA09BC)
+  (pad "1" smd roundrect (at 0 1.5) (size 3 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp fd27925d-9b2e-4663-bdb7-e46b9715b801))
+  (pad "2" smd roundrect (at 0 3.5) (size 3 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp c9a96d3d-0de1-42f4-91c4-77ed8c428365))
+  (pad "3" smd roundrect (at 0 5.5) (size 3 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 5d580eb5-0e83-488b-a0fd-a803c630f551))
+  (pad "4" smd roundrect (at 0 7.5) (size 3 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp e06f99ab-70c9-48e0-9786-de35bc5b9bdc))
+  (pad "5" smd roundrect (at 0 9.5) (size 3 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 0816bee4-5935-4741-bd0f-c370f413b02b))
+  (pad "6" smd roundrect (at 0 11.5) (size 3 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 2ca7d35c-f03b-45eb-bc5e-72292d02981d))
+)

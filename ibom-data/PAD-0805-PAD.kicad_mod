@@ -1,0 +1,6 @@
+(module "PAD-0805-PAD" (layer "F.Cu") (tedit 60A6BE61)
+  (pad 1 smd roundrect (at -0.950001 0) (size 1.000001 1.45) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.1))
+  (pad 1 thru_hole circle (at -1.905 0) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask))
+  (pad 2 smd roundrect (at 0.950021 0) (size 1.000001 1.45) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.1))
+  (pad 2 thru_hole circle (at 1.905 0) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask))
+)
