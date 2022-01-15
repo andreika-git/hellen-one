@@ -183,8 +183,8 @@ def updateBbox(bbox, padXY, padWH):
 def readFootprint(fpname, footprintsPath, des):
 	if not fpname:
 		return None
-	pat_module = re.compile(r'\(module\s+\"?([\w\-\.]+)\"?\s+\(layer\s+\"?([FB])')
-	pat_pad = re.compile(r'^\s*\(pad\s+\"?([0-9]+)\"?\s+(\w+)\s+(\w+)\s+\(at\s+([+\-0-9e\.]+)\s+([+\-0-9e\.]+)\s*([+\-0-9\.]+)?\)\s+\(size\s+([+\-0-9\.]+)\s+([+\-0-9\.]+)\)(\s*\(drill\s+([+\-0-9\.]+)\))?\s+\(layer[s]?\s+\"?([^\)]+)\)(\s*\(roundrect_rratio\s+([+\-0-9\.]+)\))?')
+	pat_module = re.compile(r'\((module|footprint)\s+\"?([\w\-\.\:]+)\"?\s+\(layer\s+\"?([FB])')
+	pat_pad = re.compile(r'^\s*\(pad\s+\"?([0-9A-Z]+)\"?\s+(\w+)\s+(\w+)\s+\(at\s+([+\-0-9e\.]+)\s+([+\-0-9e\.]+)\s*([+\-0-9\.]+)?\)\s+\(size\s+([+\-0-9\.]+)\s+([+\-0-9\.]+)\)(\s*\(drill\s+([+\-0-9\.]+)\))?\s+\(layer[s]?\s+\"?([^\)]+)\)(\s*\(roundrect_rratio\s+([+\-0-9\.]+)\))?')
 
 	fpFileName = footprintsPath + "/" + fpname + ".kicad_mod"
 	print("* Reading " + fpFileName)
@@ -198,7 +198,7 @@ def readFootprint(fpname, footprintsPath, des):
 		for line in f:
 			module = pat_module.match(line)
 			if module:
-				json["layer"] = module.group(2)
+				json["layer"] = module.group(3)
 			pad = pat_pad.match(line)
 			if pad:
 				padIdx = pad.group(1)
