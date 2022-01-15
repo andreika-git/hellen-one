@@ -80,6 +80,10 @@ for r in replList:
         else:
             print ("* Appending a new row for " + reDesignator + "...")
             rows[rePartNumber] = [reComment, [reDesignator], reFootprint, rePartNumber]
+    else:
+        print ("* Appending a new row for " + reDesignator + " (no PN)...")
+        rows["_" + str(emptyId)] = [reComment, [reDesignator], reFootprint, rePartNumber]
+        emptyId += 1
 
 print ("Saving...")
 with open (fileName, 'wb') as new_f:
