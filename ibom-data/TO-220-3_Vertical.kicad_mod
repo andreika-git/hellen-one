@@ -1,0 +1,5 @@
+(module TO-220-3_Vertical (layer F.Cu) (tedit 5AC8BA0D)
+  (pad 1 thru_hole rect (at 0 0) (size 1.905 2) (drill 1.1) (layers *.Cu *.Mask))
+  (pad 2 thru_hole oval (at 2.54 0) (size 1.905 2) (drill 1.1) (layers *.Cu *.Mask))
+  (pad 3 thru_hole oval (at 5.08 0) (size 1.905 2) (drill 1.1) (layers *.Cu *.Mask))
+)

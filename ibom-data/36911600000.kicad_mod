@@ -1,0 +1,4 @@
+(module "36911600000" (layer "F.Cu") (tedit 60B15055)
+  (pad "1" thru_hole circle (at -2.54 0) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask) (tstamp bc51db5e-7287-4df0-b03b-74508f9f90f0))
+  (pad "2" thru_hole circle (at 2.54 0) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask) (tstamp 30212161-84df-4529-9e7d-51de444bb320))
+)

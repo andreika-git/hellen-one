@@ -1,0 +1,8 @@
+(module "PinHeader_1x06_P2.54mm_Vertical" (layer "F.Cu") (tedit 59FED5CC)
+  (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 85338883-373a-4ddc-b68c-593b0856fc3f))
+  (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 6fe0a919-d5bc-4192-b212-d5b18223ac72))
+  (pad "3" thru_hole oval (at 0 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 0d0fe42b-758c-46d0-8786-76ea12049b5c))
+  (pad "4" thru_hole oval (at 0 7.62) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 9f6a1ac2-966f-4775-b494-3221a86251ff))
+  (pad "5" thru_hole oval (at 0 10.16) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp eb03e2c5-4665-45c0-94d7-6f63d3b85a25))
+  (pad "6" thru_hole oval (at 0 12.7) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 1a7fa935-6df1-4df2-93c7-50abb504ced5))
+)
