@@ -17,6 +17,23 @@ else
 	echo "* ${machine} environment detected!"
 fi
 
+# $1 = url $2 = dst
+function download_url {
+	url=$1
+	dst=$2
+	# check if wget or curl is installed
+	if [ -x "$(command -v wget)" ] ; then
+		echo "Downloading apt-cyg using wget..."
+		wget $url -O $dst
+	elif [ -x "$(command -v curl)" ]; then
+		echo "Downloading apt-cyg using curl..."
+		curl -o $dst -sfL $url
+	else
+		echo "Could not find curl or wget! Cannot download and install a package manager!" >&2
+		exit 1
+	fi
+}
+
 # $1 = package_name
 function install_package {
 	# check if the installer (package manager) exists
@@ -30,17 +47,7 @@ function install_package {
 	        			Yes )
 	        				url="rawgit.com/transcode-open/apt-cyg/master/apt-cyg"
 	        				dst="/tmp/apt-cyg"
-							# check if wget or curl is installed
-							if [ -x "$(command -v wget)" ] ; then
-								echo "Downloading apt-cyg using wget..."
-								wget $url -O $dst
-							elif [ -x "$(command -v curl)" ]; then
-								echo "Downloading apt-cyg using curl..."
-								curl -o $dst -sfL $url
-							else
-								echo "Could not find curl or wget! Cannot download and install a package manager!" >&2
-								return
-							fi
+							download_url $url $dst
 	        				install $dst /bin
 	        				rm $dst
 	        				break;;
@@ -77,18 +84,32 @@ function install_package {
 	elif [ "${machine}" = "msys" ] ; then
 		pacman -S mingw-w64-x86_64-$1
 	elif [ "${machine}" = "linux" ] ; then
-		sudo apt-get install $1
+		if ! sudo apt-get install $1; then
+			# try updating the apt repo
+			sudo apt update
+			if ! sudo apt-get install $1; then
+				echo "Error! Cannot install the package $1. Please install it manually using your package manager!" >&2
+	        	exit 1;
+	        fi
+		fi
 	fi
 }
 
 echo "Checking the Python version..."
 # check python version - should be 2.x ONLY
 python_bin="python2.7"
-python_ver=$($python_bin -V 2>&1 | grep -Po '(?<=Python )(.+)')
-if [[ -z "$python_ver" ]] || [[ ! $python_ver =~ ^2\.7.* ]] ; then
-    echo "Error! Python 2.7.x is required. It should be installed and added to the PATH!"
-    install_package python2
-fi
+while true; do
+	python_ver=$($python_bin -V 2>&1 | grep -Po '(?<=Python )(.+)')
+	if [[ -z "$python_ver" ]] || [[ ! $python_ver =~ ^2\.7.* ]] ; then
+	    echo "Error! Python 2.7.x is required. It should be installed and added to the PATH!"
+	    install_package python2
+	    if [ "${machine}" = "linux" ] ; then
+	        install_package python2-dev
+	    fi
+	else
+		break
+	fi
+done
 
 # $1 = name, $2 = library name, $3 = package name
 function check_library {
@@ -96,8 +117,13 @@ function check_library {
 	while true; do
 	  if ! command -v pkg-config >/dev/null 2>&1 ; then
 	    echo "* Missing pkg-config"
-	    echo "* TODO auto-install that dependency!"
-	    exit -1
+		echo "Do you want to download and install it now? (Press 1 or 2)"
+		select yn in "Yes" "No"; do
+		    case $yn in
+	   			Yes ) install_package pkg-config; break;;
+				No ) exit 1;
+			esac
+		done
 	  fi
 
 		lib=$(pkg-config --libs $2 2>&1 | grep -Po '(\-l'$1')')
@@ -111,7 +137,68 @@ function check_library {
 	done
 }
 
+function install_pip2 {
+	pip2installer="https://bootstrap.pypa.io/pip/2.7/get-pip.py"
+	dst="/tmp/get-pip.py"
+   	download_url $pip2installer $dst
+   	$python_bin $dst
+   	rm $dst
+}
+
+function pip2_install_module {
+	# check if pip2 works
+	pip_bin="$python_bin -m pip"
+	while true; do
+		pip2v=$($pip_bin --version 2>&1 | grep -Po '(pip [0-9]+\.[0-9]+.*)')
+		if [[ -z "$pip2v" ]] ; then
+		    echo "* Missing pip2"
+			if [ "${machine}" = "linux" ] ; then
+        		echo "Do you want to download and install it now? (Press 1 or 2)"
+        		select yn in "Yes" "No"; do
+        		    case $yn in
+        	   			Yes ) install_pip2; break;;
+        				No ) exit 1;
+        			esac
+        		done
+    	   	else
+    	   		install_package pip2
+    	   	fi
+	    else
+	    	break
+	    fi
+	done
+
+	# check if gnu compiler works (needed by some modules)
+	gcc_bin="gcc"
+	while true; do
+		gccv=$($gcc_bin -v 2>&1 | grep -Po '(version\s+[0-9]+\.[0-9]+.*)')
+		if [[ -z "$gccv" ]] ; then
+		    echo "* Missing gcc compiler"
+  	    	install_package gcc
+	    else
+	    	break
+	    fi
+	done
+
+	echo "* Installing python module $1 using $pip2v and gcc $gccv..."
+	$pip_bin install $pymodule
+}
+
 echo "* Python $python_ver detected!"
+
+echo "Checking git..."
+git_bin="git"
+git_ver=0
+while true; do
+	git_ver=$($git_bin version 2>&1 | grep -Po '(version [0-9]+\.[0-9]+.*)')
+	if [[ -z "$git_ver" ]] ; then
+	    echo "Error! Git not found! We need it to update submodules."
+	    install_package git
+	else
+		break
+	fi
+done
+echo "* Git $git_ver detected!"
 
 echo "Updating git submodules for scripts..."
 git submodule update --init -- bin/gerbmerge bin/python-combine-pdfs bin/InteractiveHtmlBom bin/pcb-tools
@@ -140,8 +227,13 @@ for module in "${!modules[@]}"; do
 		    
 		    # some modules have dependencies
 			if [ "$pymodule" = "cairocffi" ]; then
-				check_library ffi libffi libffi-devel
-				check_library cairo cairo libcairo-devel
+				if [ "${machine}" = "linux" ] ; then
+					devname="dev"
+				else
+					devname="devel"
+				fi
+				check_library ffi libffi libffi-${devname}
+				check_library cairo cairo libcairo-${devname}
 			fi
 
 		    if [ ]; then
@@ -151,7 +243,7 @@ for module in "${!modules[@]}"; do
 				echo "Do you want to download and install it now? (Press 1 or 2)"
 				select yn in "Yes" "No"; do
 				    case $yn in
-	        			Yes ) pip2 install $pymodule; break;;
+	        			Yes ) pip2_install_module $pymodule; break;;
 	        			No ) exit 1;
 					esac
 				done
@@ -162,19 +254,43 @@ done
 
 echo "Checking if Node.js is installed..."
 node_bin="node"
-node_ver=$($node_bin -v 2>&1 | grep -Po '(v[0-9]+.*)')
-if [[ -z "$node_ver" ]] ; then
-    echo "Error! This script requires Node.Js installed in PATH!"
-    echo "Please download and install it from here: https://nodejs.org/en/download/"
-    exit 1
-fi
+node_ver=0
+while true; do
+	node_ver=$($node_bin -v 2>&1 | grep -Po '(v[0-9]+.*)')
+	if [[ -z "$node_ver" ]] ; then
+	    echo "Error! This script requires Node.Js installed in PATH!"
+		if [ "${machine}" = "linux" ] ; then
+			install_package nodejs
+	    else
+		    echo "Please download and install it from here: https://nodejs.org/en/download/"
+		    exit 1
+		fi
+	else
+		break
+	fi
+done
 
 echo "* Node.js $node_ver detected!"
+
+echo "Checking npm..."
+npm_bin="npm"
+npm_ver=0
+while true; do
+	npm_ver=$($npm_bin -v 2>&1 | grep -Po '([0-9]+\.[0-9]+.*)')
+	if [[ -z "$npm_ver" ]] ; then
+	    echo "Error! NPM not found! We need it to check Node.Js packages."
+	    install_package npm
+	else
+		break
+	fi
+done
+echo "* NPM $npm_ver detected!"
+
 
 echo "Checking Node.js packages..."
 pushd ./bin/render_vrml > /dev/null
 for package in 'puppeteer' 'pngjs' 'fs' 'zlib'; do
-	if [ `npm list --depth=0 | grep -c "\-\- ${package}"` -eq 1 ]; then
+	if [ `npm list --depth=0 | grep -c "${package}@"` -eq 1 ]; then
 	    echo "* Checking Node.js module '$package': OK"
 	else
 	    echo "* Checking Node.js module '$package': ERROR!"
