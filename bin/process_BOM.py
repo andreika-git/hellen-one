@@ -5,7 +5,29 @@
 ############################################################################################
 
 from collections import OrderedDict
-import csv, sys, re
+import csv, os, sys, re
+
+include_pat = re.compile(r'#include\s+\"?([^\"]+)\"?$')
+
+def read_repl_file(csv_name, repl_base_path, replList):
+    print ("Reading replacement list from the CSV file " + csv_name + "...")
+    with open(csv_name, 'rb') as f:
+        reader = csv.reader(f, delimiter=',')
+        for row in reader:
+            # skip empty lines
+            if (len(row) < 1):
+                continue
+            # process includes
+            include = include_pat.match(row[0].strip())
+            if (include):
+                csv_sub_name = os.path.join(repl_base_path, include.group(1))
+                if (csv_sub_name != csv_name):
+                    read_repl_file(csv_sub_name, repl_base_path, replList)
+            # skip comments (this is not strictly CSV-compliant, but useful for our purposes)
+            if (row[0].startswith("#")):
+                continue
+            replList.append(row)
+
 
 if len(sys.argv) < 2:
     print ("Error! Please specify a BOM file name.")
@@ -14,6 +36,7 @@ fileName = sys.argv[1]
 
 if len(sys.argv) > 2:
     repl_csv = sys.argv[2]
+    repl_base_path = os.path.dirname(repl_csv)
 
 print ("Opening BOM file " + fileName + "...")
 
@@ -47,14 +70,7 @@ with open(fileName, 'rb') as f:
         #    print idx , ": ", item
 
 replList = list()
-print ("Reading replacement list from the CSV file " + repl_csv + "...")
-with open(repl_csv, 'rb') as f:
-    reader = csv.reader(f, delimiter=',')
-    for row in reader:
-        # skip empty lines and comments (this is not strictly CSV-compliant, but useful for our purposes)
-        if (len(row) < 1 or row[0].startswith("#")):
-            continue
-        replList.append(row)
+read_repl_file(repl_csv, repl_base_path, replList)
 
 print ("Processing the board replacements...")
 for r in replList:
@@ -80,10 +96,18 @@ for r in replList:
         else:
             print ("* Appending a new row for " + reDesignator + "...")
             rows[rePartNumber] = [reComment, [reDesignator], reFootprint, rePartNumber]
-    else:
-        print ("* Appending a new row for " + reDesignator + " (no PN)...")
-        rows["_" + str(emptyId)] = [reComment, [reDesignator], reFootprint, rePartNumber]
-        emptyId += 1
+
+print ("Final checks...")
+for rowName in rows:
+    row = rows[rowName]
+    if (row[0] == '?' and row[3].lower() == 'board_id'):
+        partName = (",".join(row[1])) if (type(row[1]) == list) else row[1]
+        print ("Error! The components used by Board_ID detection method (" + partName + ") are undefined!")
+        print ("  Please include corresponding board definition file (board_id_XXX.csv) to your BOM replacement file.")
+        print ("  If your Board_ID is unknown (custom board), just add the following line to the end of your bom_replace file:")
+        print ("  #include hellen-one/board_id/board_id_unknown.csv")
+        sys.exit(2)
+
 
 print ("Saving...")
 with open (fileName, 'wb') as new_f:
