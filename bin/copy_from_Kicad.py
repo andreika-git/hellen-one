@@ -22,11 +22,13 @@ name = sys.argv[4]
 rev = sys.argv[5]
 
 prefix = "hellen"
+project_path = project_base + "/" + prefix + name
 if (":" in type):
     (type, prefix) = type.split(":")
+    project_path = project_base
 
 if (type == "frames"):
-    base_path = project_base + "/" + prefix + name + "/boards/" + prefix + name + "-" + rev
+    base_path = project_path + "/boards/" + prefix + name + "-" + rev
     src_path = base_path + "/" + gerber_rel_path
     dst_path = base_path + "/frame"
     src_name = src_path + "/" + prefix + name
