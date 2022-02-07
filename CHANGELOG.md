@@ -2,6 +2,14 @@
 
 All notable changes will be documented in this file.
 
+## mcu-0.6 and mcu144-0.6
+  - Added C133, R133, R134 for Board-ID
+  - Changed L101 (0805) to F101 (1206)
+
+## Altium Designer (AD) shared files and Board-ID support
+  - altium.shared folder
+  - board_id folder
+
 ## output-0.3
   - TC4427 output protection: Added R312, R316, C301, C302
   - MCU protection from TC4427 failure: Added R311, R314; Changed R307, R308
