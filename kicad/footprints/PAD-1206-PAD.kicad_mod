@@ -1,5 +1,5 @@
 (footprint "PAD-1206-PAD" (version 20210424) (generator pcbnew) placed (layer "F.Cu")
-  (tedit 60BA7675)
+  (tedit 62012A15)
   (attr smd)
   (fp_text reference "J" (at -4 0 90) (layer "F.SilkS")
     (effects (font (size 0.762 0.762) (thickness 0.127)))
@@ -25,9 +25,9 @@
   (pad "1" thru_hole circle (at -2.45 0) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask) (tstamp e1bce264-217c-4a24-b8ca-a14e95929134))
   (pad "2" thru_hole circle (at 2.45 0) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask) (tstamp 754b0a12-6a51-4ec8-b7c6-60eeacbd51a9))
   (pad "2" smd roundrect (at 1.45001 0 90) (size 1.8 1.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2) (tstamp d5ddbb77-ca19-460e-8a31-fd5c9521c0c1))
-  (model "Resistors_SMD.3dshapes/R_0805.wrl"
-    (offset (xyz 0 0 0))
+  (model ":hellen-one-models:1206 resistor.STEP"
+    (offset (xyz 0 0.8 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz -90 0 0))
   )
 )
