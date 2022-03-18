@@ -2,6 +2,9 @@
 
 All notable changes will be documented in this file.
 
+## ign8-0.2
+  - Fixed module border misalignment
+
 ## mcu-0.6 and mcu144-0.6
   - Added C133, R133, R134 for Board-ID
   - Changed L101 (0805) to F101 (1206)
