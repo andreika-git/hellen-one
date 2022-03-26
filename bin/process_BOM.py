@@ -11,7 +11,7 @@ include_pat = re.compile(r'#include\s+\"?([^\"]+)\"?$')
 
 def read_repl_file(csv_name, repl_base_path, replList):
     print ("Reading replacement list from the CSV file " + csv_name + "...")
-    with open(csv_name, 'rb') as f:
+    with open(csv_name, 'rt') as f:
         reader = csv.reader(f, delimiter=',')
         for row in reader:
             # skip empty lines
@@ -43,7 +43,7 @@ print ("Opening BOM file " + fileName + "...")
 rows = OrderedDict()
 emptyId = 1
 
-with open(fileName, 'rb') as f:
+with open(fileName, 'rt') as f:
     reader = csv.reader(f, delimiter=',')
     print ("Searching for duplicates...")
     for row in reader:
@@ -75,7 +75,7 @@ read_repl_file(repl_csv, repl_base_path, replList)
 print ("Processing the board replacements...")
 for r in replList:
     reDesignator = r[0]
-    for rowName in rows:
+    for rowName in list(rows.keys()):
         row = rows[rowName]
         if reDesignator in row[1]:
             print ("* Removing " + reDesignator + " from the old row...")
@@ -110,15 +110,15 @@ for rowName in rows:
 
 
 print ("Saving...")
-with open (fileName, 'wb') as new_f:
+with open (fileName, 'wt') as new_f:
     rowIdx = 0
     for rowName in rows:
         #for idx,item in enumerate(rows[rowName]):
         #    print idx , ": ", item
         if rowIdx == 0:
-            writer = csv.writer(new_f, quoting=csv.QUOTE_NONE, quotechar='"', delimiter=',', lineterminator='\n')
+            writer = csv.writer(new_f, quoting=csv.QUOTE_NONE, quotechar='"', escapechar='', delimiter=',', lineterminator='\n')
         elif rowIdx == 1:
-            writer = csv.writer(new_f, quoting=csv.QUOTE_ALL, quotechar='"', delimiter=',', lineterminator='\n')
+            writer = csv.writer(new_f, quoting=csv.QUOTE_ALL, quotechar='"', escapechar='', delimiter=',', lineterminator='\n')
         row = rows[rowName]
         # restore empty names
         if rowName[0] == '_':

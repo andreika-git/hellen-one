@@ -23,7 +23,7 @@ config.read(mergeBoardFile)
 
 # read place file
 fragments = []
-with open(mergePlaceFile, 'rb') as fmp:
+with open(mergePlaceFile, 'rt') as fmp:
 	for line in fmp:
 		m = line.split()
 		name_and_rot = re.split(r'\*rotated|\*flipped', m[0]) # split the name and rotation/flip parts
@@ -35,7 +35,7 @@ with open(mergePlaceFile, 'rb') as fmp:
 
 print ("* Starting merge of " + str(len(fragments)) + " board fragments...")
 
-outf = gzip.open(fileOutName, 'wb')
+outf = gzip.open(fileOutName, 'wt')
 outf.write("#VRML V2.0 utf8\n")
 
 pat_hdr = re.compile('^#VRML.*')
@@ -54,7 +54,7 @@ for frag in fragments:
 	fragId = str(fId).zfill(2)
 	
 	print ("* Adding " + frag["name"] + " (" + fileName + ") at (" + str(off_x_mm) + "," + str(off_y_mm) + "), rot=" + str(rot) + ", invZ=" + str(invertZ) + "...")
-	with open(fileName, 'rb') as f:
+	with open(fileName, 'rt') as f:
 		for line in f:
 			line = line.rstrip()
 			# skip the headers (we write our own because there should be only 1 header)
@@ -69,7 +69,7 @@ for frag in fragments:
 				if pat_kicad_transform.match(line):
 					print ("* Kicad VRML detected!")
 					# todo: this is a 'hack'
-					z_offset = -board_thickness
+					z_offset = -(board_thickness / 2)
 				# for upside-down modules, the offset needs to be reversed
 				if (invertZ < 0):
 					z_offset = -board_thickness - z_offset

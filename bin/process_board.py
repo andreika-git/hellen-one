@@ -89,7 +89,8 @@ def print_module(name, prefixPath, moduleName, fileName, isBoard, isBottom):
 			"*" + bottom + "Soldermask=%(prefix)s.GBS",
 			"*" + bottom + "Silkscreen=%(prefix)s.GBO",
 			"*Keepout=%(prefix)s.GKO",
-			"Drills=%(prefix)s.DRL"])
+			"Drills=%(prefix)s.DRL",
+			"drillspth=%(prefix)s.DRL"])
 		if ((os.path.isfile(prefix + ".G1") and os.path.isfile(prefix + ".G2")) or isBoard == 1):
 			write_lines(file, [
 				"*InnerLayer2=%(prefix)s.G1",
@@ -105,7 +106,7 @@ def print_module(name, prefixPath, moduleName, fileName, isBoard, isBottom):
 
 def append_cpl(src_fname, dst_fname, x, y, mrot, isBottom, suffix = ""):
 	print ("* appending the CPL with offset (" + str(x) + "," + str(y) + ")...")
-	with open(src_fname, 'rb') as src_f, open(dst_fname, 'a') as dst_f:
+	with open(src_fname, 'rt') as src_f, open(dst_fname, 'a') as dst_f:
 		reader = csv.reader(src_f, delimiter=',')
 		i=0
 		# skip header
@@ -153,7 +154,7 @@ def append_cpl(src_fname, dst_fname, x, y, mrot, isBottom, suffix = ""):
 
 def append_bom(src_fname, dst_fname, suffix = ""):
 	print ("* appending the BOM...")
-	with open(src_fname, 'rb') as src_f, open(dst_fname, 'a') as dst_f:
+	with open(src_fname, 'rt') as src_f, open(dst_fname, 'a') as dst_f:
 		reader = csv.reader(src_f, delimiter=',')
 		i = 0
 		# skip header
@@ -332,7 +333,7 @@ p = subprocess.Popen([sys.executable, "bin/gerbmerge/gerbmerge",
 	board_cfg_path], 
 	stdin=subprocess.PIPE)
 # pass 'y' symbol to the subprocess as if a user pressed 'yes'
-p.communicate(input='y\n')[0]
+p.communicate(input=b'y\n')[0]
 check_returncode(p.returncode)
 
 print ("Post-processing BOM...")
@@ -340,9 +341,9 @@ try:
 	out = subprocess.check_output([sys.executable, "bin/process_BOM.py",
 		board_bom,
 		bom_replace_csv_path], stderr=subprocess.STDOUT)
-	print (out)
-except subprocess.CalledProcessError, e:
-	print ("BOM processing error:\n" + e.output)
+	print (out.decode('ascii'))
+except subprocess.CalledProcessError as e:
+	print ("BOM processing error:\n" + e.output.decode('ascii'))
 	sys.exit(2)
 
 print ("Merging Schematics...")
@@ -383,14 +384,14 @@ result = subprocess.call([sys.executable, "bin/create_3d_components.py",
 check_returncode(result)
 
 print ("Rendering a 3D-model of the board components...")
-result = subprocess.call([node_bin, "bin/render_vrml/render_components.js", 
+result = subprocess.call([sys.executable, "bin/render_vrml/render_components.py",
 	board_misc_path_name + "-3D.wrl.gz", 
 	board_img_components, 
 	imageDpi])
 check_returncode(result)
 
 print ("Creating a composite board image...")
-result = subprocess.call([node_bin, "bin/render_vrml/render_board.js", 
+result = subprocess.call([sys.executable, "bin/render_vrml/render_board.py",
 	board_img_top, 
 	board_img_outline, 
 	board_img_components, 

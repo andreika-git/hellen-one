@@ -14,7 +14,7 @@ from gerber.render import RenderSettings
 from gerber.render.cairo_backend import GerberCairoContext
 
 if len(sys.argv) < 3:
-    print "Error! Please specify the gerber path, image filename and board side."
+    print ("Error! Please specify the gerber path, image filename and board side.")
     sys.exit(1)
 gerberPath = sys.argv[1]
 imageFileName = sys.argv[2]
@@ -145,20 +145,20 @@ curTheme = jlcTheme
 
 # choose layers
 if boardSide == 'top':
-    print "* Top Side:"
+    print ("* Top Side:")
     boardLayers = pcb.top_layers + pcb.drill_layers
     isOutline = False
 elif boardSide == 'bottom':
-    print "* Bottom Side:"
+    print ("* Bottom Side:")
     boardLayers = pcb.bottom_layers + pcb.drill_layers
     isOutline = False
 elif boardSide == 'outline':
-    print "* Board Outline:"
+    print ("* Board Outline:")
     boardLayers = [pcb.outline_layer] + pcb.drill_layers
     curTheme = outlineTheme
     isOutline = True
 else:
-    print "Error! Please specify the valid board side."
+    print ("Error! Please specify the valid board side.")
     sys.exit(2)
 
 # render

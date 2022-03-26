@@ -24,7 +24,7 @@ sys.path.append("./bin/InteractiveHtmlBom/InteractiveHtmlBom/core")
 from lzstring import LZString
 
 if len(sys.argv) < 12:
-    print "Error! Please specify all the parameters!"
+    print ("Error! Please specify all the parameters!")
     sys.exit(1)
 
 boardName = sys.argv[1]
@@ -45,7 +45,7 @@ inch_to_mm = 25.4
 
 
 def getFormat(xI, xD, yI, yD, yInvert):
-	print "* Format: ", xI, xD, yI, yD
+	print ("* Format: ", xI, xD, yI, yD)
 	fmt_pat_x = re.compile(r'^([0-9]{'+xI+'})([0-9]{'+xD+'})$')
 	fmt_pat_y = re.compile(r'^([0-9]{'+yI+'})([0-9]{'+yD+'})$')
 	return [fmt_pat_x, fmt_pat_y, yInvert]
@@ -85,7 +85,7 @@ def readGerber(filePath, yInvert):
 	maxCoord = [ -99999, -99999 ]
 	format = getFormat("2", "5", "2", "5", yInvert)
 	invertedMask = False
-	with open(filePath, 'rb') as f:
+	with open(filePath, 'rt') as f:
 		for line in f:
 			line = line.strip()
 			#print line
@@ -101,7 +101,7 @@ def readGerber(filePath, yInvert):
 				apertNum = int(apertCircle.group(1))
 				apertSize = apertCircle.group(2)
 				apertList[apertNum] = ["circle", apertSize]
-				# print "* Aperture C: " + str(apertNum) + " = " + apertSize
+				# print ("* Aperture C: " + str(apertNum) + " = " + apertSize)
 			
 			apertRect = apert_rect_pat.match(line)
 			if apertRect:
@@ -109,7 +109,7 @@ def readGerber(filePath, yInvert):
 				apertSizeX = apertRect.group(2)
 				apertSizeY = apertRect.group(4)
 				apertList[apertNum] = ["rect", [apertSizeX, apertSizeY]]
-				# print "* Aperture R: " + str(apertNum) + " = " + apertSizeX + " " + apertSizeY
+				# print ("* Aperture R: " + str(apertNum) + " = " + apertSizeX + " " + apertSizeY)
 			
 			op = op_pat.match(line)
 			if op:
@@ -151,7 +151,7 @@ def readGerber(filePath, yInvert):
 					a = int(op)
 					cur_aper_type = apertList[a][0]
 					cur_size = apertList[a][1]
-					# print "* Changing aperture: ", a
+					# print ("* Changing aperture: ", a)
 				else:
 					cur_x = x
 					cur_y = y
@@ -187,7 +187,7 @@ def readFootprint(fpname, footprintsPath, des):
 	pat_pad = re.compile(r'^\s*\(pad\s+\"?([0-9A-Z]+)\"?\s+(\w+)\s+(\w+)\s+\(at\s+([+\-0-9e\.]+)\s+([+\-0-9e\.]+)\s*([+\-0-9\.]+)?\)\s+\(size\s+([+\-0-9\.]+)\s+([+\-0-9\.]+)\)(\s*\(drill\s+([+\-0-9\.]+)\))?\s+\(layer[s]?\s+\"?([^\)]+)\)(\s*\(roundrect_rratio\s+([+\-0-9\.]+)\))?')
 
 	fpFileName = footprintsPath + "/" + fpname + ".kicad_mod"
-	print("* Reading " + fpFileName)
+	print ("* Reading " + fpFileName)
 	if not os.path.isfile(fpFileName):
 		print("* Error! Footprint NOT FOUND! Skipping " + des)
 		return None
@@ -262,13 +262,13 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 	footprints = {}
 	rotations = {}
 	# read rotations csv (to undo weird JLC's angles which are not footprint-oriented)
-	with open(fixRotationsPath, 'rb') as f:
+	with open(fixRotationsPath, 'rt') as f:
 		next(f)
 		reader = csv.reader(f, delimiter=',')
 		for row in reader:
 			rotations[row[0]] = float(row[1])
 	# read BOM csv
-	with open(bomPath, 'rb') as f:
+	with open(bomPath, 'rt') as f:
 		next(f)
 		reader = csv.reader(f, delimiter=',')
 		for row in reader:
@@ -281,7 +281,7 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 			for b in bb:
 				bom[b] = { "fp": row[2], "idx": idx }
 	# read CPL csv
-	with open(cplPath, 'rb') as f:
+	with open(cplPath, 'rt') as f:
 		reader = csv.reader(f, delimiter=',')
 		for row in reader:
 			if row[0] in bom:
@@ -340,7 +340,7 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 	
 ###################################################################
 
-with open(htmlFileName, 'rb') as f:
+with open(htmlFileName, 'rt') as f:
 	html = f.read()
 	f.close()
 
@@ -382,7 +382,7 @@ print("* Adding the pcb image...")
 with open(renderedPcbPath, mode='rb') as f:
 	renderedPcb = f.read()
 	html = html.replace('___PCBDPI___', renderedPcbDpi)
-	html = html.replace('___PCBIMAGE___', 'data:image/png;base64,' + base64.b64encode(renderedPcb))
+	html = html.replace('___PCBIMAGE___', 'data:image/png;base64,' + base64.b64encode(renderedPcb).decode('ascii'))
 
 print("* Adding the BOM data...")
 jsonBase64 = LZString().compress_to_base64(jsonText)
@@ -394,5 +394,5 @@ with open(iBomFilePath, "wt") as wf:
 	wf.write(html)
 	wf.close()
 
-print "Done!"
+print ("Done!")
 
