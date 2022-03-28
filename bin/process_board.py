@@ -309,7 +309,9 @@ with open(frame_path + "/" + frame_name + "-BOM.csv", 'r') as bom_f:
 							# add module gerbers
 							module_path = "modules/" + module_name + "/" + module_rev
 							print_module(module_unique_name, module_path, module_name, board_cfg_path, 0, isBottom)
-							irot = int(float(rot) + 360.0) % 360
+							# inverse rot (CW<->CCW) for bottom modules
+							rot = -float(rot) if (isBottom) else float(rot)
+							irot = int(rot + 360.0) % 360
 							rotated = ("*rotated" + str(irot)) if (irot != 0) else ""
 							if (isBottom):
 								rotated += "*flippedV"
