@@ -102,9 +102,9 @@ while true; do
 	python_ver=$($python_bin -V 2>&1 | grep -Po '(?<=Python )(.+)')
 	if [[ -z "$python_ver" ]] || [[ ! $python_ver =~ ^3\.[56789].* ]] ; then
 		echo "Error! Python 3.5 or later is required. It should be installed and added to the PATH!"
-		install_package python2
+		install_package python3
 		if [ "${machine}" = "linux" ] ; then
-			install_package python2-dev
+			install_package python3-dev
 		fi
 	else
 		break

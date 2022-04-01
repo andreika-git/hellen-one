@@ -9,7 +9,7 @@ import csv, re
 import glob, shutil
 
 if len(sys.argv) < 4:
-	print "Error! Please specify the module project folder, module name and rev."
+	print ("Error! Please specify the module project folder, module name and rev.")
 	sys.exit(1)
 project_base = sys.argv[1]
 name = sys.argv[2]

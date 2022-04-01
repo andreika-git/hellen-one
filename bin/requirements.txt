@@ -1,0 +1,12 @@
+cairocffi==1.3.0
+contextlib2==21.6.0
+moderngl==5.6.4
+numpy==1.22.3
+Pillow==9.0.1
+PyPDF2==1.26.0
+pyrr==0.10.3
+pytest==7.1.1
+PyVRML97==2.3.1
+setuptools==45.2.0
+SimpleParse==2.2.2
+tsp_solver==0.1

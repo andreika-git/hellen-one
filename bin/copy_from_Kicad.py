@@ -13,7 +13,7 @@ import glob, shutil
 # also recognized by JLCPCB: https://support.jlcpcb.com/article/29-suggested-naming-patterns
 
 if len(sys.argv) < 5:
-    print "Error! Please specify the project type, base folder, gerber folder, name and rev."
+    print ("Error! Please specify the project type, base folder, gerber folder, name and rev.")
     sys.exit(1)
 type = sys.argv[1]
 project_base = sys.argv[2]
