@@ -173,7 +173,7 @@ function pip3_install_module {
 		pip3v=$($pip_bin --version 2>&1 | grep -Po '(pip [0-9]+\.[0-9]+.*)')
 		if [[ -z "$pip3v" ]] ; then
 			echo "* Missing pip3"
-			if [ "${machine}" = "linux" ] ; then
+			if [ "${machine}" = "linux" ] || [ "${machine}" = "cygwin" ] ; then
 				echo "Do you want to download and install it now? (Press 1 or 2)"
 				select yn in "Yes" "No"; do
 					case $yn in
