@@ -46,6 +46,6 @@ cp ${src_path}/${name}-vrml.wrl ${dst_path}/${name}-vrml.wrl
 # copy the BOM
 sed -E ":a;N;s/Comment.+\n/Comment,Designator,Footprint,LCSC Part #/g" ${src_path}/${name}-BOM.csv > ${dst_path}/${name}-BOM.csv
 # process and copy CPL
-python3 ./bin/jlc_kicad_tools/jlc_fix.py -o ${dst_path} ${src_path} ${name}-altium-CPL.csv ${name}-CPL.csv
+python3.8 ./bin/jlc_kicad_tools/jlc_fix.py -o ${dst_path} ${src_path} ${name}-altium-CPL.csv ${name}-CPL.csv
 # create a footprint library from PCAD ASCII file
 python ./bin/create_footprints_from_pcad.py ${src_path}/${name}-pcad.PCB ibom-data

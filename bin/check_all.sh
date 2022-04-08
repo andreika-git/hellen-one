@@ -16,6 +16,11 @@ if [ "${machine}" = "unknown" ] ; then
 else
 	echo "* ${machine} environment detected!"
 fi
+if [ "${machine}" = "linux" ] ; then
+	devname="dev"
+else
+	devname="devel"
+fi
 
 # $1 = url $2 = dst
 function download_url {
@@ -26,8 +31,12 @@ function download_url {
 		echo "Downloading apt-cyg using wget..."
 		wget $url -O $dst
 	elif [ -x "$(command -v curl)" ]; then
+		dirname="${dst%/*}"
+		filename="${dst##*/}"
+		pushd $dirname
 		echo "Downloading apt-cyg using curl..."
-		curl -o $dst -sfL $url
+		curl -o $filename -sfL $url
+		popd > /dev/null
 	else
 		echo "Could not find curl or wget! Cannot download and install a package manager!" >&2
 		exit 1
@@ -45,7 +54,7 @@ function install_package {
 				select yn in "Yes" "No"; do
 					case $yn in
 						Yes )
-							url="rawgit.com/transcode-open/apt-cyg/master/apt-cyg"
+							url="andreika-git.github.io/apt-cyg/apt-cyg"
 							dst="/tmp/apt-cyg"
 							download_url $url $dst
 							install $dst /bin
@@ -74,6 +83,9 @@ function install_package {
 			Yes )
 				break;;
 			No ) 
+				if [ "$2" = "optional" ] ; then
+					return 1
+				fi
 				echo "Please install it manually using your package manager!" >&2
 				exit 1;
 		esac
@@ -93,19 +105,28 @@ function install_package {
 			fi
 		fi
 	fi
+	return 0
 }
 
 echo "Checking the Python version..."
 # check python version - should be 3.x ONLY
-python_bin="python3"
+# todo: currently Python 3.9 is still buggy, so we use 3.8
+python_bin="python3.8"
 while true; do
 	python_ver=$($python_bin -V 2>&1 | grep -Po '(?<=Python )(.+)')
 	if [[ -z "$python_ver" ]] || [[ ! $python_ver =~ ^3\.[56789].* ]] ; then
 		echo "Error! Python 3.5 or later is required. It should be installed and added to the PATH!"
+		while true; do
+			if ! [ -x "$(command -v wget)" ] ; then
+				echo "Warning! wget is not installed. Using wget is preferred for installing other packages"
+				if ! install_package wget optional; then
+					break
+				fi
+			else
+				break
+			fi
+		done
 		install_package python3
-		if [ "${machine}" = "linux" ] ; then
-			install_package python3-dev
-		fi
 	else
 		break
 	fi
@@ -169,12 +190,36 @@ function pip3_install_module {
 	done
 
 	# check if gnu compiler works (needed by some modules)
-	gcc_bin="gcc"
+	gcc_bin="g++"
 	while true; do
 		gccv=$($gcc_bin -v 2>&1 | grep -Po '(version\s+[0-9]+\.[0-9]+.*)')
 		if [[ -z "$gccv" ]] ; then
-			echo "* Missing gcc compiler"
-  			install_package gcc
+			echo "* Missing gcc/g++ compiler"
+			if [ "${machine}" = "cygwin" ] ; then
+				install_package gcc-g++
+			else
+				install_package gcc
+			fi
+		else
+			break
+		fi
+	done
+
+	# check if Python-devel is available (needed by some Py modules)
+	while true; do
+		python_dev=0
+		# check if distutils.sysconfig is usable
+		if $($python_bin -c "from distutils import sysconfig" &> /dev/null); then
+			# get include path for this python version
+			INCLUDE_PY=$($python_bin -c "from distutils import sysconfig as s; print (s.get_config_vars()['INCLUDEPY'])")
+			if [ -f "${INCLUDE_PY}/Python.h" ]; then
+				python_dev=1
+				echo "* Found python-dev on ${INCLUDE_PY}"
+			fi
+		fi
+		if [ "$python_dev" -eq "0" ] ; then
+			echo "* Missing python-dev"
+			install_package python3-${devname}
 		else
 			break
 		fi
@@ -222,25 +267,30 @@ modules[cairocffi]=cairocffi
 for module in "${!modules[@]}"; do
 	pymodule=${modules[$module]}
 	while true; do
+		module_detected=0
 		$python_bin -c "import sys, pkgutil; sys.path.append('./bin/pcb-tools'); sys.exit(0 if (pkgutil.find_loader('$module')) else 1)"
 		if [ $? -eq 0 ]; then
 			echo "* Checking Python module '$pymodule': OK"
-			break
+			module_detected=1
 		else
 			echo "* Checking Python module '$pymodule': ERROR!"
 			echo "  Python module '$pymodule' is required and NOT found!"
-			
-			# some modules have dependencies
-			if [ "$pymodule" = "cairocffi" ]; then
-				if [ "${machine}" = "linux" ] ; then
-					devname="dev"
-				else
-					devname="devel"
-				fi
-				check_library ffi libffi libffi-${devname}
-				check_library cairo cairo libcairo-${devname}
-			fi
-
+		fi
+		# some modules have dependencies
+		if [ "$pymodule" = "cairocffi" ]; then
+			echo "* Checking module dependencies: ffi and cairo"
+			check_library ffi libffi libffi-${devname}
+			check_library cairo cairo libcairo-${devname}
+		fi
+		if [ "$pymodule" = "Pillow" ]; then
+			echo "* Checking module dependencies: jpeg"
+			check_library jpeg libjpeg libjpeg-${devname}
+		fi
+		if [ "$pymodule" = "ModernGL" ]; then
+			echo "* Checking module dependencies: GL"
+			check_library GL GL libGL-${devname}
+		fi
+		if [ "$module_detected" -eq "0" ] ; then
 			if [ ]; then
 				echo "Please use 'pip3 install $pymodule' to install it manually!"
 				exit 1;
@@ -253,6 +303,8 @@ for module in "${!modules[@]}"; do
 					esac
 				done
 			fi
+		else
+			break
 		fi
 	done
 done

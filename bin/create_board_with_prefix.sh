@@ -12,7 +12,7 @@ frame_rev="$4"
 bom_replace="$5"
 comp_img_offset="$6"
 
-python_bin="python3"
+python_bin="python3.8"
 
 ############################################################################################
 
