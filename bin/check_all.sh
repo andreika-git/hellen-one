@@ -159,7 +159,7 @@ function check_library {
 }
 
 function install_pip3 {
-	pip3installer="https://bootstrap.pypa.io/pip/3.6/get-pip.py"
+	pip3installer="https://bootstrap.pypa.io/pip/get-pip.py"
 	dst="/tmp/get-pip.py"
    	download_url $pip3installer $dst
    	$python_bin $dst
