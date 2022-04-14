@@ -10,4 +10,5 @@
 #python3 gen_hellen_board_id.py nb1-c
 #python3 gen_hellen_board_id.py na6_94-c
 #python3 gen_hellen_board_id.py nissan121-c
-python3 gen_hellen_board_id.py alpha8ch-a
+#python3 gen_hellen_board_id.py alpha8ch-a
+python3 gen_hellen_board_id.py 154hyundai-c
