@@ -114,8 +114,8 @@ echo "Checking the Python version..."
 python_bin="python3.8"
 while true; do
 	python_ver=$($python_bin -V 2>&1 | grep -Po '(?<=Python )(.+)')
-	if [[ -z "$python_ver" ]] || [[ ! $python_ver =~ ^3\.[56789].* ]] ; then
-		echo "Error! Python 3.5 or later is required. It should be installed and added to the PATH!"
+	if [[ -z "$python_ver" ]] || [[ ! $python_ver =~ ^3\.[89].* ]] ; then
+		echo "Error! Python 3.8 or later is required. It should be installed and added to the PATH!"
 		while true; do
 			if ! [ -x "$(command -v wget)" ] ; then
 				echo "Warning! wget is not installed. Using wget is preferred for installing other packages"
