@@ -288,8 +288,7 @@ for module in "${!modules[@]}"; do
 		fi
 		if [ "$pymodule" = "ModernGL" ]; then
 			echo "* Checking module dependencies: GL"
-			check_library GL GL
-			# libGL-${devname}
+			#check_library GL GL libGL-${devname}
 		fi
 		if [ "$module_detected" -eq "0" ] ; then
 			if [ ]; then
