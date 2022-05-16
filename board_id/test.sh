@@ -12,4 +12,7 @@
 #python3 gen_hellen_board_id.py nissan121-c
 #python3 gen_hellen_board_id.py alpha8ch-a
 #python3 gen_hellen_board_id.py 154hyundai-c
-python3 gen_hellen_board_id.py alpha4ch-b
+#python3 gen_hellen_board_id.py alpha4ch-b
+#python3 gen_hellen_board_id.py gm-e67-a
+#python3 gen_hellen_board_id.py 55bmw-a
+#python3 gen_hellen_board_id.py gm-e38-a
