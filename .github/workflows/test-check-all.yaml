@@ -1,0 +1,14 @@
+name: Check All
+
+on: [push, pull_request]
+
+jobs:
+  build-firmware:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: recursive
+
+
