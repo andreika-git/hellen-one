@@ -19,6 +19,6 @@ jobs:
         run: |
           pip3 install simpleparse
 
-      - name: Check All
-        run: |
-          bash bin/check_all.sh
+#      - name: Check All
+#        run: |
+#          bash bin/check_all.sh
