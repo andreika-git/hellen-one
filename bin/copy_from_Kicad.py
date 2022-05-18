@@ -107,7 +107,7 @@ shutil.copyfile(src_name + ".wrl", dst_name + "-vrml.wrl")
 footprint_LUT = dict()
 
 print ("Reading footprint replacement table...")
-with open(fixFootprintsPath, 'rb') as f_f:
+with open(fixFootprintsPath, 'rt') as f_f:
 	reader = csv.reader(f_f, delimiter=',')
 	for row in reader:
 		footprint_LUT[row[0]] = row[1]
@@ -115,7 +115,7 @@ with open(fixFootprintsPath, 'rb') as f_f:
 bom = dict()
 
 print ("Copying BOM...")
-with open(src_name + ".csv", 'rb') as src_f, open(dst_name + "-BOM.csv", 'w') as dst_f:
+with open(src_name + ".csv", 'rt') as src_f, open(dst_name + "-BOM.csv", 'w') as dst_f:
 	dst_f.write("Comment,Designator,Footprint,LCSC Part #\n")
 	reader = csv.reader(src_f, delimiter=',')
 	# skip header
@@ -140,14 +140,14 @@ with open(src_name + ".csv", 'rb') as src_f, open(dst_name + "-BOM.csv", 'w') as
 print ("Reading rotations...")
 rotations = {}
 # read rotations csv (to undo weird JLC's angles which are not footprint-oriented)
-with open(fixRotationsPath, 'rb') as f:
+with open(fixRotationsPath, 'rt') as f:
 	next(f)
 	reader = csv.reader(f, delimiter=',')
 	for row in reader:
 		rotations[row[0]] = float(row[1])
 
 print ("Copying CPL...")
-with open(src_name + "-all-pos.csv", 'rb') as src_f, open(dst_name + "-CPL.csv", 'w') as dst_f:
+with open(src_name + "-all-pos.csv", 'rt') as src_f, open(dst_name + "-CPL.csv", 'w') as dst_f:
 	dst_f.write("Designator,Mid X,Mid Y,Layer,Rotation,Ref-X(mm),Ref-Y(mm)\n")
 	reader = csv.reader(src_f, delimiter=',')
 	# skip header
