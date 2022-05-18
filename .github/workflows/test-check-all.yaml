@@ -22,3 +22,7 @@ jobs:
       - name: Build Docker
         run: |
           bash step1-build-docker.sh
+
+      - name: Run Tests in Docker
+        run: |
+          bash step2-run-docker.sh
