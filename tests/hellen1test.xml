@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>G:\RADIO\PROJECTS\S3EFI\Hellen\src\!release\!hellen-boards\hellen-one\tests\hellen1test.kicad_sch</source>
+    <date>17/05/2022 23:21:01</date>
+    <tool>Eeschema (6.0.1)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Hellen-One Test Board</title>
+        <company/>
+        <rev>A</rev>
+        <date>2022-05-17</date>
+        <source>hellen1test.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="M1">
+      <value>Module-can-0.1</value>
+      <footprint>hellen-one-can-0.1:can</footprint>
+      <libsource lib="hellen-one-can-0.1" part="Module-can-0.1" description="Hellen-One CAN Module"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hellen1test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2326ebc-6cfa-4f20-8be5-c340d5e4c015</tstamps>
+    </comp>
+    <comp ref="P1">
+      <value>Pad</value>
+      <footprint>hellen-one-common:PAD-TH</footprint>
+      <libsource lib="hellen-one-common" part="Pad" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hellen1test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f41dd84e-6491-406d-a2ce-1f6531fdae11</tstamps>
+    </comp>
+    <comp ref="P2">
+      <value>Pad</value>
+      <footprint>hellen-one-common:PAD-TH</footprint>
+      <libsource lib="hellen-one-common" part="Pad" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hellen1test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39b2c34b-9cc2-4ed0-9f8e-ee684874553b</tstamps>
+    </comp>
+    <comp ref="P3">
+      <value>Pad</value>
+      <footprint>hellen-one-common:PAD-TH</footprint>
+      <libsource lib="hellen-one-common" part="Pad" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hellen1test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0b79b8f-341e-4c48-b02e-57c6083018cd</tstamps>
+    </comp>
+    <comp ref="P4">
+      <value>Pad</value>
+      <footprint>hellen-one-common:PAD-TH</footprint>
+      <libsource lib="hellen-one-common" part="Pad" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hellen1test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>294c5a88-95a9-47c1-9fad-22bdc61cc58f</tstamps>
+    </comp>
+    <comp ref="P5">
+      <value>Pad</value>
+      <footprint>hellen-one-common:PAD-TH</footprint>
+      <libsource lib="hellen-one-common" part="Pad" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hellen1test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fcb4f52a-a6cb-4ca0-970a-4c8a2c0f3942</tstamps>
+    </comp>
+    <comp ref="P6">
+      <value>Pad</value>
+      <footprint>hellen-one-common:PAD-TH</footprint>
+      <libsource lib="hellen-one-common" part="Pad" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hellen1test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69587271-bc7a-41b5-8eba-7c26564948ac</tstamps>
+    </comp>
+    <comp ref="P7">
+      <value>Pad</value>
+      <footprint>hellen-one-common:PAD-TH</footprint>
+      <libsource lib="hellen-one-common" part="Pad" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hellen1test.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77301f37-31c4-4002-b432-284596522bee</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="hellen-one-can-0.1" part="Module-can-0.1">
+      <description>Hellen-One CAN Module</description>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Module-can-0.1</field>
+        <field name="Footprint">hellen-one-can-0.1:can</field>
+      </fields>
+      <pins>
+        <pin num="E1" name="GND" type="passive"/>
+        <pin num="S1" name="CANL" type="passive"/>
+        <pin num="S2" name="CANH" type="passive"/>
+        <pin num="V1" name="V5" type="passive"/>
+        <pin num="V2" name="CAN_VIO" type="passive"/>
+        <pin num="V5" name="CAN_TX" type="passive"/>
+        <pin num="V6" name="CAN_RX" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hellen-one-common" part="Pad">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">Pad</field>
+        <field name="Footprint">hellen-one-common:PAD-TH</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="hellen-one-can-0.1">
+      <uri>G:\RADIO\PROJECTS\S3EFI\Hellen\src\!release\!hellen-boards\hellen-one\tests/../modules/can/0.1/can.kicad_sym</uri>
+    </library>
+    <library logical="hellen-one-common">
+      <uri>G:\RADIO\PROJECTS\S3EFI\Hellen\src\!release\!hellen-boards\hellen-one\tests/../kicad/hellen-one-common.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="M1" pin="V2" pinfunction="CAN_VIO" pintype="passive"/>
+      <node ref="P2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="M1" pin="V1" pinfunction="V5" pintype="passive"/>
+      <node ref="P1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="3" name="/CAN+">
+      <node ref="M1" pin="S2" pinfunction="CANH" pintype="passive"/>
+      <node ref="P7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="4" name="/CAN-">
+      <node ref="M1" pin="S1" pinfunction="CANL" pintype="passive"/>
+      <node ref="P6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="5" name="/CAN_RX">
+      <node ref="M1" pin="V6" pinfunction="CAN_RX" pintype="passive"/>
+      <node ref="P3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="6" name="/CAN_TX">
+      <node ref="M1" pin="V5" pinfunction="CAN_TX" pintype="passive"/>
+      <node ref="P4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="7" name="GND">
+      <node ref="M1" pin="E1" pinfunction="GND" pintype="passive"/>
+      <node ref="P5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,12 @@
+Comment,Designator,Footprint,LCSC Part #
+"Pad","P1","PAD-TH",""
+"Pad","P2","PAD-TH",""
+"Pad","P3","PAD-TH",""
+"Pad","P4","PAD-TH",""
+"Pad","P5","PAD-TH",""
+"Pad","P6","PAD-TH",""
+"Pad","P7","PAD-TH",""
+"100n","C430, C431","C0603","C14663"
+"PESD1CAN","D430","SOT-23","C343993"
+"120","R430","R0603","C22787"
+"TJA1051T/3/1J","U430","SO8","C38695"
