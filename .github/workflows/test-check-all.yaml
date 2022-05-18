@@ -1,6 +1,6 @@
 name: Check All
 
-on: [push, pull_request]
+on: [ push, pull_request ]
 
 jobs:
   build-firmware:
@@ -19,6 +19,6 @@ jobs:
         run: |
           pip3 install simpleparse
 
-     - name: Build Docker
-       run: |
-         bash step1-build-docker.sh
+      - name: Build Docker
+        run: |
+          bash step1-build-docker.sh
