@@ -5,4 +5,4 @@
 # optional parameter: non-default script
 #
 
-docker run -it --rm hellen-one %1
+docker run -it --rm hellen-one $1
