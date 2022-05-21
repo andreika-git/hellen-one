@@ -31,6 +31,10 @@ if ! ./bin/check_all.sh; then
 	exit 2
 fi
 
+# start virtual framebuffer (should be already installed)
+export DISPLAY=:99.0
+sudo Xvfb :99 -screen 0 640x480x24 &
+
 echo "Processing ${board_prefix} board..."
 if ! $python_bin bin/process_board.py ${board_prefix} ${project_base} ${frame_name} ${frame_rev} ${bom_replace} ${comp_img_offset}; then
 	echo "ABORTING!"
