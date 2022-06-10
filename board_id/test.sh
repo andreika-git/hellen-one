@@ -17,3 +17,5 @@
 #python3 gen_hellen_board_id.py 55bmw-a
 #python3 gen_hellen_board_id.py gm-e38-a
 #python3 gen_hellen_board_id.py 72_NB2-f
+
+#python3 gen_hellen_board_id.py alpha4ch-c
