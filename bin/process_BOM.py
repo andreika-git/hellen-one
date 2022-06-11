@@ -26,8 +26,14 @@ def read_repl_file(csv_name, repl_base_path, replList):
             # skip comments (this is not strictly CSV-compliant, but useful for our purposes)
             if (row[0].startswith("#")):
                 continue
-            replList.append(row)
-
+            col0 = row[0].split(",")
+            for col in col0:
+                subrow = [col.strip(), row[1]]
+                if (len(row) > 2):
+                    subrow.append(row[2])
+                if (len(row) > 3):
+                    subrow.append(row[3])
+                replList.append(subrow)
 
 if len(sys.argv) < 2:
     print ("Error! Please specify a BOM file name.")
