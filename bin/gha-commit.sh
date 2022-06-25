@@ -4,7 +4,7 @@
           git config --local user.name "GitHub create-board Action"
           git add boards/*
           git status
-          OUT=$(git commit -am "Auto-generated board" 2>&1) || echo "commit failed, finding out why"
+          OUT=$(git commit -am "[skip actions] Auto-generated board" 2>&1) || echo "commit failed, finding out why"
           if echo "$OUT" | grep 'nothing to commit'; then
             echo "headers: looks like nothing to commit"
             echo "::set-env name=NOCOMMIT::true"
