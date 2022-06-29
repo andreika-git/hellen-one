@@ -19,3 +19,4 @@
 #python3 gen_hellen_board_id.py 72_NB2-f
 
 #python3 gen_hellen_board_id.py alpha4ch-c
+#python3 gen_hellen_board_id.py gm-e67-b
