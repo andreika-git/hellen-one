@@ -21,3 +21,4 @@
 #python3 gen_hellen_board_id.py alpha4ch-c
 #python3 gen_hellen_board_id.py gm-e67-b
 #python3 gen_hellen_board_id.py alpha4ch-d
+#python3 gen_hellen_board_id.py 154hyundai-d
