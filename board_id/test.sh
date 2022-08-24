@@ -23,4 +23,5 @@
 #python3 gen_hellen_board_id.py alpha4ch-d
 #python3 gen_hellen_board_id.py nissan121-d
 #python3 gen_hellen_board_id.py alpha4ch-e
+#python3 gen_hellen_board_id.py na6_94-d
 
