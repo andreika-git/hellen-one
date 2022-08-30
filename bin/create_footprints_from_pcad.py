@@ -64,7 +64,8 @@ def getNumber(v):
 			return val
 	return 0
 
-with open(pcadFileName, 'rt') as fp:
+with open(pcadFileName, 'rt', encoding='latin1') as fp:
+	print (pcadFileName)
 	for line in fp:
 		root = pat_root.match(line)
 		if root:
