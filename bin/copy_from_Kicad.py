@@ -163,6 +163,9 @@ with open(src_name + "-all-pos.csv", 'rt') as src_f, open(dst_name + "-CPL.csv",
 		# fix kicad's negative x coord for bottom-placed components
 		if (side.lower() == "bottom"):
 			posx = str(-float(posx))
+		if des not in bom:
+			print ("Error! Designator " + des + " was not found in the BOM file!")
+			sys.exit(2)
 		if bom[des]:
 			for r in rotations:
 				if re.match(r, bom[des]):
