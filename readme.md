@@ -22,9 +22,10 @@ Or, under Windows, you'll need to install a special environment like MSYS2 (http
 
 Please see "create_hellen_board_example.sh" for basic script usage.
 
-For more script usage examples and some real projects, please see:
+For more script usage examples and some real projects, please:
 
-https://github.com/andreika-git/hellen-boards/
+See https://rusefi.com/forum/viewtopic.php?p=45386#p45386
+See https://github.com/andreika-git/hellen-boards/
 
 
 * * *
