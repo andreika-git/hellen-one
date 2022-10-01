@@ -2,6 +2,9 @@
 
 All notable changes will be documented in this file.
 
+## mcu-0.7 and mcu144-0.7
+  - Changed Kicad symbol (pin names renamed + added EXTI numbers)
+
 ## ign8-0.2
   - Fixed module border misalignment
 
