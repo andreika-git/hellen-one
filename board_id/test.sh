@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# See readme.md
+
 #python3 gen_hellen_board_id_resistors.py 
 
 #python3 gen_hellen_board_id.py 72_NB2-e
@@ -26,3 +28,6 @@
 #python3 gen_hellen_board_id.py na6_94-d
 #python3 gen_hellen_board_id.py alpha2ch-d
 #python3 gen_hellen_board_id.py gm-e67-c
+#python3 gen_hellen_board_id.py nissan121-e
+#python3 gen_hellen_board_id.py honda125-a
+#python3 gen_hellen_board_id.py vag121-d
