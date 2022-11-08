@@ -25,6 +25,14 @@ cp ${src_path}/${name}.GB* ${dst_path}
 cp ${src_path}/${name}.GKO ${dst_path}
 # copy "mechanical 15" module outline layer
 cp ${src_path}/${name}.GM15 ${dst_path}
+# copy internal layer G1
+if [ -f "${src_path}/${name}.G1" ]; then
+	cp ${src_path}/${name}.G1 ${dst_path}
+fi
+# copy internal layer G2
+if [ -f "${src_path}/${name}.G2" ]; then
+	cp ${src_path}/${name}.G2 ${dst_path}
+fi
 # copy NC drill
 if [ -f "${src_path}/${name}-RoundHoles.TXT" ]; then
 	cp ${src_path}/${name}-RoundHoles.TXT ${dst_path}/${name}.DRL 2> /dev/null
