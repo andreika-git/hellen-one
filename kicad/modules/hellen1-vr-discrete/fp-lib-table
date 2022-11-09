@@ -1,4 +1,4 @@
 (fp_lib_table
   (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/../../footprints")(options "")(descr ""))
-  (lib (name "hellen-one-vr-discrete-0.1")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/vr-discrete/0.1")(options "")(descr ""))
+  (lib (name "hellen-one-vr-discrete-0.2")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/vr-discrete/0.2")(options "")(descr ""))
 )
