@@ -2362,6 +2362,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d5d7d146-d834-4a6b-b5f9-979e39d5c3be)
   )
+  (text "GPIO pins PF0, PF1 connected \nto ground to improve the routing\n(floating pins by the software)."
+    (at 135.89 82.55 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid f61c7846-63af-4484-ad36-bd483089086f)
+  )
 
   (label "LSU_H-" (at 127 153.67 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
