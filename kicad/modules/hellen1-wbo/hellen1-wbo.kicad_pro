@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.254
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -391,7 +391,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "",
-      "vrml": "../../../modules/wbo/0.3/wbo-vrml.wrl"
+      "vrml": "../../../modules/wbo/0.4/wbo-vrml.wrl"
     },
     "page_layout_descr_file": ""
   },
