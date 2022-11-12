@@ -1,6 +1,14 @@
-This repository contains all scripts and data to create Hellen One boards for [rusEFI](https://github.com/rusefi/rusefi)!
+TL,DR: please see how some of the open source boards are done and follow the pattern!
 
-See also https://github.com/andreika-git/hellen-boards
+https://github.com/rusefi/alphax-4chan
+https://github.com/rusefi/alphax-2chan
+https://github.com/rusefi/hellen154hyundai
+https://github.com/rusefi/hellen121vag
+https://github.com/rusefi/hellen88bmw
+https://github.com/andreika-git/hellen81/
+https://github.com/rusefi/alphax-8chan
+
+This repository contains all scripts and data to create Hellen One boards for [rusEFI](https://github.com/rusefi/rusefi)!
 
 See also https://github.com/rusefi/rusefi/wiki/Hellen-One-Platform
 
