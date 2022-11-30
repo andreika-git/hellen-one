@@ -2,6 +2,13 @@
 
 All notable changes will be documented in this file.
 
+## vr-discrete-0.2
+  - now double-sided assembly and smaller dimentions
+
+## wbo-0.4
+  - now integrated with CAN transiever
+  - now double-sided assembly and smaller dimentions
+
 ## mcu-0.7 and mcu144-0.7
   - mcu and mcu144 modules are now 4-layer (4-layer frames required!)
   - Changed Kicad symbol (pin names renamed + added EXTI numbers)
