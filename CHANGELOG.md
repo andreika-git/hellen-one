@@ -9,7 +9,7 @@ All notable changes will be documented in this file.
   - now double-sided assembly and smaller dimentions
 
 ## wbo-0.4
-  - now integrated with CAN transiever
+  - now integrated CAN transiever
   - now double-sided assembly and smaller dimentions
 
 ## mcu-0.7 and mcu144-0.7
