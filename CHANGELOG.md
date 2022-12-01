@@ -2,6 +2,9 @@
 
 All notable changes will be documented in this file.
 
+## knock-0.2
+  - now double-sided assembly and smaller dimentions
+
 ## vr-discrete-0.2
   - now double-sided assembly and smaller dimentions
 
