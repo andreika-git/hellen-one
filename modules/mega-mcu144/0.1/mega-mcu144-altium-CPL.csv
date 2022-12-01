@@ -4,13 +4,17 @@ C:\Work\rusefi\github\hellen-private\!release\modules\hellen1-mega-mcu144\jlc-0.
 ========================================================================================================================
 File Design Information:
 
-Date:       01.12.22
-Time:       21:48
-Revision:   cacda91cc45296b51808e5c1a19cf02404eedbcb
+Date:       02.12.22
+Time:       00:47
+Revision:   556b29e48873a706dadd40bcc29f9ecfb0323e82
 Variant:    jlc-0.1
 Units used: mm
 
 "Designator","Center-X(mm)","Center-Y(mm)","Layer","Rotation","PackageReference"
+"U1003","34.9000mm","11.3000mm","BottomLayer","180","SOT-353"
+"R1003","32.3000mm","8.4000mm","BottomLayer","0","R0402"
+"R1002","34.1000mm","8.8000mm","BottomLayer","90","R0402"
+"R1001","40.9032mm","26.1689mm","BottomLayer","270","R0402"
 "R107","28.5750mm","8.4000mm","TopLayer","90","R0402"
 "D108","33.4250mm","6.0500mm","TopLayer","270","LED-0603"
 "C233","7.3999mm","34.4000mm","BottomLayer","90","C0402"
@@ -67,7 +71,7 @@ Units used: mm
 "R190","11.5499mm","28.9500mm","BottomLayer","0","R0603-4"
 "R186","38.1000mm","25.6000mm","BottomLayer","90","R0603-4"
 "R185","38.1000mm","28.5000mm","BottomLayer","270","R0603-4"
-"R181","20.2500mm","28.9500mm","BottomLayer","180","R0603-4"
+"R181","20.2499mm","28.9500mm","BottomLayer","180","R0603-4"
 "R180","17.3499mm","28.9500mm","BottomLayer","0","R0603-4"
 "R176","26.0499mm","28.9500mm","BottomLayer","180","R0603-4"
 "R175","23.1499mm","28.9500mm","BottomLayer","0","R0603-4"
@@ -151,7 +155,7 @@ Units used: mm
 "P491","7.7000mm","24.6000mm","TopLayer","0",""
 "P490","6.4000mm","23.4000mm","TopLayer","0",""
 "J450","14.4249mm","11.7470mm","BottomLayer","0","SDAMB-012"
-"D430","37.5748mm","13.0345mm","BottomLayer","180","SOT-23"
+"D430","38.1748mm","13.4345mm","BottomLayer","180","SOT-23"
 "D205","2.5000mm","22.6500mm","TopLayer","270","SMB"
 "D207","9.2000mm","34.5000mm","TopLayer","180","SOT23-6"
 "D206","14.0000mm","34.5000mm","TopLayer","180","SOT23-6"
