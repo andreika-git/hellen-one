@@ -112,6 +112,9 @@ def append_cpl(src_fname, dst_fname, x, y, mrot, isBottom, suffix = ""):
 		# skip header
 		next(src_f)
 		for row in reader:
+			if len(row) < 5:
+				print ("Error! Wrong format of CPL file " + src_fname)
+				sys.exit(3)
 			des = row[0]
 			cxmm = row[1]
 			cymm = row[2]
@@ -160,6 +163,9 @@ def append_bom(src_fname, dst_fname, suffix = ""):
 		# skip header
 		next(src_f)
 		for row in reader:
+			if len(row) < 4:
+				print ("Error! Wrong format of BOM file " + src_fname)
+				sys.exit(3)
 			comment = row[0]
 			des = row[1]
 			footprint = row[2]
