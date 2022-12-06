@@ -1,14 +1,14 @@
 Designator,Mid X,Mid Y,Rotation,Layer
-C474,5.2536mm,1.6150mm,270,BottomLayer
-M470,4.5500mm,1.6500mm,0,TopLayer
-R470,1.6000mm,0.7000mm,180,BottomLayer
-U471,6.6350mm,1.6470mm,0,TopLayer
-R474,7.5000mm,1.6146mm,180,BottomLayer
-R473,6.2404mm,1.1500mm,270,BottomLayer
-R472,3.7250mm,0.7000mm,180,BottomLayer
-C473,7.6000mm,2.6000mm,180,BottomLayer
-C472,7.6000mm,0.7500mm,0,BottomLayer
-U470,2.6600mm,1.6470mm,0,TopLayer
-R471,1.6000mm,1.6000mm,0,BottomLayer
-C471,1.6500mm,2.6000mm,0,BottomLayer
-C470,3.7750mm,2.6000mm,180,BottomLayer
+C474,5.2536mm,1.6150mm,270,Bottom
+M470,4.5500mm,1.6500mm,0,Top
+R470,1.6000mm,0.7000mm,180,Bottom
+U471,6.6350mm,1.6470mm,0,Top
+R474,7.5000mm,1.6146mm,180,Bottom
+R473,6.2404mm,1.1500mm,270,Bottom
+R472,3.7250mm,0.7000mm,180,Bottom
+C473,7.6000mm,2.6000mm,180,Bottom
+C472,7.6000mm,0.7500mm,0,Bottom
+U470,2.6600mm,1.6470mm,0,Top
+R471,1.6000mm,1.6000mm,0,Bottom
+C471,1.6500mm,2.6000mm,0,Bottom
+C470,3.7750mm,2.6000mm,180,Bottom
