@@ -1,4 +1,4 @@
-(footprint "MOD_Hellen_POWER" (version 20211014) (generator pcbnew)
+(footprint "power_12and5V" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 0)
   (fp_text reference "M410" (at -0.181801 -21.2886 unlocked) (layer "F.SilkS") hide
