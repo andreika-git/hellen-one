@@ -4,3 +4,4 @@ If you are designing a new ECU frame see https://github.com/andreika-git/hellen-
 
 This folder contains module _source_ files, not reusable resulting frames.
 
+See https://github.com/andreika-git/hellen-one/wiki/scripts-howto#how-to-create-a-module
