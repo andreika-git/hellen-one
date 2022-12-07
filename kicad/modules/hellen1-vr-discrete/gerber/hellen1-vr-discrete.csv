@@ -17,7 +17,7 @@
 "1u","C766","Capacitor_SMD:C_0402_1005Metric","C52923"
 "1u","C767","Capacitor_SMD:C_0402_1005Metric","C52923"
 "LED-GREEN-0603","D751","LED_SMD:LED_0603_1608Metric","C72043"
-"Module-vr-discrete-0.1","M750","hellen-one-vr-discrete-0.1:vr-discrete",""
+"Module-vr-discrete-0.2","M750","hellen-one-vr-discrete-0.2:vr-discrete",""
 "2.2k","R751","Resistor_SMD:R_0402_1005Metric","C25879"
 "10k","R752","Resistor_SMD:R_0805_2012Metric","C17414"
 "10k","R753","Resistor_SMD:R_0805_2012Metric","C17414"
