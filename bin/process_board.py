@@ -91,6 +91,8 @@ def print_module(name, prefixPath, moduleName, fileName, isBoard, isBottom):
 			"*Keepout=%(prefix)s.GKO",
 			"Drills=%(prefix)s.DRL",
 			"drillspth=%(prefix)s.DRL"])
+		if ((os.path.isfile(prefix + ".GBP")):
+			write_lines(file, "*" + bottom + "SolderPasteMask=%(prefix)s.GBP")
 		if ((os.path.isfile(prefix + ".G1") and os.path.isfile(prefix + ".G2")) or isBoard == 1):
 			write_lines(file, [
 				"*InnerLayer2=%(prefix)s.G1",

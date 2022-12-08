@@ -62,7 +62,7 @@ mkdir_p(dst_path)
 
 # copy gerbers
 print ("Reading gerbers from " + src_name + "*.*")
-gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GM1", ".G2", ".G3", ".DRL"]
+gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GBP", ".GM1", ".G2", ".G3", ".DRL"]
 for g in gerbers:
 	copied = False
 	gl = g.lower()
@@ -86,6 +86,8 @@ for g in gerbers:
 	if not copied:
 		if (g == ".DRL"):
 			print ("* Skipping Drill for " + name + "...")
+		elif (g == ".GBP"):
+			print ("* Skipping Bottom Paste for " + name + "...")
 		elif (g == ".G2" or g == ".G3"):
 			print ("* Skipping Internal Layer " + g + " for " + name + "...")
 		else:
