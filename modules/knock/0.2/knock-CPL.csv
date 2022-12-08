@@ -1,0 +1,14 @@
+Designator,Mid X,Mid Y,Layer,Rotation
+C474,5.2536mm,1.6150mm,Bottom,270
+M470,4.5500mm,1.6500mm,Top,0
+R470,1.6000mm,0.7000mm,Bottom,180
+U471,6.6350mm,1.6470mm,Top,0
+R474,7.5000mm,1.6146mm,Bottom,180
+R473,6.2404mm,1.1500mm,Bottom,270
+R472,3.7250mm,0.7000mm,Bottom,180
+C473,7.6000mm,2.6000mm,Bottom,180
+C472,7.6000mm,0.7500mm,Bottom,0
+U470,2.6600mm,1.6470mm,Top,0
+R471,1.6000mm,1.6000mm,Bottom,0
+C471,1.6500mm,2.6000mm,Bottom,0
+C470,3.7750mm,2.6000mm,Bottom,180
