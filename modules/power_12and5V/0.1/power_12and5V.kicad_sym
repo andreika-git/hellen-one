@@ -6,7 +6,7 @@
     (property "Value" "Module-power_12and5V-0.1" (id 1) (at -1.27 3.81 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "power_12and5V:power_12and5V" (id 2) (at -2.54 3.81 0)
+    (property "Footprint" "hellen-one-power_12and5V-0.1:power_12and5V" (id 2) (at -2.54 3.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 0 0 0)
