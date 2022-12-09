@@ -56,6 +56,7 @@
 "1k","R627","Resistor_SMD:R_0402_1005Metric","C11702"
 "1k","R628","Resistor_SMD:R_0402_1005Metric","C11702"
 "120","R629","Resistor_SMD:R_0402_1005Metric","C25079"
+"DNP","R630","Resistor_SMD:R_0402_1005Metric","C17168"
 "MCP6004","U600","Package_SO:TSSOP-14_4.4x5mm_P0.65mm","C50282"
 "AD8628","U601","Package_TO_SOT_SMD:TSOT-23-5","C29309"
 "STM32F042K6Tx","U602","Package_QFP:LQFP-32_7x7mm_P0.8mm","C69216"
