@@ -405,6 +405,10 @@
           (name "V33_OUT" (effects (font (size 1.27 1.27))))
           (number "W8" (effects (font (size 1.27 1.27))))
         )
+        (pin passive line (at -7.62 -25.4 0) (length 7.62)
+          (name "VDDA" (effects (font (size 1.27 1.27))))
+          (number "W9" (effects (font (size 1.27 1.27))))
+        )
       )
     )
     (symbol "hellen1-wbo-rescue:+3.3V-power" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
@@ -1872,6 +1876,10 @@
   (wire (pts (xy 116.84 147.32) (xy 116.84 166.37))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 592df8ab-8eaf-4de2-a168-fbcd8b0022fa)
+  )
+  (wire (pts (xy 148.59 147.32) (xy 153.67 147.32))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 5a75ce6e-2d00-4d0c-8949-f4b4bb8241d6)
   )
   (wire (pts (xy 33.02 114.3) (xy 36.83 114.3))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -4714,7 +4722,7 @@
   (symbol (lib_id "hellen1-wbo-rescue:GND-power") (at 171.45 85.09 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 10ca8d1d-9815-4280-9786-a73150972327)
-    (property "Reference" "#PWR?" (id 0) (at 171.45 91.44 0)
+    (property "Reference" "#PWR0108" (id 0) (at 171.45 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 171.323 89.4842 0))
@@ -4819,6 +4827,22 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c5c482fb-fdda-42b3-a001-6ffe336d466e))
+  )
+
+  (symbol (lib_id "hellen1-wbo-rescue:VDDA-power") (at 148.59 147.32 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 48baa104-d05e-4eed-a021-5654a78a6884)
+    (property "Reference" "#PWR0109" (id 0) (at 148.59 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDDA" (id 1) (at 149.0218 142.9258 0))
+    (property "Footprint" "" (id 2) (at 148.59 147.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 148.59 147.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 23333d75-76c8-46a2-86d4-962e5c1051a9))
   )
 
   (symbol (lib_id "Transistor_FET:VNP10N07") (at 121.92 147.32 0) (unit 1)
@@ -4946,6 +4970,24 @@
     (pin "1" (uuid 25237782-e1ab-4a82-9199-04ec501071f1))
   )
 
+  (symbol (lib_id "hellen1-wbo-rescue:R-Device") (at 157.48 147.32 90) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 8719995c-7a59-4520-a953-b0d876dea9a1)
+    (property "Reference" "R630" (id 0) (at 157.48 145.415 90))
+    (property "Value" "DNP" (id 1) (at 157.48 149.86 90))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 157.48 149.098 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 157.48 147.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C17168" (id 4) (at 157.48 147.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0a994f60-1aa7-47c9-b37a-1a346c7aa615))
+    (pin "2" (uuid 4233ad35-c291-4974-969a-85cfea779329))
+  )
+
   (symbol (lib_id "hellen1-wbo-rescue:GND-power") (at 209.55 142.24 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 90d9cf3e-cc8d-44d6-aee6-1dfc5e3723ac)
@@ -5010,6 +5052,7 @@
     (pin "W6" (uuid 4a35886a-4888-453b-949b-8b9a7630080d))
     (pin "W7" (uuid 636cb136-306f-4c82-8735-a853f50e03ae))
     (pin "W8" (uuid 0b025a77-640c-4bdc-b37e-6a96f2f40ba2))
+    (pin "W9" (uuid a1cd3a99-eb24-4221-90d5-a28da94d5cf1))
   )
 
   (symbol (lib_id "hellen1-wbo-rescue:GND-power") (at 209.55 160.02 90) (unit 1)
@@ -5202,6 +5245,12 @@
     (path "/f8a1bf12-8885-4b79-8b83-39101450a636"
       (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
     )
+    (path "/10ca8d1d-9815-4280-9786-a73150972327"
+      (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/48baa104-d05e-4eed-a021-5654a78a6884"
+      (reference "#PWR0109") (unit 1) (value "VDDA") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005eb130b2"
       (reference "#PWR0600") (unit 1) (value "GND") (footprint "")
     )
@@ -5351,9 +5400,6 @@
     )
     (path "/00000000-0000-0000-0000-00005fd14741"
       (reference "#PWR0649") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/10ca8d1d-9815-4280-9786-a73150972327"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005eb1294f"
       (reference "C600") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -5528,6 +5574,9 @@
     )
     (path "/b9ed5c9f-08c2-46c3-9f49-260a5ce30362"
       (reference "R629") (unit 1) (value "120") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/8719995c-7a59-4520-a953-b0d876dea9a1"
+      (reference "R630") (unit 1) (value "DNP") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005f8980df"
       (reference "U600") (unit 1) (value "MCP6004") (footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm")
