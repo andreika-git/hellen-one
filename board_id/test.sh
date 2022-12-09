@@ -31,6 +31,6 @@
 #python3 gen_hellen_board_id.py nissan121-e
 #python3 gen_hellen_board_id.py honda125-a
 #python3 gen_hellen_board_id.py vag121-d
-#python3 gen_hellen_board_id.py alpha2ch-e
-#python3 gen_hellen_board_id.py alpha4ch-f
-#python3 gen_hellen_board_id.py hellen-honda-k-a
+python3 gen_hellen_board_id.py alpha2ch-e
+python3 gen_hellen_board_id.py alpha4ch-f
+python3 gen_hellen_board_id.py hellen-honda-k-a
