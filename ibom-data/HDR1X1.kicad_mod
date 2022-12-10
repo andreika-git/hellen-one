@@ -1,0 +1,3 @@
+(module HDR1X1 (layer F.Cu) (tedit 6394624B)
+  (pad 1 thru_hole oval (at 0.0 -0.0) (size 1.1 1.1) (drill 0.8) (layers F.Cu F.Mask))
+)
