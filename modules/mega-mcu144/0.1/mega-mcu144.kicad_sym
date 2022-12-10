@@ -3,7 +3,7 @@
     (property "Reference" "M" (id 0) (at 8.89 3.81 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "mega-mcu144-0.1" (id 1) (at 16.51 -237.49 0)
+    (property "Value" "Module-mega-mcu144-0.1" (id 1) (at 16.51 -237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "hellen-one-mega-mcu144-0.1:mega-mcu144" (id 2) (at 39.37 -210.82 90)
