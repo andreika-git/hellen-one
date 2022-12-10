@@ -1,4 +1,4 @@
-(module CONN-MICROSD-472192001 (layer F.Cu) (tedit 6394666A)
+(module CONN-MICROSD-472192001 (layer F.Cu) (tedit 63947503)
   (pad 1 smd roundrect (at 3.2049974 1.7999964 90.0) (size 1.5 0.65) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
   (pad 2 smd roundrect (at 2.1049995999999997 1.7999964 90.0) (size 1.5 0.65) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
   (pad 3 smd roundrect (at 1.0050018 1.7999964 90.0) (size 1.5 0.65) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
