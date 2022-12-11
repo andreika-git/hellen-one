@@ -1,7 +1,6 @@
 "Footprint pattern","Correction"
 "^SOT-223",180
 "^SOT-23",180
-"^SOT23-6",90
 "^SOT23",180
 "^TSOT-23",180
 "^TSOT23",180
@@ -22,3 +21,7 @@
 "^SO20POWER",180
 "^BatteryHolder_Keystone_1060_1x2032",180
 "^BATTERY-2032",180
+"^SOP8",270
+"^TSSOP24",180
+"^SDAMB-012",180
+"^DPAK",180
