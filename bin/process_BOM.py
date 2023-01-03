@@ -47,6 +47,7 @@ if len(sys.argv) > 2:
 print ("Opening BOM file " + fileName + "...")
 
 rows = OrderedDict()
+rowDes = OrderedDict()
 emptyId = 1
 
 with open(fileName, 'rt') as f:
@@ -56,6 +57,11 @@ with open(fileName, 'rt') as f:
         row[3] = row[3].strip()
         rowName = row[3]
         row[1] = row[1].split(", ")
+        for rDes in row[1]:
+            if rDes in rowDes:
+                print ("* Error! Duplicate designators found in BOM: " + rDes)
+                sys.exit(3)
+            rowDes[rDes] = 1
         # all empty names should be saved separately
         if not rowName:
         	rows["_" + str(emptyId)] = row
