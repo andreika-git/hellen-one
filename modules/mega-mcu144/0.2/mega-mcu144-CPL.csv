@@ -1,4 +1,5 @@
 Designator,Mid X,Mid Y,Layer,Rotation
+R1004,10.6000mm,38.4500mm,Bottom,180
 U102,17.8845mm,18.9856mm,Bottom,270
 R109,40.1000mm,34.4000mm,Bottom,180
 R108,5.2606mm,33.2254mm,Bottom,0
@@ -259,7 +260,7 @@ R125,31.4000mm,20.1000mm,Bottom,180
 C104,1.7500mm,37.3500mm,Bottom,90
 C137,8.9000mm,35.1000mm,Bottom,180
 D101,2.7500mm,31.4000mm,Bottom,180
-C101,11.9500mm,38.7500mm,Bottom,0
+C101,12.4500mm,38.7500mm,Bottom,0
 R102,41.2000mm,39.0000mm,Bottom,180
 R101,10.4001mm,28.4000mm,Bottom,270
 D102,39.7994mm,37.4432mm,Top,90

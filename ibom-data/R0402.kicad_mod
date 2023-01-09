@@ -1,4 +1,4 @@
-(module R0402 (layer F.Cu) (tedit 63AB6670)
+(module R0402 (layer F.Cu) (tedit 63BC692F)
   (pad 1 smd roundrect (at -0.49999899999999997 -0.0 90.0) (size 0.7 0.6) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
   (pad 2 smd roundrect (at 0.49999899999999997 -0.0 90.0) (size 0.7 0.6) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
 )
