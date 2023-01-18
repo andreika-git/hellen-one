@@ -1,4 +1,4 @@
 (sym_lib_table
   (lib (name "hellen-one-common")(type "KiCad")(uri "${KIPRJMOD}/../../hellen-one-common.kicad_sym")(options "")(descr ""))
-  (lib (name "vr-discrete")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/vr-discrete/0.2/hellen-one-vr-discrete-0.2.kicad_sym")(options "")(descr ""))
+  (lib (name "vr-discrete")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/vr-discrete/0.4/vr-discrete.kicad_sym")(options "")(descr ""))
 )
