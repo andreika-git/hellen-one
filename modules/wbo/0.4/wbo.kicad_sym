@@ -12,6 +12,17 @@
     (property "Datasheet" "" (id 3) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (symbol "Module-wbo-0.4_0_0"
+      (text "Analog/digital" (at 20.32 -20.32 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "Heater negative" (at 16.51 -7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "Power GND" (at 19.05 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
     (symbol "Module-wbo-0.4_1_0"
       (rectangle (start 0 0) (end 33.02 -39.37)
         (stroke (width 0) (type default) (color 0 0 0 0))
