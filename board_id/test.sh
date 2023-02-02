@@ -36,5 +36,6 @@
 #python3 gen_hellen_board_id.py hellen-honda-k-a
 #python3 gen_hellen_board_id.py alpha2ch-f
 #python3 gen_hellen_board_id.py alpha8ch-b
-python3 gen_hellen_board_id.py 154hyundai-d
-python3 gen_hellen_board_id.py hellen-honda-k-b
+#python3 gen_hellen_board_id.py 154hyundai-d
+#python3 gen_hellen_board_id.py hellen-honda-k-b
+python3 gen_hellen_board_id.py alpha4ch-g
