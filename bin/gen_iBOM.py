@@ -33,12 +33,13 @@ renderedPcbDpi = sys.argv[3]
 
 keepoutPath = sys.argv[4]
 topSilkPath = sys.argv[5]
-renderedPcbPath = sys.argv[6]
-bomPath = sys.argv[7]
-cplPath = sys.argv[8]
-footprintsPath = sys.argv[9]
-fixRotationsPath = sys.argv[10]
-iBomFilePath = sys.argv[11]
+bottomSilkPath = sys.argv[6]
+renderedPcbPath = sys.argv[7]
+bomPath = sys.argv[8]
+cplPath = sys.argv[9]
+footprintsPath = sys.argv[10]
+fixRotationsPath = sys.argv[11]
+iBomFilePath = sys.argv[12]
 
 htmlFileName = './bin/iBom-template.html'
 inch_to_mm = 25.4
@@ -67,6 +68,7 @@ def getSize(size, format):
 	return float(size) * inch_to_mm
 
 def readGerber(filePath, yInvert):
+	print("* Reading gerber file " + filePath + "...")
 	json = []
 	apertList = dict()
 	apert_circle_pat = re.compile(r'^%ADD([0-9]+)C,([+\-0-9\.]+)(X([+\-0-9\.]+))?\*%$')
@@ -139,7 +141,7 @@ def readGerber(filePath, yInvert):
 					curCoords = getCoords([x, y], format)
 					if cur_aper_type == "circle":
 						# todo: approximate with poly?
-						jsonCircle = {"type": "segment", "width": 0.2, "start": curCoords, "radius": getSize(cur_size, format) }
+						jsonCircle = {"type": "circle", "width": 0.2, "start": curCoords, "radius": getSize(cur_size, format) }
 						json.append(jsonCircle)
 					if cur_aper_type == "rect":
 						xS = getSize(cur_size[0], format) / 2
@@ -180,11 +182,18 @@ def updateBbox(bbox, padXY, padWH):
 	bbox[1][1] = max(bbox[1][1], padXY[1] + padWH[1])		
 	return bbox
 
-def readFootprint(fpname, footprintsPath, des):
+# footprint should be flipped if placed on the bottom side
+def getFootprintLayer(fpLayer, frameLayer):
+	if fpLayer == "F":
+		return frameLayer
+	return ("F" if frameLayer == "B" else "B") # flip layer
+
+def readFootprint(fpname, frameLayer, footprintsPath, des):
 	if not fpname:
 		return None
 	pat_module = re.compile(r'\s*\((module|footprint)\s+\"?([\w\-\.\:]+)\"?\s+(\(version[^\)]*\))?\s*(\(generator[^\)]*\))?\s*\(layer\s+\"?([FB])')
 	pat_pad = re.compile(r'^\s*\(pad\s+\"?([0-9A-Z]+)\"?\s+(\w+)\s+(\w+)\s+\(at\s+([+\-0-9e\.]+)\s+([+\-0-9e\.]+)\s*([+\-0-9\.]+)?\)\s+\(size\s+([+\-0-9\.]+)\s+([+\-0-9\.]+)\)(\s*\(drill\s+([+\-0-9\.]+)\))?\s+\(layer[s]?\s+\"?([^\)]+)\)(\s*\(roundrect_rratio\s+([+\-0-9\.]+)\))?')
+	pat_pad_layer = re.compile(r'([^\.]+)\.CU')
 
 	fpFileName = footprintsPath + "/" + fpname + ".kicad_mod"
 	print ("* Reading " + fpFileName)
@@ -200,7 +209,8 @@ def readFootprint(fpname, footprintsPath, des):
 		f.seek(0)
 		module = pat_module.match(allFile)
 		if module:
-			json["layer"] = module.group(5)
+			fpLayer = module.group(5)
+			json["layer"] = getFootprintLayer(fpLayer, frameLayer)
 		# pad definitions are single-line
 		for line in f:
 			pad = pat_pad.match(line)
@@ -214,11 +224,23 @@ def readFootprint(fpname, footprintsPath, des):
 				padW = pad.group(7)
 				padH = pad.group(8)
 				padDrill = pad.group(10) if pad.group(10) else "0"
-				padLayers = pad.group(11)
+				padLayers = pad.group(11) if pad.group(11) else ""
 				padRrect = pad.group(13) if pad.group(13) else "0"
 				bbox = updateBbox(bbox, [float(padX), float(padY)], [float(padW) * 0.5, float(padH) * 0.5])
+				# process pad layers
+				layersList = padLayers.split(" ")
+				layers = []
+				for l in layersList:
+					padLayer = pat_pad_layer.match(l.strip('\" ').upper())
+					if padLayer:
+						padLayer = padLayer.group(1)
+						if padLayer == "*":
+							layers.append("F")
+							layers.append("B")
+						else:
+							layers.append(getFootprintLayer(padLayer, frameLayer))
 				pad = { 
-					"layers": ["F"],	# todo: parse layers
+					"layers": layers,
 					"type": ("smd" if padType == "smd" else "th"),
 					"pos": [ float(padX), float(padY) ],
 					"size": [ float(padW), float(padH) ],
@@ -280,7 +302,7 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 				print("* Skipping an empty footprint for (" + row[1] + ")...")
 				continue
 			bb = row[1].split(", ")
-			bomlut.append({ "value": row[0], "fp": row[2], "refs": [] })
+			bomlut.append({ "value": row[0], "fp": row[2], "refs": [], "layer": "F" })
 			idx = len(bomlut) - 1
 			for b in bb:
 				bom[b] = { "fp": row[2], "idx": idx }
@@ -290,19 +312,20 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 		for row in reader:
 			if row[0] in bom:
 				fpname = bom[row[0]]["fp"]
+				layer = "B" if row[3].strip().lower() == "bottom" else "F"
 				idx = bom[row[0]]["idx"]
 				# search the stored footprint or load a new one
 				if fpname in footprints:
-					fprint = footprints[fpname]
+					fprint = footprints[fpname + layer]
 				else:
-					fprint = readFootprint(fpname, footprintsPath, row[0])
+					fprint = readFootprint(fpname, layer, footprintsPath, row[0])
 					# if the footprint is not found, we cannot add it to the iBOM
 					if not fprint:
 						if idx in bomlut:
 							bomlut.remove(idx)
 						del bom[row[0]]
 						continue
-					footprints[fpname] = fprint
+					footprints[fpname + layer] = fprint
 				fpr = copy.deepcopy(fprint)
 				fpr["ref"] = row[0]
 				fpr["bbox"]["pos"] = [ getPosValue(row[1]), getPosValue(row[2]) ]
@@ -324,6 +347,7 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 				json["footprints"].append(fpr)
 				fid = len(json["footprints"]) - 1
 				bomlut[idx]["refs"].append([row[0], fid])
+				bomlut[idx]["layer"] = layer
 
 	for b in bomlut:
 		refs = b["refs"]
@@ -337,8 +361,7 @@ def readFootprints(bomPath, cplPath, footprintsPath, yInvert):
 			refs, 
 			[]
 		]
-		# todo: handle layers
-		json["bom"]["F"].append(bomItem)
+		json["bom"][b["layer"]].append(bomItem)
 		json["bom"]["both"].append(bomItem)
 	return json
 	
@@ -373,7 +396,8 @@ data["edges_bbox"]["maxx"] = keepout["max"][0]
 data["edges_bbox"]["maxy"] = keepout["max"][1]
 
 topSilk = readGerber(topSilkPath, yInvert)
-data["silkscreen"]["F"] = topSilk["json"]
+bottomSilk = readGerber(bottomSilkPath, yInvert)
+data["silkscreen"] = { "F": topSilk["json"], "B": bottomSilk["json"] }
 
 footprints = readFootprints(bomPath, cplPath, footprintsPath, yInvert)
 data["footprints"] = footprints["footprints"]
@@ -389,7 +413,7 @@ with open(renderedPcbPath, mode='rb') as f:
 	html = html.replace('___PCBIMAGE___', 'data:image/png;base64,' + base64.b64encode(renderedPcb).decode('ascii'))
 
 print("* Adding the BOM data...")
-jsonBase64 = LZString().compress_to_base64(jsonText)
+jsonBase64 = LZString().compressToBase64(jsonText)
 html = html.replace('___PCBDATA___', jsonBase64)
 
 print("* Writing the output BOM file...")
