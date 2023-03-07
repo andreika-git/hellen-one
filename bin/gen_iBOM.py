@@ -413,7 +413,7 @@ with open(renderedPcbPath, mode='rb') as f:
 	html = html.replace('___PCBIMAGE___', 'data:image/png;base64,' + base64.b64encode(renderedPcb).decode('ascii'))
 
 print("* Adding the BOM data...")
-jsonBase64 = LZString().compressToBase64(jsonText)
+jsonBase64 = LZString().compress_to_base64(jsonText)
 html = html.replace('___PCBDATA___', jsonBase64)
 
 print("* Writing the output BOM file...")
