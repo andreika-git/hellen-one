@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -f hellen-one/git_scripts ]; then
+if [ ! -e hellen-one/git_scripts ]; then
     echo "No submodules?"
     git submodule update --init --recursive
 fi
