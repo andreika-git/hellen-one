@@ -20,7 +20,7 @@ Y=$(grep "aux_axis_origin" "$IN.kicad_pcb" | tr -s ' ' | cut -d ' ' -f 4 | tr -d
 
 python "$DIR/fill-zones.py" "$IN.kicad_pcb"
 
-kicad-cli pcb export gerbers --disable-aperture-macros -l "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In2.Cu,In1.Cu" --no-x2 "$IN.kicad_pcb" -o gerber/
+kicad-cli pcb export gerbers --disable-aperture-macros -l "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In2.Cu,In1.Cu" --no-x2 --aux-origin "$IN.kicad_pcb" -o gerber/
 kicad-cli pcb export drill --map-format ps --drill-origin plot --excellon-zeros-format suppressleading "$IN.kicad_pcb" -o gerber/
 kicad-cli pcb export pos --format csv --units mm --use-drill-file-origin "$IN.kicad_pcb" -o "gerber/$IN-all-pos.csv"
 
