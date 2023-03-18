@@ -6,7 +6,7 @@
     (effects (font (size 0.762 0.762) (thickness 0.254)) (justify left bottom))
     (tstamp e65a020d-db1b-404a-87fc-c319c2c8e0db)
   )
-  (fp_text value "Module:mega_mcu144/0.2" (at -2.019382 -45.426078 270 unlocked) (layer "F.SilkS") hide
+  (fp_text value "Module:mega_mcu144/0.3" (at -2.019382 -45.426078 270 unlocked) (layer "F.SilkS") hide
     (effects (font (size 1.524 1.524) (thickness 0.254)) (justify left bottom))
     (tstamp 3d4abbeb-ec03-4316-98b0-c3ae0173d71d)
   )

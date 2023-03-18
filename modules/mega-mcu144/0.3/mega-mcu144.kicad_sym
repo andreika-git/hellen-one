@@ -1,12 +1,12 @@
 (kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
-  (symbol "Module-mega-mcu144-0.2" (in_bom yes) (on_board yes)
+  (symbol "Module-mega-mcu144-0.3" (in_bom yes) (on_board yes)
     (property "Reference" "M1000" (id 0) (at 7.62 2.54 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Value" "Module-mega-mcu144-0.2" (id 1) (at 7.62 -246.38 0)
+    (property "Value" "Module-mega-mcu144-0.3" (id 1) (at 7.62 -246.38 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "hellen-one-mega-mcu144-0.2:mega-mcu144" (id 2) (at 0 0 0)
+    (property "Footprint" "hellen-one-mega-mcu144-0.3:mega-mcu144" (id 2) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 0 0 0)
@@ -48,7 +48,7 @@
     (property "ki_fp_filters" "MOD_Hellen_MEGA_MCU144_0.2" (id 15) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "Module-mega-mcu144-0.2_0_1"
+    (symbol "Module-mega-mcu144-0.3_0_1"
       (polyline
         (pts
           (xy 16.764 -142.748)
@@ -338,7 +338,7 @@
         (fill (type outline))
       )
     )
-    (symbol "Module-mega-mcu144-0.2_1_0"
+    (symbol "Module-mega-mcu144-0.3_1_0"
       (polyline
         (pts
           (xy 27.94 -110.49)
