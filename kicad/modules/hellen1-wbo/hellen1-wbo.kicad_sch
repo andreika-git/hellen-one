@@ -7,7 +7,7 @@
   (title_block
     (title "WBO")
     (date "2021-09-28")
-    (rev "0.5")
+    (rev "0.3")
     (company "rusefi.com")
   )
 
@@ -303,20 +303,20 @@
         )
       )
     )
-    (symbol "hellen-one-wbo-0.5:Module-wbo-0.5" (in_bom yes) (on_board yes)
+    (symbol "hellen-one-wbo-0.4:Module-wbo-0.4" (in_bom yes) (on_board yes)
       (property "Reference" "M" (id 0) (at 1.27 1.27 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Module-wbo-0.5" (id 1) (at 8.89 -40.64 0)
+      (property "Value" "Module-wbo-0.4" (id 1) (at 8.89 -40.64 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "hellen-one-wbo-0.5:wbo" (id 2) (at 25.4 1.27 0)
+      (property "Footprint" "hellen-one-wbo-0.4:wbo" (id 2) (at 25.4 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Module-wbo-0.5_0_0"
+      (symbol "Module-wbo-0.4_0_0"
         (text "Analog/digital" (at 20.32 -20.32 0)
           (effects (font (size 1.27 1.27)))
         )
@@ -327,7 +327,7 @@
           (effects (font (size 1.27 1.27)))
         )
       )
-      (symbol "Module-wbo-0.5_1_0"
+      (symbol "Module-wbo-0.4_1_0"
         (rectangle (start 0 0) (end 33.02 -39.37)
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type background))
@@ -5031,11 +5031,11 @@
     (pin "1" (uuid 64b276b6-106a-485d-84a0-5bdf806763b3))
   )
 
-  (symbol (lib_id "hellen-one-wbo-0.5:Module-wbo-0.5") (at 168.91 121.92 0) (unit 1)
-    (in_bom yes) (on_board yes)
+  (symbol (lib_id "hellen-one-wbo-0.4:Module-wbo-0.4") (at 168.91 121.92 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b31bd6a2-d597-4ef3-ad7d-f0d5e79bcc1c)
     (property "Reference" "M600" (id 0) (at 185.42 118.0804 0))
-    (property "Value" "Module-wbo-0.5" (id 1) (at 186.055 120.015 0))
+    (property "Value" "Module-wbo-0.4" (id 1) (at 185.42 120.8555 0))
     (property "Footprint" "hellen-one-wbo-0.4:wbo" (id 2) (at 194.31 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5088,7 +5088,7 @@
     (property "Reference" "R629" (id 0) (at 71.12 118.11 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "DNP" (id 1) (at 71.12 120.65 0)
+    (property "Value" "120" (id 1) (at 71.12 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 66.802 119.38 90)
@@ -5097,7 +5097,7 @@
     (property "Datasheet" "~" (id 3) (at 68.58 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (id 4) (at 68.58 119.38 0)
+    (property "LCSC" "C25079" (id 4) (at 68.58 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 74d1ad36-8d4d-4e75-ab6d-7f940801ca22))
@@ -5488,7 +5488,7 @@
       (reference "J600") (unit 1) (value "Conn_02x03_Odd_Even") (footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical")
     )
     (path "/b31bd6a2-d597-4ef3-ad7d-f0d5e79bcc1c"
-      (reference "M600") (unit 1) (value "Module-wbo-0.5") (footprint "hellen-one-wbo-0.4:wbo")
+      (reference "M600") (unit 1) (value "Module-wbo-0.4") (footprint "hellen-one-wbo-0.4:wbo")
     )
     (path "/00000000-0000-0000-0000-0000600e1a2d"
       (reference "Q600") (unit 1) (value "BTS3028") (footprint "Package_TO_SOT_SMD:TO-252-2")
@@ -5584,7 +5584,7 @@
       (reference "R628") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/b9ed5c9f-08c2-46c3-9f49-260a5ce30362"
-      (reference "R629") (unit 1) (value "DNP") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R629") (unit 1) (value "120") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/8719995c-7a59-4520-a953-b0d876dea9a1"
       (reference "R630") (unit 1) (value "DNP") (footprint "Resistor_SMD:R_0402_1005Metric")

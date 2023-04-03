@@ -1,5 +1,6 @@
 (sym_lib_table
   (lib (name "hellen1-wbo-rescue")(type "Legacy")(uri "${KIPRJMOD}/hellen1-wbo-rescue.lib")(options "")(descr ""))
+  (lib (name "hellen-one-common")(type "KiCad")(uri "${KIPRJMOD}/../../hellen-one-common.kicad_sym")(options "")(descr ""))
   (lib (name "hellen-one-wbo-0.2")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/wbo/0.2/wbo.kicad_sym")(options "")(descr ""))
-  (lib (name "hellen-one-wbo-0.5")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/wbo/0.5/wbo.kicad_sym")(options "")(descr ""))
+  (lib (name "hellen-one-wbo-0.4")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/wbo/0.4/wbo.kicad_sym")(options "")(descr ""))
 )

@@ -1296,7 +1296,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0969bcc9-45dc-4e6f-8dca-3ea7baa4a089)
     )
-    (fp_text value "Module-wbo-0.5" (at 9.02 -16 unlocked) (layer "F.Fab") hide
+    (fp_text value "Module-wbo-0.4" (at 9.02 -16 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 19113a45-dabf-4386-9492-86a09771fd70)
     )
@@ -3153,7 +3153,7 @@
   (gr_text "without\nRF3033" (at 92.32 82.78) (layer "B.SilkS") (tstamp 95474f2c-a5ae-4d9b-a5de-2cbed89c7663)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (gr_text "WBO 0.5" (at 100 86.15) (layer "B.SilkS") (tstamp cce62c68-35f9-4600-8f5e-04506f2cff46)
+  (gr_text "WBO 0.4" (at 100 86.15) (layer "B.SilkS") (tstamp cce62c68-35f9-4600-8f5e-04506f2cff46)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
 
