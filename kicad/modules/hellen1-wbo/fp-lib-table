@@ -1,5 +1,5 @@
 (fp_lib_table
   (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/../../footprints")(options "")(descr ""))
   (lib (name "hellen-one-wbo-0.2")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/wbo/0.2")(options "")(descr ""))
-  (lib (name "hellen-one-wbo-0.4")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/wbo/0.4")(options "")(descr ""))
+  (lib (name "hellen-one-wbo-0.5")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/wbo/0.5")(options "")(descr ""))
 )
