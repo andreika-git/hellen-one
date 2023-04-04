@@ -1,3 +1,11 @@
+[Source files](../../kicad/modules/hellen1-wbo)
+
+## Changelog
+
+0.4:
+  - two side assembly
+  - BUG: CANH/CANL traces are flipped
+
 0.3: 
   - MOSFET through-hole option 
   - https://github.com/andreika-git/hellen-one/blob/master/modules/wbo/wbo-0.3-migration.png remove one track and refill zones
