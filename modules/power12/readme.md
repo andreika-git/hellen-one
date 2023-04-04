@@ -1,0 +1,1 @@
+See [power_12and5V](../power_12and5V) for a more integrated option.
