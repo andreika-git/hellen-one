@@ -45,7 +45,8 @@ merged_gerber_path = board_path + "/gerber"
 board_cfg_path = board_path + "/board.cfg"
 board_place_path = board_path + "/board_place.txt"
 board_tmp_path = merged_gerber_path + "/" + board_name + ".tmp"
-board_bom = board_path_name + "-BOM.csv"
+board_bom = board_misc_path_name + "-BOM.csv"
+board_bom_mfr = board_path_name + "-BOM-JLC.csv"
 board_cpl = board_path_name + "-CPL.csv"
 board_img = board_path_name + ".png"
 board_img_top = board_misc_path_name + "-top.png"
@@ -354,6 +355,16 @@ try:
 	print (out.decode('ascii'))
 except subprocess.CalledProcessError as e:
 	print ("BOM processing error:\n" + e.output.decode('ascii'))
+	sys.exit(2)
+
+print ("Convert to the manufacturer's BOM...")
+try:
+	out = subprocess.check_output([sys.executable, "bin/convert_BOM_mfr.py",
+		board_bom,
+		board_bom_mfr], stderr=subprocess.STDOUT)
+	print (out.decode('ascii'))
+except subprocess.CalledProcessError as e:
+	print ("Mfr's BOM conversion error:\n" + e.output.decode('ascii'))
 	sys.exit(2)
 
 print ("Merging Schematics...")
