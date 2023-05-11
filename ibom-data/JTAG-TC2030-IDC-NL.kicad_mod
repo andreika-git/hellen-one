@@ -1,4 +1,4 @@
-(module JTAG-TC2030-IDC-NL (layer F.Cu) (tedit 643F25B9)
+(module JTAG-TC2030-IDC-NL (layer F.Cu) (tedit 645CFC4F)
   (pad 1 smd oval (at -1.2700254 0.6350254) (size 0.7874 0.7874) (layers F.Cu F.Mask))
   (pad 2 smd oval (at -1.2700254 -0.6349746) (size 0.7874 0.7874) (layers F.Cu F.Mask))
   (pad 3 smd oval (at -2.54e-05 0.6350254) (size 0.7874 0.7874) (layers F.Cu F.Mask))
