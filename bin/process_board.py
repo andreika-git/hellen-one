@@ -53,6 +53,7 @@ board_img_top = board_misc_path_name + "-top.png"
 board_img_bottom = board_misc_path_name + "-bottom.png"
 board_img_outline = board_misc_path_name + "-outline.png"
 board_img_components = board_misc_path_name + "-components.png"
+warnings_path = board_path + "/warnings.log"
 
 node_bin = "node"
 rotations = "bin/jlc_kicad_tools/cpl_rotations_db.csv"
@@ -351,7 +352,8 @@ print ("Post-processing BOM...")
 try:
 	out = subprocess.check_output([sys.executable, "bin/process_BOM.py",
 		board_bom,
-		bom_replace_csv_path], stderr=subprocess.STDOUT)
+		bom_replace_csv_path,
+		warnings_path], stderr=subprocess.STDOUT)
 	print (out.decode('ascii'))
 except subprocess.CalledProcessError as e:
 	print ("BOM processing error:\n" + e.output.decode('ascii'))

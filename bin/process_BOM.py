@@ -35,6 +35,12 @@ def read_repl_file(csv_name, repl_base_path, replList):
                     subrow.append(row[3])
                 replList.append(subrow)
 
+def printWarning(text):
+    print (text)
+    if warningFileName:
+        with open(warningFileName, "a") as wf:
+            wf.write(text + "\n")
+
 if len(sys.argv) < 2:
     print ("Error! Please specify a BOM file name.")
     sys.exit(1)
@@ -43,6 +49,9 @@ fileName = sys.argv[1]
 if len(sys.argv) > 2:
     repl_csv = sys.argv[2]
     repl_base_path = os.path.dirname(repl_csv)
+
+if len(sys.argv) > 3:
+    warningFileName = sys.argv[3]
 
 print ("Opening BOM file " + fileName + "...")
 
@@ -73,8 +82,7 @@ with open(fileName, 'rt') as f:
             	print ("* Error! Comment mismatch for the part #" + rowName + ": " + oldRow[0] + " != " + row[0])
             	sys.exit(2)
             if oldRow[2] != row[2]:
-            	print ("* Warning! Footprint mismatch for the part #" + rowName + ": " + oldRow[2] + " != " + row[2])
-            	#sys.exit(3)
+                printWarning ("* Warning! Footprint mismatch for the part #" + rowName + ": " + oldRow[2] + " != " + row[2])
             print ("* Duplicates found for " + rowName + " (" + row[0] + ")! Merging...")
             row[1] = oldRow[1] + row[1]
         rows[rowName] = row
@@ -108,6 +116,20 @@ for r in replList:
         else:
             print ("* Appending a new row for " + reDesignator + "...")
             rows[rePartNumber] = [reComment, [reDesignator], reFootprint, rePartNumber]
+
+print ("Checking for identical parts with different partnumbers...")
+commentAndFootprint = OrderedDict()
+for rowName in rows:
+    row = rows[rowName]
+    cf = row[0] + "_" + row[2]
+    if not row[3]:
+        continue
+    partName = (",".join(row[1])) if (type(row[1]) == list) else row[1]
+    if (cf in commentAndFootprint):
+        if (commentAndFootprint[cf][1] != row[3]):
+            printWarning ("* Warning! Identical parts " + partName + " and " + commentAndFootprint[cf][0] + " (" + cf + ") have different partnumbers: " + row[3] + " and " + commentAndFootprint[cf][1])
+    else:
+        commentAndFootprint[cf] = [partName, row[3]]
 
 print ("Final checks...")
 for rowName in rows:
