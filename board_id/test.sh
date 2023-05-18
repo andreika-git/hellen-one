@@ -40,3 +40,4 @@
 #python3 gen_hellen_board_id.py honda125-c
 #python3 gen_hellen_board_id.py alpha4ch-g
 #python3 gen_hellen_board_id.py honda125-b
+#python3 gen_hellen_board_id.py alpha4ch-i
