@@ -1,4 +1,4 @@
-(module PG-DSO-8 EP (layer F.Cu) (tedit 63EC9AB0)
+(module PG-DSO-8 EP (layer F.Cu) (tedit 6467D4C4)
   (pad 1 smd oval (at -2.9750004 -1.905 90.0) (size 0.5 2.2) (layers F.Cu F.Mask))
   (pad 2 smd oval (at -2.9750004 -0.635 90.0) (size 0.5 2.2) (layers F.Cu F.Mask))
   (pad 3 smd oval (at -2.9750004 0.635 90.0) (size 0.5 2.2) (layers F.Cu F.Mask))
