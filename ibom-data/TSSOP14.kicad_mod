@@ -1,4 +1,4 @@
-(module TSSOP14 (layer F.Cu) (tedit 645CFC4F)
+(module TSSOP14 (layer F.Cu) (tedit 6467CA98)
   (pad 1 smd oval (at -2.8500069999999997 -1.9500088 90.0) (size 0.3 1.1) (layers F.Cu F.Mask))
   (pad 2 smd oval (at -2.8500069999999997 -1.2999973999999999 90.0) (size 0.3 1.1) (layers F.Cu F.Mask))
   (pad 3 smd oval (at -2.8500069999999997 -0.649986 90.0) (size 0.3 1.1) (layers F.Cu F.Mask))

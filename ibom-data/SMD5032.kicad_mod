@@ -1,4 +1,4 @@
-(module QUARTZ-SMD5032 (layer F.Cu) (tedit 645CFC4F)
+(module QUARTZ-SMD5032 (layer F.Cu) (tedit 6467CA98)
   (pad 1 smd rect (at -1.8499836 -2.54e-05) (size 1.7 2.4) (layers F.Cu F.Mask))
   (pad 2 smd rect (at 1.8499836 -2.54e-05) (size 1.7 2.4) (layers F.Cu F.Mask))
 )

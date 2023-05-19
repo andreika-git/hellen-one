@@ -1,4 +1,4 @@
-(module HLGA-10L (layer F.Cu) (tedit 645CFC4F)
+(module HLGA-10L (layer F.Cu) (tedit 6467CA98)
   (pad 1 smd rect (at -0.762508 -0.2499868) (size 0.375 0.35) (layers F.Cu F.Mask))
   (pad 2 smd rect (at -0.762508 0.25001219999999996) (size 0.375 0.35) (layers F.Cu F.Mask))
   (pad 3 smd rect (at -0.49999899999999997 0.762508) (size 0.35 0.375) (layers F.Cu F.Mask))
