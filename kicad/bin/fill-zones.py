@@ -1,5 +1,5 @@
 import sys
-from pcbnewTransition.pcbnew import LoadBoard, ZONE_FILLER, SaveBoard
+from pcbnew import LoadBoard, ZONE_FILLER, SaveBoard
 
 b = LoadBoard(sys.argv[1])
 bz = b.Zones()
