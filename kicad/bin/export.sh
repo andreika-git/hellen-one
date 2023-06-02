@@ -18,7 +18,7 @@ kicad-cli sch export pdf "$IN.kicad_sch" --no-background-color -o "gerber/$IN.pd
 
 # Export netlist from schematic, then run BOM plugin script on it.
 kicad-cli sch export netlist "$IN.kicad_sch" --format kicadxml -o "gerber/$IN.net"
-python "$DIR/../kicad/hellen-one-kicad-bom-plugin.py" "gerber/$IN.net" "gerber/$IN.csv"
+python "$DIR/../hellen-one-kicad-bom-plugin.py" "gerber/$IN.net" "gerber/$IN.csv"
 
 # Fill zones
 python "$DIR/fill-zones.py" "$IN.kicad_pcb"
