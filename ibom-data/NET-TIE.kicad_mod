@@ -1,4 +1,4 @@
-(module NET-TIE (layer F.Cu) (tedit 648103A4)
+(module NET-TIE (layer F.Cu) (tedit 6483AF4D)
   (pad 1 smd rect (at -0.19999959999999997 -2.54e-05) (size 0.5 0.5) (layers F.Cu F.Mask))
   (pad 2 smd rect (at 0.19999959999999997 -2.54e-05) (size 0.5 0.5) (layers F.Cu F.Mask))
 )
