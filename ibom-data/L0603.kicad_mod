@@ -1,4 +1,4 @@
-(module L0603 (layer F.Cu) (tedit 6483AF4C)
+(module L0603 (layer F.Cu) (tedit 6484D62F)
   (pad 1 smd rect (at -0.8500110000000001 -0.0) (size 1.0 1.1) (layers F.Cu F.Mask))
   (pad 2 smd rect (at 0.8500110000000001 -0.0) (size 1.0 1.1) (layers F.Cu F.Mask))
 )
