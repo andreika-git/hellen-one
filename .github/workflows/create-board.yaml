@@ -4,8 +4,8 @@ on:
   workflow_call:
     inputs:
       token:
+        description: 'Token for accessing private repos'
         required: false
-        default: ${{ github.token }}
         type: string
 
 jobs:
@@ -13,9 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set Token
+        run: |
+          if ! [[ -z "${{ inputs.token }}" ]]; then
+            echo "TOKEN=${{ inputs.token }}" >> "$GITHUB_ENV"
+          else
+            echo "TOKEN=${{ github.token }}" >> "$GITHUB_ENV"
+          fi
+
       - uses: actions/checkout@v2
         with:
-          token: ${{ inputs.token }}
+          token: ${{ env.TOKEN }}
           submodules: recursive
 
       - name: Install kicad
