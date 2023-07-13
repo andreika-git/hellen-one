@@ -1,16 +1,29 @@
 name: Create Board
 
 on:
-  workflow_call
+  workflow_call:
+    inputs:
+      token:
+        description: 'Token for accessing private repos'
+        required: false
+        type: string
 
 jobs:
   create-board:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set Token
+        run: |
+          if ! [[ -z "${{ inputs.token }}" ]]; then
+            echo "TOKEN=${{ inputs.token }}" >> "$GITHUB_ENV"
+          else
+            echo "TOKEN=${{ github.token }}" >> "$GITHUB_ENV"
+          fi
+
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.MY_REPO_PAT }}
+          token: ${{ env.TOKEN }}
           submodules: recursive
 
       - name: Install kicad
