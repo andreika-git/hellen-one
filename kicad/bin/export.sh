@@ -1,14 +1,11 @@
 #!/bin/env bash
 
-if [ -z "$1" ]; then
-  echo "Pass file name without extension"
-  exit 1
-fi
-
 # Get path of script so we can call python scripts
 DIR=$(dirname $0)
 
-IN="$1"
+. revision.txt
+
+IN="$BOARD_PREFIX$BOARD_SUFFIX"
 
 # Copy to backup so we can modify before exporting
 cp "$IN.kicad_pcb" "$IN.kicad_pcb.bak"
