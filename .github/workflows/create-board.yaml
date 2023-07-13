@@ -1,7 +1,12 @@
 name: Create Board
 
 on:
-  workflow_call
+  workflow_call:
+    inputs:
+      token:
+        required: false
+        default: ${{ github.token }}
+        type: string
 
 jobs:
   create-board:
@@ -10,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.MY_REPO_PAT }}
+          token: ${{ inputs.token }}
           submodules: recursive
 
       - name: Install kicad
