@@ -10,10 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-# MY_REPO_PAT is about accessing private submodules
-# todo: how do we use same script both with and without MY_REPO_PAT? would two conditional versions of 'uses: actions/checkout@v2' be needed?
-# https://stackoverflow.com/questions/72781712/how-to-add-private-git-repo-as-a-submodule-in-another-git-repo:
-#          token: ${{ secrets.MY_REPO_PAT }}
+          token: ${{ secrets.MY_REPO_PAT }}
           submodules: recursive
 
       - name: Install kicad
