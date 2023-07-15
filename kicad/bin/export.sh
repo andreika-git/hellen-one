@@ -15,17 +15,21 @@ mkdir -p $OUT_FOLDER
 # Copy to backup so we can modify before exporting
 cp "$IN.kicad_pcb" "$IN.kicad_pcb.bak"
 
-# Export PDF from schematic
-kicad-cli sch export pdf "$IN.kicad_sch" --no-background-color -o "gerber/$IN.pdf"
+SCHEMATIC_FILE=$IN.kicad_sch
+NET_FILE=$OUT_FOLDER/$IN.net
 
-# Export netlist from schematic, then run BOM plugin script on it.
-kicad-cli sch export netlist "$IN.kicad_sch" --format kicadxml -o "gerber/$IN.net"
-python "$DIR/../hellen-one-kicad-bom-plugin.py" "gerber/$IN.net" "gerber/$IN.csv"
+echo Export PDF from [$SCHEMATIC_FILE] schematic
+kicad-cli sch export pdf "$SCHEMATIC_FILE" --no-background-color -o "gerber/$IN.pdf"
 
-# Fill zones
+echo Export netlist from [$SCHEMATIC_FILE] schematic into [$NET_FILE]
+kicad-cli sch export netlist "$SCHEMATIC_FILE" --format kicadxml -o "$NET_FILE"
+echo Run BOM plugin script on [$NET_FILE]
+python "$DIR/../hellen-one-kicad-bom-plugin.py" "$OUT_FOLDER/$IN.net" "$OUT_FOLDER/$IN.csv"
+
+echo Fill zones
 python "$DIR/fill-zones.py" "$IN.kicad_pcb"
 
-# Export Gerbers, drill file, and positions file
+echo Export Gerbers, drill file, and positions file
 kicad-cli pcb export gerbers --disable-aperture-macros -l "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In2.Cu,In1.Cu" --no-x2 --use-drill-file-origin "$IN.kicad_pcb" -o gerber/
 kicad-cli pcb export drill --map-format ps --drill-origin plot --excellon-zeros-format suppressleading -u "in" "$IN.kicad_pcb" -o gerber/
 kicad-cli pcb export pos --format csv --units mm --use-drill-file-origin --bottom-negate-x "$IN.kicad_pcb" -o "gerber/$IN-all-pos.csv"
