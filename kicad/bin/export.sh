@@ -16,6 +16,7 @@ mkdir -p $OUT_FOLDER
 cp "$IN.kicad_pcb" "$IN.kicad_pcb.bak"
 
 SCHEMATIC_FILE=$IN.kicad_sch
+PCB_FILE=$IN.kicad_pcb
 NET_FILE=$OUT_FOLDER/$IN.net
 
 if [ ! -f $SCHEMATIC_FILE ]
@@ -32,18 +33,20 @@ echo Run BOM plugin script on [$NET_FILE]
 python "$DIR/../hellen-one-kicad-bom-plugin.py" "$OUT_FOLDER/$IN.net" "$OUT_FOLDER/$IN.csv"
 
 echo Fill zones
-python "$DIR/fill-zones.py" "$IN.kicad_pcb"
+python "$DIR/fill-zones.py" "$PCB_FILE"
 
 echo Export Gerbers, drill file, and positions file
-kicad-cli pcb export gerbers --disable-aperture-macros -l "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In2.Cu,In1.Cu" --no-x2 --use-drill-file-origin "$IN.kicad_pcb" -o gerber/
-kicad-cli pcb export drill --map-format ps --drill-origin plot --excellon-zeros-format suppressleading -u "in" "$IN.kicad_pcb" -o gerber/
-kicad-cli pcb export pos --format csv --units mm --use-drill-file-origin --bottom-negate-x "$IN.kicad_pcb" -o "gerber/$IN-all-pos.csv"
+kicad-cli pcb export gerbers --disable-aperture-macros -l "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In2.Cu,In1.Cu" --no-x2 --use-drill-file-origin "$PCB_FILE" -o gerber/
+echo Export drill file
+kicad-cli pcb export drill --map-format ps --drill-origin plot --excellon-zeros-format suppressleading -u "in" "$PCB_FILE" -o gerber/
+echo Export positions file
+kicad-cli pcb export pos --format csv --units mm --use-drill-file-origin --bottom-negate-x "$PCB_FILE" -o "gerber/$IN-all-pos.csv"
 
-# Get Drill/Place origin from PCB
-X=$(grep "aux_axis_origin" "$IN.kicad_pcb" | tr -s ' ' | cut -d ' ' -f 3)
-Y=$(grep "aux_axis_origin" "$IN.kicad_pcb" | tr -s ' ' | cut -d ' ' -f 4 | tr -d ')')
-# Export VRML
-python "$DIR/export-vrml.py" "$IN.kicad_pcb" "$X" "$Y" "gerber/$IN.wrl"
+echo Getting Drill/Place origin from PCB
+X=$(grep "aux_axis_origin" "$PCB_FILE" | tr -s ' ' | cut -d ' ' -f 3)
+Y=$(grep "aux_axis_origin" "$PCB_FILE" | tr -s ' ' | cut -d ' ' -f 4 | tr -d ')')
+echo Export VRML using $X $Y
+python "$DIR/export-vrml.py" "$PCB_FILE" "$X" "$Y" "gerber/$IN.wrl"
 
-# Restore backup
-cp "$IN.kicad_pcb.bak" "$IN.kicad_pcb"
+echo Restore PCB backup
+cp "$IN.kicad_pcb.bak" "$PCB_FILE"
