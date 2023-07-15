@@ -7,6 +7,9 @@ DIR=$(dirname $0)
 
 IN="$BOARD_PREFIX$BOARD_SUFFIX"
 
+OUT_FOLDER=gerber
+mkdir -p $OUT_FOLDER
+
 # Copy to backup so we can modify before exporting
 cp "$IN.kicad_pcb" "$IN.kicad_pcb.bak"
 
