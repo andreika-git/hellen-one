@@ -1,6 +1,7 @@
 #!/bin/bash
 git config --local user.email "action@github.com"
 git config --local user.name "GitHub create-board Action"
+git add gerber/*
 git add boards/*
 git reset HEAD *.kicad_pro
 git status
