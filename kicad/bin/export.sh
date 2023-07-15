@@ -3,6 +3,8 @@
 # Get path of script so we can call python scripts
 DIR=$(dirname $0)
 
+set -e
+
 . revision.txt
 
 IN="$BOARD_PREFIX$BOARD_SUFFIX"
