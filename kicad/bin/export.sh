@@ -18,6 +18,11 @@ cp "$IN.kicad_pcb" "$IN.kicad_pcb.bak"
 SCHEMATIC_FILE=$IN.kicad_sch
 NET_FILE=$OUT_FOLDER/$IN.net
 
+if [ ! -f $SCHEMATIC_FILE ]
+then
+    echo "[$SCHEMATIC_FILE] schematic does not exist make sure at least KiCAD 6.0"
+    exit -1
+fi
 echo Export PDF from [$SCHEMATIC_FILE] schematic
 kicad-cli sch export pdf "$SCHEMATIC_FILE" --no-background-color -o "gerber/$IN.pdf"
 
