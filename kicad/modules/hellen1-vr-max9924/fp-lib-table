@@ -1,5 +1,5 @@
 (fp_lib_table
   (version 7)
   (lib (name "hellen-one-common")(type "KiCad")(uri "${KIPRJMOD}/../../footprints")(options "")(descr ""))
-  (lib (name "hellen-one-vr-max9924-0.2")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/vr-max9924/0.2")(options "")(descr ""))
+  (lib (name "hellen-one-vr-max9924-0.1")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/vr-max9924/0.1")(options "")(descr ""))
 )
