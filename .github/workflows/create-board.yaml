@@ -52,6 +52,11 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         run: |
+          git diff --name-only | while read f; do
+            if [ $(git diff --color=always|perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/' "$f" | grep -vE "Created|Generation|[dD]ate" | wc -l) -eq 0 ]; then
+              git checkout "$f"
+            fi
+          done
           bash hellen-one/bin/gha-commit.sh
 
       - name: Push board files
