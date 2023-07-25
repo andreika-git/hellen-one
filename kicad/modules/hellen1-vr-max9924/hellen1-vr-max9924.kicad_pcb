@@ -179,7 +179,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ab929491-d51a-42ce-b429-27638dbf0214)
     )
-    (fp_text value "GREEN" (at 0 1.43) (layer "F.Fab")
+    (fp_text value "LED-GREEN-0603" (at 0 1.43) (layer "F.Fab")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e1c373db-3be6-4f73-8c30-dfa03028eaa5)
     )

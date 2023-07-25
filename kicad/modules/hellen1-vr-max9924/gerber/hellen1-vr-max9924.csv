@@ -2,7 +2,7 @@
 "1n","C751","hellen-one-common:C0603","C1588"
 "100n","C752","hellen-one-common:C0603","C14663"
 "22u","C754","hellen-one-common:C0603","C59461"
-"GREEN","D751","LED_SMD:LED_0603_1608Metric","C72043"
+"LED-GREEN-0603","D751","LED_SMD:LED_0603_1608Metric","C72043"
 "Module-vr-max9924-0.1","M751","hellen-one-vr-max9924-0.1:vr-max9924",""
 "4.7k","R751","hellen-one-common:R1206","C17936"
 "4.7k","R752","hellen-one-common:R1206","C17936"

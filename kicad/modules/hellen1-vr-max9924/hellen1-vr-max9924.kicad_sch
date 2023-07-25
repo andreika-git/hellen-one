@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "VR MAX9924 module")
+    (date "2023-07-25")
+    (rev "0.1")
+  )
+
   (lib_symbols
     (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 0 2.54 0)
@@ -823,10 +829,10 @@
   (symbol (lib_id "Device:LED") (at 182.88 71.12 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ebe1648-b5ec-4729-92f8-46f9abb098ad)
-    (property "Reference" "D3" (at 185.42 67.31 0)
+    (property "Reference" "D3" (at 180.34 71.12 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "GREEN" (at 180.34 67.945 0)
+    (property "Value" "LED-GREEN-0603" (at 186.69 58.42 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 182.88 71.12 0)
