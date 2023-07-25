@@ -41,7 +41,8 @@
 #python3 gen_hellen_board_id.py alpha4ch-g
 #python3 gen_hellen_board_id.py honda125-b
 #python3 gen_hellen_board_id.py alpha4ch-i
-python3 gen_hellen_board_id.py honda125-d
-python3 gen_hellen_board_id.py honda125-e
-python3 gen_hellen_board_id.py small-can-a
-python3 gen_hellen_board_id.py small-can-b
+#python3 gen_hellen_board_id.py honda125-d
+#python3 gen_hellen_board_id.py honda125-e
+#python3 gen_hellen_board_id.py small-can-a
+#python3 gen_hellen_board_id.py small-can-b
+python3 gen_hellen_board_id.py alpha2ch-g
