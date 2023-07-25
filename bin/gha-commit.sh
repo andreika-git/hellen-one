@@ -6,7 +6,7 @@ git add boards/*
 git reset HEAD *.kicad_pro
 git status
 OUT=$(git commit -am "[skip actions] Auto-generated board" 2>&1) || echo "commit failed, finding out why"
-if echo "$OUT" | grep 'nothing to commit'; then
+if echo "$OUT" | grep 'nothing to commit' || echo "$OUT" | grep 'nothing added to commit'; then
   echo "headers: looks like nothing to commit"
   echo "::set-env name=NOCOMMIT::true"
   exit 0
