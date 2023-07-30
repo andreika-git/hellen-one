@@ -1,4 +1,4 @@
-(module MOD_Hellen_POWER_12and5V (layer F.Cu) (tedit 6467D4C4)
+(module MOD_Hellen_POWER_12and5V (layer F.Cu) (tedit 64C65D1B)
   (pad 1 thru_hole oval (at 16.1500058 -19.4999864) (size 1.5 1.5) (drill 1.0) (layers F.Cu F.Mask))
   (pad 2 thru_hole oval (at 16.1500058 -13.099999200000001) (size 1.5 1.5) (drill 1.0) (layers F.Cu F.Mask))
   (pad 3 thru_hole oval (at 16.1500058 -11.200002999999999) (size 1.5 1.5) (drill 1.0) (layers F.Cu F.Mask))

@@ -1,4 +1,4 @@
-(module HSOIC8 (layer F.Cu) (tedit 6467D4C4)
+(module HSOIC8 (layer F.Cu) (tedit 64C65D1B)
   (pad 1 smd oval (at -2.8750006 -1.905 90.0) (size 0.5 2.2) (layers F.Cu F.Mask))
   (pad 2 smd oval (at -2.8750006 -0.635 90.0) (size 0.5 2.2) (layers F.Cu F.Mask))
   (pad 3 smd oval (at -2.8750006 0.635 90.0) (size 0.5 2.2) (layers F.Cu F.Mask))
