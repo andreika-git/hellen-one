@@ -45,6 +45,10 @@ kicad-cli pcb export pos --format csv --units mm --use-drill-file-origin --botto
 echo Getting Drill/Place origin from PCB
 X=$(grep "aux_axis_origin" "$PCB_FILE" | tr -s ' ' | cut -d ' ' -f 3)
 Y=$(grep "aux_axis_origin" "$PCB_FILE" | tr -s ' ' | cut -d ' ' -f 4 | tr -d ')')
+if [ ! "$Y" ]; then
+    echo "aux_axis_origin is missing in the PCB file"
+    exit -1
+fi
 echo Export VRML using $X $Y
 python "$DIR/export-vrml.py" "$PCB_FILE" "$X" "$Y" "gerber/$IN.wrl"
 
