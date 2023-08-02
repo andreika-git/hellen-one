@@ -16,6 +16,17 @@ fi
 # '/${PWD##*/}' is doing the $pwd basename thing again
 
 source revision.txt
+
+if [ -z "${BOARD_PREFIX}" ]; then
+    echo "Error! BOARD_PREFIX is not set!"
+    exit 1
+fi
+
+if [ -z "${BOARD_SUFFIX}" ]; then
+    echo "Error! BOARD_SUFFIX is not set!"
+    exit 2
+fi
+
 echo "BOARD_REVISION=[${BOARD_REVISION}]"
 
 docker run --rm -t --user $(id -u):$(id -g) --entrypoint python3 -v "$(pwd)":/${PWD##*/} hellen-one ./bin/copy_from_Kicad.py "frames:${BOARD_PREFIX}" "/${PWD##*/}" "../../gerber" "${BOARD_SUFFIX}" "${BOARD_REVISION}"
