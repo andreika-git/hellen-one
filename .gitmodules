@@ -11,3 +11,6 @@
 [submodule "bin/pcb-tools"]
 	path = bin/pcb-tools
 	url = https://github.com/curtacircuitos/pcb-tools.git
+[submodule "board_id/libfirmware"]
+	path = board_id/libfirmware
+	url = https://github.com/rusefi/libfirmware/
