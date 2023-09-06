@@ -1,5 +1,6 @@
 (footprint "mega-mcu176" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (zone_connect 2)
   (fp_text reference "M100" (at 0.0127 -47.1551 unlocked) (layer "F.SilkS") hide
       (effects (font (size 0.762 0.762) (thickness 0.254)) (justify left bottom))
     (tstamp bf2eacb6-7e35-496a-8618-c75d99252a6c)
