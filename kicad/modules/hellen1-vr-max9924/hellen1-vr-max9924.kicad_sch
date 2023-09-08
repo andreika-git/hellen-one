@@ -677,7 +677,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "R755") (unit 1)
+          (reference "R775") (unit 1)
         )
       )
     )
@@ -716,7 +716,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "C751") (unit 1)
+          (reference "C771") (unit 1)
         )
       )
     )
@@ -725,7 +725,7 @@
   (symbol (lib_id "vr-max9924:Module-vr-max9924-0.1") (at 60.96 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1805b737-8f11-43dd-8f74-91ff57e351d5)
-    (property "Reference" "M751" (at 77.47 102.87 0)
+    (property "Reference" "M771" (at 77.47 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Module-vr-max9924-0.1" (at 77.47 105.41 0)
@@ -747,7 +747,7 @@
     (instances
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "M751") (unit 1)
+          (reference "M771") (unit 1)
         )
       )
     )
@@ -786,7 +786,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "R752") (unit 1)
+          (reference "R772") (unit 1)
         )
       )
     )
@@ -820,7 +820,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "R757") (unit 1)
+          (reference "R777") (unit 1)
         )
       )
     )
@@ -854,7 +854,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "D751") (unit 1)
+          (reference "D771") (unit 1)
         )
       )
     )
@@ -888,7 +888,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "C752") (unit 1)
+          (reference "C772") (unit 1)
         )
       )
     )
@@ -922,7 +922,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "R756") (unit 1)
+          (reference "R776") (unit 1)
         )
       )
     )
@@ -957,7 +957,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0762") (unit 1)
+          (reference "#PWR0778") (unit 1)
         )
       )
     )
@@ -999,7 +999,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "U751") (unit 1)
+          (reference "U771") (unit 1)
         )
       )
     )
@@ -1008,7 +1008,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 45.72 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 503fa6c4-6cc1-462e-96d7-7ebfe18694f4)
-    (property "Reference" "#FLG0751" (at 45.72 114.935 0)
+    (property "Reference" "#FLG0771" (at 45.72 114.935 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 45.72 112.4458 0)
@@ -1024,7 +1024,7 @@
     (instances
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#FLG0751") (unit 1)
+          (reference "#FLG0771") (unit 1)
         )
       )
     )
@@ -1059,7 +1059,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0758") (unit 1)
+          (reference "#PWR0776") (unit 1)
         )
       )
     )
@@ -1089,7 +1089,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0753") (unit 1)
+          (reference "#PWR0773") (unit 1)
         )
       )
     )
@@ -1098,7 +1098,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 52.07 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c573b21-d958-466c-9e07-ee30ed5f3352)
-    (property "Reference" "#FLG0752" (at 52.07 117.475 0)
+    (property "Reference" "#FLG0772" (at 52.07 117.475 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 52.07 114.9858 0)
@@ -1114,7 +1114,7 @@
     (instances
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#FLG0752") (unit 1)
+          (reference "#FLG0772") (unit 1)
         )
       )
     )
@@ -1149,7 +1149,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0754") (unit 1)
+          (reference "#PWR0774") (unit 1)
         )
       )
     )
@@ -1188,7 +1188,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "R754") (unit 1)
+          (reference "R774") (unit 1)
         )
       )
     )
@@ -1223,7 +1223,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0765") (unit 1)
+          (reference "#PWR0781") (unit 1)
         )
       )
     )
@@ -1253,7 +1253,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0759") (unit 1)
+          (reference "#PWR0777") (unit 1)
         )
       )
     )
@@ -1262,7 +1262,7 @@
   (symbol (lib_id "power:GND") (at 50.8 119.38 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a9efe577-3460-4e1e-acdd-32b703a4e8bb)
-    (property "Reference" "#PWR0752" (at 44.45 119.38 0)
+    (property "Reference" "#PWR0772" (at 44.45 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 46.4058 119.253 0)
@@ -1278,7 +1278,7 @@
     (instances
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0752") (unit 1)
+          (reference "#PWR0772") (unit 1)
         )
       )
     )
@@ -1317,7 +1317,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "R753") (unit 1)
+          (reference "R773") (unit 1)
         )
       )
     )
@@ -1356,7 +1356,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "R751") (unit 1)
+          (reference "R771") (unit 1)
         )
       )
     )
@@ -1386,7 +1386,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0763") (unit 1)
+          (reference "#PWR0779") (unit 1)
         )
       )
     )
@@ -1395,7 +1395,7 @@
   (symbol (lib_id "power:+5V") (at 44.45 116.84 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c3adb51c-3c09-4ed2-bff5-ae9ac0e8fc71)
-    (property "Reference" "#PWR0751" (at 48.26 116.84 0)
+    (property "Reference" "#PWR0771" (at 48.26 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 41.1988 116.459 90)
@@ -1411,7 +1411,7 @@
     (instances
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0751") (unit 1)
+          (reference "#PWR0771") (unit 1)
         )
       )
     )
@@ -1446,7 +1446,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0764") (unit 1)
+          (reference "#PWR0780") (unit 1)
         )
       )
     )
@@ -1480,7 +1480,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "C754") (unit 1)
+          (reference "C773") (unit 1)
         )
       )
     )
@@ -1510,7 +1510,7 @@
       )
       (project "hellen1-vr-max9924"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
-          (reference "#PWR0755") (unit 1)
+          (reference "#PWR0775") (unit 1)
         )
       )
     )
