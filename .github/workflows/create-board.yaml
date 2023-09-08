@@ -36,6 +36,28 @@ jobs:
         run: |
           bash hellen-one/kicad/bin/export.sh
 
+      - name: Commit fresh gerber files
+        # sad: copy-pasta see below! TODO reuse somehow?
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        run: |
+          git diff --name-only | while read f; do
+            if [ $(git diff --color=always|perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/' "$f" | grep -vE "Created|Generation|[dD]ate" | wc -l) -eq 0 ]; then
+              git checkout "$f"
+            fi
+          done
+          bash hellen-one/bin/gha-commit.sh
+
+      - name: Push gerber files
+        # sad: copy-pasta see below! TODO reuse somehow?
+        # let's support both newer 'main' and older 'master' repositories
+        if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && env.NOCOMMIT != 'true'}}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ github.token }}
+          branch: ${{ steps.extract_branch.outputs.branch }}
+
+
       - name: 1. Build Docker
         run: |
           bash hellen-one/bin/step1_build_hellen-one_docker.sh
