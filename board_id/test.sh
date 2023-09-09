@@ -45,4 +45,8 @@
 #python3 gen_hellen_board_id.py honda125-e
 #python3 gen_hellen_board_id.py small-can-a
 #python3 gen_hellen_board_id.py small-can-b
-python3 gen_hellen_board_id.py alpha2ch-g
+#python3 gen_hellen_board_id.py alpha2ch-g
+python3 gen_hellen_board_id.py h112-17-a
+python3 gen_hellen_board_id.py h112-mg1-a
+
+python3 gen_board_ids_h.py
