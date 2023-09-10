@@ -1,12 +1,12 @@
 (kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
-  (symbol "root_0_Mod-Hellen-MEGA_MCU100" (in_bom yes) (on_board yes)
+  (symbol "Module{colon}mega-mcu100/0.1" (in_bom yes) (on_board yes)
     (property "Reference" "M100" (at 7.62 2.54 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Value" "Module:mega_mcu100/0.1" (at 7.62 -172.72 0)
+    (property "Value" "Module:mega-mcu100/0.1" (at 7.62 -172.72 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "MOD_Hellen_MEGA_MCU100_0.1" (at 0 0 0)
+    (property "Footprint" "hellen-one-mega-mcu100-0.1:mega-mcu100" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 0 0 0)
@@ -42,13 +42,13 @@
     (property "TYPE" "Module" (at -5.588 -38.1 0)
       (effects (font (size 1.27 1.27)) (justify left bottom) hide)
     )
-    (property "ki_description" "Hellen One MEGA_MCU100 Module" (at 0 0 0)
+    (property "ki_description" "Hellen One MEGA-MCU100 Module" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "ki_fp_filters" "MOD_Hellen_MEGA_MCU100_0.1" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "root_0_Mod-Hellen-MEGA_MCU100_1_0"
+    (symbol "Module{colon}mega-mcu100/0.1_1_0"
       (polyline
         (pts
           (xy 41.402 -144.78)
