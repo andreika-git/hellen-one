@@ -1,4 +1,4 @@
-(module PTC-SMD1206 (layer F.Cu) (tedit 64FABCF1)
+(module PTC-SMD1206 (layer F.Cu) (tedit 64FD6EB6)
   (pad 1 smd roundrect (at -1.4500098000000001 -0.0 90.0) (size 1.8 1.15) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
   (pad 2 smd roundrect (at 1.4500098000000001 -0.0 90.0) (size 1.8 1.15) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
 )
