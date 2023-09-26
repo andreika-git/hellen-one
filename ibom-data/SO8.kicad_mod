@@ -1,4 +1,4 @@
-(module SO8 (layer F.Cu) (tedit 64FD6EB6)
+(module SO8 (layer F.Cu) (tedit 6512E8F5)
   (pad 1 smd oval (at -2.3999951999999998 -1.905 90.0) (size 0.6 2.2) (layers F.Cu F.Mask))
   (pad 2 smd oval (at -2.3999951999999998 -0.635 90.0) (size 0.6 2.2) (layers F.Cu F.Mask))
   (pad 3 smd oval (at -2.3999951999999998 0.635 90.0) (size 0.6 2.2) (layers F.Cu F.Mask))
