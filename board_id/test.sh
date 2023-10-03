@@ -46,9 +46,10 @@
 #python3 gen_hellen_board_id.py small-can-a
 #python3 gen_hellen_board_id.py small-can-b
 #python3 gen_hellen_board_id.py alpha2ch-g
-python3 gen_hellen_board_id.py h112-17-a
-python3 gen_hellen_board_id.py h112-mg1-a
-python3 gen_hellen_board_id.py h112-17-b
+#python3 gen_hellen_board_id.py h112-17-a
+#python3 gen_hellen_board_id.py h112-mg1-a
+#python3 gen_hellen_board_id.py h112-17-b
+python3 gen_hellen_board_id.py alpha8ch-c
 
 # do not forget to manually add new files into git
 # todo: one day make this a github action?
