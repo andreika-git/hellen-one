@@ -1,4 +1,4 @@
-(module LED-0603 (layer F.Cu) (tedit 651B5B3A)
+(module LED-0603 (layer F.Cu) (tedit 65398143)
   (pad 1 smd roundrect (at 0.7999983999999999 0.0500126 180.0) (size 1.0 1.1) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
   (pad 2 smd roundrect (at -0.8999982 0.049987199999999996 180.0) (size 1.0 1.1) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
 )
