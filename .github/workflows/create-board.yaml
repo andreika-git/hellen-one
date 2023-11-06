@@ -36,6 +36,9 @@ jobs:
         run: |
           bash hellen-one/kicad/bin/export.sh
 
+      - name: git pull
+        run: git pull
+
       - name: Commit fresh gerber files
         # sad: copy-pasta see below! TODO reuse somehow?
         env:
@@ -47,6 +50,9 @@ jobs:
             fi
           done
           bash hellen-one/bin/gha-commit.sh
+
+      - name: git pull
+        run: git pull
 
       - name: Push gerber files
         # sad: copy-pasta see below! TODO reuse somehow?
@@ -70,6 +76,9 @@ jobs:
         run: |
           bash hellen-one/bin/step3_create_board_with_docker.sh
 
+      - name: git pull
+        run: git pull
+
       - name: Commit fresh board files
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
@@ -80,6 +89,9 @@ jobs:
             fi
           done
           bash hellen-one/bin/gha-commit.sh
+
+      - name: git pull
+        run: git pull
 
       - name: Push board files
 # let's support both newer 'main' and older 'master' repositories
