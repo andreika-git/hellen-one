@@ -1,4 +1,4 @@
-(module LQFP144 (layer F.Cu) (tedit 6467CA98)
+(module LQFP144 (layer F.Cu) (tedit 65639F58)
   (pad 1 smd oval (at -10.6249978 -8.749995199999999 90.0) (size 0.22 1.3) (layers F.Cu F.Mask))
   (pad 2 smd oval (at -10.6249978 -8.2499962 90.0) (size 0.22 1.3) (layers F.Cu F.Mask))
   (pad 3 smd oval (at -10.6249978 -7.749997199999999 90.0) (size 0.22 1.3) (layers F.Cu F.Mask))

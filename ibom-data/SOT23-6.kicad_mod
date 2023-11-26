@@ -1,4 +1,4 @@
-(module SOT-26 (layer F.Cu) (tedit 653D1E3B)
+(module SOT-26 (layer F.Cu) (tedit 65639F57)
   (pad 1 smd roundrect (at -1.1999975999999999 -0.9500107999999999 270.0) (size 0.6 0.9) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
   (pad 2 smd roundrect (at -1.1999975999999999 -0.0 270.0) (size 0.6 0.9) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
   (pad 3 smd roundrect (at -1.1999975999999999 0.9500107999999999 270.0) (size 0.6 0.9) (layers F.Cu F.Mask) (roundrect_rratio 0.2))
