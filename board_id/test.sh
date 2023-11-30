@@ -50,9 +50,10 @@
 #python3 gen_hellen_board_id.py h112-mg1-a
 #python3 gen_hellen_board_id.py h112-17-b
 #python3 gen_hellen_board_id.py alpha8ch-c
+#python3 gen_hellen_board_id.py uaefi-a
+#python3 gen_hellen_board_id.py h112-mg1-b
 
-python3 gen_hellen_board_id.py uaefi-a
-python3 gen_hellen_board_id.py h112-mg1-b
+python3 gen_hellen_board_id.py hd81-a
 
 # do not forget to manually add new files into git
 # todo: one day make this a github action?
