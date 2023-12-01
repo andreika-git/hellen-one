@@ -26,10 +26,13 @@ fragments = []
 with open(mergePlaceFile, 'rt') as fmp:
 	for line in fmp:
 		m = line.split()
-		name_and_rot = re.split(r'\*rotated|\*flipped', m[0]) # split the name and rotation/flip parts
-		name = name_and_rot[0]
-		rot = name_and_rot[1] if len(name_and_rot) > 1 else "0"
-		flip = name_and_rot[2] if len(name_and_rot) > 2 else ""
+		name_and_rot = re.match(r'^(.*?)(\*rotated([\-0-9]+))?(\*flipped([V]))?$', m[0]) # get the name and rotation/flip parts
+		if not name_and_rot:
+			print ("Unknown place format for " + m[0])
+			sys.exit(2)
+		name = name_and_rot.group(1)
+		rot = name_and_rot.group(3) if name_and_rot.group(3) else "0"
+		flip = name_and_rot.group(5) if name_and_rot.group(5) else ""
 		m = {"name": name, "x": m[1], "y": m[2], "rot": rot, "flip": flip, "path": config[name]["Prefix"] }
 		fragments.append(m)
 
