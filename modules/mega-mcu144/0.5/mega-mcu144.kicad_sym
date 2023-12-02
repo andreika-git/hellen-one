@@ -398,6 +398,46 @@
       )
       (polyline
         (pts
+          (xy 36.322 -147.32)
+          (xy 37.592 -147.32)
+          (xy 37.592 -147.32)
+          (xy 37.592 -147.32)
+        )
+        (stroke (width 0) (type solid) (color 7 55 99 1))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 37.592 -144.78)
+          (xy 36.322 -144.78)
+          (xy 36.322 -149.86)
+          (xy 37.592 -149.86)
+        )
+        (stroke (width 0) (type solid) (color 7 55 99 1))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 49.022 -152.4)
+          (xy 47.752 -152.4)
+          (xy 47.752 -154.94)
+          (xy 49.022 -154.94)
+        )
+        (stroke (width 0) (type solid) (color 7 55 99 1))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 50.292 -139.7)
+          (xy 49.022 -139.7)
+          (xy 49.022 -142.24)
+          (xy 50.292 -142.24)
+        )
+        (stroke (width 0) (type solid) (color 7 55 99 1))
+        (fill (type none))
+      )
+      (polyline
+        (pts
           (xy 25.4 -147.32)
           (xy 26.67 -147.32)
           (xy 26.67 -124.46)
@@ -517,6 +557,9 @@
         (effects (font (size 1.1 1.1) italic))
       )
       (text "F40x does not\nhave UART8" (at 30.48 -54.61 0)
+        (effects (font (size 1.016 1.016)) (justify left))
+      )
+      (text "Internal\nbuttons" (at 40.64 -102.87 0)
         (effects (font (size 1.016 1.016)) (justify left))
       )
       (text "PA0" (at 22.86 -149.86 0)
