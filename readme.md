@@ -1,6 +1,6 @@
 # TL,DR: 
 
-hellen-one is a toolset to produce custom PCBs by merging gerber files of known proven functional modules into trivial _frame_ with mostly just the main vehicle connector.
+hellen-one is a toolset to produce custom PCBs by merging gerber files of known proven functional modules into trivial _frame_ PCB with mostly just the main vehicle connector.
 
 * fork https://github.com/rusefi/hellen-example/ repo to get github actions and meta files
 * replace xxx and yyy in ``revision.txt`` with name of your board
