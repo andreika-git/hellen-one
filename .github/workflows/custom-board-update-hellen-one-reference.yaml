@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub git update Action"
-          git add ext/rusefi
+          git add hellen-one
           git commit -am "GHA says update hellen-one"
           git status
 
