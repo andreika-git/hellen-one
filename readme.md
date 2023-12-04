@@ -2,7 +2,7 @@ TL,DR:
 
 * fork https://github.com/rusefi/hellen-example/ repo to get github actions and meta files
 * replace xxx and yyy in ``revision.txt`` with name of your board
-* create youboard.kicad_pcb using KiCAD 6 or 7
+* create youboard.kicad_pcb from [proven modules](https://github.com/andreika-git/hellen-one/tree/master/modules) using KiCAD 6 or 7
 * push into github to trigger hellen-one gerber expert and gerber merge (that's where the hellen magic happens!)
 * order your using fabrication files from 'boards' folder!
 
