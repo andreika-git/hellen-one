@@ -9,6 +9,14 @@ set -e
 
 IN="$BOARD_PREFIX$BOARD_SUFFIX"
 
+echo "Working on [$IN] based on BOARD_PREFIX [$BOARD_PREFIX] and BOARD_SUFFIX [$BOARD_SUFFIX]"
+
+if [ -z "$IN" ]
+then
+      echo "variables not set in revision.txt? \$IN is empty"
+	exit -1
+fi
+
 OUT_FOLDER=gerber
 mkdir -p $OUT_FOLDER
 
