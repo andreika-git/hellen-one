@@ -60,7 +60,7 @@ def getCoords(pos, format):
 		if format[2]:
 			y = format[2] - y
 		return [x, y]
-	sys.exit('Error! Cannot parse position ' + str(pos))
+	sys.exit('Error! Cannot parse position ' + str(pos) + '. Possible reason is negative position, place origin into bottom left corner')
 
 def getSize(size, format):
 	if type(size) is list:
