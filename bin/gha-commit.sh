@@ -1,9 +1,9 @@
 #!/bin/bash
 git config --local user.email "action@github.com"
-git config --local user.name "GitHub create-board Action"
+git config --local user.name "GitHub create-board Action v2"
 echo "Status 1/3"
 git status
-git reset HEAD *.kicad_pro
+git restore *.kicad_pro
 echo "Status 2/3"
 git status
 git add gerber/*
