@@ -3,9 +3,11 @@
 hellen-one is a toolset to produce custom PCBs by merging gerber files of known proven functional modules into trivial _frame_ PCB with mostly just the main vehicle connector.
 
 * fork https://github.com/rusefi/hellen-example/ repo to get github actions and meta files
+* make sure github actions are enabled/enable github actions on your fork
 * replace xxx and yyy in ``revision.txt`` with name of your board
 * create youboard.kicad_pcb from [proven modules](https://github.com/andreika-git/hellen-one/tree/master/modules) using KiCAD 6 or 7
 * push into github to trigger hellen-one gerber expert and gerber merge (that's where the hellen magic happens! for instance gerber export is taken care by [export.sh](https://github.com/andreika-git/hellen-one/blob/master/kicad/bin/export.sh) script which github action would invoke _automatically_. Just watch for the yellow circle to turn into a green checkmark.)
+* (sorry rotation only by factor of 90 degrees at this point)
 * order your using fabrication files from 'boards' folder!
 
 Please see how some of the open source boards are done and follow the pattern:
