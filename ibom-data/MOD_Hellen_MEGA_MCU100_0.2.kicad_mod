@@ -1,4 +1,4 @@
-(module MOD_Hellen_MEGA_MCU100_0.2 (layer F.Cu) (tedit 653D1E3B)
+(module MOD_Hellen_MEGA_MCU100_0.2 (layer F.Cu) (tedit 65948F83)
   (pad 1 thru_hole oval (at 33.7000088 -6.800011799999999 270.0) (size 0.6 0.6) (drill 0.3) (layers F.Cu F.Mask))
   (pad 2 thru_hole oval (at 33.7000088 -11.1000032 270.0) (size 0.6 0.6) (drill 0.3) (layers F.Cu F.Mask))
   (pad 3 thru_hole oval (at 33.7000088 -11.9000016 180.0) (size 0.6 0.6) (drill 0.3) (layers F.Cu F.Mask))
