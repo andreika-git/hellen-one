@@ -26,6 +26,15 @@ jobs:
           token: ${{ env.TOKEN }}
           submodules: recursive
 
+      - name: clone hellen-one if needed
+        run: |
+          if [ -d hellen-one ]; then
+            echo Found hellen-one
+          else
+            git clone https://github.com/andreika-git/hellen-one
+            ls -l hellen-one
+          fi       
+
       - name: Install kicad
         run: |
           sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
