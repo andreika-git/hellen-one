@@ -33,6 +33,8 @@ jobs:
           else
             git clone https://github.com/andreika-git/hellen-one
             ls -l hellen-one
+            cd hellen-one
+            git submodule update --init
           fi       
 
       - name: Install kicad
