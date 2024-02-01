@@ -1,4 +1,4 @@
-(footprint "hellen1-uaefi" (version 20221018) (generator pcbnew)
+(footprint "uaefi" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
   (fp_text reference "REF**" (at 9 -6 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
