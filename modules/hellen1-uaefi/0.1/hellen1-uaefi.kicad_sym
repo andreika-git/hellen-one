@@ -1,18 +1,18 @@
 (kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
-  (symbol "UAEFI_BRD" (in_bom yes) (on_board yes)
-    (property "Reference" "BRD?" (at 0 5.08 0)
+  (symbol "hellen1-uaefi" (in_bom yes) (on_board yes)
+    (property "Reference" "BRD" (at 10.16 5.08 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "uaefi" (at -17.78 -220.98 0)
+    (property "Value" "uaefi" (at 20.32 -218.44 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "uaefi_brd:UAEFI_BRD" (at -10.16 -218.44 0)
+    (property "Footprint" "hellen1-uaefi:hellen1-uaefi" (at 22.86 -215.9 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Datasheet" "" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "UAEFI_BRD_0_1"
+    (symbol "hellen1-uaefi_0_1"
       (polyline
         (pts
           (xy 7.62 -205.74)
@@ -74,7 +74,7 @@
         (fill (type none))
       )
     )
-    (symbol "UAEFI_BRD_1_0"
+    (symbol "hellen1-uaefi_1_0"
       (pin passive line (at 0 -106.68 0) (length 7.62)
         (name "IN_AUX3" (effects (font (size 1.27 1.27))))
         (number "C15" (effects (font (size 1.27 1.27))))
@@ -224,7 +224,7 @@
         (number "P8" (effects (font (size 1.27 1.27))))
       )
     )
-    (symbol "UAEFI_BRD_1_1"
+    (symbol "hellen1-uaefi_1_1"
       (text "CAM1" (at 27.94 -81.28 0)
         (effects (font (size 1.27 1.27) (color 13 14 255 1)))
       )
