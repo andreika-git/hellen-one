@@ -5,7 +5,7 @@
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 0,
+    "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -64,11 +64,11 @@
       35,
       36
     ],
-    "visible_layers": "ffffffb_ffffffff",
+    "visible_layers": "ffcfffb_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "uaefi-module.kicad_prl",
+    "filename": "hellen1-uaefi.kicad_prl",
     "version": 3
   },
   "project": {

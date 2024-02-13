@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "uaefi")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/uaefi/0.2/uaefi.kicad_sym")(options "")(descr ""))
+)

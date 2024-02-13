@@ -94,8 +94,8 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "error",
-        "silk_overlap": "error",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "ignore",
@@ -407,7 +407,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -419,7 +419,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "uaefi-module.kicad_pro",
+    "filename": "hellen1-uaefi.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -487,7 +487,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 770,
+    "annotate_start_num": 800,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
