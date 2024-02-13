@@ -3,7 +3,7 @@
     (property "Reference" "M" (at 10.16 5.08 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "uaefi" (at 20.32 -218.44 0)
+    (property "Value" "Module:uaefi/0.2" (at 20.32 -218.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "hellen-one-uaefi-0.2:uaefi" (at 21.59 -227.33 0)
