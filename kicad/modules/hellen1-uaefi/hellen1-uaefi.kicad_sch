@@ -1628,7 +1628,7 @@
     (property "LCSC" "C265321" (at 161.29 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2f))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1647,7 +1647,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 294.64 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 293.37 41.91 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 293.37 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 293.37 41.91 0)
@@ -1692,7 +1692,7 @@
     (property "LCSC" "C265321" (at 161.29 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c30))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1720,7 +1720,7 @@
     (property "LCSC" "C265321" (at 161.29 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c31))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1748,7 +1748,7 @@
     (property "LCSC" "C265321" (at 161.29 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c32))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1776,7 +1776,7 @@
     (property "LCSC" "C265321" (at 161.29 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c33))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1804,7 +1804,7 @@
     (property "LCSC" "C265321" (at 161.29 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c34))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1869,7 +1869,7 @@
     (property "LCSC" "C265321" (at 161.29 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c35))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1897,7 +1897,7 @@
     (property "LCSC" "C265321" (at 161.29 205.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c36))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1925,7 +1925,7 @@
     (property "LCSC" "C265321" (at 161.29 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c37))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1953,7 +1953,7 @@
     (property "LCSC" "C265321" (at 161.29 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c38))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -1981,7 +1981,7 @@
     (property "LCSC" "C265321" (at 161.29 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c39))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2009,7 +2009,7 @@
     (property "LCSC" "C265321" (at 161.29 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c3a))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2037,7 +2037,7 @@
     (property "LCSC" "C265321" (at 161.29 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c3b))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2065,7 +2065,7 @@
     (property "LCSC" "C265321" (at 161.29 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c3c))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2093,7 +2093,7 @@
     (property "LCSC" "C265321" (at 161.29 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c3d))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2121,7 +2121,7 @@
     (property "LCSC" "C265321" (at 161.29 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c3e))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2149,7 +2149,7 @@
     (property "LCSC" "C265321" (at 161.29 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c3f))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2177,7 +2177,7 @@
     (property "LCSC" "C265321" (at 161.29 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c40))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2205,7 +2205,7 @@
     (property "LCSC" "C265321" (at 161.29 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c41))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2224,7 +2224,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 262.89 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 261.62 40.64 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 261.62 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 261.62 40.64 0)
@@ -2269,7 +2269,7 @@
     (property "LCSC" "C265321" (at 161.29 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c42))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2297,7 +2297,7 @@
     (property "LCSC" "C265321" (at 161.29 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c43))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2325,7 +2325,7 @@
     (property "LCSC" "C265321" (at 161.29 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c44))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2344,7 +2344,7 @@
     (property "Value" "Conn_01x01_Pin" (at 165.735 226.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 165.1 228.6 0)
+    (property "Footprint" "RT-01T-1.0B:1x1" (at 165.1 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 165.1 228.6 0)
@@ -2372,7 +2372,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 256.54 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 255.27 33.02 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 255.27 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 255.27 33.02 0)
@@ -2417,7 +2417,7 @@
     (property "LCSC" "C265321" (at 161.29 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c45))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2445,7 +2445,7 @@
     (property "LCSC" "C265321" (at 161.29 203.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c46))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2473,7 +2473,7 @@
     (property "LCSC" "C265321" (at 161.29 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c47))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2501,7 +2501,7 @@
     (property "LCSC" "C265321" (at 161.29 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c48))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2529,7 +2529,7 @@
     (property "LCSC" "C265321" (at 161.29 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c49))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2557,7 +2557,7 @@
     (property "LCSC" "C265321" (at 161.29 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c4a))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2576,7 +2576,7 @@
     (property "Value" "Conn_01x01_Pin" (at 165.735 233.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 165.1 236.22 0)
+    (property "Footprint" "RT-01T-1.0B:1x1" (at 165.1 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 165.1 236.22 0)
@@ -2613,7 +2613,7 @@
     (property "LCSC" "C265321" (at 161.29 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c4b))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2641,7 +2641,7 @@
     (property "LCSC" "C265321" (at 161.29 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c4c))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2660,7 +2660,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 267.97 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 266.7 49.53 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 266.7 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 266.7 49.53 0)
@@ -2705,7 +2705,7 @@
     (property "LCSC" "C265321" (at 161.29 187.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c4d))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2724,7 +2724,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 292.1 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 290.83 33.02 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 290.83 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 290.83 33.02 0)
@@ -2760,7 +2760,7 @@
     (property "Value" "Conn_01x01_Pin" (at 165.735 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 165.1 238.76 0)
+    (property "Footprint" "RT-01T-1.0B:1x1" (at 165.1 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 165.1 238.76 0)
@@ -2797,7 +2797,7 @@
     (property "LCSC" "C265321" (at 161.29 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c4e))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2825,7 +2825,7 @@
     (property "LCSC" "C265321" (at 161.29 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c4f))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2853,7 +2853,7 @@
     (property "LCSC" "C265321" (at 161.29 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c50))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2872,7 +2872,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 330.2 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 328.93 49.53 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 328.93 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 328.93 49.53 0)
@@ -2917,7 +2917,7 @@
     (property "LCSC" "C265321" (at 161.29 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c51))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -2936,7 +2936,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 361.95 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 360.68 49.53 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 360.68 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 360.68 49.53 0)
@@ -2981,7 +2981,7 @@
     (property "LCSC" "C265321" (at 161.29 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c52))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3009,7 +3009,7 @@
     (property "LCSC" "C265321" (at 161.29 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c53))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3037,7 +3037,7 @@
     (property "LCSC" "C265321" (at 161.29 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c54))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3065,7 +3065,7 @@
     (property "LCSC" "C265321" (at 161.29 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c55))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3093,7 +3093,7 @@
     (property "LCSC" "C265321" (at 161.29 198.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c56))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3121,7 +3121,7 @@
     (property "LCSC" "C265321" (at 161.29 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c57))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3149,7 +3149,7 @@
     (property "LCSC" "C265321" (at 161.29 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c58))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3177,7 +3177,7 @@
     (property "LCSC" "C265321" (at 161.29 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c59))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3205,7 +3205,7 @@
     (property "LCSC" "C265321" (at 161.29 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c5a))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3233,7 +3233,7 @@
     (property "LCSC" "C265321" (at 161.29 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c5b))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3261,7 +3261,7 @@
     (property "LCSC" "C265321" (at 161.29 208.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c5c))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3289,7 +3289,7 @@
     (property "LCSC" "C265321" (at 161.29 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c5d))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3317,7 +3317,7 @@
     (property "LCSC" "C265321" (at 161.29 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c5e))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3336,7 +3336,7 @@
     (property "Value" "Conn_01x03_Pin" (at 165.735 241.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 165.1 246.38 0)
+    (property "Footprint" "RT-01T-1.0B:1x3_2.54" (at 165.1 246.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 165.1 246.38 0)
@@ -3366,7 +3366,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 327.66 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 326.39 57.15 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 326.39 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 326.39 57.15 0)
@@ -3411,7 +3411,7 @@
     (property "LCSC" "C265321" (at 161.29 182.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c5f))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3430,7 +3430,7 @@
     (property "Value" "Conn_01x01_Pin" (at 165.735 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 165.1 231.14 0)
+    (property "Footprint" "RT-01T-1.0B:1x1" (at 165.1 231.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 165.1 231.14 0)
@@ -3467,7 +3467,7 @@
     (property "LCSC" "C265321" (at 161.29 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c60))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3495,7 +3495,7 @@
     (property "LCSC" "C265321" (at 161.29 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c61))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3523,7 +3523,7 @@
     (property "LCSC" "C265321" (at 161.29 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c62))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3656,7 +3656,7 @@
     (property "LCSC" "C265321" (at 161.29 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c63))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3712,7 +3712,7 @@
     (property "LCSC" "C265321" (at 161.29 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c64))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3731,7 +3731,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 325.12 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 323.85 41.91 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 323.85 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 323.85 41.91 0)
@@ -3776,7 +3776,7 @@
     (property "LCSC" "C265321" (at 161.29 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c65))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3795,7 +3795,7 @@
     (property "Value" "Conn_01x01_Pin" (at 165.735 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" (at 165.1 251.46 0)
+    (property "Footprint" "RT-01T-1.0B:1x1" (at 165.1 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 165.1 251.46 0)
@@ -3823,7 +3823,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 356.87 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 355.6 33.02 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 355.6 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 355.6 33.02 0)
@@ -3868,7 +3868,7 @@
     (property "LCSC" "C265321" (at 161.29 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c66))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3887,7 +3887,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 298.45 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 297.18 49.53 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 297.18 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 297.18 49.53 0)
@@ -3923,7 +3923,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 323.85 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 322.58 33.02 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 322.58 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 322.58 33.02 0)
@@ -3968,7 +3968,7 @@
     (property "LCSC" "C265321" (at 161.29 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c67))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -3987,7 +3987,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 261.62 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 260.35 57.15 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 260.35 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 260.35 57.15 0)
@@ -4032,7 +4032,7 @@
     (property "LCSC" "C265321" (at 161.29 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c68))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -4060,7 +4060,7 @@
     (property "LCSC" "C265321" (at 161.29 200.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c69))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -4088,7 +4088,7 @@
     (property "LCSC" "C265321" (at 161.29 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c6a))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -4116,7 +4116,7 @@
     (property "LCSC" "C265321" (at 161.29 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c6b))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -4144,7 +4144,7 @@
     (property "LCSC" "C265321" (at 161.29 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c6c))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -4172,7 +4172,7 @@
     (property "LCSC" "C265321" (at 161.29 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c6d))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -4200,7 +4200,7 @@
     (property "LCSC" "C265321" (at 161.29 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c6e))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -4219,7 +4219,7 @@
     (property "Value" "Conn_02x02_Odd_Even" (at 356.87 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" (at 355.6 41.91 0)
+    (property "Footprint" "RT-01T-1.0B:2x2_2.54" (at 355.6 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 355.6 41.91 0)
@@ -4264,7 +4264,7 @@
     (property "LCSC" "C265321" (at 161.29 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c6f))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"
@@ -4292,7 +4292,7 @@
     (property "LCSC" "C265321" (at 161.29 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c2e))
+    (pin "1" (uuid 1f177ef7-3608-4869-98a0-839360cf7c70))
     (instances
       (project "hellen1-uaefi"
         (path "/759a7f60-bcfd-4446-a468-fcc3b8c86cdc"

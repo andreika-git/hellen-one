@@ -1,0 +1,16 @@
+(footprint "2x2_2.54" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 1.75 -1.75 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 2652eac2-e679-4139-934b-9aa255925c77)
+  )
+  (fp_text value "2x2_2.54" (at 1.5 4.25 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 38ba14ef-7af3-4033-9671-9dd99d550ebb)
+  )
+  (pad "1" thru_hole oval (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp b1cf5f3c-e1cd-4ca5-896a-134a98930a71))
+  (pad "2" thru_hole oval (at 2.54 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 022f7975-62c2-4e0b-80db-088e05a91165))
+  (pad "3" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 4bb181b0-7151-4ae3-89b8-133a21d68739))
+  (pad "4" thru_hole oval (at 2.54 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp ad47c5c2-f4df-4ea8-8fec-afe71c5c9720))
+)
