@@ -304,7 +304,7 @@
       (property "Reference" "M" (at 10.16 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Module:uaefi/0.2" (at 20.32 -218.44 0)
+      (property "Value" "Module:uaefi/0.2" (at 16.51 -227.33 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "hellen-one-uaefi-0.2:uaefi" (at 21.59 -227.33 0)
@@ -317,7 +317,7 @@
         (polyline
           (pts
             (xy 7.62 -213.36)
-            (xy 43.18 -213.36)
+            (xy 44.45 -213.36)
           )
           (stroke (width 0) (type default))
           (fill (type none))
@@ -325,7 +325,7 @@
         (polyline
           (pts
             (xy 7.62 -205.74)
-            (xy 43.18 -205.74)
+            (xy 44.45 -205.74)
           )
           (stroke (width 0) (type default))
           (fill (type none))
@@ -333,7 +333,7 @@
         (polyline
           (pts
             (xy 7.62 -198.12)
-            (xy 43.18 -198.12)
+            (xy 44.45 -198.12)
           )
           (stroke (width 0) (type default))
           (fill (type none))
@@ -341,7 +341,7 @@
         (polyline
           (pts
             (xy 7.62 -182.88)
-            (xy 43.18 -182.88)
+            (xy 44.45 -182.88)
           )
           (stroke (width 0) (type default))
           (fill (type none))
@@ -349,7 +349,7 @@
         (polyline
           (pts
             (xy 7.62 -165.1)
-            (xy 43.18 -165.1)
+            (xy 44.45 -165.1)
           )
           (stroke (width 0) (type default))
           (fill (type none))
@@ -357,7 +357,7 @@
         (polyline
           (pts
             (xy 7.62 -121.92)
-            (xy 43.18 -121.92)
+            (xy 44.45 -121.92)
           )
           (stroke (width 0) (type default))
           (fill (type none))
@@ -365,7 +365,7 @@
         (polyline
           (pts
             (xy 7.62 -68.58)
-            (xy 43.18 -68.58)
+            (xy 44.45 -68.58)
           )
           (stroke (width 0) (type default))
           (fill (type none))
@@ -373,12 +373,12 @@
         (polyline
           (pts
             (xy 7.62 -20.32)
-            (xy 43.18 -20.32)
+            (xy 44.45 -20.32)
           )
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (rectangle (start 7.62 2.54) (end 43.18 -226.06)
+        (rectangle (start 7.62 2.54) (end 44.45 -226.06)
           (stroke (width 0) (type default))
           (fill (type none))
         )
@@ -550,25 +550,28 @@
         )
       )
       (symbol "Module-uaefi-0.2_1_1"
-        (text "CAM1" (at 24.13 -81.28 0)
+        (text "Always hot\ncapable" (at 33.02 -41.91 0)
           (effects (font (size 1.27 1.27) (color 13 14 255 1)) (justify left))
         )
-        (text "CAM2" (at 24.13 -83.82 0)
+        (text "CAM1" (at 21.59 -81.28 0)
           (effects (font (size 1.27 1.27) (color 13 14 255 1)) (justify left))
         )
-        (text "Fan Relay" (at 24.13 -40.64 0)
+        (text "CAM2" (at 21.59 -83.82 0)
           (effects (font (size 1.27 1.27) (color 13 14 255 1)) (justify left))
         )
-        (text "Fuel Pump Relay" (at 24.13 -60.96 0)
+        (text "Fan Relay" (at 21.59 -40.64 0)
           (effects (font (size 1.27 1.27) (color 13 14 255 1)) (justify left))
         )
-        (text "Idle Air Valve" (at 24.13 -66.04 0)
+        (text "Fuel Pump Relay" (at 21.59 -60.96 0)
           (effects (font (size 1.27 1.27) (color 13 14 255 1)) (justify left))
         )
-        (text "Main Relay" (at 24.13 -43.18 0)
+        (text "Idle Air Valve" (at 21.59 -66.04 0)
           (effects (font (size 1.27 1.27) (color 13 14 255 1)) (justify left))
         )
-        (text "VVT1" (at 24.13 -38.1 0)
+        (text "Main Relay" (at 21.59 -43.18 0)
+          (effects (font (size 1.27 1.27) (color 13 14 255 1)) (justify left))
+        )
+        (text "VVT1" (at 21.59 -38.1 0)
           (effects (font (size 1.27 1.27) (color 13 14 255 1)) (justify left))
         )
         (pin passive line (at 0 0 0) (length 7.62)
@@ -668,11 +671,11 @@
           (number "B7" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 0 -40.64 0) (length 7.62)
-          (name "OUT_LS_WEAK2" (effects (font (size 1.27 1.27))))
+          (name "OUT_LS_HOT2" (effects (font (size 1.27 1.27))))
           (number "B8" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 0 -43.18 0) (length 7.62)
-          (name "OUT_LS_WEAK1" (effects (font (size 1.27 1.27))))
+          (name "OUT_LS_HOT1" (effects (font (size 1.27 1.27))))
           (number "B9" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 0 -71.12 0) (length 7.62)
