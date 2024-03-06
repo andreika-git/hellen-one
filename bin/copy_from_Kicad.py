@@ -166,7 +166,7 @@ with open(src_name + "-all-pos.csv", 'rt') as src_f, open(dst_name + "-CPL.csv",
 		if (side.lower() == "bottom"):
 			posx = str(-float(posx))
 		if des not in bom:
-			print ("Error! Designator " + des + " was not found in the BOM file!")
+			print ("copy_from_Kicad.py: Error! Designator [" + des + "] was not found in the BOM file!")
 			sys.exit(2)
 		if bom[des]:
 			for r in rotations:
