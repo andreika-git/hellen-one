@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "hellen-one-common")(type "KiCad")(uri "${KIPRJMOD}/../../footprints")(options "")(descr ""))
+  (lib (name "hellen-one-mcz33810-0.1")(type "KiCad")(uri "${KIPRJMOD}/../../../modules/mcz33810/0.1")(options "")(descr ""))
+  (lib (name "kicad6-libraries")(type "KiCad")(uri "${KIPRJMOD}/../../../../kicad6-libraries")(options "")(descr ""))
+)

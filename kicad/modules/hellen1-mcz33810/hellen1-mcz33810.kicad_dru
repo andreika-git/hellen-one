@@ -1,0 +1,10 @@
+(version 1)
+(rule "HV"
+   (layer outer)
+   (constraint clearance (min 0.4mm))
+   (condition "A.NetClass == 'HV'"))
+
+(rule "HVin"
+   (layer inner)
+   (constraint clearance (min 0.2mm))
+   (condition "A.NetClass == 'HV'"))
