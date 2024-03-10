@@ -1,0 +1,23 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,7.0.9*
+G04 #@! TF.CreationDate,2024-03-10T08:17:23+03:00*
+G04 #@! TF.ProjectId,hellen1-motor-driver,68656c6c-656e-4312-9d6d-6f746f722d64,rev?*
+G04 #@! TF.SameCoordinates,PX507d780PY4a62f80*
+G04 #@! TF.FileFunction,Profile,NP*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.9) date 2024-03-10 08:17:23*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 #@! TA.AperFunction,Profile*
+%ADD10C,0.050000*%
+G04 #@! TD*
+G04 APERTURE END LIST*
+D10*
+X0Y10000000D02*
+X13800000Y10000000D01*
+X13800000Y0D01*
+X0Y0D01*
+X0Y10000000D01*
+M02*
