@@ -11,6 +11,7 @@ frame_name="$3"
 frame_rev="$4"
 bom_replace="$5"
 comp_img_offset="$6"
+num_layers="$7"
 
 python_bin="python3.8"
 
@@ -36,7 +37,7 @@ export DISPLAY=:99.0
 Xvfb :99 -screen 0 640x480x24 &
 
 echo "Processing ${board_prefix} board..."
-if ! $python_bin bin/process_board.py ${board_prefix} ${project_base} ${frame_name} ${frame_rev} ${bom_replace} ${comp_img_offset}; then
+if ! $python_bin bin/process_board.py ${board_prefix} ${project_base} ${frame_name} ${frame_rev} ${bom_replace} ${comp_img_offset} ${num_layers}; then
 	echo "ABORTING!"
 	exit 3
 else

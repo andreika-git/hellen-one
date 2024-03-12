@@ -11,7 +11,7 @@ import csv, re
 import subprocess
 
 if len(sys.argv) < 5:
-	print ("Error! Please specify the board prefix, project base name, frame name, revision and optional BOM replacement file.")
+	print ("Error! Please specify the board prefix, project base name, frame name, revision and optional [BOM replacement file] and [number of layers].")
 	sys.exit(1)
 
 board_prefix = sys.argv[1]
@@ -28,6 +28,8 @@ if len(sys.argv) > 6:
 	comp_img_offset = sys.argv[6]
 else:
 	comp_img_offset = "0,0"
+
+num_layers = int(sys.argv[7]) if (len(sys.argv) > 7 and sys.argv[7] != "") else 4
 
 imageDpi = "600"
 
@@ -95,7 +97,7 @@ def print_module(name, prefixPath, moduleName, fileName, isBoard, isBottom):
 			"drillspth=%(prefix)s.DRL"])
 		if (os.path.isfile(prefix + ".GBP")):
 			write_lines(file, "*" + bottom + "SolderPasteMask=%(prefix)s.GBP")
-		if ((os.path.isfile(prefix + ".G1") and os.path.isfile(prefix + ".G2")) or isBoard == 1):
+		if (num_layers >= 4 and ((os.path.isfile(prefix + ".G1") and os.path.isfile(prefix + ".G2")) or isBoard == 1)):
 			write_lines(file, [
 				"*InnerLayer2=%(prefix)s.G1",
 				"*InnerLayer3=%(prefix)s.G2"])

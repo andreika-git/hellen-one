@@ -20,6 +20,7 @@ if [ -z "${BOARD_SUFFIX}" ]; then
 fi
 
 echo "BOARD_REVISION=[${BOARD_REVISION}]"
+echo "BOARD_LAYERS=[${BOARD_LAYERS}]"
 
-docker run --rm -t --user $(id -u):$(id -g) --entrypoint bash -v "$(pwd)":/${PWD##*/} hellen-one ./bin/create_board_with_prefix.sh "${BOARD_PREFIX}" "/${PWD##*/}" "${BOARD_SUFFIX}" "${BOARD_REVISION}" "bom_replace_${BOARD_PREFIX}${BOARD_SUFFIX}-${BOARD_REVISION}.csv " "${BOARD_PCB_OFFSET}"
+docker run --rm -t --user $(id -u):$(id -g) --entrypoint bash -v "$(pwd)":/${PWD##*/} hellen-one ./bin/create_board_with_prefix.sh "${BOARD_PREFIX}" "/${PWD##*/}" "${BOARD_SUFFIX}" "${BOARD_REVISION}" "bom_replace_${BOARD_PREFIX}${BOARD_SUFFIX}-${BOARD_REVISION}.csv " "${BOARD_PCB_OFFSET}" "${BOARD_LAYERS}"
 

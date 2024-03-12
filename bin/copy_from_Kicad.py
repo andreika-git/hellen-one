@@ -12,7 +12,7 @@ import glob, shutil
 # https://www.candorind.com/gerber-file-extensions/
 # also recognized by JLCPCB: https://support.jlcpcb.com/article/29-suggested-naming-patterns
 
-if len(sys.argv) < 5:
+if len(sys.argv) < 6:
     print ("Error! Please specify the project type, base folder, gerber folder, name and rev.")
     sys.exit(1)
 type = sys.argv[1]
@@ -20,6 +20,7 @@ project_base = sys.argv[2]
 gerber_rel_path = sys.argv[3]
 name = sys.argv[4]
 rev = sys.argv[5]
+num_layers = int(sys.argv[6]) if (len(sys.argv) > 6 and sys.argv[6] != "") else 4
 
 prefix = "hellen"
 project_path = project_base + "/" + prefix + name
@@ -62,7 +63,9 @@ mkdir_p(dst_path)
 
 # copy gerbers
 print ("Reading gerbers from " + src_name + "*.*")
-gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GBP", ".GM1", ".G2", ".G3", ".DRL"]
+gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GBP", ".GM1", ".DRL" ]
+if (num_layers >= 4):
+	gerbers += [ ".G2", ".G3" ]
 for g in gerbers:
 	copied = False
 	gl = g.lower()
