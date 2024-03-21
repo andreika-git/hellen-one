@@ -2,11 +2,12 @@
   (layer "F.Cu")
   (property "Sheetfile" "Файл: hellen1-vr-discrete.kicad_sch")
   (property "Sheetname" "")
-  (fp_text reference "M800" (at 2.45 -9.8 unlocked) (layer "F.SilkS") hide
+  (zone_connect 2)
+  (fp_text reference "REF**" (at 2.45 -9.8 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 88a83db3-3da2-451b-a804-145f455a30d3)
   )
-  (fp_text value "Module-mcz33810-0.1" (at 9.4 -11.3 unlocked) (layer "F.Fab") hide
+  (fp_text value "M801" (at 9.4 -11.3 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 6d9dadfd-2e24-498e-be2c-182fb8276bde)
   )
