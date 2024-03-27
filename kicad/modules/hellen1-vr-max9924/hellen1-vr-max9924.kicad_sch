@@ -592,7 +592,7 @@
     (uuid fb0d1424-962b-4205-9d20-bdb949a63fc5)
   )
 
-  (text "Install R755 for use with very hot\nVR signals, to dampen the signal"
+  (text "Install R775 for use with very hot\nVR signals, to dampen the signal"
     (at 110.49 88.9 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3e647d0b-22a4-4e83-8c43-c6f252c001d1)

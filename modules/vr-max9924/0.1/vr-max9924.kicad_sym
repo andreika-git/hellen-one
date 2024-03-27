@@ -17,7 +17,7 @@
         (stroke (width 0) (type default))
         (fill (type background))
       )
-      (text "Install R755 for use \nwith very hot VR signals, \nto dampen the signal" (at 5.08 -5.08 0)
+      (text "Install R775 for use \nwith very hot VR signals, \nto dampen the signal" (at 5.08 -5.08 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (pin passive line (at 40.64 -12.7 180) (length 7.62)
