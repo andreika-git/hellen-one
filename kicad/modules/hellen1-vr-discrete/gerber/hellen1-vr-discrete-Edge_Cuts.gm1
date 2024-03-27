@@ -1,11 +1,11 @@
-G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(6.0.8)*
-G04 #@! TF.CreationDate,2023-01-16T12:06:17+03:00*
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,7.0.9*
+G04 #@! TF.CreationDate,2024-03-27T08:03:59+03:00*
 G04 #@! TF.ProjectId,hellen1-vr-discrete,68656c6c-656e-4312-9d76-722d64697363,rev?*
 G04 #@! TF.SameCoordinates,PX4a19ba0PY5aa5910*
 G04 #@! TF.FileFunction,Profile,NP*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (6.0.8)) date 2023-01-16 12:06:17*
+G04 Created by KiCad (PCBNEW 7.0.9) date 2024-03-27 08:03:59*
 %MOMM*%
 %LPD*%
 G01*
@@ -15,12 +15,9 @@ G04 #@! TA.AperFunction,Profile*
 G04 #@! TD*
 G04 APERTURE END LIST*
 D10*
-X0Y0D02*
-X15200000Y0D01*
-X15200000Y0D02*
-X15200000Y9800000D01*
-X15200000Y9800000D02*
-X0Y9800000D01*
 X0Y9800000D02*
+X15200000Y9800000D01*
+X15200000Y0D01*
 X0Y0D01*
+X0Y9800000D01*
 M02*

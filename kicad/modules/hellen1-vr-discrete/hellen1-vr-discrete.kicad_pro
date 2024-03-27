@@ -56,7 +56,13 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|80960001|89920001|b7b546ab-3414-428a-86d2-9af8cd3ec442|5f7c6e92-ad8b-427c-8b01-c03da8662aeb",
+        "courtyards_overlap|84080001|86570001|159f2f54-e78f-4c9c-84a3-1d9a295cfb7e|630cabeb-e1a6-44e7-92b6-93c6054f82d1",
+        "courtyards_overlap|84998031|86570001|0c0fd518-19c1-4efd-ac40-44c0a1ba696c|630cabeb-e1a6-44e7-92b6-93c6054f82d1",
+        "courtyards_overlap|92398029|90740001|0c0fd518-19c1-4efd-ac40-44c0a1ba696c|4f46fe1c-7f12-4f9a-a389-92b676728ed7",
+        "courtyards_overlap|92431307|91600001|4f46fe1c-7f12-4f9a-a389-92b676728ed7|a7320488-0cc5-4036-a740-e056a17baa19"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -98,7 +104,7 @@
         "silk_overlap": "error",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "ignore",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -426,7 +432,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.1492,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,

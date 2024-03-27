@@ -1,3 +1,3 @@
 cd ..\..\..
 
-python ./bin/copy_from_Kicad.py "modules" "kicad/modules" "gerber" "vr-discrete" "0.4"
+python ./bin/copy_from_Kicad.py "modules" "kicad/modules" "gerber" "vr-discrete" "0.5"
