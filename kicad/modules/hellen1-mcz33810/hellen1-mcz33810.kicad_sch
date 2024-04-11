@@ -462,6 +462,9 @@
           (stroke (width 0) (type default))
           (fill (type background))
         )
+        (text "Remove R806, R808, R810, R812, Q801-Q804,\nC806-C809 and install 0 Ohm R814-R817 \nfor use with smart coils" (at 16.51 -48.26 900)
+          (effects (font (size 1.27 1.27)) (justify left))
+        )
         (pin passive line (at -5.08 -46.99 0) (length 5.08)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "G" (effects (font (size 1.27 1.27))))
@@ -1360,6 +1363,12 @@
   (wire (pts (xy 162.56 130.81) (xy 157.48 130.81))
     (stroke (width 0) (type default))
     (uuid fcd0b9c1-546e-45b9-899d-24c7c9bd935a)
+  )
+
+  (text "Remove R806, R808, R810, R812, Q801-Q804, C806-C809\nand install 0 Ohm R814-R817 for use with smart coils"
+    (at 215.9 40.64 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6d5fc520-2d93-4d35-9433-f37d2503df3d)
   )
 
   (label "IGN1" (at 83.82 27.94 0) (fields_autoplaced)
