@@ -51,8 +51,8 @@ echo Export positions file
 kicad-cli pcb export pos --format csv --units mm --use-drill-file-origin --bottom-negate-x "$PCB_FILE" -o "gerber/$IN-all-pos.csv"
 
 echo Getting Drill/Place origin from PCB
-X=$(grep "aux_axis_origin" "$PCB_FILE" | tr '	' ' ' | tr -s ' ' | cut -d ' ' -f 3)
-Y=$(grep "aux_axis_origin" "$PCB_FILE" | tr '	' ' ' | tr -s ' ' | cut -d ' ' -f 4 | tr -d ')')
+X=$(grep "aux_axis_origin" "$PCB_FILE" | tr -s ' ' | cut -d ' ' -f 3)
+Y=$(grep "aux_axis_origin" "$PCB_FILE" | tr -s ' ' | cut -d ' ' -f 4 | tr -d ')')
 if [ ! "$Y" ]; then
     echo "aux_axis_origin is missing in the PCB file"
     exit -1
