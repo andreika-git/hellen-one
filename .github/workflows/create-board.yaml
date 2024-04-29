@@ -16,8 +16,10 @@ jobs:
       - name: Set Token
         run: |
           if ! [[ -z "${{ inputs.token }}" ]]; then
+            echo "Token was specified"
             echo "TOKEN=${{ inputs.token }}" >> "$GITHUB_ENV"
           else
+            echo "Using default token"
             echo "TOKEN=${{ github.token }}" >> "$GITHUB_ENV"
           fi
 
