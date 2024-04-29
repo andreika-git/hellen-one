@@ -16,11 +16,11 @@ jobs:
       - name: Set Token
         run: |
           if ! [[ -z "${{ inputs.token }}" ]]; then
-            echo "Token was specified"
+            echo "Got token input (is that even possible?)"
             echo "TOKEN=${{ inputs.token }}" >> "$GITHUB_ENV"
           else
-            echo "Using default token"
-            echo "TOKEN=${{ github.token }}" >> "$GITHUB_ENV"
+            echo "Using current secret"
+            echo "TOKEN=${{ secrets.MY_REPO_PAT }}" >> "$GITHUB_ENV"
           fi
 
       - uses: actions/checkout@v4
