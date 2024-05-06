@@ -13,19 +13,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-
-
-
-
-
-
-
-
-
+      - name: Set Token
+        run: |
+          if ! [[ -z "${{ inputs.token }}" ]]; then
+            echo "Got token input (is that even possible?)"
+            echo "TOKEN=${{ inputs.token }}" >> "$GITHUB_ENV"
+          else
+            echo "Using current secret"
+            echo "TOKEN=${{ secrets.MY_REPO_PAT }}" >> "$GITHUB_ENV"
+          fi
 
       - uses: actions/checkout@v4
         with:
+          token: ${{ env.TOKEN }}
           submodules: recursive
 
       - name: clone hellen-one if needed
