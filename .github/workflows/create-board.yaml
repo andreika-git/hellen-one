@@ -39,7 +39,7 @@ jobs:
             git submodule update --init
           fi       
 
-      - name: Install kicad
+      - name: Install kicad 8
         run: |
           sudo add-apt-repository --yes ppa:kicad/kicad-8.0-releases
           sudo apt-get install kicad
