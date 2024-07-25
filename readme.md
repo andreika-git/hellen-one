@@ -44,3 +44,12 @@ Please see Hellen One Wiki for more info:
 
 https://github.com/andreika-git/hellen-one/wiki
 
+
+### FAQ
+
+#### Q: I do not have any files inside hellen-one folder on my PC
+
+A: That's a problem, you have not cloned submodules. See https://stackoverflow.com/questions/3796927/how-do-i-git-clone-a-repo-including-its-submodules
+
+
+
