@@ -10,8 +10,8 @@ Step 3: replace xxx and yyy in ``revision.txt`` with name of your board
 
 Step 4: create youboard.kicad_pcb from [proven modules](https://github.com/andreika-git/hellen-one/tree/master/modules) using KiCAD
 
-Step 5: push into github to trigger hellen-one gerber expert and gerber merge (that's where the hellen magic happens! for instance gerber export is taken care by [export.sh](https://github.com/andreika-git/hellen-
-one/blob/master/kicad/bin/export.sh) script which github action would invoke _automatically_. Just watch for the yellow circle to turn into a green checkmark.)
+Step 5: push into github to trigger hellen-one gerber expert and gerber merge (that's where the hellen magic happens! for instance gerber export is taken care 
+by [export.sh](https://github.com/andreika-git/hellen-one/blob/master/kicad/bin/export.sh) script which github action would invoke _automatically_. Just watch for the yellow circle to turn into a green checkmark.)
 
 Step 6: (sorry rotation only by factor of 90 degrees at this point)
 
