@@ -1,0 +1,7 @@
+
+#MAX9142 substitution - cheaper and more available, it's simpler to be uniform between different boards
+# first VR
+U754,"TLV3202AIDR","SO8","C129325"
+
+# second discrete VR
+U754_2,"TLV3202AIDR","SO8","C129325"
