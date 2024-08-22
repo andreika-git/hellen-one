@@ -356,9 +356,9 @@ try:
 		board_bom,
 		bom_replace_csv_path,
 		warnings_path], stderr=subprocess.STDOUT)
-	print (out.decode('ascii'))
+	print (out.decode('ascii', errors='replace'))
 except subprocess.CalledProcessError as e:
-	print ("BOM processing error:\n" + e.output.decode('ascii'))
+	print ("BOM processing error:\n" + e.output.decode('ascii', errors='replace'))
 	sys.exit(2)
 
 print ("Convert to the manufacturer's BOM...")
@@ -366,9 +366,9 @@ try:
 	out = subprocess.check_output([sys.executable, "bin/convert_BOM_mfr.py",
 		board_bom,
 		board_bom_mfr], stderr=subprocess.STDOUT)
-	print (out.decode('ascii'))
+	print (out.decode('ascii', errors='replace'))
 except subprocess.CalledProcessError as e:
-	print ("Mfr's BOM conversion error:\n" + e.output.decode('ascii'))
+	print ("Mfr's BOM conversion error:\n" + e.output.decode('ascii', errors='replace'))
 	sys.exit(2)
 
 print ("Merging Schematics...")

@@ -9,14 +9,24 @@ import csv, os, sys, re
 
 include_pat = re.compile(r'#include\s+\"?([^\"]+)\"?$')
 
+def checkNonAsciiSymbols(row):
+    for r in row:
+        try:
+            r.encode('ascii')
+        except UnicodeEncodeError:
+            print ("Error! The following line contains non-ASCII symbols:")
+            print (row)
+            sys.exit(5)
+
 def read_repl_file(csv_name, repl_base_path, replList):
     print ("Reading replacement list from the CSV file " + csv_name + "...")
-    with open(csv_name, 'rt') as f:
+    with open(csv_name, 'rt', errors='replace') as f:
         reader = csv.reader(f, delimiter=',')
         for row in reader:
             # skip empty lines
             if (len(row) < 1):
                 continue
+            checkNonAsciiSymbols(row)
             # process includes
             include = include_pat.match(row[0].strip())
             if (include):
@@ -59,10 +69,11 @@ rows = OrderedDict()
 rowDes = OrderedDict()
 emptyId = 1
 
-with open(fileName, 'rt') as f:
+with open(fileName, 'rt', errors='replace') as f:
     reader = csv.reader(f, delimiter=',')
     print ("Searching for duplicates...")
     for row in reader:
+        checkNonAsciiSymbols(row)
         row[3] = row[3].strip()
         rowName = row[3]
         row[1] = row[1].split(", ")
@@ -150,9 +161,9 @@ with open (fileName, 'wt') as new_f:
         #for idx,item in enumerate(rows[rowName]):
         #    print idx , ": ", item
         if rowIdx == 0:
-            writer = csv.writer(new_f, quoting=csv.QUOTE_NONE, quotechar='"', escapechar='', delimiter=',', lineterminator='\n')
+            writer = csv.writer(new_f, quoting=csv.QUOTE_NONE, quotechar='"', escapechar=None, delimiter=',', lineterminator='\n')
         elif rowIdx == 1:
-            writer = csv.writer(new_f, quoting=csv.QUOTE_ALL, quotechar='"', escapechar='', delimiter=',', lineterminator='\n')
+            writer = csv.writer(new_f, quoting=csv.QUOTE_ALL, quotechar='"', escapechar=None, delimiter=',', lineterminator='\n')
         row = rows[rowName]
         # restore empty names
         if rowName[0] == '_':

@@ -24,9 +24,9 @@ with open(bomFileName, 'rt') as f, open (mfrBomFileName, 'wt') as new_f:
         if not pn:
         	continue
         if rowIdx == 0:
-            writer = csv.writer(new_f, quoting=csv.QUOTE_NONE, quotechar='"', escapechar='', delimiter=',', lineterminator='\n')
+            writer = csv.writer(new_f, quoting=csv.QUOTE_NONE, quotechar='"', escapechar=None, delimiter=',', lineterminator='\n')
         elif rowIdx == 1:
-            writer = csv.writer(new_f, quoting=csv.QUOTE_ALL, quotechar='"', escapechar='', delimiter=',', lineterminator='\n')
+            writer = csv.writer(new_f, quoting=csv.QUOTE_ALL, quotechar='"', escapechar=None, delimiter=',', lineterminator='\n')
        	writer.writerow(row)
         rowIdx += 1
 
