@@ -62,7 +62,8 @@
 #python3 gen_hellen_board_id.py h112-mg1-c
 #python3 gen_hellen_board_id.py uaefi121-a
 #python3 gen_hellen_board_id.py polaris-112-a
-python3 gen_hellen_board_id.py uaefi121-b
+#python3 gen_hellen_board_id.py uaefi121-b
+python3 gen_hellen_board_id.py gdi4chan-b
 
 # do not forget to manually add new files into git
 # todo: one day make this a github action?
