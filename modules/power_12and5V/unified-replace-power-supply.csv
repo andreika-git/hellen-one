@@ -5,7 +5,7 @@
 L421,"MWSA0503S-100MT","MWSA0503","C408412"
 L420,"NLCV32T-2R2M-EF","L1210","C250227"
 # same power supply/same reference on all boards fuse
-F410,"nSMD050-24V","SMD1206","C70076"
+F410,"nSMD050-24V","SMD1206","C369160"
 # JLC-BOM stock shortages...
 # same power supply/same reference on all boards
 U411,"TLS115B0EJXUMA1","PG-DSO-8","C3743696"
