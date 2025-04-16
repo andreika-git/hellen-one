@@ -70,7 +70,8 @@
 #python3 gen_hellen_board_id.py alphax_gold-a
 #python3 gen_hellen_board_id.py gm-e92-a
 #python3 gen_hellen_board_id.py hd81-e
-python3 gen_hellen_board_id.py uaefi-Honda-OBD1-c
+#python3 gen_hellen_board_id.py uaefi-Honda-OBD1-c
+python3 gen_hellen_board_id.py 135subaru2011-a
 
 # do not forget to manually add new files into git
 # todo: one day make this a github action?
