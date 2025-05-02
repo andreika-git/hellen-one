@@ -1,3 +1,3 @@
-(module PAD-SMD-0.8 (layer F.Cu) (tedit 67AFBD30)
+(module PAD-SMD-0.8 (layer F.Cu) (tedit 68155734)
   (pad 1 smd oval (at 0.0 -0.0) (size 0.8 0.8) (layers F.Cu F.Mask))
 )
