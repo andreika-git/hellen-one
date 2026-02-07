@@ -77,7 +77,7 @@
 #python3 gen_hellen_board_id.py super-uaefi-a
 #python3 gen_hellen_board_id.py 135subaru2011-b
 #python3 gen_hellen_board_id.py gm-e38-b
-python3 gen_hellen_board_id.py gm-e38-c
+python3 gen_hellen_board_id.py polaris-112-b
 
 # do not forget to manually add new files into git
 # todo: one day make this a github action?
