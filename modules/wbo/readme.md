@@ -2,6 +2,12 @@
 
 ## Changelog
 
+0.6:
+  - removed external MOSFET
+  - reduced 3mm length
+  - removed BIG thermal via
+  - SOT-223 MOSFET
+
 0.4:
   - two side assembly
   - BUG: CANH/CANL traces are flipped
