@@ -78,7 +78,8 @@
 #python3 gen_hellen_board_id.py 135subaru2011-b
 #python3 gen_hellen_board_id.py gm-e38-b
 #python3 gen_hellen_board_id.py polaris-112-b
-python3 gen_hellen_board_id.py gm-e92-b
+#python3 gen_hellen_board_id.py gm-e92-b
+python3 gen_hellen_board_id.py alphax_gold-b
 
 # do not forget to manually add new files into git
 # todo: one day make this a github action?
