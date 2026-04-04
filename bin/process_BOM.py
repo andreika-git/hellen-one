@@ -8,6 +8,7 @@ from collections import OrderedDict
 import csv, os, sys, re
 
 include_pat = re.compile(r'#include\s+\"?([^\"]+)\"?$')
+define_pat = re.compile(r'#define\s+([A-Za-z0-9_]+)\s+([A-Za-z0-9_]+)$')
 
 def checkNonAsciiSymbols(row):
     for r in row:
@@ -18,7 +19,7 @@ def checkNonAsciiSymbols(row):
             print (row)
             sys.exit(5)
 
-def read_repl_file(csv_name, repl_base_path, replList):
+def read_repl_file(csv_name, repl_base_path, replList, defList):
     print ("Reading replacement list from the CSV file " + csv_name + "...")
     with open(csv_name, 'rt', errors='replace') as f:
         reader = csv.reader(f, delimiter=',')
@@ -32,7 +33,20 @@ def read_repl_file(csv_name, repl_base_path, replList):
             if (include):
                 csv_sub_name = os.path.join(repl_base_path, include.group(1))
                 if (csv_sub_name != csv_name):
-                    read_repl_file(csv_sub_name, repl_base_path, replList)
+                    read_repl_file(csv_sub_name, repl_base_path, replList, defList)
+                continue
+            # process defines
+            define = define_pat.match(row[0].strip())
+            if (define):
+                old_value = define.group(1)
+                new_value = define.group(2)
+
+                # Optional duplicate check
+                if (old_value in defList and defList[old_value] != new_value):
+                    print (f'Warning: redefine {old_value}: {defList[old_value]} -> {new_value}')
+
+                defList[old_value] = new_value
+                continue
             # skip comments (this is not strictly CSV-compliant, but useful for our purposes)
             if (row[0].startswith("#")):
                 continue
@@ -42,7 +56,9 @@ def read_repl_file(csv_name, repl_base_path, replList):
                 if (len(row) > 2):
                     subrow.append(row[2])
                 if (len(row) > 3):
-                    subrow.append(row[3])
+                    value = row[3].strip()
+                    value = defList.get(value, value)
+                    subrow.append(value)
                 replList.append(subrow)
 
 def printWarning(text):
@@ -101,7 +117,8 @@ with open(fileName, 'rt', errors='replace') as f:
         #    print idx , ": ", item
 
 replList = list()
-read_repl_file(repl_csv, repl_base_path, replList)
+defList = dict()
+read_repl_file(repl_csv, repl_base_path, replList, defList)
 
 print ("Processing the board replacements...")
 for r in replList:
