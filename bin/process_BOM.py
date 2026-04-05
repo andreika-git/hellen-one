@@ -57,7 +57,6 @@ def read_repl_file(csv_name, repl_base_path, replList, defList):
                     subrow.append(row[2])
                 if (len(row) > 3):
                     value = row[3].strip()
-                    value = defList.get(value, value)
                     subrow.append(value)
                 replList.append(subrow)
 
@@ -144,6 +143,17 @@ for r in replList:
         else:
             print ("* Appending a new row for " + reDesignator + "...")
             rows[rePartNumber] = [reComment, [reDesignator], reFootprint, rePartNumber]
+
+print ("Apply partnumber replacements from #define directives...")
+for rowName in rows:
+    row = rows[rowName]
+    if not row[3]:
+        continue
+    newName = defList.get(row[3], row[3])
+    if (newName != row[3]):
+        cf = row[0] + "_" + row[2]
+        print ("* Replacing " + row[3] + "->" + newName + " for " + cf)
+        row[3] = newName
 
 print ("Checking for identical parts with different partnumbers...")
 commentAndFootprint = OrderedDict()
