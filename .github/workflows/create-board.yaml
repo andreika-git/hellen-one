@@ -57,7 +57,10 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         run: |
+          git diff --color=always
           git diff --name-only | while read f; do
+            # Filter out changes that only include "Created", "Generation", or "Date" (case-insensitive) in the added lines (indicated by green color in diff)
+            # fun fact: rusEFI repo has 'smart-git-add.sh' which does similar thing by counting lines in diff 
             if [ $(git diff --color=always|perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/' "$f" | grep -vE "Created|Generation|[dD]ate" | wc -l) -eq 0 ]; then
               echo Only unimportant changes here? NOT SURE not invoking git checkout "$f"
             fi
@@ -97,6 +100,7 @@ jobs:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         run: |
           git diff --name-only | while read f; do
+            # Filter out changes that only include "Created", "Generation", or "Date" (case-insensitive) in the added lines (indicated by green color in diff)
             if [ $(git diff --color=always|perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/' "$f" | grep -vE "Created|Generation|[dD]ate" | wc -l) -eq 0 ]; then
               echo Only unimportant changes here? NOT SURE not invoking git checkout "$f"
             fi
