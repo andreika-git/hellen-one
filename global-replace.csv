@@ -15,3 +15,6 @@
 
 #61.9 0603
 #define C23092 C321964 
+
+#Ignition high current SN74LXCH8T245PWR 
+#define C7859 C2918963
