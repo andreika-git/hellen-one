@@ -21,3 +21,9 @@
 
 #Ignition high current SN74LXCH8T245PWR 
 #define C7859 C2918963
+
+#CAN protection
+#define C343993 C5261084
+
+#1 Ohm 0402
+#define C25086 C102864
