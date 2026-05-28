@@ -27,3 +27,6 @@
 
 #1 Ohm 0402
 #define C25086 C102864
+
+#MM buttons
+#define C115357 C455280
