@@ -1,0 +1,6 @@
+(module QUARTZ-SMD3225 (layer F.Cu) (tedit 6A3C37F7)
+  (pad 1 smd rect (at -1.0999978 0.7999983999999999) (size 1.4 1.15) (layers F.Cu F.Mask))
+  (pad 2 smd rect (at 1.0999978 0.7999983999999999) (size 1.4 1.15) (layers F.Cu F.Mask))
+  (pad 3 smd rect (at 1.0999978 -0.7999983999999999) (size 1.4 1.15) (layers F.Cu F.Mask))
+  (pad 4 smd rect (at -1.0999978 -0.7999983999999999) (size 1.4 1.15) (layers F.Cu F.Mask))
+)
