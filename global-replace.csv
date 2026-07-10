@@ -43,6 +43,10 @@
 #3.3V LDO U101
 #define C435835 C15578
 
+# === LEDs ===
+#Yellow 0603
+#define C72038 C2287
+
 # === Other === 
 
 #MM buttons
