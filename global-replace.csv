@@ -9,7 +9,7 @@
 #define C25885 C138017
 
 #6.8k 0402
-#not required now C25917 C93940 
+#define C25917 C93940 
 
 #10k 0402
 #define C25744 C60490
