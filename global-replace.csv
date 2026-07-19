@@ -26,6 +26,10 @@
 #470k 0402
 #define C25790 C137976
 
+# === Inductors ===
+#L421 10uH
+#define C139506 C325966
+
 # === GDI ===
 #GDI Vboost diode STTH802G-TR -> STTH1602CG-TR
 #define C181034 C2970530 
