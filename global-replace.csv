@@ -50,9 +50,30 @@
 #3.3V LDO U101
 #define C435835 C15578
 
+#U107 Baro https://github.com/rusefi/uaefi-Honda-OBD1/issues/14
+#define C94049 C2827824
+
+#U602 STM32F042K6T6 -> STM32F042K6T7
+#define C69216 C1337340
+
+#U821 TLE9201SG motor driver
+#define C112633 C2653438
+
+# i2c for faster board ID PCF8575TS -> PCA9555APW,118
+#define C12251 C2652295
+
+#U754 MAX9142 substitution - cheaper and more available, it's simpler to be uniform between different boards
+#define C18567 C129325
+
 # === LEDs ===
 #Yellow 0603
 #define C72038 C2287
+
+#Green 0603
+#define C72043 C965804
+
+#Blue 0603
+#define C72041 C497940
 
 # === Other === 
 
