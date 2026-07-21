@@ -1,6 +1,6 @@
 # === RES ===
 #1 Ohm 0402
-#define C25086 C102864
+#not needed C25086 C102864
 
 #61.9 0603
 #define C23092 C321964 
@@ -29,6 +29,17 @@
 # === Inductors ===
 #L421 10uH
 #define C139506 C325966
+
+#L420 2.2 uH
+#define C36828 C250227
+
+# === Capacitors ===
+#33n 0402
+#define C1585 C106862
+
+# === Fuses ===
+#F410 0.5A 1206
+#define C209741 C369160
 
 # === GDI ===
 #GDI Vboost diode STTH802G-TR -> STTH1602CG-TR
@@ -64,6 +75,9 @@
 
 #U754 MAX9142 substitution - cheaper and more available, it's simpler to be uniform between different boards
 #define C18567 C129325
+
+#U411 TLS115 same power supply/same reference on all boards
+#define C540242 C3743696
 
 # === LEDs ===
 #Yellow 0603
