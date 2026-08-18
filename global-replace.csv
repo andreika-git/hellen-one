@@ -1,6 +1,6 @@
 # === RES ===
 #1 Ohm 0402
-#not needed C25086 C102864
+#define C25086 C25147
 
 #61.9 0603
 #define C23092 C321964 
