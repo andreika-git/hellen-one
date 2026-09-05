@@ -2,6 +2,12 @@
 
 All notable changes will be documented in this file.
 
+## KiCad 10 toolset
+  - Frame export (kicad/bin/export.sh) and the create-board GitHub workflows now require KiCad 10
+  - No more pcbnew Python scripting: zones are refilled by 'kicad-cli pcb export gerbers --check-zones', VRML by 'kicad-cli pcb export vrml'; the board file is no longer modified during export
+  - hellen-one-kicad-bom-plugin.py uses the kicad_netlist_reader shipped with KiCad and honours the native DNP attribute (in addition to MyComment=DNP)
+  - CI runs the KiCad export on the test frame (tests/) with KiCad 10
+
 ## knock-0.2
   - now double-sided assembly and smaller dimentions
 

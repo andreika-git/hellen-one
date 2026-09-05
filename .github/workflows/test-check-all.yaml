@@ -18,3 +18,30 @@ jobs:
       - name: Run Tests in Docker
         run: |
           bash step2-run-docker.sh
+
+  kicad-export:
+    # Exercises kicad/bin/export.sh (the step board repos run via create-board.yaml) against KiCad 10
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install kicad 10
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
+          sudo apt-get install kicad
+
+      - name: Export test frame with kicad-cli
+        run: |
+          cd tests
+          bash ../kicad/bin/export.sh
+
+      - name: Copy exported frame into project layout
+        run: |
+          python3 ./bin/copy_from_Kicad.py "frames:hellen" "tests" "../../gerber" "1test" "a"
+
+      - name: Compare BOM and CPL with the expected output
+        run: |
+          diff tests/boards.EXAMPLE/hellen1test-a/frame/1test-BOM.csv tests/boards/hellen1test-a/frame/1test-BOM.csv
+          diff tests/boards.EXAMPLE/hellen1test-a/frame/1test-CPL.csv tests/boards/hellen1test-a/frame/1test-CPL.csv
+          ls -l tests/boards/hellen1test-a/frame
