@@ -39,8 +39,10 @@ Board repos drive the same thing via `bin/step1_build_hellen-one_docker.sh`, `bi
 Other commands:
 
 ```bash
-# Export gerbers/BOM/CPL/PDF/VRML from a KiCad frame (needs kicad-cli + pcbnew python; reads revision.txt in cwd)
+# Export gerbers/BOM/CPL/PDF/VRML from a KiCad frame (needs KiCad 10 kicad-cli; reads revision.txt in cwd)
 bash kicad/bin/export.sh
+# Same thing on the test frame (tests/revision.txt is committed):
+cd tests && bash ../kicad/bin/export.sh
 
 # Allocate a new Board-ID: uncomment/add a line in board_id/test.sh, then
 cd board_id && bash test.sh        # writes generated/board_id_<name>.csv, updates board_ids.csv and libfirmware/board_id/boards_id.h
@@ -53,7 +55,7 @@ python ./bin/copy_from_Kicad.py "modules" "kicad/modules" "gerber" "wbo" "0.6"
 
 Three stages, each a separate entry point:
 
-1. **KiCad export** (`kicad/bin/export.sh`, runs in GitHub Actions with KiCad 8 installed): `kicad-cli` exports gerbers, drill, positions CSV, schematic PDF; `kicad/hellen-one-kicad-bom-plugin.py` turns the XML netlist into a `Comment,Designator,Footprint,LCSC Part #` CSV (a `MyComment=DNP` field blanks the LCSC number); `fill-zones.py` and `export-vrml.py` use `pcbnew`. Output goes to `gerber/` in the board repo.
+1. **KiCad export** (`kicad/bin/export.sh`, requires KiCad 10, runs in GitHub Actions): pure `kicad-cli`, no `pcbnew` Python. Exports gerbers with `--check-zones` (in-memory zone refill, the board file is never modified), drill, positions CSV, schematic PDF and VRML (`pcb export vrml --user-origin` set from the board's `aux_axis_origin`). `kicad/hellen-one-kicad-bom-plugin.py` turns the XML netlist into a `Comment,Designator,Footprint,LCSC Part #` CSV using the `kicad_netlist_reader` shipped with KiCad (`/usr/share/kicad/plugins`, overridable with `KICAD_PLUGINS_DIR`); a `MyComment=DNP` field or the native DNP attribute blanks the LCSC number. Output goes to `gerber/` in the board repo. `kicad-cli` rewrites `*.kicad_prl`; `bin/gha-commit.sh` restores it so it is not committed.
 
 2. **Copy/normalize** (`bin/copy_from_Kicad.py`): copies KiCad gerbers into `boards/<prefix><name>-<rev>/frame/` with Altium/JLC-style extensions (`.GTL/.GBL/.GTO/...`, inner `.G2/.G3` renamed to `.G1/.G2`, Edge.Cuts becomes both `.GKO` and `.GM15`). Rewrites the BOM: footprint names mapped through `kicad/footprints.csv`, library prefix stripped, and any component whose value matches `Module-<name>-<rev>` becomes `Module:<name>/<rev>`. Builds the CPL from the positions file, applying per-footprint rotation corrections from `bin/jlc_kicad_tools/cpl_rotations_db.csv`.
 
@@ -74,11 +76,12 @@ Three stages, each a separate entry point:
 
 ## CI / reusable workflows
 
-`.github/workflows/test-check-all.yaml` runs the Docker test on every push/PR. `create-board.yaml` and `create-board-checkout-with-token.yaml` are `workflow_call` workflows consumed by board repos: they install KiCad 8, run `kicad/bin/export.sh`, commit `gerber/`, then run the three Docker steps and commit `boards/`. `bin/gha-commit.sh` does the commit and sets `NOCOMMIT`/`YESCOMMIT`. `custom-board-update-hellen-one-reference.yaml` bumps the `hellen-one` submodule pointer in a board repo.
+`.github/workflows/test-check-all.yaml` runs two jobs on every push/PR: the Docker pipeline test, and a KiCad 10 job that runs `kicad/bin/export.sh` on `tests/` and diffs the resulting frame BOM/CPL against `tests/boards.EXAMPLE`. `create-board.yaml` and `create-board-checkout-with-token.yaml` are `workflow_call` workflows consumed by board repos: they install KiCad 10 from `ppa:kicad/kicad-10.0-releases`, run `kicad/bin/export.sh`, commit `gerber/`, then run the three Docker steps and commit `boards/`. `bin/gha-commit.sh` does the commit and sets `NOCOMMIT`/`YESCOMMIT`. `custom-board-update-hellen-one-reference.yaml` bumps the `hellen-one` submodule pointer in a board repo.
 
 ## Gotchas
 
 - Module rotation in frames is only supported in multiples of 90 degrees.
+- Board/module KiCad files must stay loadable by KiCad 10; `kicad-cli` also loads the `.kicad_pro` (net classes affect zone fills), so keep it next to the board.
 - Scripts assume cwd is the repo root; `create_board.sh` refuses to run without args and is meant to be called from a user script like `create_hellen_board_example.sh`.
 - `process_board.py` wipes the whole `board/` output directory on every run.
 - `bin/check_all.sh` is interactive (uses `select`) and will prompt when a dependency is missing; in Docker all deps are preinstalled so it passes silently.

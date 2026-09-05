@@ -4,6 +4,8 @@ git config --local user.name "GitHub create-board Action"
 echo "Status 1/3"
 git status
 git restore *.kicad_pro
+# kicad-cli rewrites the project-local settings file; do not commit that noise
+git restore *.kicad_prl
 echo "Status 2/3"
 git status
 git add gerber/*

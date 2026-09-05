@@ -22,8 +22,16 @@ import csv
 import sys
 import os
 
-# [andreika]: add kicad plugins path
-sys.path.append(os.path.dirname(sys.executable) + "/scripting/plugins")
+# Locate kicad_netlist_reader.py shipped with KiCad (Linux .deb, macOS bundle, Windows installer).
+# KICAD_PLUGINS_DIR can point to it explicitly; 'pip install kicad-netlist-reader' also works.
+for plugins_dir in [
+        os.environ.get("KICAD_PLUGINS_DIR", ""),
+        "/usr/share/kicad/plugins",
+        "/usr/local/share/kicad/plugins",
+        "/Applications/KiCad/KiCad.app/Contents/SharedSupport/plugins",
+        os.path.dirname(sys.executable) + "/scripting/plugins"]:
+    if plugins_dir and os.path.isdir(plugins_dir) and plugins_dir not in sys.path:
+        sys.path.append(plugins_dir)
 # Import the KiCad python helper module
 import kicad_netlist_reader
 
@@ -59,7 +67,8 @@ writerow( out, ['Comment', 'Designator', 'Footprint', 'LCSC Part #'] )
 # Output all of the component information (One component per row)
 for c in components:
     lcsc = c.getField("LCSC")
-    if (c.getField("MyComment") == "DNP"):
+    # Do-Not-Populate: either the legacy MyComment=DNP field or the native KiCad DNP attribute
+    if (c.getField("MyComment") == "DNP" or (hasattr(c, "getDNP") and c.getDNP())):
         lcsc = ""
     writerow( out, [c.getValue(), c.getRef(), c.getFootprint(), lcsc])
 
