@@ -65,11 +65,21 @@ mkdir_p(dst_path)
 print ("Reading gerbers from " + src_name + "*.*")
 gerbers = [ ".GTL", ".GTO", ".GTP", ".GTS", ".GBL", ".GBO", ".GBS", ".GBP", ".GM1", ".DRL" ]
 if (num_layers >= 4):
-	gerbers += [ ".G2", ".G3" ]
+	# Match logical layer names: KiCad 8 used g2/g3, KiCad 10 uses g1/g2.
+	# An extension-only glob can copy In2 over In1 when both exports coexist.
+	current_inner = [src_name + "-In%d_Cu.g%d" % (i, i) for i in (1, 2)]
+	legacy_inner = [src_name + "-In%d_Cu.g%d" % (i, i + 1) for i in (1, 2)]
+	inner = current_inner if any(os.path.isfile(p) for p in current_inner) else legacy_inner
+	if any(os.path.isfile(p) for p in inner):
+		if not all(os.path.isfile(p) for p in inner):
+			print ("Error! Incomplete internal Gerber layer pair: " + ", ".join(inner))
+			sys.exit(2)
+		gerbers += [ ".G1", ".G2" ]
 for g in gerbers:
 	copied = False
 	gl = g.lower()
-	for gPath in glob.glob(src_name + "*" + gl):
+	paths = [inner[int(g[2:]) - 1]] if g in (".G1", ".G2") else glob.glob(src_name + "*" + gl)
+	for gPath in paths:
 		print ("* Copying " + name + gl + "...")
 		# keepout layer is a special case
 		if (g == ".GM1"):
@@ -77,12 +87,6 @@ for g in gerbers:
 			if (type == "frames"):
 				shutil.copyfile(gPath, dst_name + ".GM15")
 			shutil.copyfile(gPath, dst_name + ".GKO")
-		elif (g == ".G2"):
-			# using Altium naming convention
-			shutil.copyfile(gPath, dst_name + ".G1")
-		elif (g == ".G3"):
-			# using Altium naming convention
-			shutil.copyfile(gPath, dst_name + ".G2")
 		else:
 			shutil.copyfile(gPath, dst_name + g)
 		copied = True
@@ -91,8 +95,6 @@ for g in gerbers:
 			print ("* Skipping Drill for " + name + "...")
 		elif (g == ".GBP"):
 			print ("* Skipping Bottom Paste for " + name + "...")
-		elif (g == ".G2" or g == ".G3"):
-			print ("* Skipping Internal Layer " + g + " for " + name + "...")
 		else:
 			print ("Error! Gerber " + g + " not found for " + name + "!")
 			sys.exit(2)
