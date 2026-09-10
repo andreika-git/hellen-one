@@ -63,6 +63,7 @@ $PYTHON "$DIR/../hellen-one-kicad-bom-plugin.py" "$NET_FILE" "$OUT_FOLDER/$IN.cs
 
 echo Export Gerbers with zones refilled in-memory
 $KICAD_CLI pcb export gerbers --disable-aperture-macros -l "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In2.Cu,In1.Cu" --no-x2 --use-drill-file-origin --check-zones "$PCB_FILE" -o $OUT_FOLDER/
+$PYTHON "$DIR/../../bin/cleanup_kicad_gerbers.py" "$OUT_FOLDER" "$IN"
 echo Export drill file
 $KICAD_CLI pcb export drill --map-format ps --drill-origin plot --excellon-zeros-format suppressleading -u "in" "$PCB_FILE" -o $OUT_FOLDER/
 echo Export positions file
