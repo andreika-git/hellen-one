@@ -26,6 +26,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Check KiCad Gerber naming and cleanup
+        run: python3 -m unittest discover -s tests -p 'test_kicad_gerbers.py'
+
       - name: Install kicad 10
         run: |
           sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
