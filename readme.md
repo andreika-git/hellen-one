@@ -28,6 +28,10 @@ Please see how some of the open source boards are done and follow the pattern:
 * https://github.com/rusefi/hellen121vag
 * https://github.com/rusefi/hellen88bmw
 * https://github.com/andreika-git/hellen81/
+* https://github.com/rusefi/hellen-miata-NA6
+* https://github.com/rusefi/hellen-miata-NA8
+* https://github.com/rusefi/hellen-miata-NB1
+* https://github.com/rusefi/hellen-miata-NB2
 
 This repository contains all scripts and data to create Hellen One boards for [rusEFI](https://github.com/rusefi/rusefi)!
 
