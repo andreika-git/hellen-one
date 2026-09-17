@@ -93,3 +93,6 @@
 
 #MM buttons
 #define C115357 C455280
+
+#32.768 crystal Y101
+#define C99009 C97602
