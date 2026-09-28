@@ -77,6 +77,7 @@ if [ ! "$Y" ]; then
     exit -1
 fi
 echo Export VRML using origin $X $Y mm
-$KICAD_CLI pcb export vrml --units mm --user-origin "${X}x${Y}mm" --force "$PCB_FILE" -o "$OUT_FOLDER/$IN.wrl"
+# DNP footprints remain on the PCB, but their unpopulated parts must not appear in 3D.
+$KICAD_CLI pcb export vrml --units mm --user-origin "${X}x${Y}mm" --no-dnp --force "$PCB_FILE" -o "$OUT_FOLDER/$IN.wrl"
 
 echo Export done
