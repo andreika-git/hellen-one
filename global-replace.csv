@@ -79,6 +79,9 @@
 #U411 TLS115 same power supply/same reference on all boards
 #define C540242 C3743696
 
+#SRV05-4-P-T7
+#define C85364 C6454456
+
 # === LEDs ===
 #Yellow 0603
 #define C72038 C2287
